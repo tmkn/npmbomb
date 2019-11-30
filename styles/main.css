@@ -6,5 +6,33 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    @apply antialiased;
+    @apply antialiased bg-gray-100;
+}
+
+.header {
+
+}
+
+.header .caption {
+    @apply flex-1 self-center px-10;
+}
+
+.innerheader {
+    @apply mx-auto py-4 flex;
+}
+
+.logo {
+    @apply mx-auto font-medium text-3xl;
+}
+
+.footer {
+    @apply py-4;
+}
+
+.footer div {
+    @apply mx-auto text-center;
+}
+
+.main {
+    background: white;
 }
