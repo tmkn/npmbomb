@@ -5,18 +5,20 @@ import Index from "./components/index/Index";
 import Package from "./components/package/Package";
 
 export const App: React.FC = () => {
-  return (<BrowserRouter>
-  <div>
-    <Link to="/">Home</Link> <div>
-    </div><Link to="/package/typescript">package</Link>
-    </div>
-      <Switch>
-        <Route path="/package">
-          <Package />
-        </Route>
-        <Route path="/">
-          <Index />
-        </Route>
-      </Switch>
-  </BrowserRouter>)
+    return (
+        <BrowserRouter>
+            <div>
+                <Link to="/">Home</Link> <div></div>
+                <Link to="/package/typescript">package</Link>
+            </div>
+            <Switch>
+                <Route path="/package">
+                    <Package />
+                </Route>
+                <Route path="/">
+                    <Index />
+                </Route>
+            </Switch>
+        </BrowserRouter>
+    );
 };

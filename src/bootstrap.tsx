@@ -12,7 +12,12 @@ function mount(): void {
 
     document.body.appendChild(app);
 
-    ReactDOM.render(<div><App /></div>, app);
+    ReactDOM.render(
+        <div>
+            <App />
+        </div>,
+        app
+    );
 }
 
 mount();
