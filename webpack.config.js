@@ -29,6 +29,10 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'npmbomb',
+            meta: {
+                charset: { charset: 'utf-8' },
+                viewport: 'width=device-width, initial-scale=1'
+            },
         }),
     ],
     output: {
