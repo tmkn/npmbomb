@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/core";
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Index from "./components/index/Index";
 import Package from "./components/package/Package";
-import Header from "./components/header/Header";
-import Content from "./components/content/Content";
-import Footer from "./components/footer/Footer";
+import Results from "./components/results/Results";
+import Header from "./components/shared/header/Header";
+import Content from "./components/shared/content/Content";
+import Footer from "./components/shared/footer/Footer";
 
 const globalStyle: SerializedStyles = css`
     body {
@@ -80,19 +81,31 @@ const globalStyle: SerializedStyles = css`
     }
 `;
 
+const results = [
+    {
+        pkg: "TypeScript",
+        dependencies: 0,
+        guess: 23
+    },
+    {
+        pkg: "react",
+        dependencies: 4,
+        guess: 2
+    }
+];
+
 export const App: React.FC = () => {
     return (
         <BrowserRouter>
             <Global styles={globalStyle} />
             <Header />
             <Content>
-                {/*<div>
-                    <Link to="/">Home</Link> <div></div>
-                    <Link to="/package/typescript">package</Link>
-                </div>*/}
                 <Switch>
                     <Route path="/package">
                         <Package />
+                    </Route>
+                    <Route path="/results">
+                        <Results results={results} />
                     </Route>
                     <Route path="/">
                         <Index />

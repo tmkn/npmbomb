@@ -4,8 +4,11 @@ import React, { useRef, useState, useEffect } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect } from "react-router-dom";
 
 import { mq } from "../../css";
-import { Info, Divider, Center } from "../index/Index";
-import { PrimaryButton } from "../buttons/Buttons";
+import { PrimaryButton } from "../shared/buttons/Buttons";
+import { Info } from "../shared/Info/Info";
+import { Center } from "../shared/center/Center";
+import { Divider } from "../shared/divider/Divider";
+import { ResultsTable, Number } from "../shared/results/Results";
 
 const guessBoxStyle = css({
     [mq[0]]: {
@@ -38,23 +41,6 @@ const GuessBox: React.FC = () => {
     );
 };
 
-const numberStyle = css({
-    color: "#616161",
-    fontFamily: "Roboto Slab"
-});
-
-const Number: React.FC = ({ children }) => <span css={numberStyle}>{children}</span>;
-
-const resultBoxStyle = css({
-    [mq[0]]: {
-        display: "grid",
-        gridTemplateColumns: "max-content 1fr",
-        columnGap: "1rem",
-        rowGap: "1rem",
-        color: "#616161"
-    }
-});
-
 interface IResultBoxProps {
     guess: number;
     actual: number;
@@ -63,12 +49,12 @@ interface IResultBoxProps {
 const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
     return (
         <React.Fragment>
-            <div css={resultBoxStyle}>
+            <ResultsTable columns={2}>
                 <div>Your Guess:</div>
                 <Number>{guess}</Number>
                 <div>Actual:</div>
                 <Number>{actual}</Number>
-            </div>
+            </ResultsTable>
             <Divider margin={"1rem 0"} />
             <div style={{ color: "#616161" }}>
                 You were off by <Number>56</Number>

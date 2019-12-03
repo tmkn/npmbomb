@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-import { mq } from "../../css";
+import { mq } from "../../../css";
 
 const style = css({
     margin: "0 auto",

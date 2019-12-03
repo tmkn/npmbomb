@@ -4,26 +4,16 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import { mq } from "../../css";
-import { PrimaryButton } from "../buttons/Buttons";
+import { PrimaryButton } from "../shared/buttons/Buttons";
+import { Info } from "../shared/Info/Info";
+import { Center } from "../shared/center/Center";
+import { Divider } from "../shared/divider/Divider";
 
 const highlightStyle = css({
     color: "#9c27b0"
 });
 
 const Highlight: React.FC = ({ children }) => <span css={highlightStyle}>{children}</span>;
-
-const infoStyle = css({
-    fontFamily: "Open Sans",
-    padding: "2rem",
-    backgroundColor: "#e0f7fa",
-    color: "#311B92",
-    margin: 0,
-    marginBottom: "2rem"
-});
-
-export const Info: React.FC = ({ children }) => {
-    return <p css={infoStyle}>{children}</p>;
-};
 
 const faqStyle = css({
     fontFamily: "Open Sans",
@@ -42,31 +32,6 @@ const Faq: React.FC<IFaqProps> = ({ children, header }) => {
         </React.Fragment>
     );
 };
-
-const centerStyle = css({
-    display: "flex",
-    flex: 1,
-    justifyContent: "center"
-});
-
-export const Center: React.FC = ({ children }) => {
-    return <div css={centerStyle}>{children}</div>;
-};
-
-const dividerStyle = css({
-    height: "0px",
-    borderBottom: "1px solid #ececec",
-    display: "flex",
-    flex: 1
-});
-
-interface IDividerProps {
-    margin: string;
-}
-
-export const Divider: React.FC<IDividerProps> = ({ margin }) => (
-    <div css={dividerStyle} style={{ margin }}></div>
-);
 
 const h2Style = css({
     fontFamily: "Roboto Slab",
