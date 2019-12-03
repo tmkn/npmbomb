@@ -5,9 +5,10 @@
   "private": true,
   "scripts": {
     "tsc": "tsc",
-    "build": "webpack",
+    "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start:prod": "webpack-dev-server --open --config webpack.prod.js",
     "prettier": "prettier --write \"{src,tests}/**/{*.ts,*.tsx}\""
   },
   "keywords": [],
@@ -32,6 +33,7 @@
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   }
 }

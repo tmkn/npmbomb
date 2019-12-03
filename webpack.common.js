@@ -3,26 +3,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: {
         app: './src/bootstrap.tsx'
     },
-    devtool: 'source-map',
     module: {
         rules: [
-          {
-            test: /\.tsx?$/,
-            use: 'ts-loader',
-            exclude: /node_modules/,
-          },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
         ],
-      },
-      resolve: {
-        extensions: [ '.tsx', '.ts', '.js' ],
-      },
-    devServer: {
-        contentBase: './dist',
-        historyApiFallback: true
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [
         new CleanWebpackPlugin(),
