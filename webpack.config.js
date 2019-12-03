@@ -7,7 +7,7 @@ module.exports = {
     entry: {
         app: './src/bootstrap.tsx'
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     module: {
         rules: [
           {
@@ -20,7 +20,6 @@ module.exports = {
       resolve: {
         extensions: [ '.tsx', '.ts', '.js' ],
       },
-    devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
         historyApiFallback: true

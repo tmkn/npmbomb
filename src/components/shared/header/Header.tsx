@@ -5,8 +5,8 @@ import { mq } from "../../../css";
 
 const style = css({
     margin: "0 auto",
-    "font-size": "2rem",
-    "font-family": "'Muli', sans-serif",
+    fontSize: "2rem",
+    fontFamily: "'Muli', sans-serif",
     height: "4rem",
     display: "flex",
     [mq[0]]: {
@@ -33,7 +33,7 @@ const titleStyle = css({
 const subTitleStyle = css({
     fontSize: "1rem",
     flex: 1,
-    "font-family": "'Roboto Slab', serif",
+    fontFamily: "'Roboto Slab', serif",
     fontWeight: 400
 });
 
