@@ -9,12 +9,17 @@ const style = css({
     "font-family": "'Muli', sans-serif",
     height: "4rem",
     display: "flex",
-    alignItems: "center",
     [mq[0]]: {
-        maxWidth: "300px"
+        maxWidth: "300px",
+        flexDirection: "column",
+        alignItems: "left",
+        marginTop: "1rem"
     },
     [mq[1]]: {
-        maxWidth: "700px"
+        maxWidth: "700px",
+        flexDirection: "row",
+        alignItems: "center",
+        marginTop: 0
     },
     [mq[2]]: {
         maxWidth: "900px"

@@ -20,6 +20,10 @@ const globalStyle: SerializedStyles = css`
         font-family: "Open Sans";
     }
 
+    a {
+        text-decoration: none;
+    }
+
     h1 {
         font-family: "Roboto Slab";
         color: #9c27b0;
@@ -30,7 +34,6 @@ const globalStyle: SerializedStyles = css`
         font-family: "Roboto Slab";
         color: #0097a7;
         font-weight: 200;
-        margin-bottom: 0.5rem;
     }
 
     @font-face {
@@ -83,10 +86,10 @@ export const App: React.FC = () => {
             <Global styles={globalStyle} />
             <Header />
             <Content>
-                <div>
+                {/*<div>
                     <Link to="/">Home</Link> <div></div>
                     <Link to="/package/typescript">package</Link>
-                </div>
+                </div>*/}
                 <Switch>
                     <Route path="/package">
                         <Package />

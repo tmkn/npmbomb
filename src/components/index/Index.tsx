@@ -1,12 +1,12 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 import { mq } from "../../css";
 import { PrimaryButton } from "../buttons/Buttons";
 
 const highlightStyle = css({
-    //fontStyle: "italic",
     color: "#9c27b0"
 });
 
@@ -16,11 +16,12 @@ const infoStyle = css({
     fontFamily: "Open Sans",
     padding: "2rem",
     backgroundColor: "#e0f7fa",
-    color: "#616161",
-    margin: 0
+    color: "#311B92",
+    margin: 0,
+    marginBottom: "2rem"
 });
 
-const Info: React.FC = ({ children }) => {
+export const Info: React.FC = ({ children }) => {
     return <p css={infoStyle}>{children}</p>;
 };
 
@@ -36,14 +37,50 @@ interface IFaqProps {
 const Faq: React.FC<IFaqProps> = ({ children, header }) => {
     return (
         <React.Fragment>
-            <h2>> {header}</h2>
+            <H2>> {header}</H2>
             <div css={faqStyle}>{children}</div>
         </React.Fragment>
     );
 };
 
+const centerStyle = css({
+    display: "flex",
+    flex: 1,
+    justifyContent: "center"
+});
+
+export const Center: React.FC = ({ children }) => {
+    return <div css={centerStyle}>{children}</div>;
+};
+
+const dividerStyle = css({
+    height: "0px",
+    borderBottom: "1px solid #ececec",
+    display: "flex",
+    flex: 1
+});
+
+interface IDividerProps {
+    margin: string;
+}
+
+export const Divider: React.FC<IDividerProps> = ({ margin }) => (
+    <div css={dividerStyle} style={{ margin }}></div>
+);
+
+const h2Style = css({
+    fontFamily: "Roboto Slab",
+    color: "#0097a7",
+    fontWeight: 200,
+    marginBottom: "0.5rem"
+});
+
+const H2: React.FC = ({ children }) => <h2 css={h2Style}>{children}</h2>;
+
 const style = css({
-    fontFamily: "Roboto Slab"
+    fontFamily: "Roboto Slab",
+    display: "flex",
+    flexDirection: "column"
 });
 
 export default () => (
@@ -53,8 +90,13 @@ export default () => (
             Test your knowledge of the NPM ecosystem by guessing the number of dependencies for
             popular NPM packages.
         </Info>
-        <PrimaryButton>Start</PrimaryButton>
-        <h1>FAQ</h1>
+        <Center>
+            <Link to="/package/typescript">
+                <PrimaryButton onClick={() => console.log("clicked")}>Start</PrimaryButton>
+            </Link>
+        </Center>
+        <Divider margin={"2rem 0"} />
+        <H2>FAQ</H2>
         <Faq header="Why is it called npmbomb?">
             It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
             <blockquote css={{ fontFamily: "Roboto Slab" }}>
