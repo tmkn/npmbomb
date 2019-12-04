@@ -1,19 +1,24 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
+import { Link } from "react-router-dom";
 
-import { mq } from "../../../css";
+import { mq, serifFont, headerFont } from "../../../css";
 
 const style = css({
-    margin: "0 auto",
-    fontSize: "2rem",
-    fontFamily: "'Muli', sans-serif",
-    height: "4rem",
-    display: "flex",
     [mq[0]]: {
         maxWidth: "300px",
         flexDirection: "column",
         alignItems: "left",
-        marginTop: "1rem"
+        marginTop: "1rem",
+        margin: "0 auto",
+        fontSize: "2rem",
+        fontFamily: `"${headerFont}"`,
+        height: "4rem",
+        display: "flex",
+        "& a": {
+            flex: 1,
+            color: "black"
+        }
     },
     [mq[1]]: {
         maxWidth: "700px",
@@ -33,14 +38,16 @@ const titleStyle = css({
 const subTitleStyle = css({
     fontSize: "1rem",
     flex: 1,
-    fontFamily: "'Roboto Slab', serif",
+    fontFamily: `"${serifFont}"`,
     fontWeight: 400
 });
 
 const Header: React.FC = () => {
     return (
         <div css={style}>
-            <div css={titleStyle}>npmbomb</div>
+            <Link to="/">
+                <div css={titleStyle}>npmbomb</div>
+            </Link>
             <div css={subTitleStyle}>Guess NPM dependencies</div>
         </div>
     );

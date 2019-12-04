@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
+import { sansSerifFont, primaryColorDark, secondaryColorLight } from "../../../css";
+
 const infoStyle = css({
-    fontFamily: "Open Sans",
+    fontFamily: `"${sansSerifFont}"`,
     padding: "2rem",
-    backgroundColor: "#e0f7fa",
-    color: "#311B92",
+    backgroundColor: `${secondaryColorLight}`,
+    color: `${primaryColorDark}`,
     margin: 0,
     marginBottom: "2rem"
 });

@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect } from "react-router-dom";
 
-import { mq } from "../../css";
+import { mq, serifFont, primaryColor, textColor, primaryColorDark } from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
-import { Info } from "../shared/Info/Info";
+import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
-import { ResultsTable, Number } from "../shared/results/Results";
+import { ResultsTable, Num } from "../shared/results/Results";
 
 const guessBoxStyle = css({
     [mq[0]]: {
@@ -22,21 +22,52 @@ const inputStyle = css({
     [mq[0]]: {
         padding: "0 1rem",
         fontSize: "1rem",
-        fontFamily: "Roboto Slab",
+        fontFamily: `"${serifFont}"`,
         maxWidth: "5rem",
         border: "1px solid #EDE7F6",
         outline: "none",
-        color: "#311B92",
+        color: `${primaryColorDark}`,
         textAlign: "center"
     }
 });
 
-const GuessBox: React.FC = () => {
+interface IGuessBoxProps {
+    value?: string;
+}
+
+const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
+    const initValue: string = value ?? "";
+    const [guess, setGuess] = useState(initValue);
+    const [valid, setValid] = useState(Number.isNaN(parseInt(initValue)));
+    const { setUserGuess } = useContext(PackageContext);
+
+    function validate(e: React.ChangeEvent<HTMLInputElement>): void {
+        const number = parseInt(e.target.value);
+
+        setValid(Number.isNaN(number));
+        if (Number.isNaN(number)) {
+            setGuess("");
+        } else {
+            setGuess(number.toString());
+        }
+    }
+
+    function doConfirm(): void {
+        const number = parseInt(guess);
+
+        if (!Number.isNaN(number)) {
+            setUserGuess(number);
+            console.log(`guessed`, guess);
+        }
+    }
+
     return (
         <div css={guessBoxStyle}>
-            <input css={inputStyle} />
+            <input css={inputStyle} value={guess} onChange={validate} />
             <div style={{ flex: "0.05" }} />
-            <PrimaryButton onClick={() => console.log("guessed")}>Guess</PrimaryButton>
+            <PrimaryButton disabled={valid} onClick={doConfirm}>
+                Guess
+            </PrimaryButton>
         </div>
     );
 };
@@ -51,13 +82,13 @@ const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
         <React.Fragment>
             <ResultsTable columns={2}>
                 <div>Your Guess:</div>
-                <Number>{guess}</Number>
+                <Num>{guess}</Num>
                 <div>Actual:</div>
-                <Number>{actual}</Number>
+                <Num>{actual}</Num>
             </ResultsTable>
             <Divider margin={"1rem 0"} />
-            <div style={{ color: "#616161" }}>
-                You were off by <Number>56</Number>
+            <div style={{ color: `${textColor}` }}>
+                You were off by <Num>56</Num>
             </div>
         </React.Fragment>
     );
@@ -67,17 +98,19 @@ const scaleDuration = 1500;
 const scale = keyframes`
     from, 0%, to {
         transform: scale(1);
+        color: #e0f7fa;
     }
 
     100% {
         transform: scale(2);
+        color: ${primaryColor};
     }
 `;
 
 const countupStyle = css({
     fontSize: "3rem",
-    fontFamily: "Roboto Slab",
-    color: "#673AB7",
+    fontFamily: `"${serifFont}"`,
+    color: `${primaryColor}`,
     fontWeight: "bold",
     margin: "3rem",
     animation: `${scale} ${scaleDuration}ms ease forwards`
@@ -114,22 +147,48 @@ const Countup: React.FC<ICountupProps> = ({ number, target }) => {
     );
 };
 
+interface IPackageContext {
+    guess: number | undefined;
+    setUserGuess: (guess: number) => void;
+}
+
+const PackageContext = React.createContext<IPackageContext>({
+    guess: undefined,
+    setUserGuess: () => {}
+});
+
 const Package: React.FC = () => {
-    let { pkgName } = useParams<{ pkgName: string }>();
+    const { pkgName } = useParams<{ pkgName: string }>();
+    const [userGuess, setUserGuess] = useState<number | undefined>();
+    const [loading, setLoading] = useState(true);
+    const context: IPackageContext = {
+        guess: undefined,
+        setUserGuess: value => setUserGuess(value)
+    };
+
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 1000);
+    }, []);
+
+    if (loading) return <div>loading</div>;
 
     return (
-        <React.Fragment>
+        <PackageContext.Provider value={context}>
             <h1>{pkgName}</h1>
             <Info>TypeScript is a language for application scale JavaScript development</Info>
             <h2>How many dependencies?</h2>
             <GuessBox />
-            <Countup number={548} target={758} />
-            <h2>Results</h2>
-            <ResultBox guess={123} actual={569} />
-            <Center>
-                <PrimaryButton onClick={() => console.log(`todo next`)}>Next</PrimaryButton>
-            </Center>
-        </React.Fragment>
+            {typeof userGuess !== "undefined" && (
+                <React.Fragment>
+                    <Countup number={userGuess} target={758} />
+                    <h2>Results</h2>
+                    <ResultBox guess={userGuess} actual={569} />
+                    <Center>
+                        <PrimaryButton onClick={() => console.log(`todo next`)}>Next</PrimaryButton>
+                    </Center>
+                </React.Fragment>
+            )}
+        </PackageContext.Provider>
     );
 };
 

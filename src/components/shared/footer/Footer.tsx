@@ -1,16 +1,16 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
-import { mq } from "../../../css";
+import { mq, sansSerifFont, textColor } from "../../../css";
 
 const footerStyle = css({
     display: "flex",
-    fontFamily: "'Open Sans', sans-serif",
+    fontFamily: `"${sansSerifFont}"`,
     fontSize: "0.8rem",
     justifyContent: "center",
     marginTop: "4rem",
     marginBottom: "2rem",
-    color: "#616161"
+    color: `${textColor}`
 });
 
 const Footer: React.FC = () => {

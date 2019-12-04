@@ -8,6 +8,7 @@ import Results from "./components/results/Results";
 import Header from "./components/shared/header/Header";
 import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
+import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
 
 const globalStyle: SerializedStyles = css`
     body {
@@ -18,7 +19,7 @@ const globalStyle: SerializedStyles = css`
         max-width: 100vw;
         display: flex;
         flex-direction: column;
-        font-family: "Open Sans";
+        font-family: "${sansSerifFont}";
     }
 
     a {
@@ -26,14 +27,14 @@ const globalStyle: SerializedStyles = css`
     }
 
     h1 {
-        font-family: "Roboto Slab";
-        color: #9c27b0;
+        font-family: "${serifFont}";
+        color: ${primaryColor};
         font-weight: 200;
     }
 
     h2 {
-        font-family: "Roboto Slab";
-        color: #0097a7;
+        font-family: "${serifFont}";
+        color: ${secondaryColor};
         font-weight: 200;
     }
 
@@ -88,7 +89,7 @@ const results = [
         guess: 23
     },
     {
-        pkg: "react",
+        pkg: "react-create-app",
         dependencies: 4,
         guess: 2
     }

@@ -3,21 +3,21 @@ import { jsx, css } from "@emotion/core";
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import { mq } from "../../css";
+import { mq, serifFont, sansSerifFont, primaryColor, secondaryColor, textColor } from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
-import { Info } from "../shared/Info/Info";
+import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 
 const highlightStyle = css({
-    color: "#9c27b0"
+    color: `${primaryColor}`
 });
 
 const Highlight: React.FC = ({ children }) => <span css={highlightStyle}>{children}</span>;
 
 const faqStyle = css({
-    fontFamily: "Open Sans",
-    color: "#616161"
+    fontFamily: `"${sansSerifFont}"`,
+    color: `${textColor}`
 });
 
 interface IFaqProps {
@@ -34,8 +34,8 @@ const Faq: React.FC<IFaqProps> = ({ children, header }) => {
 };
 
 const h2Style = css({
-    fontFamily: "Roboto Slab",
-    color: "#0097a7",
+    fontFamily: `"${serifFont}"`,
+    color: `${secondaryColor}`,
     fontWeight: 200,
     marginBottom: "0.5rem"
 });
@@ -43,7 +43,7 @@ const h2Style = css({
 const H2: React.FC = ({ children }) => <h2 css={h2Style}>{children}</h2>;
 
 const style = css({
-    fontFamily: "Roboto Slab",
+    fontFamily: `"${serifFont}"`,
     display: "flex",
     flexDirection: "column"
 });
@@ -57,14 +57,14 @@ export default () => (
         </Info>
         <Center>
             <Link to="/package/typescript">
-                <PrimaryButton onClick={() => console.log("clicked")}>Start</PrimaryButton>
+                <PrimaryButton>Start</PrimaryButton>
             </Link>
         </Center>
         <Divider margin={"2rem 0"} />
         <H2>FAQ</H2>
         <Faq header="Why is it called npmbomb?">
             It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
-            <blockquote css={{ fontFamily: "Roboto Slab" }}>
+            <blockquote css={{ fontFamily: `"${serifFont}"` }}>
                 "A zip bomb is usually a small file .... however, when the file is unpacked, its
                 contents are more than the system can handle."
             </blockquote>
