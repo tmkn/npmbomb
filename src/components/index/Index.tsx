@@ -10,6 +10,7 @@ import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
+import { TextLink } from "../shared/link/TextLink";
 
 const highlightStyle = css({
     color: `${primaryColor}`
@@ -93,7 +94,9 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
                     {header}
                 </span>
             </H2>
-            <div css={[faqStyle, expanded ? contentExpandStyle : contentCollapseStyle]}>{children}</div>
+            <div css={[faqStyle, expanded ? contentExpandStyle : contentCollapseStyle]}>
+                {children}
+            </div>
         </React.Fragment>
     );
 };
@@ -116,21 +119,6 @@ const H2: React.FC<IH2Props> = ({ children, onClick }) => {
         <h2 css={h2Style} onClick={_onClick}>
             {children}
         </h2>
-    );
-};
-
-const TextLink: React.FC<{ href: string }> = ({ children, href }) => {
-    const style = css({
-        [mq[0]]: {
-            textDecoration: "underline",
-            textDecorationColor: secondaryColor
-        }
-    });
-
-    return (
-        <a css={style} href={href}>
-            {children}
-        </a>
     );
 };
 
@@ -182,7 +170,9 @@ export default () => {
             </Faq>
             <Faq header="Why can't I find library XYZ?" collapsed>
                 For now, it only shows a preselected number of libraries, namely the ones that are
-                in the dependency tree of the most downloaded packages.
+                in the dependency tree of the most downloaded packages or specifically handpicked
+                ones. If you want a specific dependency you can hit me up on Twitter{" "}
+                <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
             </Faq>
             <Faq header="Why doesn't it show a version number?" collapsed>
                 Because it's not important, it's just a lighthearted jab at the size of the

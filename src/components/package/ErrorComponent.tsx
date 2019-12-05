@@ -7,6 +7,7 @@ import { AppContext } from "../../App";
 import { mq, textColor } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
+import { TextLink } from "../shared/link/TextLink";
 
 export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName }) => {
     const { setAppState } = useContext(AppContext);
@@ -36,7 +37,12 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName }) => {
             <h1>{pkgName}</h1>
             <Center>
                 <div css={style}>
-                    <span>Whoops, couldn't load data!</span>
+                    <span>Whoops, couldn't find data for this package!</span>
+                    <br />
+                    <span>
+                        If you feel this package is important you can hit me up on Twitter{" "}
+                        <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
+                    </span>
                 </div>
             </Center>
             <Center>

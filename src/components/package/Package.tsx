@@ -43,9 +43,11 @@ const Package: React.FC = () => {
     useEffect(() => {
         //todo load real data
         setTimeout(() => {
+            const pkgInfo = data.get(pkgName);
+
             setLoading(false);
-            //setError(true);
-            setPkgInfo(data.get(pkgName)!);
+            if (pkgInfo) setPkgInfo(pkgInfo);
+            else setError(true);
         }, 1000);
     }, [pkgName]);
 
