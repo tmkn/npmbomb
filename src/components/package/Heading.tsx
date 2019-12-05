@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes } from "@emotion/core";
+import { jsx, css } from "@emotion/core";
 import React, { useRef, useState, useContext, useEffect } from "react";
 
 import { AppContext } from "../../App";
