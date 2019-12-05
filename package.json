@@ -7,12 +7,12 @@
     "tsc": "tsc",
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "webpack-dev-server --open --host --config webpack.dev.js",
     "start:prod": "webpack-dev-server --compress --open --config webpack.prod.js",
     "prettier": "prettier --write \"{src,tests}/**/{*.ts,*.tsx}\""
   },
   "keywords": [],
-  "author": "",
+  "author": "tmkn",
   "license": "ISC",
   "dependencies": {
     "@emotion/core": "^10.0.22",
