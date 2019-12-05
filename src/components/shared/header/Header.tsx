@@ -9,8 +9,7 @@ const style = css({
         maxWidth: "300px",
         flexDirection: "column",
         alignItems: "left",
-        marginTop: "1rem",
-        margin: "0 auto",
+        margin: "1rem auto 0",
         fontSize: "2rem",
         fontFamily: `"${headerFont}"`,
         height: "4rem",
@@ -33,6 +32,12 @@ const style = css({
 
 const titleStyle = css({
     flex: 1
+    /*WebkitTextStroke: "1px black",
+    WebkitTextFillColor: "white"*/
+    /*background: "linear-gradient(to right, cyan, orange)",
+    backgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    WebkitBackgroundClip: "text"*/
 });
 
 const subTitleStyle = css({

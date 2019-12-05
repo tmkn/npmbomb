@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/core";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Index from "./components/index/Index";
@@ -82,38 +83,64 @@ const globalStyle: SerializedStyles = css`
     }
 `;
 
-const results = [
-    {
-        pkg: "TypeScript",
-        dependencies: 0,
-        guess: 23
+export interface IGuessResult {
+    pkg: string;
+    dependencies: number;
+    guess: number;
+}
+
+interface IAppContext {
+    appState: IAppState;
+    setAppState: (state: IAppState) => void;
+}
+
+export const AppContext = React.createContext<IAppContext>({
+    appState: {
+        gameMode: false,
+        guesses: [],
+        remaining: []
     },
-    {
-        pkg: "react-create-app",
-        dependencies: 4,
-        guess: 2
-    }
-];
+    setAppState: () => {}
+});
+
+interface IAppState {
+    gameMode: boolean;
+    remaining: string[];
+    guesses: IGuessResult[];
+}
 
 export const App: React.FC = () => {
+    const [appState, setAppState] = useState<IAppState>({
+        gameMode: false,
+        guesses: [],
+        remaining: []
+    });
+
+    const context: IAppContext = {
+        appState,
+        setAppState
+    };
+
     return (
-        <BrowserRouter>
-            <Global styles={globalStyle} />
-            <Header />
-            <Content>
-                <Switch>
-                    <Route path="/package">
-                        <Package />
-                    </Route>
-                    <Route path="/results">
-                        <Results results={results} />
-                    </Route>
-                    <Route path="/">
-                        <Index />
-                    </Route>
-                </Switch>
-            </Content>
-            <Footer />
-        </BrowserRouter>
+        <AppContext.Provider value={context}>
+            <BrowserRouter>
+                <Global styles={globalStyle} />
+                <Header />
+                <Content>
+                    <Switch>
+                        <Route path="/package">
+                            <Package />
+                        </Route>
+                        <Route path="/results">
+                            <Results />
+                        </Route>
+                        <Route path="/">
+                            <Index />
+                        </Route>
+                    </Switch>
+                </Content>
+                <Footer />
+            </BrowserRouter>
+        </AppContext.Provider>
     );
 };

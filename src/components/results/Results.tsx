@@ -1,28 +1,25 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React from "react";
-import { Redirect, Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Redirect, Link, useHistory } from "react-router-dom";
 
 import { ResultsTable, Num } from "../shared/results/Results";
 import { primaryColor, mq, mobileOnly, hideOnMobile } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Divider } from "../shared/divider/Divider";
+import { IGuessResult, AppContext } from "../../App";
 
-interface IResult {
-    pkg: string;
-    dependencies: number;
-    guess: number;
-}
+type Results = IGuessResult[];
 
-type Results = IResult[];
+const Results: React.FC = () => {
+    const {
+        appState: { gameMode, guesses, remaining },
+        setAppState
+    } = useContext(AppContext);
+    const history = useHistory();
 
-interface IResultsProps {
-    results: Results;
-}
-
-const Results: React.FC<IResultsProps> = ({ results }) => {
-    if (results.length === 0) return <Redirect to="/" />;
+    if (guesses.length === 0) return <Redirect to="/" />;
 
     const alignRight = css({
         textAlign: "right",
@@ -53,6 +50,16 @@ const Results: React.FC<IResultsProps> = ({ results }) => {
         }
     `;
 
+    function onHome() {
+        setAppState({
+            gameMode: false,
+            guesses: [],
+            remaining: []
+        });
+
+        history.push("/");
+    }
+
     return (
         <React.Fragment>
             <h1>Results</h1>
@@ -60,15 +67,15 @@ const Results: React.FC<IResultsProps> = ({ results }) => {
                 <div css={mobileOnly}></div>
                 <div css={[mobileOnly, alignRight]}>Deps.</div>
                 <div css={[mobileOnly, alignRight]}>You</div>
-                {results.map(({ pkg, dependencies, guess }, i) => {
+                {guesses.map(({ pkg, dependencies, guess }, i) => {
                     const animation = css({
                         opacity: 0,
                         animation: `${fadeIn} 1s ease forwards, ${moveIn} 500ms ease forwards`,
-                        animationDelay: `${500 * (i + 1)}ms`
+                        animationDelay: `${500 * i}ms`
                     });
 
                     return (
-                        <React.Fragment>
+                        <React.Fragment key={pkg}>
                             <div css={[animation, primary]}>{pkg}</div>
                             <div css={[alignRight, animation]}>
                                 <span>
@@ -86,9 +93,7 @@ const Results: React.FC<IResultsProps> = ({ results }) => {
             </ResultsTable>
             <Divider margin={"1rem 0"} />
             <Center>
-                <Link to="/">
-                    <PrimaryButton>Home</PrimaryButton>
-                </Link>
+                <PrimaryButton onClick={onHome}>Home</PrimaryButton>
             </Center>
         </React.Fragment>
     );
