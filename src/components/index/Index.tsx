@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
@@ -26,7 +26,6 @@ const faqStyle = css({
 const arrowStyle = css({
     [mq[0]]: {
         display: "inline-block"
-        //animationFillMode: "forwards"
     }
 });
 
@@ -62,15 +61,36 @@ const collapseStyle = css({
     }
 });
 
+const expandAnimation2 = keyframes`
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+`;
+
+const collapseAnimation2 = keyframes`
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+`;
+
 const contentCollapseStyle = css({
     [mq[0]]: {
-        display: "none"
+        animation: `${collapseAnimation2} 500ms ease forwards`
     }
 });
 
 const contentExpandStyle = css({
     [mq[0]]: {
-        display: "block"
+        display: "block",
+        animation: `${expandAnimation2} 500ms ease forwards`
     }
 });
 
@@ -81,6 +101,27 @@ interface IFaqProps {
 
 const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
     const [expanded, setExpandend] = useState(!collapsed ?? true);
+    const contentEl = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (!expanded) {
+            window.setTimeout(() => {
+                if (contentEl.current) {
+                    contentEl.current.style.display = "none";
+                }
+            }, 400);
+        } else {
+            if (contentEl.current) {
+                contentEl.current.style.display = "block";
+            }
+        }
+    }, [expanded]);
+
+    useEffect(() => {
+        if (contentEl.current && !expanded) {
+            contentEl.current.style.display = "none";
+        }
+    }, []);
 
     function onClick() {
         setExpandend(!expanded);
@@ -94,7 +135,10 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
                     {header}
                 </span>
             </H2>
-            <div css={[faqStyle, expanded ? contentExpandStyle : contentCollapseStyle]}>
+            <div
+                ref={contentEl}
+                css={[faqStyle, expanded ? contentExpandStyle : contentCollapseStyle]}
+            >
                 {children}
             </div>
         </React.Fragment>

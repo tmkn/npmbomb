@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core";
+import { jsx, css, keyframes } from "@emotion/core";
 import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
 
@@ -11,9 +11,34 @@ import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { ErrorComponent } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
-import { CountUp } from "./CountUp";
+import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { data } from "./data";
+import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
+
+const blink = keyframes`
+    from {
+        visibility: visible;
+        color: ${primaryColor};
+        //transform: scale(1);
+    }
+
+    to {
+        visibility: visible;
+        color: ${secondaryColor};
+        //transform: scale(1.02);
+    }
+`;
+
+const exactMatchStyle = css({
+    [mq[0]]: {
+        fontFamily: `${serifFont}`,
+        visibility: "hidden",
+        color: secondaryColor,
+        animation: `${blink} 1500ms ease-in-out infinite alternate`,
+        animationDelay: `${scaleDuration}ms`
+    }
+});
 
 export interface IPackageInfo {
     name: string;
@@ -108,8 +133,16 @@ const Package: React.FC = () => {
             {typeof userGuess !== "undefined" && (
                 <React.Fragment>
                     <CountUp target={pkgInfo.dependencies} />
-                    <h2>Results</h2>
-                    <ResultBox guess={userGuess} actual={pkgInfo.dependencies} />
+                    {userGuess === pkgInfo.dependencies && (
+                        <Center>
+                            <div css={exactMatchStyle}>Congratulations, exact match!</div>
+                        </Center>
+                    )}
+                    {userGuess !== pkgInfo.dependencies && (
+                        <React.Fragment>
+                            <ResultBox guess={userGuess} actual={pkgInfo.dependencies} />
+                        </React.Fragment>
+                    )}
                     {appState.gameMode && (
                         <Center>
                             <PrimaryButton onClick={onNext}>{nextLabel}</PrimaryButton>

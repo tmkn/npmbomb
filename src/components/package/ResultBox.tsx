@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
-import React, { useRef, useState, useContext } from "react";
+import { jsx, css, keyframes } from "@emotion/core";
+import React from "react";
 
 import { mq, textColor } from "../../css";
 import { ResultsTable, Num } from "../shared/results/Results";
 import { Divider } from "../shared/divider/Divider";
+import { scaleDuration } from "./CountUp";
 
 interface IResultBoxProps {
     guess: number;
@@ -12,6 +13,28 @@ interface IResultBoxProps {
 }
 
 export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
+    const fadeIn = keyframes`
+        from {
+            height: 0;
+            opacity: 0;
+        }
+
+        to {
+            height: auto;
+            opacity: 1;
+        }
+    `;
+
+    const containerStyle = css({
+        [mq[0]]: {
+            //display: "none",
+            opacity: 0,
+            height: 0,
+            animation: `${fadeIn} 500ms ease forwards`,
+            animationDelay: `${scaleDuration}ms`
+        }
+    });
+
     const resultStyle = css({
         [mq[0]]: {
             marginBottom: "1rem",
@@ -19,9 +42,18 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
         }
     });
     const distance = Math.abs(guess - actual);
+    const message: JSX.Element =
+        distance === 0 ? (
+            <React.Fragment>Congratulations, you guessed correctly!</React.Fragment>
+        ) : (
+            <React.Fragment>
+                You were off by <Num>{distance}</Num>
+            </React.Fragment>
+        );
 
     return (
-        <React.Fragment>
+        <div css={containerStyle}>
+            <h2>Results</h2>
             <ResultsTable columns={2}>
                 <div>Your Guess:</div>
                 <Num>{guess}</Num>
@@ -29,9 +61,7 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
                 <Num>{actual}</Num>
             </ResultsTable>
             <Divider margin={"1rem 0"} />
-            <div css={resultStyle}>
-                You were off by <Num>{distance}</Num>
-            </div>
-        </React.Fragment>
+            <div css={resultStyle}>{message}</div>
+        </div>
     );
 };
