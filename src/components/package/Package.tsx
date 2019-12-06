@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
@@ -36,7 +36,8 @@ const exactMatchStyle = css({
         visibility: "hidden",
         color: secondaryColor,
         animation: `${blink} 1500ms ease-in-out infinite alternate`,
-        animationDelay: `${scaleDuration}ms`
+        animationDelay: `${scaleDuration}ms`,
+        fontWeight: "bold"
     }
 });
 
@@ -132,7 +133,7 @@ const Package: React.FC = () => {
             {typeof userGuess === "undefined" && <GuessBox />}
             {typeof userGuess !== "undefined" && (
                 <React.Fragment>
-                    <CountUp target={pkgInfo.dependencies} />
+                    <CountUp target={pkgInfo.dependencies} userGuess={userGuess} />
                     {userGuess === pkgInfo.dependencies && (
                         <Center>
                             <div css={exactMatchStyle}>Congratulations, exact match!</div>

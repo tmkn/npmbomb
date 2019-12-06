@@ -41,19 +41,13 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
             color: textColor
         }
     });
+
     const distance = Math.abs(guess - actual);
-    const message: JSX.Element =
-        distance === 0 ? (
-            <React.Fragment>Congratulations, you guessed correctly!</React.Fragment>
-        ) : (
-            <React.Fragment>
-                You were off by <Num>{distance}</Num>
-            </React.Fragment>
-        );
 
     return (
         <div css={containerStyle}>
             <h2>Results</h2>
+            <Divider margin={"1rem 0"} />
             <ResultsTable columns={2}>
                 <div>Your Guess:</div>
                 <Num>{guess}</Num>
@@ -61,7 +55,11 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
                 <Num>{actual}</Num>
             </ResultsTable>
             <Divider margin={"1rem 0"} />
-            <div css={resultStyle}>{message}</div>
+            <div css={resultStyle}>
+                <React.Fragment>
+                    You were off by <Num>{distance}</Num>
+                </React.Fragment>
+            </div>
         </div>
     );
 };

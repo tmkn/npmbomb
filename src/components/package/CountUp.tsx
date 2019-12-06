@@ -115,9 +115,10 @@ const countupStyle = css({
 
 interface ICountupProps {
     target: number;
+    userGuess: number;
 }
 
-export const CountUp: React.FC<ICountupProps> = ({ target }) => {
+export const CountUp: React.FC<ICountupProps> = ({ target, userGuess }) => {
     const [value, setValue] = useState<number>(0);
     const counterRef = useRef<HTMLDivElement>(null);
     const [rendered, setRendered] = useState(false);
@@ -149,7 +150,9 @@ export const CountUp: React.FC<ICountupProps> = ({ target }) => {
             <div ref={counterRef} css={countupStyle}>
                 {value}
             </div>
-            {rendered && <Bubbles amount={40} anchor={counterRef} />}
+            {rendered === true && target === userGuess && (
+                <Bubbles amount={40} anchor={counterRef} />
+            )}
         </Center>
     );
 };
