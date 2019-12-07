@@ -46,5 +46,7 @@ steps:
 
 - script: |
     yarn ci:e2e
+  variables:
+    PERCY_TOKEN: $(PERCY_TOKEN)
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate visual snapshots'
