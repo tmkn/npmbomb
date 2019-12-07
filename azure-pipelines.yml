@@ -45,7 +45,7 @@ steps:
   displayName: 'Generate code coverage'
 
 - script: |
-    PERCY_TOKEN="${PERCY_TOKEN}"
+    echo '##vso[task.setvariable variable=PERCY_TOKEN]$(PERCY_TOKEN)'
     yarn ci:e2e
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate visual snapshots'
