@@ -44,10 +44,8 @@ steps:
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate code coverage'
 
-env:
-  PERCY_TOKEN: $(PERCY_TOKEN)
-
 - script: |
+    PERCY_TOKEN="${PERCY_TOKEN}"
     yarn ci:e2e
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate visual snapshots'
