@@ -43,3 +43,10 @@ steps:
     codecov -t $(CODECOV_TOKEN)
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate code coverage'
+
+- script: |
+    yarn ci:e2e
+  env:
+    PERCY_TOKEN: $(PERCY_TOKEN)
+  condition: eq( variables['Agent.OS'], 'Linux' )
+  displayName: 'Generate visual snapshots'
