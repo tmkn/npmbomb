@@ -47,5 +47,7 @@ steps:
 - script: |
     echo '##vso[task.setvariable variable=PERCY_TOKEN]$(PERCY_TOKEN)'
     yarn ci:e2e
+  env:
+    PERCY_TOKEN: $(PERCY_TOKEN)
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate visual snapshots'
