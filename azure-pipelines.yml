@@ -44,7 +44,7 @@ steps:
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate code coverage'
 
-variables:
+env:
   PERCY_TOKEN: $(PERCY_TOKEN)
 
 - script: |
