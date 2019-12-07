@@ -45,8 +45,6 @@ steps:
   displayName: 'Generate code coverage'
 
 - script: |
-    npm install -g serve
-    serve -s dist -l 8080
-    yarn percy
+    yarn ci:e2e
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate visual snapshots'
