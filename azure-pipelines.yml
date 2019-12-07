@@ -43,3 +43,10 @@ steps:
     codecov -t $(CODECOV_TOKEN)
   condition: eq( variables['Agent.OS'], 'Linux' )
   displayName: 'Generate code coverage'
+
+- script: |
+    npm install -g serve
+    serve -s dist -l 8080
+    yarn percy
+  condition: eq( variables['Agent.OS'], 'Linux' )
+  displayName: 'Generate visual snapshots'
