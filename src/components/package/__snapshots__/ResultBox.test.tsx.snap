@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResultBox /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1jz05p8"
+  >
+    <h2>
+      Results
+    </h2>
+    <div
+      class="css-14vnwjz"
+      style="margin: 1rem 0px;"
+    />
+    <div
+      class="css-60ri6o"
+    >
+      <div>
+        Your Guess:
+      </div>
+      <span
+        class="css-12eoq8x"
+      >
+        23
+      </span>
+      <div>
+        Actual:
+      </div>
+      <span
+        class="css-12eoq8x"
+      >
+        45
+      </span>
+    </div>
+    <div
+      class="css-14vnwjz"
+      style="margin: 1rem 0px;"
+    />
+    <div
+      class="css-ziif3o"
+    >
+      You were off by 
+      <span
+        class="css-12eoq8x"
+      >
+        22
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

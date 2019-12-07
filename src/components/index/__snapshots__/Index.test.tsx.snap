@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Results /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-13ji2h0"
+  >
+    <h1>
+      About
+    </h1>
+    <p
+      class="css-1axajee"
+    >
+      Test your knowledge of the NPM ecosystem by guessing the number of dependencies for popular NPM packages.
+    </p>
+    <div
+      class="css-8a5j6a"
+    >
+      <div
+        class="css-16wgzhr"
+      >
+        Start
+      </div>
+    </div>
+    <div
+      class="css-14vnwjz"
+      style="margin: 2rem 0px;"
+    />
+    <h2
+      class="css-iio3hc"
+    >
+      FAQ
+    </h2>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         Why is it called npmbomb?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
+      <blockquote
+        class="css-12z6zy1"
+      >
+        "A zip bomb is usually a small file .... however, when the file is unpacked, its contents are more than the system can handle."
+      </blockquote>
+      That sure sounds like your typical 
+      <span
+        class="css-18yn0ml-Highlight"
+      >
+        npm install
+      </span>
+       😈
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         Does it count dev dependencies?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      No, it only shows (and counts) dependencies from the 
+      <span
+        class="css-18yn0ml-Highlight"
+      >
+        dependencies
+      </span>
+       entry in the 
+      <span
+        class="css-18yn0ml-Highlight"
+      >
+        package.json
+      </span>
+       all the way to the very bottom.
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         Why can't I find library XYZ?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages or specifically handpicked ones. If you want a specific dependency you can hit me up on Twitter 
+      <a
+        class="css-1qgk5q"
+        href="https://twitter.com/tmkndev"
+      >
+        @tmkndev
+      </a>
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         Why doesn't it show a version number?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      Because it's not important, it's just a lighthearted jab at the size of the node_modules folder.
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         Is it Open Source?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      <a
+        class="css-1qgk5q"
+        href="https://github.com/tmkn/npmbomb"
+      >
+        Yes
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

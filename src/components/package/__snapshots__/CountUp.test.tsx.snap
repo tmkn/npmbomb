@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GuessBox /> matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-8a5j6a"
+  >
+    <div
+      class="css-p6pdcu"
+    >
+      0
+    </div>
+  </div>
+</DocumentFragment>
+`;

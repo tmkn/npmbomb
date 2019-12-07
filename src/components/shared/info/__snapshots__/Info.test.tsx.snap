@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Info /> matches snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="css-1axajee"
+  >
+    Hello
+  </p>
+</DocumentFragment>
+`;

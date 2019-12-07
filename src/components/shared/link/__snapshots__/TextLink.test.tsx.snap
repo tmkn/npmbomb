@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="css-1qgk5q"
+    href="abc"
+  >
+    Hello World
+  </a>
+</DocumentFragment>
+`;
