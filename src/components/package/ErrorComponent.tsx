@@ -9,7 +9,7 @@ import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { TextLink } from "../shared/link/TextLink";
 
-export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName }) => {
+export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, children }) => {
     const { setAppState } = useContext(AppContext);
     const history = useHistory();
 
@@ -36,14 +36,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName }) => {
         <React.Fragment>
             <h1>{pkgName}</h1>
             <Center>
-                <div css={style}>
-                    <span>Whoops, couldn't find data for this package!</span>
-                    <br />
-                    <span>
-                        If you feel this package is important you can hit me up on Twitter{" "}
-                        <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
-                    </span>
-                </div>
+                <div css={style}>{children}</div>
             </Center>
             <Center>
                 <PrimaryButton onClick={onClick}>Home</PrimaryButton>
@@ -51,3 +44,20 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName }) => {
         </React.Fragment>
     );
 };
+
+export const NotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => (
+    <ErrorComponent pkgName={pkgName}>
+        <span>Whoops, couldn't find data for this package!</span>
+        <br />
+        <span>
+            If you feel this package is important you can hit me up on Twitter{" "}
+            <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
+        </span>
+    </ErrorComponent>
+);
+
+export const VersionNotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => (
+    <ErrorComponent pkgName={pkgName}>
+        <span>Whoops, couldn't parse the version for this package!</span>
+    </ErrorComponent>
+);

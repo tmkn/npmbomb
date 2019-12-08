@@ -10,6 +10,30 @@ exports[`<ErrorComponent /> matches snapshot 1`] = `
   >
     <div
       class="css-1x66upb"
+    />
+  </div>
+  <div
+    class="css-8a5j6a"
+  >
+    <div
+      class="css-16wgzhr"
+    >
+      Home
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<NotFound /> matches snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    test
+  </h1>
+  <div
+    class="css-8a5j6a"
+  >
+    <div
+      class="css-1x66upb"
     >
       <span>
         Whoops, couldn't find data for this package!
@@ -23,6 +47,34 @@ exports[`<ErrorComponent /> matches snapshot 1`] = `
         >
           @tmkndev
         </a>
+      </span>
+    </div>
+  </div>
+  <div
+    class="css-8a5j6a"
+  >
+    <div
+      class="css-16wgzhr"
+    >
+      Home
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<VersionNotFound /> matches snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    test
+  </h1>
+  <div
+    class="css-8a5j6a"
+  >
+    <div
+      class="css-1x66upb"
+    >
+      <span>
+        Whoops, couldn't parse the version for this package!
       </span>
     </div>
   </div>

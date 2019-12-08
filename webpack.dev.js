@@ -8,6 +8,8 @@ module.exports = merge(common, {
     devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname),
-        historyApiFallback: true
+        historyApiFallback: {
+            disableDotRule: true
+        }
     },
 });
