@@ -9,7 +9,7 @@ import { Center } from "../shared/center/Center";
 import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
-import { ErrorComponent } from "./ErrorComponent";
+import { NotFound, VersionNotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
@@ -41,6 +41,16 @@ const exactMatchStyle = css({
     }
 });
 
+function getNameVersion(pkg: string): [string, string] {
+    const parts = pkg.split("@");
+
+    if (parts.length < 2) {
+        return [parts[0], ""];
+    }
+
+    return [parts[0], parts[1]];
+}
+
 export interface IPackageInfo {
     name: string;
     version: string;
@@ -51,6 +61,7 @@ export interface IPackageInfo {
 const Package: React.FC = () => {
     const history = useHistory();
     const { pkgName } = useParams<{ pkgName: string }>();
+    const [name, version] = getNameVersion(pkgName);
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
     const [loading, setLoading] = useState(true);
@@ -69,7 +80,7 @@ const Package: React.FC = () => {
     useEffect(() => {
         //todo load real data
         setTimeout(() => {
-            const pkgInfo = data.get(pkgName);
+            const pkgInfo = data.get(name);
 
             setLoading(false);
             if (pkgInfo) setPkgInfo(pkgInfo);
@@ -79,7 +90,9 @@ const Package: React.FC = () => {
 
     if (loading) return <LoadingIndicator />;
 
-    if (error) return <ErrorComponent pkgName={pkgName} />;
+    if (error) return <NotFound pkgName={pkgName} />;
+
+    if (version === "") return <VersionNotFound pkgName={pkgName} />;
 
     function onNext(): void {
         const { guesses, remaining } = appState;
@@ -127,7 +140,7 @@ const Package: React.FC = () => {
 
     return (
         <GuessContext.Provider value={guessContext}>
-            <Heading name={pkgInfo.name} />
+            <Heading name={`${name}@${version}`} />
             <Info>{pkgInfo.description}</Info>
             <h2>How many dependencies?</h2>
             {typeof userGuess === "undefined" && <GuessBox />}

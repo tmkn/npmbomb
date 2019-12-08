@@ -11,6 +11,7 @@ import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
+import { data } from "../package/data";
 
 const highlightStyle = css({
     color: `${primaryColor}`
@@ -177,7 +178,8 @@ export default () => {
     const history = useHistory();
 
     function onStart() {
-        const remaining = shuffle(["typescript", "webpack", "react"]);
+        const packages = [...data].map(([, { name, version }]) => `${name}@${version}`);
+        const remaining = shuffle(packages);
 
         setAppState({
             ...appState,
@@ -217,10 +219,6 @@ export default () => {
                 in the dependency tree of the most downloaded packages or specifically handpicked
                 ones. If you want a specific dependency you can hit me up on Twitter{" "}
                 <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
-            </Faq>
-            <Faq header="Why doesn't it show a version number?" collapsed>
-                Because it's not important, it's just a lighthearted jab at the size of the
-                node_modules folder.
             </Faq>
             <Faq header="Is it Open Source?" collapsed>
                 <TextLink href="https://github.com/tmkn/npmbomb">Yes</TextLink>

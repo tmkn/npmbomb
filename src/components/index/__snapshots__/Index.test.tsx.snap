@@ -132,26 +132,6 @@ exports[`<Results /> matches snapshot 1`] = `
         >
           &gt;
         </span>
-         Why doesn't it show a version number?
-      </span>
-    </h2>
-    <div
-      class="css-1rqbofr-Faq"
-      style="display: none;"
-    >
-      Because it's not important, it's just a lighthearted jab at the size of the node_modules folder.
-    </div>
-    <h2
-      class="css-iio3hc"
-    >
-      <span
-        style="cursor: pointer;"
-      >
-        <span
-          class="css-swfxel-Faq"
-        >
-          &gt;
-        </span>
          Is it Open Source?
       </span>
     </h2>
