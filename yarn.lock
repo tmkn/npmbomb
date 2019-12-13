@@ -1982,12 +1982,12 @@ bluebird@3.5.0:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
   integrity sha1-eRQg1/VR7qKJdFOop3ZT+WYG1nw=
 
-bluebird@3.7.1, bluebird@^3.5.5:
+bluebird@3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.1.tgz#df70e302b471d7473489acf26a93d63b53f874de"
   integrity sha512-DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==
 
-bluebird@^3.5.0, bluebird@^3.5.1:
+bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -2853,10 +2853,10 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
-cypress@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.7.0.tgz#e2cd71b87b6ce0d4c72c6ea25da1005d75c1f231"
-  integrity sha512-o+vfRxqAba8TduelzfZQ4WHmj2yNEjaoO2EuZ8dZ9pJpuW+WGtBGheKIp6zkoQsp8ZgFe8OoHh1i2mY8BDnMAw==
+cypress@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-3.8.0.tgz#7d4cd08f81f9048ee36760cc9ee3b9014f9e84ab"
+  integrity sha512-gtEbqCgKETRc3pQFMsELRgIBNgiQg7vbOWTrCi7WE7bgOwNCaW9PEX8Jb3UN8z/maIp9WwzoFfeySfelYY7nRA==
   dependencies:
     "@cypress/listr-verbose-renderer" "0.4.1"
     "@cypress/xvfb" "1.2.4"
