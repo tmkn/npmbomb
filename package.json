@@ -9,7 +9,7 @@
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --host --config webpack.dev.js",
     "start:prod": "webpack-dev-server --compress --open --config webpack.prod.js",
-    "prettier": "prettier --write \"{src,cypress}/**/{*.ts,*.tsx}\"",
+    "prettier": "prettier --write \"{src,cypress,tools}/**/{*.ts,*.tsx}\"",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -21,7 +21,7 @@
     "npa": "npa",
     "build:npmdata": "tsc --project ./tools/npmdata/tsconfig.json",
     "watch:npmdata": "tsc --project ./tools/npmdata/tsconfig.json --watch",
-    "run:npmdata": "node ./tools/npmdata/npmdata.js"
+    "run:npmdata": "node ./tools/npmdata/npmdata.js abcd"
   },
   "keywords": [],
   "author": "tmkn",
