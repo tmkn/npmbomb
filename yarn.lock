@@ -1139,10 +1139,10 @@
     "@testing-library/dom" "^6.11.0"
     "@types/testing-library__react" "^9.1.2"
 
-"@tmkn/packageanalyzer@^0.9.0-beta.0":
-  version "0.9.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@tmkn/packageanalyzer/-/packageanalyzer-0.9.0-beta.0.tgz#2dd159259fd26817a58ad58b07edd8327be6650d"
-  integrity sha512-2yvTbDB+S10gDcJImU10Q4FrRBzEXZVL3Utwo3cL7laHaBQFMOL0t/sF49JWZB67q5WUrHkggdvF++h2P2dz4g==
+"@tmkn/packageanalyzer@^0.9.0-beta.3":
+  version "0.9.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@tmkn/packageanalyzer/-/packageanalyzer-0.9.0-beta.3.tgz#60ba278b63e74408e3dd4024c17573fe4f053e76"
+  integrity sha512-l8wiI7WgCvhS0++sdEYXDIntcjDTL3Ul3cti0R8H3tp4+XYTLcDj2NXl5M3YLon7gVAHMgt7VvosktFxtF9X+Q==
   dependencies:
     dayjs "^1.8.18"
     ora "^4.0.3"

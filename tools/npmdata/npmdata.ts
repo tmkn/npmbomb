@@ -18,7 +18,7 @@ console.log(foo);
 
     createOutDir(outputDir);
 
-    await Extractor.Extract(inputData, foo, outputDir, pa => ({name: pa.name}));
+    await Extractor.Extract(inputData, foo, outputDir, pa => JSON.stringify({name: pa.name}) as any);
 })();
 
 function createOutDir(outDir: string): void {
