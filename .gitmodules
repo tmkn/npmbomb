@@ -1,0 +1,3 @@
+[submodule "packageanalyzer"]
+	path = packageanalyzer
+	url = https://github.com/tmkn/packageanalyzer.git
