@@ -1,23 +1,6 @@
 [
     "typescript",
-    "jest",
-    "webpack",
     "react",
     "lodash",
-    "mocha",
-    "prettier",
-    "eslint",
-    "express",
-    "chai",
-    "ora",
-    "chalk",
-    "array-first",
-    "array-last",
-    "pad-left",
-    "stringify-object",
-    "has-own-property",
-    "mkdirp",
-    "username",
-    "create-react-app",
-    "@storybook/cli"
+    "prettier"
 ]

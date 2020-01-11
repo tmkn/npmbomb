@@ -1,0 +1,10 @@
+typescript@3.5.2
+react@16.8.6
+loose-envify@1.4.0
+js-tokens@4.0.0
+object-assign@4.1.1
+prop-types@15.7.2
+react-is@16.8.6
+scheduler@0.13.6
+lodash@4.17.11
+prettier@1.18.2

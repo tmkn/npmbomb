@@ -21,7 +21,7 @@
     "npa": "npa",
     "build:npmdata": "tsc --project ./tools/npmdata/tsconfig.json",
     "watch:npmdata": "tsc --project ./tools/npmdata/tsconfig.json --watch",
-    "run:npmdata": "node ./tools/npmdata/npmdata.js E:\\npm.json"
+    "run:npmdata": "node ./tools/npmdata/build/tools/npmdata/npmdata.js E:\\npm.json"
   },
   "keywords": [],
   "author": "tmkn",
@@ -39,7 +39,6 @@
     "@percy/cypress": "^2.2.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
-    "@tmkn/packageanalyzer": "^0.9.0-beta.3",
     "@types/jest": "^24.0.25",
     "@types/lodash.shuffle": "^4.2.6",
     "@types/node": "^13.1.4",
