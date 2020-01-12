@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<ClickLink /> matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    class="css-9wkshj"
+  >
+    Hello World
+  </span>
+</DocumentFragment>
+`;
+
 exports[`<TextLink /> matches snapshot 1`] = `
 <DocumentFragment>
   <a
