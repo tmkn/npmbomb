@@ -4,7 +4,7 @@ import { render, fireEvent, waitForElement } from "@testing-library/react";
 
 import { App } from "./App";
 
-describe("<ErrorComponent />", () => {
+describe("<App />", () => {
     test("matches snapshot", () => {
         const { asFragment } = render(<App />);
 

@@ -10,11 +10,13 @@ describe("<Package />", () => {
     });
 
     test("matches snapshot", () => {
-        fetchMock.mockResponseOnce(JSON.stringify({
-            name: `typescript@1.2.3`,
-            description: `foo`,
-            dependencies: 123
-        }));
+        fetchMock.mockResponseOnce(
+            JSON.stringify({
+                name: `typescript@1.2.3`,
+                description: `foo`,
+                dependencies: 123
+            })
+        );
 
         const { asFragment } = render(
             <BrowserRouter>
