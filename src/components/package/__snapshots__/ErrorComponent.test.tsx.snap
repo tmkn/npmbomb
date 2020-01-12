@@ -40,13 +40,11 @@ exports[`<NotFound /> matches snapshot 1`] = `
       </span>
       <br />
       <span>
-        If you feel this package is important you can hit me up on Twitter 
-        <a
-          class="css-1qgk5q"
-          href="https://twitter.com/tmkndev"
+        <span
+          class="css-9wkshj"
         >
-          @tmkndev
-        </a>
+          Propose this package
+        </span>
       </span>
     </div>
   </div>
