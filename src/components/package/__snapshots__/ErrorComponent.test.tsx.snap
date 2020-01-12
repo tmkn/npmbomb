@@ -61,31 +61,3 @@ exports[`<NotFound /> matches snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`<VersionNotFound /> matches snapshot 1`] = `
-<DocumentFragment>
-  <h1>
-    test
-  </h1>
-  <div
-    class="css-8a5j6a"
-  >
-    <div
-      class="css-1x66upb"
-    >
-      <span>
-        Whoops, couldn't parse the version for this package!
-      </span>
-    </div>
-  </div>
-  <div
-    class="css-8a5j6a"
-  >
-    <div
-      class="css-16wgzhr"
-    >
-      Home
-    </div>
-  </div>
-</DocumentFragment>
-`;

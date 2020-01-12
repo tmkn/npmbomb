@@ -9,7 +9,7 @@ import { Center } from "../shared/center/Center";
 import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
-import { NotFound, VersionNotFound } from "./ErrorComponent";
+import { NotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
@@ -56,11 +56,23 @@ export interface IPackageInfo {
     dependencies: number;
 }
 
-async function getPackageInfo(pkg: string): Promise<IPackageInfo | undefined> {
+async function getPackageInfo(pkg: string): Promise<IPackageInfo> {
     const resp = await fetch(`/data/${pkg}.json`);
     const json = await resp.json();
 
     return json;
+}
+
+async function getAvailableVersion(pkgName: string): Promise<string> {
+    const resp = await fetch(`/data/lookup.txt`);
+    const names: string[] = (await resp.text())
+        .split("\n")
+        .map(l => l.trim())
+        .filter(l => l.startsWith(pkgName));
+
+    if (names.length === 0) throw new Error(`Couldn't find a version for ${pkgName}`);
+
+    return names[0];
 }
 
 const Package: React.FC = () => {
@@ -82,18 +94,32 @@ const Package: React.FC = () => {
     };
 
     useEffect(() => {
-        getPackageInfo(pkgName).then(pkgInfo => {
-            setLoading(false);
-            if (pkgInfo) setPkgInfo(pkgInfo);
-            else setError(true);
-        });
+        if (version === "") {
+            getAvailableVersion(pkgName)
+                .then(pkgInfo => {
+                    setLoading(false);
+                    history.push(`/package/${pkgInfo}`);
+                })
+                .catch(_ => {
+                    setLoading(false);
+                    setError(true);
+                });
+        } else {
+            getPackageInfo(pkgName)
+                .then(pkgInfo => {
+                    setLoading(false);
+                    setPkgInfo(pkgInfo);
+                })
+                .catch(_ => {
+                    setLoading(false);
+                    setError(true);
+                });
+        }
     }, [pkgName]);
 
     if (loading) return <LoadingIndicator />;
 
     if (error) return <NotFound pkgName={pkgName} />;
-
-    if (version === "") return <VersionNotFound pkgName={pkgName} />;
 
     function onNext(): void {
         const { guesses, remaining } = appState;
