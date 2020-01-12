@@ -11,7 +11,6 @@ import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
-import { data } from "../package/data";
 
 const highlightStyle = css({
     color: `${primaryColor}`
@@ -177,9 +176,17 @@ export default () => {
     const { appState, setAppState } = useContext(AppContext);
     const history = useHistory();
 
+    useEffect(() => {
+        fetchAvailablePackages().then(pkgs => {
+            setAppState({
+                ...appState,
+                packages: pkgs
+            });
+        });
+    }, []);
+
     function onStart() {
-        const packages = [...data].map(([, { name, version }]) => `${name}@${version}`);
-        const remaining = shuffle(packages);
+        const remaining = shuffle(appState.packages).slice(0, 4);
 
         setAppState({
             ...appState,
@@ -201,6 +208,11 @@ export default () => {
             </Center>
             <Divider margin={"2rem 0"} />
             <H2>FAQ</H2>
+            <Faq header="How is the dependency count calculated?" collapsed>
+                As the dependency tree is traversed, each dependency from the dependencies field in
+                the package.json is added to the count. It's a straight accumulation, as such a
+                single package is counted multiple times if it is a dependency of other packages.
+            </Faq>
             <Faq header="Why is it called npmbomb?" collapsed>
                 It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
                 <blockquote css={{ fontFamily: `"${serifFont}"` }}>
@@ -226,3 +238,13 @@ export default () => {
         </div>
     );
 };
+
+async function fetchAvailablePackages(): Promise<string[]> {
+    const resp = await fetch(`data/lookup.txt`);
+    const text = await resp.text();
+
+    return text
+        .split("\n")
+        .map(l => l.trim())
+        .filter(l => l !== "");
+}

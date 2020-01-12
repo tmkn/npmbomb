@@ -6,7 +6,12 @@ import { render, fireEvent, waitForElement } from "@testing-library/react";
 import Index from "./Index";
 
 describe("<Results />", () => {
+    beforeEach(() => {
+        fetchMock.resetMocks();
+    });
+
     test("matches snapshot", () => {
+        fetchMock.mockResponseOnce(JSON.stringify(["sd", "l", "h", "m"]));
         const { asFragment } = render(
             <BrowserRouter>
                 <Index />

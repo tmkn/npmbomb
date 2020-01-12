@@ -13,13 +13,10 @@ import { IGuessResult, AppContext } from "../../App";
 type Results = IGuessResult[];
 
 const Results: React.FC = () => {
-    const {
-        appState: { gameMode, guesses, remaining },
-        setAppState
-    } = useContext(AppContext);
+    const { appState, setAppState } = useContext(AppContext);
     const history = useHistory();
 
-    if (guesses.length === 0) return <Redirect to="/" />;
+    if (appState.guesses.length === 0) return <Redirect to="/" />;
 
     const alignRight = css({
         textAlign: "right",
@@ -52,6 +49,7 @@ const Results: React.FC = () => {
 
     function onHome() {
         setAppState({
+            ...appState,
             gameMode: false,
             guesses: [],
             remaining: []
@@ -67,7 +65,7 @@ const Results: React.FC = () => {
                 <div css={mobileOnly}></div>
                 <div css={[mobileOnly, alignRight]}>Deps.</div>
                 <div css={[mobileOnly, alignRight]}>You</div>
-                {guesses.map(({ pkg, dependencies, guess }, i) => {
+                {appState.guesses.map(({ pkg, dependencies, guess }, i) => {
                     const animation = css({
                         opacity: 0,
                         animation: `${fadeIn} 1s ease forwards, ${moveIn} 500ms ease forwards`,

@@ -3,7 +3,7 @@ import * as fs from "fs";
 
 import { Extractor } from "../../packageanalyzer/src/extractor";
 
-const [,, foo] = process.argv;
+const [, , foo] = process.argv;
 
 console.log(foo);
 

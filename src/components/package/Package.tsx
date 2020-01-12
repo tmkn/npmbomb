@@ -13,7 +13,6 @@ import { NotFound, VersionNotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
-import { data } from "./data";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 
 const blink = keyframes`
@@ -53,9 +52,15 @@ function getNameVersion(pkg: string): [string, string] {
 
 export interface IPackageInfo {
     name: string;
-    version: string;
     description: string;
     dependencies: number;
+}
+
+async function getPackageInfo(pkg: string): Promise<IPackageInfo | undefined> {
+    const resp = await fetch(`/data/${pkg}.json`);
+    const json = await resp.json();
+
+    return json;
 }
 
 const Package: React.FC = () => {
@@ -68,7 +73,6 @@ const Package: React.FC = () => {
     const [error, setError] = useState(false);
     const [pkgInfo, setPkgInfo] = useState<IPackageInfo>({
         name: "",
-        version: "",
         dependencies: 0,
         description: ""
     });
@@ -78,14 +82,11 @@ const Package: React.FC = () => {
     };
 
     useEffect(() => {
-        //todo load real data
-        setTimeout(() => {
-            const pkgInfo = data.get(name);
-
+        getPackageInfo(pkgName).then(pkgInfo => {
             setLoading(false);
             if (pkgInfo) setPkgInfo(pkgInfo);
             else setError(true);
-        }, 1000);
+        });
     }, [pkgName]);
 
     if (loading) return <LoadingIndicator />;

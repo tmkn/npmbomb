@@ -27,7 +27,8 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
         setAppState({
             gameMode: false,
             guesses: [],
-            remaining: []
+            remaining: [],
+            packages: []
         });
         history.push("/");
     }

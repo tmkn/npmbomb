@@ -42,6 +42,26 @@ exports[`<Results /> matches snapshot 1`] = `
         >
           &gt;
         </span>
+         How is the dependency count calculated?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      As the dependency tree is traversed, each dependency from the dependencies field in the package.json is added to the count. It's a straight accumulation, as such a single package is counted multiple times if it is a dependency of other packages.
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
          Why is it called npmbomb?
       </span>
     </h2>
