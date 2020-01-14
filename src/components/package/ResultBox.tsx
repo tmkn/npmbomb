@@ -31,7 +31,10 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
             opacity: 0,
             height: 0,
             animation: `${fadeIn} 500ms ease forwards`,
-            animationDelay: `${scaleDuration}ms`
+            animationDelay: `${scaleDuration}ms`,
+            h2: {
+                marginTop: 0
+            }
         }
     });
 

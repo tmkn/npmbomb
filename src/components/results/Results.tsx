@@ -77,12 +77,13 @@ const Results: React.FC = () => {
                             <div css={[animation, primary]}>{pkg}</div>
                             <div css={[alignRight, animation]}>
                                 <span>
-                                    <Num>{guess}</Num> <span css={hideOnMobile}>Dependencies</span>
+                                    <Num>{dependencies}</Num>{" "}
+                                    <span css={hideOnMobile}>Dependencies</span>
                                 </span>
                             </div>
                             <div css={[alignRight, animation]}>
                                 <span>
-                                    <Num>{dependencies}</Num> <span css={hideOnMobile}>You</span>
+                                    <Num>{guess}</Num> <span css={hideOnMobile}>You</span>
                                 </span>
                             </div>
                         </React.Fragment>

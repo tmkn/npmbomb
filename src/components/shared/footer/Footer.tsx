@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
     return (
         <div css={footerStyle}>
             <span>
-                made with ♥️ by <a href="https://twitter.com/tmkndev">@tmkndev</a>
+                hecho con ♥️ por <a href="https://twitter.com/tmkndev">@tmkndev</a>
             </span>
         </div>
     );

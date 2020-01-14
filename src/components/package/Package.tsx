@@ -163,8 +163,6 @@ const Package: React.FC = () => {
         }
     }
 
-    const nextLabel = appState.remaining.length > 1 ? "Next" : "Results";
-
     return (
         <GuessContext.Provider value={guessContext}>
             <Heading name={`${name}@${version}`} />
@@ -186,12 +184,33 @@ const Package: React.FC = () => {
                     )}
                     {appState.gameMode && (
                         <Center>
-                            <PrimaryButton onClick={onNext}>{nextLabel}</PrimaryButton>
+                            <PrimaryButton onClick={onNext}>
+                                <Next />
+                            </PrimaryButton>
                         </Center>
                     )}
                 </React.Fragment>
             )}
         </GuessContext.Provider>
+    );
+};
+
+const Next: React.FC = () => {
+    const { appState } = useContext(AppContext);
+    const showResults = appState.remaining.length === 0;
+    const nextLabel = showResults ? "Results" : "Next";
+    const current = appState.guesses.length + 1;
+    const all = appState.guesses.length + appState.remaining.length;
+
+    return (
+        <React.Fragment>
+            {nextLabel}{" "}
+            {!showResults && (
+                <React.Fragment>
+                    [{current}/{all}]
+                </React.Fragment>
+            )}
+        </React.Fragment>
     );
 };
 
