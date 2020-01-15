@@ -7,7 +7,7 @@ import { mq, serifFont, primaryColor } from "../../css";
 
 export const Heading: React.FC<{ name: string }> = ({ name }) => {
     const {
-        appState: { gameMode, guesses, remaining }
+        appState: { inGameMode: gameMode, guesses, remaining }
     } = useContext(AppContext);
     const style = css({
         [mq[0]]: {

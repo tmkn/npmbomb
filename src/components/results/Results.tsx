@@ -50,7 +50,7 @@ const Results: React.FC = () => {
     function onHome() {
         setAppState({
             ...appState,
-            gameMode: false,
+            inGameMode: false,
             guesses: [],
             remaining: []
         });

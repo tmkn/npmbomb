@@ -191,7 +191,7 @@ export default () => {
         setAppState({
             ...appState,
             remaining: remaining,
-            gameMode: true
+            inGameMode: true
         });
         history.push(`/package/${remaining[0]}`);
     }

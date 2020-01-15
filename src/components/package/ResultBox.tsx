@@ -10,9 +10,10 @@ import { scaleDuration } from "./CountUp";
 interface IResultBoxProps {
     guess: number;
     actual: number;
+    distinct: number;
 }
 
-export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
+export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual, distinct }) => {
     const fadeIn = keyframes`
         from {
             height: 0;
@@ -56,6 +57,8 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
                 <Num>{guess}</Num>
                 <div>Actual:</div>
                 <Num>{actual}</Num>
+                <div>Distinct:</div>
+                <Num>{distinct}</Num>
             </ResultsTable>
             <Divider margin={"1rem 0"} />
             <div css={resultStyle}>

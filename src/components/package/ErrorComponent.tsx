@@ -25,7 +25,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
 
     function onClick(): void {
         setAppState({
-            gameMode: false,
+            inGameMode: false,
             guesses: [],
             remaining: [],
             packages: []

@@ -96,7 +96,7 @@ interface IAppContext {
 
 export const AppContext = React.createContext<IAppContext>({
     appState: {
-        gameMode: false,
+        inGameMode: false,
         guesses: [],
         remaining: [],
         packages: []
@@ -105,7 +105,7 @@ export const AppContext = React.createContext<IAppContext>({
 });
 
 interface IAppState {
-    gameMode: boolean;
+    inGameMode: boolean;
     remaining: string[];
     guesses: IGuessResult[];
     packages: string[];
@@ -113,7 +113,7 @@ interface IAppState {
 
 export const App: React.FC = () => {
     const [appState, setAppState] = useState<IAppState>({
-        gameMode: false,
+        inGameMode: false,
         guesses: [],
         remaining: [],
         packages: []

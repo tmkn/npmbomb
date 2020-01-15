@@ -31,6 +31,14 @@ exports[`<ResultBox /> matches snapshot 1`] = `
       >
         45
       </span>
+      <div>
+        Distinct:
+      </div>
+      <span
+        class="css-12eoq8x"
+      >
+        123
+      </span>
     </div>
     <div
       class="css-14vnwjz"

@@ -54,6 +54,7 @@ export interface IPackageInfo {
     name: string;
     description: string;
     dependencies: number;
+    distinctDependencies?: number;
 }
 
 async function getPackageInfo(pkg: string): Promise<IPackageInfo> {
@@ -179,10 +180,10 @@ const Package: React.FC = () => {
                     )}
                     {userGuess !== pkgInfo.dependencies && (
                         <React.Fragment>
-                            <ResultBox guess={userGuess} actual={pkgInfo.dependencies} />
+                            <ResultBox guess={userGuess} actual={pkgInfo.dependencies} distinct={pkgInfo.distinctDependencies ?? -1337} />
                         </React.Fragment>
                     )}
-                    {appState.gameMode && (
+                    {appState.inGameMode && (
                         <Center>
                             <PrimaryButton onClick={onNext}>
                                 <Next />
