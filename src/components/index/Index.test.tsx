@@ -5,7 +5,7 @@ import { render, fireEvent, waitForElement } from "@testing-library/react";
 
 import Index from "./Index";
 
-describe("<Results />", () => {
+describe("<Index />", () => {
     beforeEach(() => {
         fetchMock.resetMocks();
     });

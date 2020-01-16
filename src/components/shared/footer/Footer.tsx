@@ -7,7 +7,7 @@ const footerStyle = css({
     [mq[0]]: {
         display: "flex",
         fontFamily: `"${sansSerifFont}"`,
-        fontSize: "0.8rem",
+        fontSize: "1rem",
         justifyContent: "center",
         marginTop: "4rem",
         marginBottom: "2rem",

@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent, waitForElement, wait } from "@testing-library/react";
 
 import { App } from "./App";
 
 describe("<App />", () => {
-    test("matches snapshot", () => {
+    test("matches snapshot", async () => {
         const { asFragment } = render(<App />);
 
         expect(asFragment()).toMatchSnapshot();
+        await wait();
     });
 });

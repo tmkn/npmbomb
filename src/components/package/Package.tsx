@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useState, useEffect, useContext, createContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
@@ -40,6 +40,12 @@ const exactMatchStyle = css({
     }
 });
 
+const exactMatchMargin = css({
+    [mq[0]]: {
+        marginBottom: `1.5rem`
+    }
+});
+
 function getNameVersion(pkg: string): [string, string] {
     const parts = pkg.split("@");
 
@@ -76,47 +82,68 @@ async function getAvailableVersion(pkgName: string): Promise<string> {
     return names[0];
 }
 
+interface IDataLoaderResponse {
+    data: IPackageInfo;
+    error: boolean;
+    loading: boolean;
+}
+
+function useDataLoader(pkgName: string): IDataLoaderResponse {
+    const history = useHistory();
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<boolean>(false);
+    const [data, setData] = useState<IPackageInfo>({
+        name: ``,
+        description: ``,
+        distinctDependencies: 0,
+        dependencies: 0
+    });
+
+    async function loadData() {
+        try {
+            const [name, version] = getNameVersion(pkgName);
+
+            setLoading(true);
+            setError(false);
+
+            if (version === "") {
+                const availableVersion = await getAvailableVersion(name);
+
+                setLoading(false);
+                history.push(`/package/${availableVersion}`);
+            } else {
+                const pkgInfo = await getPackageInfo(pkgName);
+
+                setLoading(false);
+                setData(pkgInfo);
+            }
+        } catch {
+            setLoading(false);
+            setError(true);
+        }
+    }
+
+    useEffect(() => {
+        loadData();
+    }, [pkgName]);
+
+    return {
+        data,
+        loading,
+        error
+    };
+}
+
 const Package: React.FC = () => {
     const history = useHistory();
     const { pkgName } = useParams<{ pkgName: string }>();
-    const [name, version] = getNameVersion(pkgName);
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(false);
-    const [pkgInfo, setPkgInfo] = useState<IPackageInfo>({
-        name: "",
-        dependencies: 0,
-        description: ""
-    });
+    const { data: pkgInfo, loading, error } = useDataLoader(pkgName);
     const guessContext: IGuessContext = {
         guess: undefined,
         setUserGuess: value => setUserGuess(value)
     };
-
-    useEffect(() => {
-        if (version === "") {
-            getAvailableVersion(pkgName)
-                .then(pkgInfo => {
-                    setLoading(false);
-                    history.push(`/package/${pkgInfo}`);
-                })
-                .catch(_ => {
-                    setLoading(false);
-                    setError(true);
-                });
-        } else {
-            getPackageInfo(pkgName)
-                .then(pkgInfo => {
-                    setLoading(false);
-                    setPkgInfo(pkgInfo);
-                })
-                .catch(_ => {
-                    setLoading(false);
-                    setError(true);
-                });
-        }
-    }, [pkgName]);
 
     if (loading) return <LoadingIndicator />;
 
@@ -158,15 +185,32 @@ const Package: React.FC = () => {
                     }
                 ]
             });
-            setLoading(true);
 
             history.push(`/package/${_remaining[0]}`);
         }
     }
 
+    const fadeIn = keyframes`
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    `;
+
+    const nextStyle = css({
+        [mq[0]]: {
+            opacity: 0,
+            animation: `${fadeIn} 1500ms ease forwards`,
+            animationDelay: `${scaleDuration}ms`
+        }
+    });
+
     return (
         <GuessContext.Provider value={guessContext}>
-            <Heading name={`${name}@${version}`} />
+            <Heading name={`${pkgName}`} />
             <Info>{pkgInfo.description}</Info>
             <h2>How many dependencies?</h2>
             {typeof userGuess === "undefined" && <GuessBox />}
@@ -175,20 +219,28 @@ const Package: React.FC = () => {
                     <CountUp target={pkgInfo.dependencies} userGuess={userGuess} />
                     {userGuess === pkgInfo.dependencies && (
                         <Center>
-                            <div css={exactMatchStyle}>Congratulations, exact match!</div>
+                            <div css={[exactMatchStyle, exactMatchMargin]}>
+                                Congratulations, exact match!
+                            </div>
                         </Center>
                     )}
                     {userGuess !== pkgInfo.dependencies && (
                         <React.Fragment>
-                            <ResultBox guess={userGuess} actual={pkgInfo.dependencies} distinct={pkgInfo.distinctDependencies ?? -1337} />
+                            <ResultBox
+                                guess={userGuess}
+                                actual={pkgInfo.dependencies}
+                                distinct={pkgInfo.distinctDependencies ?? -1337}
+                            />
                         </React.Fragment>
                     )}
-                    {appState.inGameMode && (
-                        <Center>
-                            <PrimaryButton onClick={onNext}>
-                                <Next />
-                            </PrimaryButton>
-                        </Center>
+                    {appState.inGameMode && typeof userGuess !== "undefined" && (
+                        <div css={nextStyle}>
+                            <Center>
+                                <PrimaryButton onClick={onNext}>
+                                    <Next />
+                                </PrimaryButton>
+                            </Center>
+                        </div>
                     )}
                 </React.Fragment>
             )}
@@ -198,10 +250,10 @@ const Package: React.FC = () => {
 
 const Next: React.FC = () => {
     const { appState } = useContext(AppContext);
-    const showResults = appState.remaining.length === 0;
-    const nextLabel = showResults ? "Results" : "Next";
     const current = appState.guesses.length + 1;
     const all = appState.guesses.length + appState.remaining.length;
+    const showResults = current === all;
+    const nextLabel = showResults ? "Results" : "Next";
 
     return (
         <React.Fragment>

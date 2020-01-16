@@ -74,6 +74,7 @@ export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
                 pattern="[0-9]"
                 inputMode="numeric"
                 onChange={validate}
+                autoFocus
             />
             <div style={{ flex: "0.05" }} />
             <PrimaryButton disabled={valid} onClick={doConfirm}>

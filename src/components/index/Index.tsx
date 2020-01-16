@@ -210,8 +210,15 @@ export default () => {
             <H2>FAQ</H2>
             <Faq header="How is the dependency count calculated?" collapsed>
                 As the dependency tree is traversed, each dependency from the dependencies field in
-                the package.json is added to the count. It's a straight accumulation, as such a
-                single package is counted multiple times if it is a dependency of other packages.
+                the package.json is added to the count.{" "}
+                <Highlight>It's a straight accumulation</Highlight>, as such a single package is
+                counted multiple times if it is a dependency of other packages.
+            </Faq>
+            <Faq header="How is the distinct dependency count calculated?" collapsed>
+                A dependency is counted as distinct if it differs in name and version. This means
+                each individual version of a dependency counts towards the distinct dependency
+                count.{" "}
+                <Highlight>Multiple same version dependencies will be only counted once.</Highlight>
             </Faq>
             <Faq header="Why is it called npmbomb?" collapsed>
                 It's a hommage to zip bomb. According to Wikipedia a zip bomb is:

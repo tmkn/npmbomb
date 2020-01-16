@@ -70,7 +70,38 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-1rqbofr-Faq"
         style="display: none;"
       >
-        As the dependency tree is traversed, each dependency from the dependencies field in the package.json is added to the count. It's a straight accumulation, as such a single package is counted multiple times if it is a dependency of other packages.
+        As the dependency tree is traversed, each dependency from the dependencies field in the package.json is added to the count. 
+        <span
+          class="css-18yn0ml-Highlight"
+        >
+          It's a straight accumulation
+        </span>
+        , as such a single package is counted multiple times if it is a dependency of other packages.
+      </div>
+      <h2
+        class="css-iio3hc"
+      >
+        <span
+          style="cursor: pointer;"
+        >
+          <span
+            class="css-swfxel-Faq"
+          >
+            &gt;
+          </span>
+           How is the distinct dependency count calculated?
+        </span>
+      </h2>
+      <div
+        class="css-1rqbofr-Faq"
+        style="display: none;"
+      >
+        A dependency is counted as distinct if it differs in name and version. This means each individual version of a dependency counts towards the distinct dependency count. 
+        <span
+          class="css-18yn0ml-Highlight"
+        >
+          Multiple same version dependencies will be only counted once.
+        </span>
       </div>
       <h2
         class="css-iio3hc"
@@ -190,7 +221,7 @@ exports[`<App /> matches snapshot 1`] = `
     </div>
   </div>
   <div
-    class="css-kg3jfn-Footer"
+    class="css-138a4w9-Footer"
   >
     <span>
       hecho con ♥️ por 
