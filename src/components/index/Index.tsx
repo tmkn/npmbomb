@@ -11,12 +11,7 @@ import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
-
-const highlightStyle = css({
-    color: `${primaryColor}`
-});
-
-const Highlight: React.FC = ({ children }) => <span css={highlightStyle}>{children}</span>;
+import { Highlight } from "../shared/highlight/Highlight";
 
 const faqStyle = css({
     fontFamily: `"${sansSerifFont}"`,

@@ -72,7 +72,7 @@ exports[`<App /> matches snapshot 1`] = `
       >
         As the dependency tree is traversed, each dependency from the dependencies field in the package.json is added to the count. 
         <span
-          class="css-18yn0ml-Highlight"
+          class="css-1789ga5"
         >
           It's a straight accumulation
         </span>
@@ -98,7 +98,7 @@ exports[`<App /> matches snapshot 1`] = `
       >
         A dependency is counted as distinct if it differs in name and version. This means each individual version of a dependency counts towards the distinct dependency count. 
         <span
-          class="css-18yn0ml-Highlight"
+          class="css-1789ga5"
         >
           Multiple same version dependencies will be only counted once.
         </span>
@@ -129,7 +129,7 @@ exports[`<App /> matches snapshot 1`] = `
         </blockquote>
         That sure sounds like your typical 
         <span
-          class="css-18yn0ml-Highlight"
+          class="css-1789ga5"
         >
           npm install
         </span>
@@ -155,13 +155,13 @@ exports[`<App /> matches snapshot 1`] = `
       >
         No, it only shows (and counts) dependencies from the 
         <span
-          class="css-18yn0ml-Highlight"
+          class="css-1789ga5"
         >
           dependencies
         </span>
          entry in the 
         <span
-          class="css-18yn0ml-Highlight"
+          class="css-1789ga5"
         >
           package.json
         </span>
