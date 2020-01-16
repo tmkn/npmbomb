@@ -1,0 +1,1 @@
+{"name":"multimatch","dependencies":8,"distinctDependencies":8,"description":"Extends `minimatch.match()` with support for multiple patterns"}

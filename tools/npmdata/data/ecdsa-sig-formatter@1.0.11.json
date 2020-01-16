@@ -1,0 +1,1 @@
+{"name":"ecdsa-sig-formatter","dependencies":1,"distinctDependencies":1,"description":"Translate ECDSA signatures between ASN.1/DER and JOSE-style concatenation"}

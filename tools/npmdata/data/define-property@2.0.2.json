@@ -1,0 +1,1 @@
+{"name":"define-property","dependencies":7,"distinctDependencies":5,"description":"Define a non-enumerable property on an object. Uses Reflect.defineProperty when available, otherwise Object.defineProperty."}

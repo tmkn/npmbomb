@@ -1,0 +1,1 @@
+{"name":"pumpify","dependencies":22,"distinctDependencies":14,"description":"Combine an array of streams into a single duplex stream using pump and duplexify"}

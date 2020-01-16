@@ -1,0 +1,1 @@
+{"name":"is-extendable","dependencies":0,"distinctDependencies":0,"description":"Returns true if a value is any of the object types: array, regexp, plain object, function or date. This is useful for determining if a value can be extended, e.g. \"can the value have keys?\""}

@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-dotall-regex","dependencies":14,"distinctDependencies":13,"description":"Compile regular expressions using the `s` (`dotAll`) flag to ES5."}

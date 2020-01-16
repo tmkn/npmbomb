@@ -1,0 +1,1 @@
+{"name":"broccoli-funnel","dependencies":86,"distinctDependencies":37,"description":"Broccoli plugin that allows you to filter files selected from an input node down based on regular expressions."}

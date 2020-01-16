@@ -1,0 +1,1 @@
+{"name":"default-compare","dependencies":1,"distinctDependencies":1,"description":"Basic sort algorithm that has similar behavior to Array.prototype.sort for null and undefined, but also allows sorting by an object property."}

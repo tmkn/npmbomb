@@ -1,0 +1,1 @@
+{"name":"safe-regex","dependencies":1,"distinctDependencies":1,"description":"detect possibly catastrophic, exponential-time regular expressions"}

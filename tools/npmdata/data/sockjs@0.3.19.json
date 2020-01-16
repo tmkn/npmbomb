@@ -1,0 +1,1 @@
+{"name":"sockjs","dependencies":6,"distinctDependencies":6,"description":"SockJS-node is a server counterpart of SockJS-client a JavaScript library that provides a WebSocket-like object in the browser. SockJS gives you a coherent, cross-browser, Javascript API which creates a low latency, full duplex, cross-domain communication"}

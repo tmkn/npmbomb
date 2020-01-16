@@ -1,0 +1,1 @@
+{"name":"pump","dependencies":5,"distinctDependencies":3,"description":"pipe streams together and close all of them if one of them closes"}

@@ -1,0 +1,1 @@
+{"name":"currently-unhandled","dependencies":1,"distinctDependencies":1,"description":"Track the list of currently unhandled promise rejections."}

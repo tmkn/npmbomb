@@ -1,0 +1,1 @@
+{"name":"regex-not","dependencies":7,"distinctDependencies":7,"description":"Create a javascript regular expression for matching everything except for the given string."}

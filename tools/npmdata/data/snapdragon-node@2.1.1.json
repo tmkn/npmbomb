@@ -1,0 +1,1 @@
+{"name":"snapdragon-node","dependencies":11,"distinctDependencies":9,"description":"Snapdragon utility for creating a new AST node in custom code, such as plugins."}

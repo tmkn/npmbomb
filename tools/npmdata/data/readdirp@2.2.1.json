@@ -1,0 +1,1 @@
+{"name":"readdirp","dependencies":910,"distinctDependencies":91,"description":"Recursive version of fs.readdir with streaming api."}

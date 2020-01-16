@@ -1,0 +1,1 @@
+{"name":"run-async","dependencies":1,"distinctDependencies":1,"description":"Utility method to run function either synchronously or asynchronously using the common `this.async()` style."}

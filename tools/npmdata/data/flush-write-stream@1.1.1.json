@@ -1,0 +1,1 @@
+{"name":"flush-write-stream","dependencies":10,"distinctDependencies":8,"description":"A write stream constructor that supports a flush function that is called before finish is emitted"}

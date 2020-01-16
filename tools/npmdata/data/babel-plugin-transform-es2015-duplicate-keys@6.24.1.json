@@ -1,0 +1,1 @@
+{"name":"babel-plugin-transform-es2015-duplicate-keys","dependencies":10,"distinctDependencies":7,"description":"Compile objects with duplicate keys to valid strict ES5"}

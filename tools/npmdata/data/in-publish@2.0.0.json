@@ -1,0 +1,1 @@
+{"name":"in-publish","dependencies":0,"distinctDependencies":0,"description":"Detect if we were run as a result of `npm publish`"}

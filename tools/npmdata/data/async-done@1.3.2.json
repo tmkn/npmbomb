@@ -1,0 +1,1 @@
+{"name":"async-done","dependencies":7,"distinctDependencies":5,"description":"Allows libraries to handle various caller provided asynchronous functions uniformly. Maps promises, observables, child processes and streams, and callbacks to callback style."}

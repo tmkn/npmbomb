@@ -1,0 +1,1 @@
+{"name":"resolve","dependencies":1,"distinctDependencies":1,"description":"resolve like require.resolve() on behalf of files asynchronously and synchronously"}

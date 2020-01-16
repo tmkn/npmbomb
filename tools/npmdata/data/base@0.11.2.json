@@ -1,0 +1,1 @@
+{"name":"base","dependencies":104,"distinctDependencies":47,"description":"base is the foundation for creating modular, unit testable and highly pluggable node.js applications, starting with a handful of common methods, like `set`, `get`, `del` and `use`."}

@@ -1,0 +1,1 @@
+{"name":"bcrypt-pbkdf","dependencies":1,"distinctDependencies":1,"description":"Port of the OpenBSD bcrypt_pbkdf function to pure JS"}

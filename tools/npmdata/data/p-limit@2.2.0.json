@@ -1,0 +1,1 @@
+{"name":"p-limit","dependencies":1,"distinctDependencies":1,"description":"Run multiple promise-returning & async functions with limited concurrency"}

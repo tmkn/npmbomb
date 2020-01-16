@@ -1,0 +1,1 @@
+{"name":"mem","dependencies":4,"distinctDependencies":4,"description":"Memoize functions - An optimization used to speed up consecutive function calls by caching the result of calls with identical input"}

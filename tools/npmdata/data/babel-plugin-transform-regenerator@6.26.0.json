@@ -1,0 +1,1 @@
+{"name":"babel-plugin-transform-regenerator","dependencies":12,"distinctDependencies":9,"description":"Explode async and generator functions into a state machine."}

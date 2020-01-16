@@ -1,0 +1,1 @@
+{"name":"replace-homedir","dependencies":8,"distinctDependencies":8,"description":"Replace user home in a string with another string. Useful for tildifying a path."}

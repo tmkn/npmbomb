@@ -1,0 +1,1 @@
+{"name":"object.map","dependencies":4,"distinctDependencies":4,"description":"Similar to map for arrays, this creates a new object by calling the callback on each property of the original object."}

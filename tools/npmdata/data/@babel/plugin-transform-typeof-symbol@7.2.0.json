@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-typeof-symbol","dependencies":1,"distinctDependencies":1,"description":"This transformer wraps all typeof expressions with a method that replicates native behaviour. (ie. returning “symbol” for symbols)"}

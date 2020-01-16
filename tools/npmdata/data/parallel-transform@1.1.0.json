@@ -1,0 +1,1 @@
+{"name":"parallel-transform","dependencies":11,"distinctDependencies":9,"description":"Transform stream that allows you to run your transforms in parallel without changing the order"}

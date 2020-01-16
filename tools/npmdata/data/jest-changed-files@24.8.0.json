@@ -1,0 +1,1 @@
+{"name":"jest-changed-files","dependencies":30,"distinctDependencies":25,"description":"A module used internally by Jest to check which files have changed since you last committed in git or hg."}

@@ -1,0 +1,1 @@
+{"name":"workerpool","dependencies":202,"distinctDependencies":38,"description":"Offload tasks to a pool of workers on node.js and in the browser"}

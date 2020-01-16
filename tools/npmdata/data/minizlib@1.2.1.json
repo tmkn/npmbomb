@@ -1,0 +1,1 @@
+{"name":"minizlib","dependencies":3,"distinctDependencies":3,"description":"A small fast zlib stream built on [minipass](http://npm.im/minipass) and Node.js's zlib binding."}

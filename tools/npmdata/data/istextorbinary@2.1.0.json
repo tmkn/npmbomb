@@ -1,0 +1,1 @@
+{"name":"istextorbinary","dependencies":3,"distinctDependencies":3,"description":"Determines if a buffer is comprised of text or binary"}

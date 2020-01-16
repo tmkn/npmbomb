@@ -1,0 +1,1 @@
+{"name":"homedir-polyfill","dependencies":1,"distinctDependencies":1,"description":"Node.js os.homedir polyfill for older versions of node.js."}

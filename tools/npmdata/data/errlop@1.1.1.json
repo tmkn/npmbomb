@@ -1,0 +1,1 @@
+{"name":"errlop","dependencies":1,"distinctDependencies":1,"description":"An extended Error class that envelops a parent error, such that the stack trace contains the causation"}

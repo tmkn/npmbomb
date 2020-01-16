@@ -1,0 +1,1 @@
+{"name":"cache-base","dependencies":53,"distinctDependencies":29,"description":"Basic object cache with `get`, `set`, `del`, and `has` methods for node.js/javascript projects."}

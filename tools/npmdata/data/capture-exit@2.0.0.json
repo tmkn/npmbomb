@@ -1,0 +1,1 @@
+{"name":"capture-exit","dependencies":1,"distinctDependencies":1,"description":"safely cleanup in signal handlers"}

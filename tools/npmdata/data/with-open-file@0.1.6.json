@@ -1,0 +1,1 @@
+{"name":"with-open-file","dependencies":3,"distinctDependencies":3,"description":"Do stuff with an open file, knowing it will finally be closed"}

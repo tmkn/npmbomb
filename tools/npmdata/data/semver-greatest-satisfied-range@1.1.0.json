@@ -1,0 +1,1 @@
+{"name":"semver-greatest-satisfied-range","dependencies":48,"distinctDependencies":7,"description":"Find the greatest satisfied semver range from an array of ranges."}

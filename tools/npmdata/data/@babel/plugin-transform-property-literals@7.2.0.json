@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-property-literals","dependencies":1,"distinctDependencies":1,"description":"Ensure that reserved words are quoted in object property keys"}

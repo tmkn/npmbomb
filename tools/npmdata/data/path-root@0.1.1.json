@@ -1,0 +1,1 @@
+{"name":"path-root","dependencies":1,"distinctDependencies":1,"description":"Get the root of a posix or windows filepath."}

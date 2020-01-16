@@ -1,0 +1,1 @@
+{"name":"object-copy","dependencies":12,"distinctDependencies":8,"description":"Copy static properties, prototype properties, and descriptors from one object to another."}

@@ -1,0 +1,1 @@
+{"name":"nopt","dependencies":4,"distinctDependencies":4,"description":"Option parsing for Node, supporting types, shorthands, etc. Used by npm."}

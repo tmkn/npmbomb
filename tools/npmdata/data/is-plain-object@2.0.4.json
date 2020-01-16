@@ -1,0 +1,1 @@
+{"name":"is-plain-object","dependencies":1,"distinctDependencies":1,"description":"Returns true if an object was created by the `Object` constructor."}

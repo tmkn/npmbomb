@@ -1,0 +1,1 @@
+{"name":"make-iterator","dependencies":1,"distinctDependencies":1,"description":"Convert an argument into a valid iterator. Based on the `.makeIterator()` implementation in mout https://github.com/mout/mout."}

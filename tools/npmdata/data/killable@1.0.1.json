@@ -1,0 +1,1 @@
+{"name":"killable","dependencies":0,"distinctDependencies":0,"description":"Keeps track of a server's open sockets so they can be destroyed at a moment's notice."}

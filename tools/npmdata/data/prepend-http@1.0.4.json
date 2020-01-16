@@ -1,0 +1,1 @@
+{"name":"prepend-http","dependencies":0,"distinctDependencies":0,"description":"Prepend `http://` to humanized URLs like todomvc.com and localhost"}

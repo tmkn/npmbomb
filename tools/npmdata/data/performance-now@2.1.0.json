@@ -1,0 +1,1 @@
+{"name":"performance-now","dependencies":0,"distinctDependencies":0,"description":"Implements performance.now (based on process.hrtime)."}

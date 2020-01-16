@@ -1,0 +1,1 @@
+{"name":"cli-width","dependencies":0,"distinctDependencies":0,"description":"Get stdout window width, with two fallbacks, tty and then a default."}

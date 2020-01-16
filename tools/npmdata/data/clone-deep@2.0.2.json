@@ -1,0 +1,1 @@
+{"name":"clone-deep","dependencies":11,"distinctDependencies":10,"description":"Recursively (deep) clone JavaScript native types, like Object, Array, RegExp, Date as well as primitives."}

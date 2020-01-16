@@ -1,0 +1,1 @@
+{"name":"copy-concurrently","dependencies":34,"distinctDependencies":27,"description":"Promises of copies of files, directories and symlinks, with concurrency controls and win32 junction fallback."}

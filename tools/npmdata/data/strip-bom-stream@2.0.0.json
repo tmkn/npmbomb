@@ -1,0 +1,1 @@
+{"name":"strip-bom-stream","dependencies":12,"distinctDependencies":11,"description":"Strip UTF-8 byte order mark (BOM) from a stream"}

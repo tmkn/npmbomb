@@ -1,0 +1,1 @@
+{"name":"invert-kv","dependencies":0,"distinctDependencies":0,"description":"Invert the key/value of an object. Example: {foo: 'bar'} → {bar: 'foo'}"}

@@ -1,0 +1,1 @@
+{"name":"set-blocking","dependencies":0,"distinctDependencies":0,"description":"set blocking stdio and stderr ensuring that terminal output does not truncate"}

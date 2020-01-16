@@ -1,0 +1,1 @@
+{"name":"dns-txt","dependencies":1,"distinctDependencies":1,"description":"Encode/decode DNS-SD TXT record RDATA fields"}

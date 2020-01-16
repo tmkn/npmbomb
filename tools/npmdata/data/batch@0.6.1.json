@@ -1,0 +1,1 @@
+{"name":"batch","dependencies":0,"distinctDependencies":0,"description":"Simple async batch with concurrency control and progress reporting."}

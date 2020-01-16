@@ -1,0 +1,1 @@
+{"name":"isobject","dependencies":0,"distinctDependencies":0,"description":"Returns true if the value is an object and not an array or null."}

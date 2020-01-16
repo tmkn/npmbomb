@@ -1,0 +1,1 @@
+{"name":"ignore-walk","dependencies":4,"distinctDependencies":4,"description":"Nested/recursive `.gitignore`/`.npmignore` parsing and filtering."}

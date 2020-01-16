@@ -1,0 +1,1 @@
+{"name":"split-string","dependencies":5,"distinctDependencies":5,"description":"Split a string on a character except when the character is escaped."}

@@ -1,0 +1,1 @@
+{"name":"merge-stream","dependencies":9,"distinctDependencies":8,"description":"Create a stream that emits events from multiple other streams"}

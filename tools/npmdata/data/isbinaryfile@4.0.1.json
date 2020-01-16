@@ -1,0 +1,1 @@
+{"name":"isbinaryfile","dependencies":0,"distinctDependencies":0,"description":"Detects if a file is binary in Node.js. Similar to Perl's -B."}

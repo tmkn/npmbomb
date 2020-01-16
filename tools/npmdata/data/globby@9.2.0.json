@@ -1,0 +1,1 @@
+{"name":"globby","dependencies":938,"distinctDependencies":117,"description":"Extends `glob` with support for multiple patterns and exposes a Promise API"}

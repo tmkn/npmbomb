@@ -1,0 +1,1 @@
+{"name":"flat","dependencies":1,"distinctDependencies":1,"description":"Take a nested Javascript object and flatten it, or unflatten an object with delimited keys"}

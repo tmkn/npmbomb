@@ -1,0 +1,1 @@
+{"name":"restore-cursor","dependencies":3,"distinctDependencies":3,"description":"Gracefully restore the CLI cursor on exit"}

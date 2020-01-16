@@ -1,0 +1,1 @@
+{"name":"postcss-modules-extract-imports","dependencies":11,"distinctDependencies":10,"description":"A CSS Modules transform to extract local aliases for inline imports"}

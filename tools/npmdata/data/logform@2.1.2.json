@@ -1,0 +1,1 @@
+{"name":"logform","dependencies":5,"distinctDependencies":5,"description":"An mutable object-based log format designed for chaining & objectMode streams."}

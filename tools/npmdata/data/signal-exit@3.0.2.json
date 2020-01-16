@@ -1,0 +1,1 @@
+{"name":"signal-exit","dependencies":0,"distinctDependencies":0,"description":"when you want to fire an event no matter how a process exits."}

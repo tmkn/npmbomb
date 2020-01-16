@@ -1,0 +1,1 @@
+{"name":"is-absolute","dependencies":4,"distinctDependencies":4,"description":"Returns true if a file path is absolute. Does not rely on the path module and can be used as a polyfill for node.js native `path.isAbolute`."}

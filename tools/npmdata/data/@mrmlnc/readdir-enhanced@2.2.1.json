@@ -1,0 +1,1 @@
+{"name":"@mrmlnc/readdir-enhanced","dependencies":2,"distinctDependencies":2,"description":"fs.readdir with sync, async, and streaming APIs + filtering, recursion, absolute paths, etc."}

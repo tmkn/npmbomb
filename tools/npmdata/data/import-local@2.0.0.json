@@ -1,0 +1,1 @@
+{"name":"import-local","dependencies":9,"distinctDependencies":9,"description":"Let a globally installed package use a locally installed version of itself if available"}

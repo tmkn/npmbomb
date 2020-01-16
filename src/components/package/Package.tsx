@@ -60,7 +60,7 @@ export interface IPackageInfo {
     name: string;
     description: string;
     dependencies: number;
-    distinctDependencies?: number;
+    distinctDependencies: number;
 }
 
 async function getPackageInfo(pkg: string): Promise<IPackageInfo> {
@@ -229,7 +229,7 @@ const Package: React.FC = () => {
                             <ResultBox
                                 guess={userGuess}
                                 actual={pkgInfo.dependencies}
-                                distinct={pkgInfo.distinctDependencies ?? -1337}
+                                distinct={pkgInfo.distinctDependencies}
                             />
                         </React.Fragment>
                     )}

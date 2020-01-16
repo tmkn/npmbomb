@@ -1,0 +1,1 @@
+{"name":"write-file-atomic","dependencies":3,"distinctDependencies":3,"description":"Write files in an atomic fashion w/configurable ownership"}
