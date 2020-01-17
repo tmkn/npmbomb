@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent, waitForElement, wait } from "@testing-library/react";
 
 import Index from "./Index";
 
@@ -10,7 +10,7 @@ describe("<Index />", () => {
         fetchMock.resetMocks();
     });
 
-    test("matches snapshot", () => {
+    test("matches snapshot", async () => {
         fetchMock.mockResponseOnce(JSON.stringify(["sd", "l", "h", "m"]));
         const { asFragment } = render(
             <BrowserRouter>
@@ -19,5 +19,7 @@ describe("<Index />", () => {
         );
 
         expect(asFragment()).toMatchSnapshot();
+
+        await wait();
     });
 });

@@ -3,11 +3,16 @@
 exports[`<Heading /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-44f025"
+    class="css-7mpcby"
   >
     <h1>
       test
     </h1>
+    <div>
+      <img
+        src="https://img.shields.io/npm/dw/test?style=for-the-badge"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;

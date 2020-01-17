@@ -38,7 +38,7 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-8a5j6a"
       >
         <div
-          class="css-16wgzhr"
+          class="css-o2285k"
         >
           Start
         </div>
@@ -70,13 +70,13 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-1rqbofr-Faq"
         style="display: none;"
       >
-        As the dependency tree is traversed, each dependency from the dependencies field in the package.json is added to the count. 
+        As the dependency tree is traversed, each dependency from the dependencies field in the package.json is resolved according to their range and added to the overall count. 
         <span
           class="css-1789ga5"
         >
           It's a straight accumulation
         </span>
-        , as such a single package is counted multiple times if it is a dependency of other packages.
+        , as such the same package is counted multiple times if it is a dependency of other packages.
       </div>
       <h2
         class="css-iio3hc"
@@ -96,11 +96,12 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-1rqbofr-Faq"
         style="display: none;"
       >
-        A dependency is counted as distinct if it differs in name and version. This means each individual version of a dependency counts towards the distinct dependency count. 
+        A dependency is distinct if after resolving it according to their range differs in name and version.
+        <br />
         <span
           class="css-1789ga5"
         >
-          Multiple same version dependencies will be only counted once.
+          Multiple same version dependencies will only be counted once.
         </span>
       </div>
       <h2
@@ -121,19 +122,13 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-1rqbofr-Faq"
         style="display: none;"
       >
-        It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
+        It's a hommage to the word zip bomb. Wikipedia defines it as:
         <blockquote
           class="css-12z6zy1"
         >
           "A zip bomb is usually a small file .... however, when the file is unpacked, its contents are more than the system can handle."
         </blockquote>
-        That sure sounds like your typical 
-        <span
-          class="css-1789ga5"
-        >
-          npm install
-        </span>
-         😈
+        Sounds familiar? 😈
       </div>
       <h2
         class="css-iio3hc"
@@ -159,13 +154,13 @@ exports[`<App /> matches snapshot 1`] = `
         >
           dependencies
         </span>
-         entry in the 
+         field in the 
         <span
           class="css-1789ga5"
         >
           package.json
         </span>
-         all the way to the very bottom.
+         all the way to the very last dependency.
       </div>
       <h2
         class="css-iio3hc"
@@ -185,7 +180,7 @@ exports[`<App /> matches snapshot 1`] = `
         class="css-1rqbofr-Faq"
         style="display: none;"
       >
-        For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages or specifically handpicked ones. If you want a specific dependency you can hit me up on Twitter 
+        For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages. If you want a specific dependency or have an idea or just want to chat in general, you can contact me on Twitter 
         <a
           class="css-1qgk5q"
           href="https://twitter.com/tmkndev"

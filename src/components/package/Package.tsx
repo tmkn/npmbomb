@@ -46,7 +46,7 @@ const exactMatchMargin = css({
     }
 });
 
-function getNameVersion(pkg: string): [string, string] {
+export function getNameVersion(pkg: string): [string, string] {
     const parts = pkg.split("@");
 
     if (parts.length < 2) {
@@ -63,8 +63,9 @@ export interface IPackageInfo {
     distinctDependencies: number;
 }
 
-async function getPackageInfo(pkg: string): Promise<IPackageInfo> {
-    const resp = await fetch(`/data/${pkg}.json`);
+async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
+    const dataUrl: string = scope ? `${scope}/${pkgName}` : pkgName;
+    const resp = await fetch(`/data/${dataUrl}.json`);
     const json = await resp.json();
 
     return json;
@@ -88,7 +89,7 @@ interface IDataLoaderResponse {
     loading: boolean;
 }
 
-function useDataLoader(pkgName: string): IDataLoaderResponse {
+function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderResponse {
     const history = useHistory();
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false);
@@ -112,7 +113,7 @@ function useDataLoader(pkgName: string): IDataLoaderResponse {
                 setLoading(false);
                 history.push(`/package/${availableVersion}`);
             } else {
-                const pkgInfo = await getPackageInfo(pkgName);
+                const pkgInfo = await getPackageInfo(pkgName, scope);
 
                 setLoading(false);
                 setData(pkgInfo);
@@ -136,10 +137,10 @@ function useDataLoader(pkgName: string): IDataLoaderResponse {
 
 const Package: React.FC = () => {
     const history = useHistory();
-    const { pkgName } = useParams<{ pkgName: string }>();
+    const { pkgName, scope } = useParams<{ pkgName: string; scope?: string }>();
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
-    const { data: pkgInfo, loading, error } = useDataLoader(pkgName);
+    const { data: pkgInfo, loading, error } = useDataLoader(pkgName, scope);
     const guessContext: IGuessContext = {
         guess: undefined,
         setUserGuess: value => setUserGuess(value)
@@ -210,7 +211,7 @@ const Package: React.FC = () => {
 
     return (
         <GuessContext.Provider value={guessContext}>
-            <Heading name={`${pkgName}`} />
+            <Heading packageName={pkgName} scope={scope} />
             <Info>{pkgInfo.description}</Info>
             <h2>How many dependencies?</h2>
             {typeof userGuess === "undefined" && <GuessBox />}
@@ -272,7 +273,10 @@ export default () => {
 
     return (
         <Switch>
-            <Route path={`${match.path}/:pkgName`}>
+            <Route exact path={`${match.path}/:pkgName`}>
+                <Package />
+            </Route>
+            <Route exact path={`${match.path}/:scope/:pkgName`}>
                 <Package />
             </Route>
             <Route path={match.path}>
