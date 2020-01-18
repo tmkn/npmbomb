@@ -10,10 +10,11 @@ import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
-import { ResultBox, Summary } from "./ResultBox";
+import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
+import { setPackageTitle } from "../../title";
 
 const blink = keyframes`
     from {
@@ -150,6 +151,10 @@ const Package: React.FC = () => {
         guess: undefined,
         setUserGuess: value => setUserGuess(value)
     };
+
+    useEffect(() => {
+        setPackageTitle(`${pkgInfo.name}@${pkgInfo.version}`);
+    });
 
     if (loading) return <LoadingIndicator />;
 

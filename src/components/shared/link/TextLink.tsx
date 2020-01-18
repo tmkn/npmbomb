@@ -4,7 +4,11 @@ import React from "react";
 
 import { mq, secondaryColor, primaryColor } from "../../../css";
 
-export const TextLink: React.FC<{ href: string, target?: string }> = ({ children, href, target }) => {
+export const TextLink: React.FC<{ href: string; target?: string }> = ({
+    children,
+    href,
+    target
+}) => {
     const style = css({
         [mq[0]]: {
             textDecoration: "underline",

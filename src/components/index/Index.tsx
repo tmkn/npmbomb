@@ -12,6 +12,7 @@ import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
 import { Highlight } from "../shared/highlight/Highlight";
+import { setDefaultTitle } from "../../title";
 
 const faqStyle = css({
     fontFamily: `"${sansSerifFont}"`,
@@ -172,6 +173,10 @@ export default () => {
     const history = useHistory();
     const { loading, error } = useAvailablePackagesLoader();
     const disableStart = loading === true || error === true;
+
+    useEffect(() => {
+        setDefaultTitle();
+    });
 
     function onStart() {
         const remaining = shuffle(appState.packages).slice(0, 4);

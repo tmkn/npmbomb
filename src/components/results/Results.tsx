@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Redirect, Link, useHistory } from "react-router-dom";
 
 import { ResultsTable, Num } from "../shared/results/Results";
@@ -9,12 +9,17 @@ import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Divider } from "../shared/divider/Divider";
 import { IGuessResult, AppContext } from "../../App";
+import { setDefaultTitle } from "../../title";
 
 type Results = IGuessResult[];
 
 const Results: React.FC = () => {
     const { appState, setAppState } = useContext(AppContext);
     const history = useHistory();
+
+    useEffect(() => {
+        setDefaultTitle();
+    });
 
     if (appState.guesses.length === 0) return <Redirect to="/" />;
 

@@ -61,7 +61,9 @@ const Header: React.FC = () => {
     return (
         <div css={style}>
             <Link to="/">
-                <div css={titleStyle}>npmb<span css={bombStyle}>💣</span>mb</div>
+                <div css={titleStyle}>
+                    npmb<span css={bombStyle}>💣</span>mb
+                </div>
             </Link>
             <div css={subTitleStyle}>Guess NPM dependencies</div>
         </div>

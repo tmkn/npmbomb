@@ -3,19 +3,25 @@
 exports[`<Header /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-fmf8w1-Header"
+    class="css-denbe-Header"
   >
     <a
       href="/"
     >
       <div
-        class="css-rcpacg-Header"
+        class="css-bof962-Header"
       >
-        npmbomb
+        npmb
+        <span
+          class="css-1bxjuaj-Header"
+        >
+          💣
+        </span>
+        mb
       </div>
     </a>
     <div
-      class="css-vmd3lt-Header"
+      class="css-fz30dm-Header"
     >
       Guess NPM dependencies
     </div>
