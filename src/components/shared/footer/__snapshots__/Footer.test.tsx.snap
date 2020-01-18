@@ -10,6 +10,7 @@ exports[`<Footer /> matches snapshot 1`] = `
       <a
         class="css-1ka21sq"
         href="https://twitter.com/tmkndev"
+        target="_blank"
       >
         @tmkndev
       </a>

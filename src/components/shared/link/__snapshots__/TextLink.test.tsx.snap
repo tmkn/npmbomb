@@ -15,6 +15,7 @@ exports[`<TextLink /> matches snapshot 1`] = `
   <a
     class="css-1ka21sq"
     href="abc"
+    target="_blank"
   >
     Hello World
   </a>

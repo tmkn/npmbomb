@@ -13,7 +13,8 @@ exports[`<ResultBox /> matches snapshot 1`] = `
     >
       <a
         class="css-1ka21sq"
-        href="google.at"
+        href="https://www.npmjs.com/package//v/"
+        target="_blank"
       >
         @
       </a>
