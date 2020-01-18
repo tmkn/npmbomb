@@ -1,1 +1,1 @@
-{"name":"is-unc-path","dependencies":1,"distinctDependencies":1,"description":"Returns true if a filepath is a windows UNC file path."}
+{"name":"is-unc-path","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Returns true if a filepath is a windows UNC file path."}

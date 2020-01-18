@@ -1,1 +1,1 @@
-{"name":"hmac-drbg","dependencies":5,"distinctDependencies":4,"description":"Deterministic random bit generator (hmac)"}
+{"name":"hmac-drbg","version":"1.0.1","directDependencies":3,"dependencies":5,"distinctDependencies":4,"description":"Deterministic random bit generator (hmac)"}

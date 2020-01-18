@@ -1,1 +1,1 @@
-{"name":"camelize","dependencies":0,"distinctDependencies":0,"description":"recursively transform key strings to camel-case"}
+{"name":"camelize","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"recursively transform key strings to camel-case"}

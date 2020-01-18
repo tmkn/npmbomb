@@ -1,1 +1,1 @@
-{"name":"fstream","dependencies":19,"distinctDependencies":15,"description":"Advanced file system stream things"}
+{"name":"fstream","version":"1.0.12","directDependencies":4,"dependencies":19,"distinctDependencies":15,"description":"Advanced file system stream things"}

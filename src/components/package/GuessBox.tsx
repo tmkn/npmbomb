@@ -4,13 +4,23 @@ import React, { useRef, useState, useContext } from "react";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark } from "../../css";
+import { IPackageInfo } from "./Package";
 
 export interface IGuessContext {
+    package: IPackageInfo;
     guess: number | undefined;
     setUserGuess: (guess: number) => void;
 }
 
 export const GuessContext = React.createContext<IGuessContext>({
+    package: {
+        name: "",
+        version: "",
+        dependencies: 0,
+        distinctDependencies: 0,
+        directDependencies: 0,
+        description: ""
+    },
     guess: undefined,
     setUserGuess: () => {}
 });

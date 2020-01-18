@@ -1,1 +1,1 @@
-{"name":"babel-plugin-check-es2015-constants","dependencies":3,"distinctDependencies":3,"description":"Compile ES2015 constants to ES5"}
+{"name":"babel-plugin-check-es2015-constants","version":"6.22.0","directDependencies":1,"dependencies":3,"distinctDependencies":3,"description":"Compile ES2015 constants to ES5"}

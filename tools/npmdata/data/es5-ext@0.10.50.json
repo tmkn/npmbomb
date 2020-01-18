@@ -1,1 +1,1 @@
-{"name":"es5-ext","dependencies":5,"distinctDependencies":5,"description":"ECMAScript extensions and shims"}
+{"name":"es5-ext","version":"0.10.50","directDependencies":3,"dependencies":5,"distinctDependencies":5,"description":"ECMAScript extensions and shims"}

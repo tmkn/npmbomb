@@ -1,1 +1,1 @@
-{"name":"aria-query","dependencies":2,"distinctDependencies":2,"description":"Programmatic access to the ARIA specification"}
+{"name":"aria-query","version":"3.0.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Programmatic access to the ARIA specification"}

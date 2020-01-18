@@ -1,1 +1,1 @@
-{"name":"color-string","dependencies":3,"distinctDependencies":3,"description":"Parser and generator for CSS color strings"}
+{"name":"color-string","version":"1.5.3","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Parser and generator for CSS color strings"}

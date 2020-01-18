@@ -1,1 +1,1 @@
-{"name":"remove-bom-buffer","dependencies":2,"distinctDependencies":2,"description":"Remove a byte order mark (BOM) from a buffer."}
+{"name":"remove-bom-buffer","version":"3.0.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Remove a byte order mark (BOM) from a buffer."}

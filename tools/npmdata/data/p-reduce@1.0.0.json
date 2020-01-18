@@ -1,1 +1,1 @@
-{"name":"p-reduce","dependencies":0,"distinctDependencies":0,"description":"Reduce a list of values using promises into a promise for a value"}
+{"name":"p-reduce","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Reduce a list of values using promises into a promise for a value"}

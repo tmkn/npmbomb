@@ -1,1 +1,1 @@
-{"name":"broccoli-debug","dependencies":97,"distinctDependencies":35,"description":"Enable easy debugging of broccoli pipelines with broccoli-debug!"}
+{"name":"broccoli-debug","version":"0.6.5","directDependencies":6,"dependencies":97,"distinctDependencies":35,"description":"Enable easy debugging of broccoli pipelines with broccoli-debug!"}

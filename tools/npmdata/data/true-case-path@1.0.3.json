@@ -1,1 +1,1 @@
-{"name":"true-case-path","dependencies":14,"distinctDependencies":11,"description":"Given a possibly case-variant version of an existing filesystem path, returns the case-exact, normalized version as stored in the filesystem."}
+{"name":"true-case-path","version":"1.0.3","directDependencies":1,"dependencies":14,"distinctDependencies":11,"description":"Given a possibly case-variant version of an existing filesystem path, returns the case-exact, normalized version as stored in the filesystem."}

@@ -1,1 +1,1 @@
-{"name":"env-variable","dependencies":0,"distinctDependencies":0,"description":"Cross platform environment variables with process.env, window.name, location.hash and localStorage fallbacks"}
+{"name":"env-variable","version":"0.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Cross platform environment variables with process.env, window.name, location.hash and localStorage fallbacks"}

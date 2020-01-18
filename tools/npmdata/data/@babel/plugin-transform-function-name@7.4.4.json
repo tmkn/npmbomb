@@ -1,1 +1,1 @@
-{"name":"@babel/plugin-transform-function-name","dependencies":28,"distinctDependencies":19,"description":"Apply ES2015 function.name semantics to all functions"}
+{"name":"@babel/plugin-transform-function-name","version":"7.4.4","directDependencies":2,"dependencies":28,"distinctDependencies":19,"description":"Apply ES2015 function.name semantics to all functions"}

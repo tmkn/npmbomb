@@ -1,1 +1,1 @@
-{"name":"unpipe","dependencies":0,"distinctDependencies":0,"description":"Unpipe a stream from all destinations"}
+{"name":"unpipe","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Unpipe a stream from all destinations"}

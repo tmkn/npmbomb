@@ -1,1 +1,1 @@
-{"name":"@babel/plugin-proposal-unicode-property-regex","dependencies":14,"distinctDependencies":13,"description":"Compile Unicode property escapes in Unicode regular expressions to ES5."}
+{"name":"@babel/plugin-proposal-unicode-property-regex","version":"7.4.4","directDependencies":3,"dependencies":14,"distinctDependencies":13,"description":"Compile Unicode property escapes in Unicode regular expressions to ES5."}

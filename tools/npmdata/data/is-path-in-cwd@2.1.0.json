@@ -1,1 +1,1 @@
-{"name":"is-path-in-cwd","dependencies":2,"distinctDependencies":2,"description":"Check if a path is in the current working directory"}
+{"name":"is-path-in-cwd","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Check if a path is in the current working directory"}

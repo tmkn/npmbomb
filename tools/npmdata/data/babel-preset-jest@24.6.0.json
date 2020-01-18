@@ -1,1 +1,1 @@
-{"name":"babel-preset-jest","dependencies":8,"distinctDependencies":8,"description":"> Babel preset for all Jest plugins. This preset is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."}
+{"name":"babel-preset-jest","version":"24.6.0","directDependencies":2,"dependencies":8,"distinctDependencies":8,"description":"> Babel preset for all Jest plugins. This preset is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."}

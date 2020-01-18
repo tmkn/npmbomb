@@ -1,1 +1,1 @@
-{"name":"broccoli-merge-trees","dependencies":69,"distinctDependencies":32,"description":"Broccoli plugin to merge multiple trees into one"}
+{"name":"broccoli-merge-trees","version":"3.0.2","directDependencies":2,"dependencies":69,"distinctDependencies":32,"description":"Broccoli plugin to merge multiple trees into one"}

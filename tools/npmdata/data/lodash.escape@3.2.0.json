@@ -1,1 +1,1 @@
-{"name":"lodash.escape","dependencies":1,"distinctDependencies":1,"description":"The lodash method `_.escape` exported as a module."}
+{"name":"lodash.escape","version":"3.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"The lodash method `_.escape` exported as a module."}

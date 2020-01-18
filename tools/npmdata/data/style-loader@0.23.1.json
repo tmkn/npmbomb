@@ -1,1 +1,1 @@
-{"name":"style-loader","dependencies":14,"distinctDependencies":14,"description":"style loader module for webpack"}
+{"name":"style-loader","version":"0.23.1","directDependencies":2,"dependencies":14,"distinctDependencies":14,"description":"style loader module for webpack"}

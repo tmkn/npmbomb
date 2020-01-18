@@ -1,1 +1,1 @@
-{"name":"original","dependencies":3,"distinctDependencies":3,"description":"Generate the origin from an URL or check if two URL/Origins are the same"}
+{"name":"original","version":"1.0.2","directDependencies":1,"dependencies":3,"distinctDependencies":3,"description":"Generate the origin from an URL or check if two URL/Origins are the same"}

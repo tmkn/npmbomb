@@ -1,1 +1,1 @@
-{"name":"stack-utils","dependencies":0,"distinctDependencies":0,"description":"Captures and cleans stack traces"}
+{"name":"stack-utils","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Captures and cleans stack traces"}

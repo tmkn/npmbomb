@@ -1,1 +1,1 @@
-{"name":"parse-json","dependencies":2,"distinctDependencies":2,"description":"Parse JSON with more helpful errors"}
+{"name":"parse-json","version":"2.2.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Parse JSON with more helpful errors"}

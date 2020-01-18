@@ -1,1 +1,1 @@
-{"name":"function-bind","dependencies":0,"distinctDependencies":0,"description":"Implementation of Function.prototype.bind"}
+{"name":"function-bind","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Implementation of Function.prototype.bind"}

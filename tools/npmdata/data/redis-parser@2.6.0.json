@@ -1,1 +1,1 @@
-{"name":"redis-parser","dependencies":0,"distinctDependencies":0,"description":"Javascript Redis protocol (RESP) parser"}
+{"name":"redis-parser","version":"2.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Javascript Redis protocol (RESP) parser"}

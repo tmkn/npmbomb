@@ -2,6 +2,7 @@
 import { jsx, css } from "@emotion/core";
 
 import { mq, sansSerifFont, textColor, secondaryColor } from "../../../css";
+import { TextLink } from "../link/TextLink";
 
 const footerStyle = css({
     [mq[0]]: {
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
     return (
         <div css={footerStyle}>
             <span>
-                hecho con ♥️ por <a href="https://twitter.com/tmkndev">@tmkndev</a>
+                hecho con ♥️ por <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
             </span>
         </div>
     );

@@ -1,1 +1,1 @@
-{"name":"babel-template","dependencies":46,"distinctDependencies":25,"description":"Generate an AST from a string template."}
+{"name":"babel-template","version":"6.26.0","directDependencies":5,"dependencies":46,"distinctDependencies":25,"description":"Generate an AST from a string template."}

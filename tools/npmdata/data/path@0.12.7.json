@@ -1,1 +1,1 @@
-{"name":"path","dependencies":3,"distinctDependencies":3,"description":"Node.JS path module"}
+{"name":"path","version":"0.12.7","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Node.JS path module"}

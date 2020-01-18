@@ -1,1 +1,1 @@
-{"name":"fast-ordered-set","dependencies":1,"distinctDependencies":1,"description":"quick and dirty ordered-set"}
+{"name":"fast-ordered-set","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"quick and dirty ordered-set"}

@@ -1,1 +1,1 @@
-{"name":"diagnostics","dependencies":13,"distinctDependencies":13,"description":"Tools for debugging your node.js modules and event loop"}
+{"name":"diagnostics","version":"1.1.1","directDependencies":3,"dependencies":13,"distinctDependencies":13,"description":"Tools for debugging your node.js modules and event loop"}

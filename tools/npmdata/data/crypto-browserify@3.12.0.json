@@ -1,1 +1,1 @@
-{"name":"crypto-browserify","dependencies":557,"distinctDependencies":33,"description":"implementation of crypto for the browser"}
+{"name":"crypto-browserify","version":"3.12.0","directDependencies":11,"dependencies":557,"distinctDependencies":33,"description":"implementation of crypto for the browser"}

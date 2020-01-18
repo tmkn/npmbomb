@@ -1,1 +1,1 @@
-{"name":"ajv","dependencies":5,"distinctDependencies":5,"description":"Another JSON Schema Validator"}
+{"name":"ajv","version":"6.10.0","directDependencies":4,"dependencies":5,"distinctDependencies":5,"description":"Another JSON Schema Validator"}

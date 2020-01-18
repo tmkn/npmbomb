@@ -1,1 +1,1 @@
-{"name":"callsites","dependencies":0,"distinctDependencies":0,"description":"Get callsites from the V8 stack trace API"}
+{"name":"callsites","version":"3.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get callsites from the V8 stack trace API"}

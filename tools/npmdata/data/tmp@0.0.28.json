@@ -1,1 +1,1 @@
-{"name":"tmp","dependencies":1,"distinctDependencies":1,"description":"Temporary file and directory creator"}
+{"name":"tmp","version":"0.0.28","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Temporary file and directory creator"}

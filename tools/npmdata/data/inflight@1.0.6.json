@@ -1,1 +1,1 @@
-{"name":"inflight","dependencies":3,"distinctDependencies":2,"description":"Add callbacks to requests in flight to avoid async duplication"}
+{"name":"inflight","version":"1.0.6","directDependencies":2,"dependencies":3,"distinctDependencies":2,"description":"Add callbacks to requests in flight to avoid async duplication"}

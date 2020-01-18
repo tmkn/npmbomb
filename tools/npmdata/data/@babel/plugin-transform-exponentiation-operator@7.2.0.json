@@ -1,1 +1,1 @@
-{"name":"@babel/plugin-transform-exponentiation-operator","dependencies":73,"distinctDependencies":30,"description":"Compile exponentiation operator to ES5"}
+{"name":"@babel/plugin-transform-exponentiation-operator","version":"7.2.0","directDependencies":2,"dependencies":73,"distinctDependencies":30,"description":"Compile exponentiation operator to ES5"}

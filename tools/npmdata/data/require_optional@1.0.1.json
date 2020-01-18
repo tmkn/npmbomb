@@ -1,1 +1,1 @@
-{"name":"require_optional","dependencies":2,"distinctDependencies":2,"description":"Allows you declare optionalPeerDependencies that can be satisfied by the top level module but ignored if they are not."}
+{"name":"require_optional","version":"1.0.1","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Allows you declare optionalPeerDependencies that can be satisfied by the top level module but ignored if they are not."}

@@ -1,1 +1,1 @@
-{"name":"lcid","dependencies":1,"distinctDependencies":1,"description":"Mapping between standard locale identifiers and Windows locale identifiers (LCID)"}
+{"name":"lcid","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Mapping between standard locale identifiers and Windows locale identifiers (LCID)"}

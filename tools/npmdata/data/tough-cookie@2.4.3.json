@@ -1,1 +1,1 @@
-{"name":"tough-cookie","dependencies":2,"distinctDependencies":2,"description":"RFC6265 Cookies and Cookie Jar for node.js"}
+{"name":"tough-cookie","version":"2.4.3","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"RFC6265 Cookies and Cookie Jar for node.js"}

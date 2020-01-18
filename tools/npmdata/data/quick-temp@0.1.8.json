@@ -1,1 +1,1 @@
-{"name":"quick-temp","dependencies":19,"distinctDependencies":16,"description":"Create and remove temporary directories with minimal effort"}
+{"name":"quick-temp","version":"0.1.8","directDependencies":3,"dependencies":19,"distinctDependencies":16,"description":"Create and remove temporary directories with minimal effort"}

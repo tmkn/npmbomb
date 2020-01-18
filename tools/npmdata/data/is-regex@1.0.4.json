@@ -1,1 +1,1 @@
-{"name":"is-regex","dependencies":2,"distinctDependencies":2,"description":"Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTag"}
+{"name":"is-regex","version":"1.0.4","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTag"}

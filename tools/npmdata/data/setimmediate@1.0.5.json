@@ -1,1 +1,1 @@
-{"name":"setimmediate","dependencies":0,"distinctDependencies":0,"description":"A shim for the setImmediate efficient script yielding API"}
+{"name":"setimmediate","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A shim for the setImmediate efficient script yielding API"}

@@ -1,1 +1,1 @@
-{"name":"babel-types","dependencies":6,"distinctDependencies":6,"description":"Babel Types is a Lodash-esque utility library for AST nodes"}
+{"name":"babel-types","version":"6.26.0","directDependencies":4,"dependencies":6,"distinctDependencies":6,"description":"Babel Types is a Lodash-esque utility library for AST nodes"}

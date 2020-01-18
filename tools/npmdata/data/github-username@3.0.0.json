@@ -1,1 +1,1 @@
-{"name":"github-username","dependencies":16,"distinctDependencies":16,"description":"Get a GitHub username from an email address"}
+{"name":"github-username","version":"3.0.0","directDependencies":1,"dependencies":16,"distinctDependencies":16,"description":"Get a GitHub username from an email address"}

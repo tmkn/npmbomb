@@ -1,1 +1,1 @@
-{"name":"redis","dependencies":3,"distinctDependencies":3,"description":"Redis client library"}
+{"name":"redis","version":"2.8.0","directDependencies":3,"dependencies":3,"distinctDependencies":3,"description":"Redis client library"}

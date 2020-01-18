@@ -1,1 +1,1 @@
-{"name":"slice-ansi","dependencies":5,"distinctDependencies":5,"description":"Slice a string with ANSI escape codes"}
+{"name":"slice-ansi","version":"2.1.0","directDependencies":3,"dependencies":5,"distinctDependencies":5,"description":"Slice a string with ANSI escape codes"}

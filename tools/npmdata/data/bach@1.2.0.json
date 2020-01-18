@@ -1,1 +1,1 @@
-{"name":"bach","dependencies":33,"distinctDependencies":18,"description":"Compose your async functions with elegance."}
+{"name":"bach","version":"1.2.0","directDependencies":9,"dependencies":33,"distinctDependencies":18,"description":"Compose your async functions with elegance."}

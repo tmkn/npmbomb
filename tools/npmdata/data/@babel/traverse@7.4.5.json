@@ -1,1 +1,1 @@
-{"name":"@babel/traverse","dependencies":61,"distinctDependencies":26,"description":"The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes"}
+{"name":"@babel/traverse","version":"7.4.5","directDependencies":9,"dependencies":61,"distinctDependencies":26,"description":"The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes"}

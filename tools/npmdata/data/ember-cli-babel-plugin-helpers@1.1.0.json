@@ -1,1 +1,1 @@
-{"name":"ember-cli-babel-plugin-helpers","dependencies":0,"distinctDependencies":0,"description":"Utilities for managing installed Babel plugins in an Ember app or addon"}
+{"name":"ember-cli-babel-plugin-helpers","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Utilities for managing installed Babel plugins in an Ember app or addon"}

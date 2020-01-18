@@ -1,1 +1,1 @@
-{"name":"sass-graph","dependencies":94,"distinctDependencies":62,"description":"Parse sass files and extract a graph of imports"}
+{"name":"sass-graph","version":"2.2.4","directDependencies":4,"dependencies":94,"distinctDependencies":62,"description":"Parse sass files and extract a graph of imports"}

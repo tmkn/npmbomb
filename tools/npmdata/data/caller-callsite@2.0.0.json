@@ -1,1 +1,1 @@
-{"name":"caller-callsite","dependencies":1,"distinctDependencies":1,"description":"Get the callsite of the caller function"}
+{"name":"caller-callsite","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Get the callsite of the caller function"}

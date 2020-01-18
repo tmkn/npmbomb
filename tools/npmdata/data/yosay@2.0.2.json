@@ -1,1 +1,1 @@
-{"name":"yosay","dependencies":32,"distinctDependencies":24,"description":"Tell Yeoman what to say"}
+{"name":"yosay","version":"2.0.2","directDependencies":9,"dependencies":32,"distinctDependencies":24,"description":"Tell Yeoman what to say"}

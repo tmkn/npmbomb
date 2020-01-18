@@ -1,1 +1,1 @@
-{"name":"symlink-or-copy","dependencies":0,"distinctDependencies":0,"description":"Symlink files or directories, falling back to copying on Windows"}
+{"name":"symlink-or-copy","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Symlink files or directories, falling back to copying on Windows"}

@@ -1,1 +1,1 @@
-{"name":"parseuri","dependencies":2,"distinctDependencies":2,"description":"Method that parses a URI and returns an array of its components"}
+{"name":"parseuri","version":"0.0.5","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Method that parses a URI and returns an array of its components"}

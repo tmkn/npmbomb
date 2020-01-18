@@ -1,1 +1,1 @@
-{"name":"ieee754","dependencies":0,"distinctDependencies":0,"description":"Read/write IEEE754 floating point numbers from/to a Buffer or array-like object"}
+{"name":"ieee754","version":"1.1.13","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Read/write IEEE754 floating point numbers from/to a Buffer or array-like object"}

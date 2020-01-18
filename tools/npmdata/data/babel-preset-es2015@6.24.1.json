@@ -1,1 +1,1 @@
-{"name":"babel-preset-es2015","dependencies":1497,"distinctDependencies":66,"description":"Babel preset for all es2015 plugins."}
+{"name":"babel-preset-es2015","version":"6.24.1","directDependencies":24,"dependencies":1497,"distinctDependencies":66,"description":"Babel preset for all es2015 plugins."}

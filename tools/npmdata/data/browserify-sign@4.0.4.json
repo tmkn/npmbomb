@@ -1,1 +1,1 @@
-{"name":"browserify-sign","dependencies":202,"distinctDependencies":24,"description":"adds node crypto signing for browsers"}
+{"name":"browserify-sign","version":"4.0.4","directDependencies":7,"dependencies":202,"distinctDependencies":24,"description":"adds node crypto signing for browsers"}

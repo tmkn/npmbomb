@@ -1,1 +1,1 @@
-{"name":"ansi-regex","dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching ANSI escape codes"}
+{"name":"ansi-regex","version":"4.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching ANSI escape codes"}

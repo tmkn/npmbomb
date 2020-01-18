@@ -1,1 +1,1 @@
-{"name":"import-cwd","dependencies":2,"distinctDependencies":2,"description":"Import a module like with `require()` but from the current working directory"}
+{"name":"import-cwd","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Import a module like with `require()` but from the current working directory"}

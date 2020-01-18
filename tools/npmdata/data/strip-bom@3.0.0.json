@@ -1,1 +1,1 @@
-{"name":"strip-bom","dependencies":0,"distinctDependencies":0,"description":"Strip UTF-8 byte order mark (BOM) from a string"}
+{"name":"strip-bom","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Strip UTF-8 byte order mark (BOM) from a string"}

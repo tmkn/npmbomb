@@ -1,1 +1,1 @@
-{"name":"body-parser","dependencies":31,"distinctDependencies":21,"description":"Node.js body parsing middleware"}
+{"name":"body-parser","version":"1.19.0","directDependencies":10,"dependencies":31,"distinctDependencies":21,"description":"Node.js body parsing middleware"}

@@ -1,1 +1,1 @@
-{"name":"parse-asn1","dependencies":128,"distinctDependencies":16,"description":"utility library for parsing asn1 files for use with browserify-sign."}
+{"name":"parse-asn1","version":"5.1.4","directDependencies":6,"dependencies":128,"distinctDependencies":16,"description":"utility library for parsing asn1 files for use with browserify-sign."}

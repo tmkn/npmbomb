@@ -1,1 +1,1 @@
-{"name":"brace-expansion","dependencies":2,"distinctDependencies":2,"description":"Brace expansion as known from sh/bash"}
+{"name":"brace-expansion","version":"1.1.11","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Brace expansion as known from sh/bash"}

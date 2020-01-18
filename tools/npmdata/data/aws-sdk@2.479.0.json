@@ -1,1 +1,1 @@
-{"name":"aws-sdk","dependencies":16,"distinctDependencies":15,"description":"AWS SDK for JavaScript"}
+{"name":"aws-sdk","version":"2.479.0","directDependencies":9,"dependencies":16,"distinctDependencies":15,"description":"AWS SDK for JavaScript"}

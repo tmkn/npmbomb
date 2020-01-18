@@ -1,1 +1,1 @@
-{"name":"dns-txt","dependencies":1,"distinctDependencies":1,"description":"Encode/decode DNS-SD TXT record RDATA fields"}
+{"name":"dns-txt","version":"2.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Encode/decode DNS-SD TXT record RDATA fields"}

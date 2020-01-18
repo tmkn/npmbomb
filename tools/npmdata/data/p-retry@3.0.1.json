@@ -1,1 +1,1 @@
-{"name":"p-retry","dependencies":1,"distinctDependencies":1,"description":"Retry a promise-returning or async function"}
+{"name":"p-retry","version":"3.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Retry a promise-returning or async function"}

@@ -13,7 +13,7 @@ exports[`<ClickLink /> matches snapshot 1`] = `
 exports[`<TextLink /> matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="css-1qgk5q"
+    class="css-1ka21sq"
     href="abc"
   >
     Hello World

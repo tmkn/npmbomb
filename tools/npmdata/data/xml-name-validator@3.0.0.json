@@ -1,1 +1,1 @@
-{"name":"xml-name-validator","dependencies":0,"distinctDependencies":0,"description":"Validates whether a string matches the production for an XML name or qualified name"}
+{"name":"xml-name-validator","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Validates whether a string matches the production for an XML name or qualified name"}

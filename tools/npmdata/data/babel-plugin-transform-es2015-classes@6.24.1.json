@@ -1,1 +1,1 @@
-{"name":"babel-plugin-transform-es2015-classes","dependencies":431,"distinctDependencies":31,"description":"Compile ES2015 classes to ES5"}
+{"name":"babel-plugin-transform-es2015-classes","version":"6.24.1","directDependencies":9,"dependencies":431,"distinctDependencies":31,"description":"Compile ES2015 classes to ES5"}

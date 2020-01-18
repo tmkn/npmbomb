@@ -1,1 +1,1 @@
-{"name":"css-loader","dependencies":122,"distinctDependencies":36,"description":"css loader module for webpack"}
+{"name":"css-loader","version":"3.0.0","directDependencies":12,"dependencies":122,"distinctDependencies":36,"description":"css loader module for webpack"}

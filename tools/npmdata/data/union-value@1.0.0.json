@@ -1,1 +1,1 @@
-{"name":"union-value","dependencies":12,"distinctDependencies":10,"description":"Set an array of unique values as the property of an object. Supports setting deeply nested properties using using object-paths/dot notation."}
+{"name":"union-value","version":"1.0.0","directDependencies":4,"dependencies":12,"distinctDependencies":10,"description":"Set an array of unique values as the property of an object. Supports setting deeply nested properties using using object-paths/dot notation."}

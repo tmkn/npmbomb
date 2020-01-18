@@ -1,1 +1,1 @@
-{"name":"babel-generator","dependencies":22,"distinctDependencies":15,"description":"Turns an AST into code."}
+{"name":"babel-generator","version":"6.26.1","directDependencies":8,"dependencies":22,"distinctDependencies":15,"description":"Turns an AST into code."}

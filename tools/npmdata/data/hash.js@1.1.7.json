@@ -1,1 +1,1 @@
-{"name":"hash.js","dependencies":2,"distinctDependencies":2,"description":"Various hash functions that could be run by both browser and node"}
+{"name":"hash.js","version":"1.1.7","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Various hash functions that could be run by both browser and node"}

@@ -1,1 +1,1 @@
-{"name":"stealthy-require","dependencies":0,"distinctDependencies":0,"description":"The closest you can get to require something with bypassing the require cache"}
+{"name":"stealthy-require","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The closest you can get to require something with bypassing the require cache"}

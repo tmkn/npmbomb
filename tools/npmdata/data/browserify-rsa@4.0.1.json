@@ -1,1 +1,1 @@
-{"name":"browserify-rsa","dependencies":3,"distinctDependencies":3,"description":"RSA for browserify"}
+{"name":"browserify-rsa","version":"4.0.1","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"RSA for browserify"}

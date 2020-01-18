@@ -1,1 +1,1 @@
-{"name":"dir-glob","dependencies":3,"distinctDependencies":3,"description":"Convert directories to glob compatible strings"}
+{"name":"dir-glob","version":"2.0.0","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Convert directories to glob compatible strings"}

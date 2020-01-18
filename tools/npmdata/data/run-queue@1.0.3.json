@@ -1,1 +1,1 @@
-{"name":"run-queue","dependencies":1,"distinctDependencies":1,"description":"A promise based, dynamic priority queue runner, with concurrency limiting."}
+{"name":"run-queue","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"A promise based, dynamic priority queue runner, with concurrency limiting."}

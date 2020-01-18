@@ -1,1 +1,1 @@
-{"name":"doctrine","dependencies":2,"distinctDependencies":2,"description":"JSDoc parser"}
+{"name":"doctrine","version":"1.5.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"JSDoc parser"}

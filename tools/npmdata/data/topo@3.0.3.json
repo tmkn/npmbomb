@@ -1,1 +1,1 @@
-{"name":"topo","dependencies":1,"distinctDependencies":1,"description":"Topological sorting with grouping support"}
+{"name":"topo","version":"3.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Topological sorting with grouping support"}

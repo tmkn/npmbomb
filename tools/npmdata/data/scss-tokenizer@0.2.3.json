@@ -1,1 +1,1 @@
-{"name":"scss-tokenizer","dependencies":3,"distinctDependencies":3,"description":"A tokenzier for Sass' SCSS syntax"}
+{"name":"scss-tokenizer","version":"0.2.3","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"A tokenzier for Sass' SCSS syntax"}

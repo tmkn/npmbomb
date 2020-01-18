@@ -1,1 +1,1 @@
-{"name":"enabled","dependencies":1,"distinctDependencies":1,"description":"Check if a certain debug flag is enabled."}
+{"name":"enabled","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Check if a certain debug flag is enabled."}

@@ -1,1 +1,1 @@
-{"name":"@babel/helper-module-imports","dependencies":4,"distinctDependencies":4,"description":"Babel helper functions for inserting module loads"}
+{"name":"@babel/helper-module-imports","version":"7.0.0","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Babel helper functions for inserting module loads"}

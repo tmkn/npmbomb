@@ -1,1 +1,1 @@
-{"name":"parseqs","dependencies":2,"distinctDependencies":2,"description":"Provides methods for parsing a query string into an object, and vice versa."}
+{"name":"parseqs","version":"0.0.5","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Provides methods for parsing a query string into an object, and vice versa."}

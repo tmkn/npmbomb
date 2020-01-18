@@ -1,1 +1,1 @@
-{"name":"ssri","dependencies":1,"distinctDependencies":1,"description":"Standard Subresource Integrity library --  parses, serializes, generates, and verifies integrity metadata according to the SRI spec."}
+{"name":"ssri","version":"6.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Standard Subresource Integrity library --  parses, serializes, generates, and verifies integrity metadata according to the SRI spec."}

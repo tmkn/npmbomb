@@ -10,7 +10,7 @@ import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
-import { ResultBox } from "./ResultBox";
+import { ResultBox, Summary } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
@@ -58,9 +58,11 @@ export function getNameVersion(pkg: string): [string, string] {
 
 export interface IPackageInfo {
     name: string;
+    version: string;
     description: string;
     dependencies: number;
     distinctDependencies: number;
+    directDependencies: number;
 }
 
 async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
@@ -95,9 +97,11 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
     const [error, setError] = useState<boolean>(false);
     const [data, setData] = useState<IPackageInfo>({
         name: ``,
+        version: ``,
         description: ``,
         distinctDependencies: 0,
-        dependencies: 0
+        dependencies: 0,
+        directDependencies: 0
     });
 
     async function loadData() {
@@ -142,6 +146,7 @@ const Package: React.FC = () => {
     const [userGuess, setUserGuess] = useState<number | undefined>();
     const { data: pkgInfo, loading, error } = useDataLoader(pkgName, scope);
     const guessContext: IGuessContext = {
+        package: pkgInfo,
         guess: undefined,
         setUserGuess: value => setUserGuess(value)
     };
@@ -225,15 +230,11 @@ const Package: React.FC = () => {
                             </div>
                         </Center>
                     )}
-                    {userGuess !== pkgInfo.dependencies && (
-                        <React.Fragment>
-                            <ResultBox
-                                guess={userGuess}
-                                actual={pkgInfo.dependencies}
-                                distinct={pkgInfo.distinctDependencies}
-                            />
-                        </React.Fragment>
-                    )}
+                    <ResultBox
+                        guess={userGuess}
+                        actual={pkgInfo.dependencies}
+                        distinct={pkgInfo.distinctDependencies}
+                    />
                     {appState.inGameMode && typeof userGuess !== "undefined" && (
                         <div css={nextStyle}>
                             <Center>

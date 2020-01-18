@@ -1,1 +1,1 @@
-{"name":"detect-conflict","dependencies":0,"distinctDependencies":0,"description":"Small utility library that check if a new file content can be merged safely in the on-disk existing file."}
+{"name":"detect-conflict","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Small utility library that check if a new file content can be merged safely in the on-disk existing file."}

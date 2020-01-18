@@ -1,1 +1,1 @@
-{"name":"ret","dependencies":0,"distinctDependencies":0,"description":"Tokenizes a string that represents a regular expression."}
+{"name":"ret","version":"0.1.15","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tokenizes a string that represents a regular expression."}

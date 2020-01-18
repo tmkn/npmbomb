@@ -1,1 +1,1 @@
-{"name":"amd-name-resolver","dependencies":2,"distinctDependencies":2,"description":"AMD module name resolver algorithm"}
+{"name":"amd-name-resolver","version":"1.3.1","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"AMD module name resolver algorithm"}

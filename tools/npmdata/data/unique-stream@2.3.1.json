@@ -1,1 +1,1 @@
-{"name":"unique-stream","dependencies":14,"distinctDependencies":12,"description":"node.js through stream that emits a unique stream of objects based on criteria"}
+{"name":"unique-stream","version":"2.3.1","directDependencies":2,"dependencies":14,"distinctDependencies":12,"description":"node.js through stream that emits a unique stream of objects based on criteria"}

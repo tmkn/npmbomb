@@ -1,1 +1,1 @@
-{"name":"esrecurse","dependencies":1,"distinctDependencies":1,"description":"ECMAScript AST recursive visitor"}
+{"name":"esrecurse","version":"4.2.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"ECMAScript AST recursive visitor"}

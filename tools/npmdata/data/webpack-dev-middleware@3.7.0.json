@@ -1,1 +1,1 @@
-{"name":"webpack-dev-middleware","dependencies":17,"distinctDependencies":16,"description":"A development middleware for webpack"}
+{"name":"webpack-dev-middleware","version":"3.7.0","directDependencies":4,"dependencies":17,"distinctDependencies":16,"description":"A development middleware for webpack"}

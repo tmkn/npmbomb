@@ -1,1 +1,1 @@
-{"name":"stream-browserify","dependencies":10,"distinctDependencies":8,"description":"the stream module from node core for browsers"}
+{"name":"stream-browserify","version":"2.0.2","directDependencies":2,"dependencies":10,"distinctDependencies":8,"description":"the stream module from node core for browsers"}

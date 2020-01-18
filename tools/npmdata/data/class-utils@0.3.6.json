@@ -1,1 +1,1 @@
-{"name":"class-utils","dependencies":34,"distinctDependencies":12,"description":"Utils for working with JavaScript classes and prototype methods."}
+{"name":"class-utils","version":"0.3.6","directDependencies":4,"dependencies":34,"distinctDependencies":12,"description":"Utils for working with JavaScript classes and prototype methods."}

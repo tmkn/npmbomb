@@ -6,6 +6,32 @@ exports[`<ResultBox /> matches snapshot 1`] = `
     class="css-7emoiw"
   >
     <h2>
+      Summary
+    </h2>
+    <p
+      class="css-1axajee"
+    >
+      <a
+        class="css-1ka21sq"
+        href="google.at"
+      >
+        @
+      </a>
+       defines 
+      <b>
+        0 direct dependencies
+      </b>
+       which explode into 
+      <b>
+        0 dependencies overall
+      </b>
+      , resulting in 
+      <b>
+        0 distinct dependencies
+      </b>
+      .
+    </p>
+    <h2>
       Results
     </h2>
     <div
@@ -30,14 +56,6 @@ exports[`<ResultBox /> matches snapshot 1`] = `
         class="css-12eoq8x"
       >
         45
-      </span>
-      <div>
-        Distinct:
-      </div>
-      <span
-        class="css-12eoq8x"
-      >
-        123
       </span>
     </div>
     <div

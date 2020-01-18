@@ -1,1 +1,1 @@
-{"name":"url-parse-lax","dependencies":1,"distinctDependencies":1,"description":"url.parse() with support for protocol-less URLs & IPs"}
+{"name":"url-parse-lax","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"url.parse() with support for protocol-less URLs & IPs"}

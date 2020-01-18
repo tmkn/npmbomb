@@ -1,1 +1,1 @@
-{"name":"superagent","dependencies":21,"distinctDependencies":21,"description":"elegant & feature rich browser / node HTTP with a fluent API"}
+{"name":"superagent","version":"5.1.0","directDependencies":11,"dependencies":21,"distinctDependencies":21,"description":"elegant & feature rich browser / node HTTP with a fluent API"}

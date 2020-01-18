@@ -1,1 +1,1 @@
-{"name":"nanomatch","dependencies":181,"distinctDependencies":70,"description":"Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but complete Bash 4.3 wildcard support only (no support for exglobs, posix brackets or braces)"}
+{"name":"nanomatch","version":"1.2.13","directDependencies":11,"dependencies":181,"distinctDependencies":70,"description":"Fast, minimal glob matcher for node.js. Similar to micromatch, minimatch and multimatch, but complete Bash 4.3 wildcard support only (no support for exglobs, posix brackets or braces)"}

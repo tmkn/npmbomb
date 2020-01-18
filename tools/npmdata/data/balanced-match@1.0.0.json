@@ -1,1 +1,1 @@
-{"name":"balanced-match","dependencies":0,"distinctDependencies":0,"description":"Match balanced character pairs, like \"{\" and \"}\""}
+{"name":"balanced-match","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Match balanced character pairs, like \"{\" and \"}\""}

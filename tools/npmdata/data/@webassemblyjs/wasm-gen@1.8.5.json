@@ -1,1 +1,1 @@
-{"name":"@webassemblyjs/wasm-gen","dependencies":22,"distinctDependencies":15,"description":"WebAssembly binary format printer"}
+{"name":"@webassemblyjs/wasm-gen","version":"1.8.5","directDependencies":5,"dependencies":22,"distinctDependencies":15,"description":"WebAssembly binary format printer"}

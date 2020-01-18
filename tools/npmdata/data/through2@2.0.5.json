@@ -1,1 +1,1 @@
-{"name":"through2","dependencies":10,"distinctDependencies":9,"description":"A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise"}
+{"name":"through2","version":"2.0.5","directDependencies":2,"dependencies":10,"distinctDependencies":9,"description":"A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise"}

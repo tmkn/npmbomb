@@ -1,1 +1,1 @@
-{"name":"broccoli-source","dependencies":0,"distinctDependencies":0,"description":"Broccoli plugin for referring to source directories on the file system"}
+{"name":"broccoli-source","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Broccoli plugin for referring to source directories on the file system"}

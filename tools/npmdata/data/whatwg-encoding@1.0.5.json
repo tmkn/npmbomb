@@ -1,1 +1,1 @@
-{"name":"whatwg-encoding","dependencies":2,"distinctDependencies":2,"description":"Decode strings according to the WHATWG Encoding Standard"}
+{"name":"whatwg-encoding","version":"1.0.5","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Decode strings according to the WHATWG Encoding Standard"}

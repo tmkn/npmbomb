@@ -1,1 +1,1 @@
-{"name":"tr46","dependencies":1,"distinctDependencies":1,"description":"An implementation of the Unicode TR46 spec"}
+{"name":"tr46","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"An implementation of the Unicode TR46 spec"}

@@ -1,1 +1,1 @@
-{"name":"relateurl","dependencies":0,"distinctDependencies":0,"description":"Minify URLs by converting them from absolute to relative."}
+{"name":"relateurl","version":"0.2.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Minify URLs by converting them from absolute to relative."}

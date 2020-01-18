@@ -1,1 +1,1 @@
-{"name":"yargs","dependencies":74,"distinctDependencies":45,"description":"yargs the modern, pirate-themed, successor to optimist."}
+{"name":"yargs","version":"7.1.0","directDependencies":13,"dependencies":74,"distinctDependencies":45,"description":"yargs the modern, pirate-themed, successor to optimist."}

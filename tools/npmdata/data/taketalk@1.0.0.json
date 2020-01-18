@@ -1,1 +1,1 @@
-{"name":"taketalk","dependencies":2,"distinctDependencies":2,"description":"Ever wanted a bin for your node module?"}
+{"name":"taketalk","version":"1.0.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Ever wanted a bin for your node module?"}

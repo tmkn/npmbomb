@@ -1,1 +1,1 @@
-{"name":"jws","dependencies":6,"distinctDependencies":4,"description":"Implementation of JSON Web Signatures"}
+{"name":"jws","version":"3.2.2","directDependencies":2,"dependencies":6,"distinctDependencies":4,"description":"Implementation of JSON Web Signatures"}

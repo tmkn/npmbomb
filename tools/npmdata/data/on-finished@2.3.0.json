@@ -1,1 +1,1 @@
-{"name":"on-finished","dependencies":1,"distinctDependencies":1,"description":"Execute a callback when a request closes, finishes, or errors"}
+{"name":"on-finished","version":"2.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Execute a callback when a request closes, finishes, or errors"}

@@ -1,1 +1,1 @@
-{"name":"gulp-util","dependencies":68,"distinctDependencies":58,"description":"Utility functions for gulp plugins"}
+{"name":"gulp-util","version":"3.0.8","directDependencies":18,"dependencies":68,"distinctDependencies":58,"description":"Utility functions for gulp plugins"}

@@ -1,1 +1,1 @@
-{"name":"prop-types","dependencies":4,"distinctDependencies":4,"description":"Runtime type checking for React props and similar objects."}
+{"name":"prop-types","version":"15.7.2","directDependencies":3,"dependencies":4,"distinctDependencies":4,"description":"Runtime type checking for React props and similar objects."}

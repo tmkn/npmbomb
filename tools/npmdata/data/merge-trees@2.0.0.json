@@ -1,1 +1,1 @@
-{"name":"merge-trees","dependencies":29,"distinctDependencies":22,"description":"Incrementally merge directories."}
+{"name":"merge-trees","version":"2.0.0","directDependencies":2,"dependencies":29,"distinctDependencies":22,"description":"Incrementally merge directories."}

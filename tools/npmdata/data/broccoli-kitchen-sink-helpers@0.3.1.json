@@ -1,1 +1,1 @@
-{"name":"broccoli-kitchen-sink-helpers","dependencies":15,"distinctDependencies":12,"description":"Collection of helpers that need to be extracted into separate packages"}
+{"name":"broccoli-kitchen-sink-helpers","version":"0.3.1","directDependencies":2,"dependencies":15,"distinctDependencies":12,"description":"Collection of helpers that need to be extracted into separate packages"}

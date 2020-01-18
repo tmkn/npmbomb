@@ -1,1 +1,1 @@
-{"name":"text-hex","dependencies":0,"distinctDependencies":0,"description":"Generate a hex color from the given text"}
+{"name":"text-hex","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generate a hex color from the given text"}

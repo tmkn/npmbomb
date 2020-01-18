@@ -1,1 +1,1 @@
-{"name":"scheduler","dependencies":3,"distinctDependencies":3,"description":"Cooperative scheduler for the browser environment."}
+{"name":"scheduler","version":"0.13.6","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Cooperative scheduler for the browser environment."}

@@ -161,7 +161,7 @@ exports[`<Index /> matches snapshot 1`] = `
     >
       For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages. If you want a specific dependency or have an idea or just want to chat in general, you can contact me on Twitter 
       <a
-        class="css-1qgk5q"
+        class="css-1ka21sq"
         href="https://twitter.com/tmkndev"
       >
         @tmkndev
@@ -186,7 +186,7 @@ exports[`<Index /> matches snapshot 1`] = `
       style="display: none;"
     >
       <a
-        class="css-1qgk5q"
+        class="css-1ka21sq"
         href="https://github.com/tmkn/npmbomb"
       >
         Yes

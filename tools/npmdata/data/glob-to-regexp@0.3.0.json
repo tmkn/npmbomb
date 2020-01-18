@@ -1,1 +1,1 @@
-{"name":"glob-to-regexp","dependencies":0,"distinctDependencies":0,"description":"Convert globs to regular expressions"}
+{"name":"glob-to-regexp","version":"0.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert globs to regular expressions"}

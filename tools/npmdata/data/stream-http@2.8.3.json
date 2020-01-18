@@ -1,1 +1,1 @@
-{"name":"stream-http","dependencies":13,"distinctDependencies":11,"description":"Streaming http in the browser"}
+{"name":"stream-http","version":"2.8.3","directDependencies":5,"dependencies":13,"distinctDependencies":11,"description":"Streaming http in the browser"}

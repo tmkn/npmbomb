@@ -1,1 +1,1 @@
-{"name":"is-promise","dependencies":0,"distinctDependencies":0,"description":"Test whether an object looks like a promises-a+ promise"}
+{"name":"is-promise","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Test whether an object looks like a promises-a+ promise"}

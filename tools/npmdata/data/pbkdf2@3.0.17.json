@@ -1,1 +1,1 @@
-{"name":"pbkdf2","dependencies":61,"distinctDependencies":9,"description":"This library provides the functionality of PBKDF2 with the ability to use any supported hashing algorithm returned from crypto.getHashes()"}
+{"name":"pbkdf2","version":"3.0.17","directDependencies":5,"dependencies":61,"distinctDependencies":9,"description":"This library provides the functionality of PBKDF2 with the ability to use any supported hashing algorithm returned from crypto.getHashes()"}

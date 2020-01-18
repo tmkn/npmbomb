@@ -1,1 +1,1 @@
-{"name":"on-headers","dependencies":0,"distinctDependencies":0,"description":"Execute a listener when a response is about to write headers"}
+{"name":"on-headers","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Execute a listener when a response is about to write headers"}

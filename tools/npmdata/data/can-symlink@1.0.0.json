@@ -1,1 +1,1 @@
-{"name":"can-symlink","dependencies":2,"distinctDependencies":2,"description":"Utility module to determine if fs.symlink commands will succeed. Useful for win32 enviornments where special permission is required for symlinking."}
+{"name":"can-symlink","version":"1.0.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Utility module to determine if fs.symlink commands will succeed. Useful for win32 enviornments where special permission is required for symlinking."}

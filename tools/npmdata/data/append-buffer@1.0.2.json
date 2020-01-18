@@ -1,1 +1,1 @@
-{"name":"append-buffer","dependencies":1,"distinctDependencies":1,"description":"Append a buffer to another buffer ensuring to preserve line ending characters."}
+{"name":"append-buffer","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Append a buffer to another buffer ensuring to preserve line ending characters."}

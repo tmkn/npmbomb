@@ -1,1 +1,1 @@
-{"name":"through2-filter","dependencies":12,"distinctDependencies":10,"description":"A through2 to create an Array.prototype.filter analog for streams."}
+{"name":"through2-filter","version":"3.0.0","directDependencies":2,"dependencies":12,"distinctDependencies":10,"description":"A through2 to create an Array.prototype.filter analog for streams."}

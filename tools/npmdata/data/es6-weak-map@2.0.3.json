@@ -1,1 +1,1 @@
-{"name":"es6-weak-map","dependencies":77,"distinctDependencies":6,"description":"ECMAScript6 WeakMap polyfill"}
+{"name":"es6-weak-map","version":"2.0.3","directDependencies":4,"dependencies":77,"distinctDependencies":6,"description":"ECMAScript6 WeakMap polyfill"}

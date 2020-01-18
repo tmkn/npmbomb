@@ -1,1 +1,1 @@
-{"name":"babel-messages","dependencies":3,"distinctDependencies":3,"description":"Collection of debug messages used by Babel."}
+{"name":"babel-messages","version":"6.23.0","directDependencies":1,"dependencies":3,"distinctDependencies":3,"description":"Collection of debug messages used by Babel."}

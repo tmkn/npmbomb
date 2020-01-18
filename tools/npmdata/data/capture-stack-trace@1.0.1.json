@@ -1,1 +1,1 @@
-{"name":"capture-stack-trace","dependencies":0,"distinctDependencies":0,"description":"Error.captureStackTrace ponyfill"}
+{"name":"capture-stack-trace","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Error.captureStackTrace ponyfill"}

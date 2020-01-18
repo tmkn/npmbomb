@@ -1,1 +1,1 @@
-{"name":"ora","dependencies":26,"distinctDependencies":19,"description":"Elegant terminal spinner"}
+{"name":"ora","version":"3.4.0","directDependencies":6,"dependencies":26,"distinctDependencies":19,"description":"Elegant terminal spinner"}

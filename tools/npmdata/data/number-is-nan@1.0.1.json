@@ -1,1 +1,1 @@
-{"name":"number-is-nan","dependencies":0,"distinctDependencies":0,"description":"ES2015 Number.isNaN() ponyfill"}
+{"name":"number-is-nan","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 Number.isNaN() ponyfill"}

@@ -1,1 +1,1 @@
-{"name":"code-point-at","dependencies":0,"distinctDependencies":0,"description":"ES2015 `String#codePointAt()` ponyfill"}
+{"name":"code-point-at","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 `String#codePointAt()` ponyfill"}

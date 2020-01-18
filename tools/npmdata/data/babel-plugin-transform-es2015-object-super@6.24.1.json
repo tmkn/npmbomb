@@ -1,1 +1,1 @@
-{"name":"babel-plugin-transform-es2015-object-super","dependencies":110,"distinctDependencies":28,"description":"Compile ES2015 object super to ES5"}
+{"name":"babel-plugin-transform-es2015-object-super","version":"6.24.1","directDependencies":2,"dependencies":110,"distinctDependencies":28,"description":"Compile ES2015 object super to ES5"}

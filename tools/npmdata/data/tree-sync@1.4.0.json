@@ -1,1 +1,1 @@
-{"name":"tree-sync","dependencies":40,"distinctDependencies":31,"description":"A module for repeated efficient synchronizing two directories."}
+{"name":"tree-sync","version":"1.4.0","directDependencies":5,"dependencies":40,"distinctDependencies":31,"description":"A module for repeated efficient synchronizing two directories."}

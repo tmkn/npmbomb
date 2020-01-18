@@ -1,1 +1,1 @@
-{"name":"worker-farm","dependencies":2,"distinctDependencies":2,"description":"Distribute processing tasks to child processes with an über-simple API and baked-in durability & custom concurrency options."}
+{"name":"worker-farm","version":"1.7.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Distribute processing tasks to child processes with an über-simple API and baked-in durability & custom concurrency options."}

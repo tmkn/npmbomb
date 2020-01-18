@@ -1,1 +1,1 @@
-{"name":"autoprefixer","dependencies":27,"distinctDependencies":18,"description":"Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website"}
+{"name":"autoprefixer","version":"9.6.0","directDependencies":7,"dependencies":27,"distinctDependencies":18,"description":"Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website"}

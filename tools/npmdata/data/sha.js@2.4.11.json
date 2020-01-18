@@ -1,1 +1,1 @@
-{"name":"sha.js","dependencies":2,"distinctDependencies":2,"description":"Streamable SHA hashes in pure javascript"}
+{"name":"sha.js","version":"2.4.11","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Streamable SHA hashes in pure javascript"}

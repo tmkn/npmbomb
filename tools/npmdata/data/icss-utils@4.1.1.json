@@ -1,1 +1,1 @@
-{"name":"icss-utils","dependencies":11,"distinctDependencies":10,"description":"ICSS utils for postcss ast"}
+{"name":"icss-utils","version":"4.1.1","directDependencies":1,"dependencies":11,"distinctDependencies":10,"description":"ICSS utils for postcss ast"}

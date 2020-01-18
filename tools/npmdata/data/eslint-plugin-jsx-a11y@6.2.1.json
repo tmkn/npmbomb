@@ -1,1 +1,1 @@
-{"name":"eslint-plugin-jsx-a11y","dependencies":45,"distinctDependencies":19,"description":"Static AST checker for accessibility rules on JSX elements."}
+{"name":"eslint-plugin-jsx-a11y","version":"6.2.1","directDependencies":8,"dependencies":45,"distinctDependencies":19,"description":"Static AST checker for accessibility rules on JSX elements."}

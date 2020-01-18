@@ -1,1 +1,1 @@
-{"name":"no-case","dependencies":1,"distinctDependencies":1,"description":"Remove case from a string"}
+{"name":"no-case","version":"2.3.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Remove case from a string"}

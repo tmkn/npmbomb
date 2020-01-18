@@ -1,1 +1,1 @@
-{"name":"read-pkg-up","dependencies":27,"distinctDependencies":23,"description":"Read the closest package.json file"}
+{"name":"read-pkg-up","version":"5.0.0","directDependencies":2,"dependencies":27,"distinctDependencies":23,"description":"Read the closest package.json file"}

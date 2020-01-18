@@ -1,1 +1,1 @@
-{"name":"globule","dependencies":19,"distinctDependencies":12,"description":"An easy-to-use wildcard globbing library."}
+{"name":"globule","version":"1.2.1","directDependencies":3,"dependencies":19,"distinctDependencies":12,"description":"An easy-to-use wildcard globbing library."}

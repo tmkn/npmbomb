@@ -1,1 +1,1 @@
-{"name":"buffer-equal","dependencies":0,"distinctDependencies":0,"description":"return whether two buffers are equal"}
+{"name":"buffer-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"return whether two buffers are equal"}

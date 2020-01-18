@@ -1,1 +1,1 @@
-{"name":"fill-range","dependencies":11,"distinctDependencies":7,"description":"Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`"}
+{"name":"fill-range","version":"4.0.0","directDependencies":4,"dependencies":11,"distinctDependencies":7,"description":"Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`"}

@@ -1,1 +1,1 @@
-{"name":"fs-tree-diff","dependencies":9,"distinctDependencies":9,"description":"Backs out file tree changes"}
+{"name":"fs-tree-diff","version":"2.0.1","directDependencies":5,"dependencies":9,"distinctDependencies":9,"description":"Backs out file tree changes"}

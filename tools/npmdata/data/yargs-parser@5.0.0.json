@@ -1,1 +1,1 @@
-{"name":"yargs-parser","dependencies":1,"distinctDependencies":1,"description":"the mighty option parser used by yargs"}
+{"name":"yargs-parser","version":"5.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"the mighty option parser used by yargs"}

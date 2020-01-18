@@ -1,1 +1,1 @@
-{"name":"string-template","dependencies":0,"distinctDependencies":0,"description":"A simple string template function based on named or indexed arguments"}
+{"name":"string-template","version":"0.2.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A simple string template function based on named or indexed arguments"}

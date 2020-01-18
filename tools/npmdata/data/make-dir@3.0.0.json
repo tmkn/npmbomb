@@ -1,1 +1,1 @@
-{"name":"make-dir","dependencies":1,"distinctDependencies":1,"description":"Make a directory and its parents if needed - Think `mkdir -p`"}
+{"name":"make-dir","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Make a directory and its parents if needed - Think `mkdir -p`"}

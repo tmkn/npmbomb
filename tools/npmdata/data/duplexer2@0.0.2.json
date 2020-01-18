@@ -1,1 +1,1 @@
-{"name":"duplexer2","dependencies":5,"distinctDependencies":5,"description":"Like duplexer (http://npm.im/duplexer) but using streams2"}
+{"name":"duplexer2","version":"0.0.2","directDependencies":1,"dependencies":5,"distinctDependencies":5,"description":"Like duplexer (http://npm.im/duplexer) but using streams2"}

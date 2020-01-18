@@ -1,1 +1,1 @@
-{"name":"duplexify","dependencies":14,"distinctDependencies":12,"description":"Turn a writable and readable stream into a streams2 duplex stream with support for async initialization and streams1/streams2 input"}
+{"name":"duplexify","version":"3.7.1","directDependencies":4,"dependencies":14,"distinctDependencies":12,"description":"Turn a writable and readable stream into a streams2 duplex stream with support for async initialization and streams1/streams2 input"}

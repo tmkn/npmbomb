@@ -1,1 +1,1 @@
-{"name":"mpath","dependencies":0,"distinctDependencies":0,"description":"{G,S}et object values using MongoDB-like path notation"}
+{"name":"mpath","version":"0.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"{G,S}et object values using MongoDB-like path notation"}

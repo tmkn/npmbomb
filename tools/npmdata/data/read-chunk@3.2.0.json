@@ -1,1 +1,1 @@
-{"name":"read-chunk","dependencies":5,"distinctDependencies":4,"description":"Read a chunk from a file"}
+{"name":"read-chunk","version":"3.2.0","directDependencies":2,"dependencies":5,"distinctDependencies":4,"description":"Read a chunk from a file"}

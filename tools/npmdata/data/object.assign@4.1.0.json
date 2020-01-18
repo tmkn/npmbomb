@@ -1,1 +1,1 @@
-{"name":"object.assign","dependencies":5,"distinctDependencies":4,"description":"ES6 spec-compliant Object.assign shim. From https://github.com/es-shims/es6-shim"}
+{"name":"object.assign","version":"4.1.0","directDependencies":4,"dependencies":5,"distinctDependencies":4,"description":"ES6 spec-compliant Object.assign shim. From https://github.com/es-shims/es6-shim"}

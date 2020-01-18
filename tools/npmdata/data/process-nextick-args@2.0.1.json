@@ -1,1 +1,1 @@
-{"name":"process-nextick-args","dependencies":0,"distinctDependencies":0,"description":"process.nextTick but always with args"}
+{"name":"process-nextick-args","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"process.nextTick but always with args"}

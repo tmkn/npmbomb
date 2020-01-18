@@ -1,1 +1,1 @@
-{"name":"path-type","dependencies":1,"distinctDependencies":1,"description":"Check if a path is a file, directory, or symlink"}
+{"name":"path-type","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Check if a path is a file, directory, or symlink"}

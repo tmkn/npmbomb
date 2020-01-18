@@ -1,1 +1,1 @@
-{"name":"es6-iterator","dependencies":27,"distinctDependencies":6,"description":"Iterator abstraction based on ES6 specification"}
+{"name":"es6-iterator","version":"2.0.3","directDependencies":3,"dependencies":27,"distinctDependencies":6,"description":"Iterator abstraction based on ES6 specification"}

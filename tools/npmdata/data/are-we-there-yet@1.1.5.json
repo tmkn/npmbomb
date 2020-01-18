@@ -1,1 +1,1 @@
-{"name":"are-we-there-yet","dependencies":10,"distinctDependencies":9,"description":"Keep track of the overall completion of many disparate processes"}
+{"name":"are-we-there-yet","version":"1.1.5","directDependencies":2,"dependencies":10,"distinctDependencies":9,"description":"Keep track of the overall completion of many disparate processes"}

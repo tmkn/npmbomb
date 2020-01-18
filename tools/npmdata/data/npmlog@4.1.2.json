@@ -1,1 +1,1 @@
-{"name":"npmlog","dependencies":32,"distinctDependencies":28,"description":"logger for npm"}
+{"name":"npmlog","version":"4.1.2","directDependencies":4,"dependencies":32,"distinctDependencies":28,"description":"logger for npm"}

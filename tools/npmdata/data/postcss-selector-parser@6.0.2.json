@@ -1,1 +1,1 @@
-{"name":"postcss-selector-parser","dependencies":3,"distinctDependencies":3,"description":"> Selector parser with built in methods for working with selector strings."}
+{"name":"postcss-selector-parser","version":"6.0.2","directDependencies":3,"dependencies":3,"distinctDependencies":3,"description":"> Selector parser with built in methods for working with selector strings."}

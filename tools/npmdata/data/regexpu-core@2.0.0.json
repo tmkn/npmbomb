@@ -1,1 +1,1 @@
-{"name":"regexpu-core","dependencies":4,"distinctDependencies":4,"description":"regexpu’s core functionality (i.e. `rewritePattern(pattern, flag)`), capable of translating ES6 Unicode regular expressions to ES5."}
+{"name":"regexpu-core","version":"2.0.0","directDependencies":3,"dependencies":4,"distinctDependencies":4,"description":"regexpu’s core functionality (i.e. `rewritePattern(pattern, flag)`), capable of translating ES6 Unicode regular expressions to ES5."}

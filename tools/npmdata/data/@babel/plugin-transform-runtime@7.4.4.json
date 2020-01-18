@@ -1,1 +1,1 @@
-{"name":"@babel/plugin-transform-runtime","dependencies":9,"distinctDependencies":9,"description":"Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals"}
+{"name":"@babel/plugin-transform-runtime","version":"7.4.4","directDependencies":4,"dependencies":9,"distinctDependencies":9,"description":"Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals"}

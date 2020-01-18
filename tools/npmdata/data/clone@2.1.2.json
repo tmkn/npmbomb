@@ -1,1 +1,1 @@
-{"name":"clone","dependencies":0,"distinctDependencies":0,"description":"deep cloning of objects and arrays"}
+{"name":"clone","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"deep cloning of objects and arrays"}

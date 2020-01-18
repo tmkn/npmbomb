@@ -1,1 +1,1 @@
-{"name":"chai","dependencies":7,"distinctDependencies":6,"description":"BDD/TDD assertion library for node.js and the browser. Test framework agnostic."}
+{"name":"chai","version":"4.2.0","directDependencies":6,"dependencies":7,"distinctDependencies":6,"description":"BDD/TDD assertion library for node.js and the browser. Test framework agnostic."}

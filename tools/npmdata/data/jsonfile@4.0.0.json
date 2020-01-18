@@ -1,1 +1,1 @@
-{"name":"jsonfile","dependencies":1,"distinctDependencies":1,"description":"Easily read/write JSON files."}
+{"name":"jsonfile","version":"4.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Easily read/write JSON files."}

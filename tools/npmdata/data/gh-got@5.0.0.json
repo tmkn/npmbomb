@@ -1,1 +1,1 @@
-{"name":"gh-got","dependencies":15,"distinctDependencies":15,"description":"Convenience wrapper for `got` to interact with the GitHub API"}
+{"name":"gh-got","version":"5.0.0","directDependencies":2,"dependencies":15,"distinctDependencies":15,"description":"Convenience wrapper for `got` to interact with the GitHub API"}

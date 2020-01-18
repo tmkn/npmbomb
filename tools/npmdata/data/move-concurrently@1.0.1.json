@@ -1,1 +1,1 @@
-{"name":"move-concurrently","dependencies":68,"distinctDependencies":28,"description":"Promises of moves of files or directories with rename, falling back to recursive rename/copy on EXDEV errors, with configurable concurrency and win32 junction support."}
+{"name":"move-concurrently","version":"1.0.1","directDependencies":6,"dependencies":68,"distinctDependencies":28,"description":"Promises of moves of files or directories with rename, falling back to recursive rename/copy on EXDEV errors, with configurable concurrency and win32 junction support."}

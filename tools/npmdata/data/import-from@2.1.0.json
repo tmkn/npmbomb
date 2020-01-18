@@ -1,1 +1,1 @@
-{"name":"import-from","dependencies":1,"distinctDependencies":1,"description":"Import a module like with `require()` but from a given path"}
+{"name":"import-from","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Import a module like with `require()` but from a given path"}

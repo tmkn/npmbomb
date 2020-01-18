@@ -1,1 +1,1 @@
-{"name":"@babel/helper-optimise-call-expression","dependencies":4,"distinctDependencies":4,"description":"Helper function to optimise call expression"}
+{"name":"@babel/helper-optimise-call-expression","version":"7.0.0","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Helper function to optimise call expression"}

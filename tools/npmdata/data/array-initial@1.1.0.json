@@ -1,1 +1,1 @@
-{"name":"array-initial","dependencies":2,"distinctDependencies":2,"description":"Get all but the last element or last n elements of an array."}
+{"name":"array-initial","version":"1.1.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Get all but the last element or last n elements of an array."}

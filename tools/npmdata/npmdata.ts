@@ -15,6 +15,8 @@ console.log(foo);
 
     await Extractor.Extract(inputData, foo, outputDir, pa => ({
         name: pa.name,
+        version: pa.version,
+        directDependencies: pa.directDependencyCount,
         dependencies: pa.transitiveDependenciesCount,
         distinctDependencies: pa.distinctByVersionCount,
         description: pa.getData("description")

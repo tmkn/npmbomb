@@ -1,1 +1,1 @@
-{"name":"read-pkg","dependencies":20,"distinctDependencies":16,"description":"Read a package.json file"}
+{"name":"read-pkg","version":"5.1.1","directDependencies":4,"dependencies":20,"distinctDependencies":16,"description":"Read a package.json file"}

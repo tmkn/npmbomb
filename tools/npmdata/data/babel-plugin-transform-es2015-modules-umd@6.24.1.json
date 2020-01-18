@@ -1,1 +1,1 @@
-{"name":"babel-plugin-transform-es2015-modules-umd","dependencies":170,"distinctDependencies":29,"description":"This plugin transforms ES2015 modules to UMD"}
+{"name":"babel-plugin-transform-es2015-modules-umd","version":"6.24.1","directDependencies":3,"dependencies":170,"distinctDependencies":29,"description":"This plugin transforms ES2015 modules to UMD"}

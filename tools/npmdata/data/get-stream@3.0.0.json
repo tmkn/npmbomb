@@ -1,1 +1,1 @@
-{"name":"get-stream","dependencies":0,"distinctDependencies":0,"description":"Get a stream as a string, buffer, or array"}
+{"name":"get-stream","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get a stream as a string, buffer, or array"}

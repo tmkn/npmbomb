@@ -1,1 +1,1 @@
-{"name":"arr-union","dependencies":0,"distinctDependencies":0,"description":"Combines a list of arrays, returning a single array with unique values, using strict equality for comparisons."}
+{"name":"arr-union","version":"3.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Combines a list of arrays, returning a single array with unique values, using strict equality for comparisons."}
