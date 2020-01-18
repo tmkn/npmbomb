@@ -25,7 +25,13 @@ module.exports = {
             title: 'npmbomb',
             meta: {
                 charset: { charset: 'utf-8' },
-                viewport: 'width=device-width, initial-scale=1'
+                viewport: 'width=device-width, initial-scale=1',
+                description: 'Guess the number of dependencies for popular NPM packages',
+                keywords: 'NPM,dependencies,number,guess',
+                'twitter:card': 'summary_large_image',
+                'twitter:site': '@tmkndev',
+                'twitter:title': 'npmb💣mb',
+                'twitter:description': 'Guess the number of dependencies for popular NPM packages'
             },
         }),
         new CopyPlugin([

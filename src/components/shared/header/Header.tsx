@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import { Link } from "react-router-dom";
 
-import { mq, serifFont, headerFont } from "../../../css";
+import { mq, serifFont, headerFont, secondaryColor } from "../../../css";
 
 const style = css({
     [mq[0]]: {
@@ -16,7 +16,7 @@ const style = css({
         display: "flex",
         "& a": {
             flex: 1,
-            color: "black"
+            color: secondaryColor
         }
     },
     [mq[1]]: {
@@ -31,27 +31,37 @@ const style = css({
 });
 
 const titleStyle = css({
-    flex: 1
-    /*WebkitTextStroke: "1px black",
-    WebkitTextFillColor: "white"*/
-    /*background: "linear-gradient(to right, cyan, orange)",
-    backgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-    WebkitBackgroundClip: "text"*/
+    [mq[0]]: {
+        flex: 1
+        /*WebkitTextStroke: "1px black",
+        WebkitTextFillColor: "white"*/
+        /*background: "linear-gradient(to right, cyan, orange)",
+        backgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        WebkitBackgroundClip: "text"*/
+    }
 });
 
 const subTitleStyle = css({
-    fontSize: "1rem",
-    flex: 1,
-    fontFamily: `"${serifFont}"`,
-    fontWeight: 400
+    [mq[0]]: {
+        fontSize: "1rem",
+        flex: 1,
+        fontFamily: `"${serifFont}"`,
+        fontWeight: 400
+    }
+});
+
+const bombStyle = css({
+    [mq[0]]: {
+        fontSize: "1.6rem"
+    }
 });
 
 const Header: React.FC = () => {
     return (
         <div css={style}>
             <Link to="/">
-                <div css={titleStyle}>npmbomb</div>
+                <div css={titleStyle}>npmb<span css={bombStyle}>💣</span>mb</div>
             </Link>
             <div css={subTitleStyle}>Guess NPM dependencies</div>
         </div>
