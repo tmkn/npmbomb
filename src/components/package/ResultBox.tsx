@@ -21,7 +21,7 @@ export const Summary: React.FC = () => {
         <React.Fragment>
             <h2>Summary</h2>
             <Info>
-                <TextLink href="google.at">
+                <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
                     {pkg.name}@{pkg.version}
                 </TextLink>{" "}
                 defines{" "}
