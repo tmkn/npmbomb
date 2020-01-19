@@ -1,0 +1,1 @@
+{"name":"expand-brackets","version":"2.1.4","directDependencies":7,"dependencies":174,"distinctDependencies":66,"description":"Expand POSIX bracket expressions (character classes) in glob patterns."}

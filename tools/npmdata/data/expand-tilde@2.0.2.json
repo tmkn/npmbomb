@@ -1,0 +1,1 @@
+{"name":"expand-tilde","version":"2.0.2","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Bash-like tilde expansion for node.js. Expands a leading tilde in a file path to the user home directory, or `~+` to the cwd."}

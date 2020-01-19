@@ -1,0 +1,1 @@
+{"name":"to-regex-range","version":"2.1.1","directDependencies":2,"dependencies":4,"distinctDependencies":4,"description":"Pass two numbers, get a regex-compatible source string for matching ranges. Validated against more than 2.78 million test assertions."}

@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -24,9 +25,18 @@ module.exports = {
             title: 'npmbomb',
             meta: {
                 charset: { charset: 'utf-8' },
-                viewport: 'width=device-width, initial-scale=1'
+                viewport: 'width=device-width, initial-scale=1',
+                description: 'Guess the number of dependencies for popular NPM packages',
+                keywords: 'NPM,dependencies,number,guess',
+                'twitter:card': 'summary_large_image',
+                'twitter:site': '@tmkndev',
+                'twitter:title': 'npmb💣mb',
+                'twitter:description': 'Guess the number of dependencies for popular NPM packages'
             },
         }),
+        new CopyPlugin([
+            { from: 'tools/npmdata/data', to: 'data' }
+        ]),
     ],
     output: {
         filename: '[name].bundle.js',

@@ -1,0 +1,1 @@
+{"name":"fs-updater","version":"1.0.4","directDependencies":5,"dependencies":26,"distinctDependencies":21,"description":"Incrementally update a directory based on an in-memory representation."}

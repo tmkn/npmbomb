@@ -1,0 +1,1 @@
+{"name":"is-descriptor","version":"1.0.2","directDependencies":3,"dependencies":5,"distinctDependencies":3,"description":"Returns true if a value has the characteristics of a valid JavaScript descriptor. Works for data descriptors and accessor descriptors."}

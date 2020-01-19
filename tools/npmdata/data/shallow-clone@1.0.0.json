@@ -1,0 +1,1 @@
+{"name":"shallow-clone","version":"1.0.0","directDependencies":3,"dependencies":5,"distinctDependencies":4,"description":"Make a shallow clone of an object, array or primitive."}

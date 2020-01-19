@@ -1,0 +1,1 @@
+{"name":"@babel/helper-annotate-as-pure","version":"7.0.0","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Helper function to annotate paths and nodes with #__PURE__ comment"}

@@ -3,8 +3,35 @@
 exports[`<ResultBox /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1jz05p8"
+    class="css-7emoiw"
   >
+    <h2>
+      Summary
+    </h2>
+    <p
+      class="css-1axajee"
+    >
+      <a
+        class="css-1ka21sq"
+        href="https://www.npmjs.com/package//v/"
+        target="_blank"
+      >
+        @
+      </a>
+       defines 
+      <b>
+        0 direct dependencies
+      </b>
+       which explode into 
+      <b>
+        0 dependencies overall
+      </b>
+      , resulting in 
+      <b>
+        0 distinct dependencies
+      </b>
+      .
+    </p>
     <h2>
       Results
     </h2>

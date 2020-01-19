@@ -40,41 +40,11 @@ exports[`<NotFound /> matches snapshot 1`] = `
       </span>
       <br />
       <span>
-        If you feel this package is important you can hit me up on Twitter 
-        <a
-          class="css-1qgk5q"
-          href="https://twitter.com/tmkndev"
+        <span
+          class="css-9wkshj"
         >
-          @tmkndev
-        </a>
-      </span>
-    </div>
-  </div>
-  <div
-    class="css-8a5j6a"
-  >
-    <div
-      class="css-16wgzhr"
-    >
-      Home
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`<VersionNotFound /> matches snapshot 1`] = `
-<DocumentFragment>
-  <h1>
-    test
-  </h1>
-  <div
-    class="css-8a5j6a"
-  >
-    <div
-      class="css-1x66upb"
-    >
-      <span>
-        Whoops, couldn't parse the version for this package!
+          Propose this package
+        </span>
       </span>
     </div>
   </div>

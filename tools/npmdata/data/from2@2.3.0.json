@@ -1,0 +1,1 @@
+{"name":"from2","version":"2.3.0","directDependencies":2,"dependencies":10,"distinctDependencies":8,"description":"Convenience wrapper for ReadableStream, with an API lifted from \"from\" and \"through2\""}

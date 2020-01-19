@@ -1,0 +1,1 @@
+{"name":"@babel/helper-member-expression-to-functions","version":"7.0.0","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Helper function to replace certain member expressions with function calls"}

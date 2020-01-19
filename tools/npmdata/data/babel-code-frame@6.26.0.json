@@ -1,0 +1,1 @@
+{"name":"babel-code-frame","version":"6.26.0","directDependencies":3,"dependencies":10,"distinctDependencies":9,"description":"Generate errors that contain a code frame that point to source locations."}

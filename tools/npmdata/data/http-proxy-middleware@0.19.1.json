@@ -1,0 +1,1 @@
+{"name":"http-proxy-middleware","version":"0.19.1","directDependencies":4,"dependencies":909,"distinctDependencies":92,"description":"The one-liner node.js proxy middleware for connect, express and browser-sync"}

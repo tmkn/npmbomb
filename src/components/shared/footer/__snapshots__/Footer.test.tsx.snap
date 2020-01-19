@@ -3,12 +3,14 @@
 exports[`<Footer /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-kg3jfn-Footer"
+    class="css-138a4w9-Footer"
   >
     <span>
-      made with ♥️ by 
+      hecho con ♥️ por 
       <a
+        class="css-1ka21sq"
         href="https://twitter.com/tmkndev"
+        target="_blank"
       >
         @tmkndev
       </a>

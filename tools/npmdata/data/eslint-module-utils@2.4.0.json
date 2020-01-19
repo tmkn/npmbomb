@@ -1,0 +1,1 @@
+{"name":"eslint-module-utils","version":"2.4.0","directDependencies":2,"dependencies":9,"distinctDependencies":9,"description":"Core utilities to support eslint-plugin-import and other module-related plugins."}

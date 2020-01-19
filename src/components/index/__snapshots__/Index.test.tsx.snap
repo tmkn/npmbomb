@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Results /> matches snapshot 1`] = `
+exports[`<Index /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-13ji2h0"
@@ -17,7 +17,7 @@ exports[`<Results /> matches snapshot 1`] = `
       class="css-8a5j6a"
     >
       <div
-        class="css-16wgzhr"
+        class="css-o2285k"
       >
         Start
       </div>
@@ -42,6 +42,58 @@ exports[`<Results /> matches snapshot 1`] = `
         >
           &gt;
         </span>
+         How is the dependency count calculated?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      As the dependency tree is traversed, each dependency from the dependencies field in the package.json is resolved according to their range and added to the overall count. 
+      <span
+        class="css-1789ga5"
+      >
+        It's a straight accumulation
+      </span>
+      , as such the same package is counted multiple times if it is a dependency of other packages.
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
+         How is the distinct dependency count calculated?
+      </span>
+    </h2>
+    <div
+      class="css-1rqbofr-Faq"
+      style="display: none;"
+    >
+      A dependency is distinct if after resolving it according to their range differs in name and version.
+      <br />
+      <span
+        class="css-1789ga5"
+      >
+        Multiple same version dependencies will only be counted once.
+      </span>
+    </div>
+    <h2
+      class="css-iio3hc"
+    >
+      <span
+        style="cursor: pointer;"
+      >
+        <span
+          class="css-swfxel-Faq"
+        >
+          &gt;
+        </span>
          Why is it called npmbomb?
       </span>
     </h2>
@@ -49,19 +101,13 @@ exports[`<Results /> matches snapshot 1`] = `
       class="css-1rqbofr-Faq"
       style="display: none;"
     >
-      It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
+      It's a hommage to the word zip bomb. Wikipedia defines it as:
       <blockquote
         class="css-12z6zy1"
       >
         "A zip bomb is usually a small file .... however, when the file is unpacked, its contents are more than the system can handle."
       </blockquote>
-      That sure sounds like your typical 
-      <span
-        class="css-18yn0ml-Highlight"
-      >
-        npm install
-      </span>
-       😈
+      Sounds familiar? 😈
     </div>
     <h2
       class="css-iio3hc"
@@ -83,17 +129,17 @@ exports[`<Results /> matches snapshot 1`] = `
     >
       No, it only shows (and counts) dependencies from the 
       <span
-        class="css-18yn0ml-Highlight"
+        class="css-1789ga5"
       >
         dependencies
       </span>
-       entry in the 
+       field in the 
       <span
-        class="css-18yn0ml-Highlight"
+        class="css-1789ga5"
       >
         package.json
       </span>
-       all the way to the very bottom.
+       all the way to the very last dependency.
     </div>
     <h2
       class="css-iio3hc"
@@ -113,10 +159,11 @@ exports[`<Results /> matches snapshot 1`] = `
       class="css-1rqbofr-Faq"
       style="display: none;"
     >
-      For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages or specifically handpicked ones. If you want a specific dependency you can hit me up on Twitter 
+      For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages. If you want a specific dependency or have an idea or just want to chat in general, you can contact me on Twitter 
       <a
-        class="css-1qgk5q"
+        class="css-1ka21sq"
         href="https://twitter.com/tmkndev"
+        target="_blank"
       >
         @tmkndev
       </a>
@@ -140,8 +187,9 @@ exports[`<Results /> matches snapshot 1`] = `
       style="display: none;"
     >
       <a
-        class="css-1qgk5q"
+        class="css-1ka21sq"
         href="https://github.com/tmkn/npmbomb"
+        target="_blank"
       >
         Yes
       </a>

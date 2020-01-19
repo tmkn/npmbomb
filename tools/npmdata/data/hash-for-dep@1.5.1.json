@@ -1,0 +1,1 @@
+{"name":"hash-for-dep","version":"1.5.1","directDependencies":6,"dependencies":32,"distinctDependencies":23,"description":"generates a hash that represents a module and its depenencies uniqueness"}

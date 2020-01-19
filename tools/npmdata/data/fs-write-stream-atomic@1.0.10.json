@@ -1,0 +1,1 @@
+{"name":"fs-write-stream-atomic","version":"1.0.10","directDependencies":4,"dependencies":12,"distinctDependencies":11,"description":"Like `fs.createWriteStream(...)`, but atomic."}

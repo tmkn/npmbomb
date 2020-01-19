@@ -1,0 +1,1 @@
+{"name":"requires-port","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a protocol requires a certain port number to be added to an URL."}

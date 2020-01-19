@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Redirect, Link, useHistory } from "react-router-dom";
 
 import { ResultsTable, Num } from "../shared/results/Results";
@@ -9,17 +9,19 @@ import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Divider } from "../shared/divider/Divider";
 import { IGuessResult, AppContext } from "../../App";
+import { setDefaultTitle } from "../../title";
 
 type Results = IGuessResult[];
 
 const Results: React.FC = () => {
-    const {
-        appState: { gameMode, guesses, remaining },
-        setAppState
-    } = useContext(AppContext);
+    const { appState, setAppState } = useContext(AppContext);
     const history = useHistory();
 
-    if (guesses.length === 0) return <Redirect to="/" />;
+    useEffect(() => {
+        setDefaultTitle();
+    });
+
+    if (appState.guesses.length === 0) return <Redirect to="/" />;
 
     const alignRight = css({
         textAlign: "right",
@@ -52,7 +54,8 @@ const Results: React.FC = () => {
 
     function onHome() {
         setAppState({
-            gameMode: false,
+            ...appState,
+            inGameMode: false,
             guesses: [],
             remaining: []
         });
@@ -67,7 +70,7 @@ const Results: React.FC = () => {
                 <div css={mobileOnly}></div>
                 <div css={[mobileOnly, alignRight]}>Deps.</div>
                 <div css={[mobileOnly, alignRight]}>You</div>
-                {guesses.map(({ pkg, dependencies, guess }, i) => {
+                {appState.guesses.map(({ pkg, dependencies, guess }, i) => {
                     const animation = css({
                         opacity: 0,
                         animation: `${fadeIn} 1s ease forwards, ${moveIn} 500ms ease forwards`,
@@ -79,12 +82,13 @@ const Results: React.FC = () => {
                             <div css={[animation, primary]}>{pkg}</div>
                             <div css={[alignRight, animation]}>
                                 <span>
-                                    <Num>{guess}</Num> <span css={hideOnMobile}>Dependencies</span>
+                                    <Num>{dependencies}</Num>{" "}
+                                    <span css={hideOnMobile}>Dependencies</span>
                                 </span>
                             </div>
                             <div css={[alignRight, animation]}>
                                 <span>
-                                    <Num>{dependencies}</Num> <span css={hideOnMobile}>You</span>
+                                    <Num>{guess}</Num> <span css={hideOnMobile}>You</span>
                                 </span>
                             </div>
                         </React.Fragment>

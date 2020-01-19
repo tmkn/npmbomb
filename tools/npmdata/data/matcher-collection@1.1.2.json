@@ -1,0 +1,1 @@
+{"name":"matcher-collection","version":"1.1.2","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Minimatch but for collections of minimatcher matchers."}

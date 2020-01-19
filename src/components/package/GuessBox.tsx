@@ -4,13 +4,23 @@ import React, { useRef, useState, useContext } from "react";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark } from "../../css";
+import { IPackageInfo } from "./Package";
 
 export interface IGuessContext {
+    package: IPackageInfo;
     guess: number | undefined;
     setUserGuess: (guess: number) => void;
 }
 
 export const GuessContext = React.createContext<IGuessContext>({
+    package: {
+        name: "",
+        version: "",
+        dependencies: 0,
+        distinctDependencies: 0,
+        directDependencies: 0,
+        description: ""
+    },
     guess: undefined,
     setUserGuess: () => {}
 });
@@ -74,6 +84,7 @@ export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
                 pattern="[0-9]"
                 inputMode="numeric"
                 onChange={validate}
+                autoFocus
             />
             <div style={{ flex: "0.05" }} />
             <PrimaryButton disabled={valid} onClick={doConfirm}>

@@ -1,0 +1,1 @@
+{"name":"parse-filepath","version":"1.0.2","directDependencies":3,"dependencies":8,"distinctDependencies":8,"description":"Pollyfill for node.js `path.parse`, parses a filepath into an object."}

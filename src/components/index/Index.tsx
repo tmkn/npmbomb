@@ -11,13 +11,8 @@ import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
 import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
-import { data } from "../package/data";
-
-const highlightStyle = css({
-    color: `${primaryColor}`
-});
-
-const Highlight: React.FC = ({ children }) => <span css={highlightStyle}>{children}</span>;
+import { Highlight } from "../shared/highlight/Highlight";
+import { setDefaultTitle } from "../../title";
 
 const faqStyle = css({
     fontFamily: `"${sansSerifFont}"`,
@@ -176,15 +171,20 @@ const style = css({
 export default () => {
     const { appState, setAppState } = useContext(AppContext);
     const history = useHistory();
+    const { loading, error } = useAvailablePackagesLoader();
+    const disableStart = loading === true || error === true;
+
+    useEffect(() => {
+        setDefaultTitle();
+    });
 
     function onStart() {
-        const packages = [...data].map(([, { name, version }]) => `${name}@${version}`);
-        const remaining = shuffle(packages);
+        const remaining = shuffle(appState.packages).slice(0, 4);
 
         setAppState({
             ...appState,
             remaining: remaining,
-            gameMode: true
+            inGameMode: true
         });
         history.push(`/package/${remaining[0]}`);
     }
@@ -197,28 +197,42 @@ export default () => {
                 popular NPM packages.
             </Info>
             <Center>
-                <PrimaryButton onClick={onStart}>Start</PrimaryButton>
+                <PrimaryButton disabled={disableStart} onClick={onStart}>
+                    Start
+                </PrimaryButton>
             </Center>
             <Divider margin={"2rem 0"} />
             <H2>FAQ</H2>
+            <Faq header="How is the dependency count calculated?" collapsed>
+                As the dependency tree is traversed, each dependency from the dependencies field in
+                the package.json is resolved according to their range and added to the overall
+                count. <Highlight>It's a straight accumulation</Highlight>, as such the same package
+                is counted multiple times if it is a dependency of other packages.
+            </Faq>
+            <Faq header="How is the distinct dependency count calculated?" collapsed>
+                A dependency is distinct if after resolving it according to their range differs in
+                name and version.
+                <br />
+                <Highlight>Multiple same version dependencies will only be counted once.</Highlight>
+            </Faq>
             <Faq header="Why is it called npmbomb?" collapsed>
-                It's a hommage to zip bomb. According to Wikipedia a zip bomb is:
+                It's a hommage to the word zip bomb. Wikipedia defines it as:
                 <blockquote css={{ fontFamily: `"${serifFont}"` }}>
                     "A zip bomb is usually a small file .... however, when the file is unpacked, its
                     contents are more than the system can handle."
                 </blockquote>
-                That sure sounds like your typical <Highlight>npm install</Highlight> 😈
+                Sounds familiar? 😈
             </Faq>
             <Faq header="Does it count dev dependencies?" collapsed>
                 No, it only shows (and counts) dependencies from the{" "}
-                <Highlight>dependencies</Highlight> entry in the <Highlight>package.json</Highlight>{" "}
-                all the way to the very bottom.
+                <Highlight>dependencies</Highlight> field in the <Highlight>package.json</Highlight>{" "}
+                all the way to the very last dependency.
             </Faq>
             <Faq header="Why can't I find library XYZ?" collapsed>
                 For now, it only shows a preselected number of libraries, namely the ones that are
-                in the dependency tree of the most downloaded packages or specifically handpicked
-                ones. If you want a specific dependency you can hit me up on Twitter{" "}
-                <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
+                in the dependency tree of the most downloaded packages. If you want a specific
+                dependency or have an idea or just want to chat in general, you can contact me on
+                Twitter <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
             </Faq>
             <Faq header="Is it Open Source?" collapsed>
                 <TextLink href="https://github.com/tmkn/npmbomb">Yes</TextLink>
@@ -226,3 +240,53 @@ export default () => {
         </div>
     );
 };
+
+interface IAvailablePackgesHookResponse {
+    packages: string[];
+    loading: boolean;
+    error: boolean;
+}
+
+function useAvailablePackagesLoader(): IAvailablePackgesHookResponse {
+    const { appState, setAppState } = useContext(AppContext);
+
+    const [packages, setPackages] = useState<string[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<boolean>(false);
+
+    async function fetchAvailablePackages(): Promise<string[]> {
+        const resp = await fetch(`data/lookup.txt`);
+        const text = await resp.text();
+
+        return text
+            .split("\n")
+            .map(l => l.trim())
+            .filter(l => l !== "");
+    }
+
+    async function load(): Promise<void> {
+        try {
+            setLoading(true);
+            setError(false);
+
+            const packages = await fetchAvailablePackages();
+
+            setAppState({
+                ...appState,
+                packages: packages
+            });
+            setLoading(false);
+            setPackages(packages);
+        } catch {
+            setError(true);
+            setLoading(false);
+            setPackages([]);
+        }
+    }
+
+    useEffect(() => {
+        load();
+    }, []);
+
+    return { packages, loading, error };
+}

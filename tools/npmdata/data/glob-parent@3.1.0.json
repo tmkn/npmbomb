@@ -1,0 +1,1 @@
+{"name":"glob-parent","version":"3.1.0","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Strips glob magic from a string to provide the parent directory path"}

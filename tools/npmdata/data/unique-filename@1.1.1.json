@@ -1,0 +1,1 @@
+{"name":"unique-filename","version":"1.1.1","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Generate a unique filename for use in temporary directories or caches."}

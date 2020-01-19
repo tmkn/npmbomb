@@ -1,0 +1,1 @@
+{"name":"read-pkg-up","version":"1.0.1","directDependencies":2,"dependencies":36,"distinctDependencies":24,"description":"Read the closest package.json file"}

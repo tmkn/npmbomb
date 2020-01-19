@@ -1,0 +1,1 @@
+{"name":"regenerator-transform","version":"0.14.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Explode async and generator functions into a state machine."}

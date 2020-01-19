@@ -1,0 +1,1 @@
+{"name":"lru-cache","version":"4.1.5","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"A cache object that deletes the least-recently-used items."}

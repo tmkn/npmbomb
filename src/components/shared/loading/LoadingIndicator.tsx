@@ -32,11 +32,11 @@ export const LoadingIndicator: React.FC = memo(() => {
             height: "40px",
             position: "relative",
             margin: "100px auto",
-            "& div:nth-child(odd)": {
+            "& div:nth-of-type(odd)": {
                 ...sharedStyle,
                 backgroundColor: primaryColor
             },
-            "& div:nth-child(even)": {
+            "& div:nth-of-type(even)": {
                 ...sharedStyle,
                 backgroundColor: primaryColorLight,
                 animationDelay: "-1s"

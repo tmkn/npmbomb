@@ -1,0 +1,1 @@
+{"name":"expect","version":"24.8.0","directDependencies":6,"dependencies":1008,"distinctDependencies":117,"description":"This package exports the `expect` function used in [Jest](https://jestjs.io/). You can find its documentation [on Jest's website](https://jestjs.io/docs/en/expect.html)."}

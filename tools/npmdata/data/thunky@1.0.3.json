@@ -1,0 +1,1 @@
+{"name":"thunky","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"delay the evaluation of a paramless async function and cache the result"}

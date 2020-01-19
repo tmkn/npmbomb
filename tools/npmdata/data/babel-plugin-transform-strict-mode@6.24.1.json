@@ -1,0 +1,1 @@
+{"name":"babel-plugin-transform-strict-mode","version":"6.24.1","directDependencies":2,"dependencies":10,"distinctDependencies":7,"description":"This plugin places a 'use strict'; directive at the top of all files to enable strict mode"}

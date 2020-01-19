@@ -1,0 +1,1 @@
+{"name":"eventsource","version":"1.0.7","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"W3C compliant EventSource client for Node.js and browser (polyfill)"}

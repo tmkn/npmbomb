@@ -1,0 +1,1 @@
+{"name":"jsesc","version":"2.5.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Given some data, jsesc returns the shortest possible stringified & ASCII-safe representation of that data."}

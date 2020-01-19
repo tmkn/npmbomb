@@ -1,13 +1,15 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React, { useRef, useState, useContext } from "react";
+import React, { useRef, useState, useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import * as Sentry from "@sentry/browser";
 
 import { AppContext } from "../../App";
 import { mq, textColor } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
-import { TextLink } from "../shared/link/TextLink";
+import { TextLink, ClickLink } from "../shared/link/TextLink";
+import { Highlight } from "../shared/highlight/Highlight";
 
 export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, children }) => {
     const { setAppState } = useContext(AppContext);
@@ -25,9 +27,10 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
 
     function onClick(): void {
         setAppState({
-            gameMode: false,
+            inGameMode: false,
             guesses: [],
-            remaining: []
+            remaining: [],
+            packages: []
         });
         history.push("/");
     }
@@ -45,19 +48,31 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
     );
 };
 
-export const NotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => (
-    <ErrorComponent pkgName={pkgName}>
-        <span>Whoops, couldn't find data for this package!</span>
-        <br />
-        <span>
-            If you feel this package is important you can hit me up on Twitter{" "}
-            <TextLink href="https://twitter.com/tmkndev">@tmkndev</TextLink>
-        </span>
-    </ErrorComponent>
-);
+export const NotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => {
+    const [sentFeedback, setFeedback] = useState<boolean>(false);
 
-export const VersionNotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => (
-    <ErrorComponent pkgName={pkgName}>
-        <span>Whoops, couldn't parse the version for this package!</span>
-    </ErrorComponent>
-);
+    function proposePackage() {
+        Sentry.configureScope(function(scope) {
+            scope.setExtra("pkg", pkgName);
+        });
+        Sentry.captureMessage(`Propose ${pkgName}`);
+        setFeedback(true);
+    }
+
+    return (
+        <ErrorComponent pkgName={pkgName}>
+            <span>Whoops, couldn't find data for this package!</span>
+            <br />
+            {!sentFeedback && (
+                <span>
+                    <ClickLink onClick={proposePackage}>Propose this package</ClickLink>
+                </span>
+            )}
+            {sentFeedback && (
+                <span>
+                    Package <Highlight>{pkgName}</Highlight> was proposed!
+                </span>
+            )}
+        </ErrorComponent>
+    );
+};

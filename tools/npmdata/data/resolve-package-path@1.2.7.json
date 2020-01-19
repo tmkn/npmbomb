@@ -1,0 +1,1 @@
+{"name":"resolve-package-path","version":"1.2.7","directDependencies":2,"dependencies":4,"distinctDependencies":4,"description":"a special purpose fast memoizing way to resolve a node modules package.json"}

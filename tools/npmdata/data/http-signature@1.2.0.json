@@ -1,0 +1,1 @@
+{"name":"http-signature","version":"1.2.0","directDependencies":3,"dependencies":25,"distinctDependencies":16,"description":"Reference implementation of Joyent's HTTP Signature scheme."}

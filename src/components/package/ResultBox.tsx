@@ -1,18 +1,54 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React from "react";
+import React, { useContext } from "react";
 
 import { mq, textColor } from "../../css";
 import { ResultsTable, Num } from "../shared/results/Results";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
+import { Info } from "../shared/info/Info";
+import { GuessContext } from "./GuessBox";
+import { TextLink } from "../shared/link/TextLink";
+
+function plural(count: number): string {
+    return count === 1 ? "dependency" : "dependencies";
+}
+
+export const Summary: React.FC = () => {
+    const { package: pkg } = useContext(GuessContext);
+
+    return (
+        <React.Fragment>
+            <h2>Summary</h2>
+            <Info>
+                <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
+                    {pkg.name}@{pkg.version}
+                </TextLink>{" "}
+                defines{" "}
+                <b>
+                    {pkg.directDependencies} direct {plural(pkg.directDependencies)}
+                </b>{" "}
+                which explode into{" "}
+                <b>
+                    {pkg.dependencies} {plural(pkg.dependencies)} overall
+                </b>
+                , resulting in{" "}
+                <b>
+                    {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
+                </b>
+                .
+            </Info>
+        </React.Fragment>
+    );
+};
 
 interface IResultBoxProps {
     guess: number;
     actual: number;
+    distinct: number;
 }
 
-export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
+export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual, distinct }) => {
     const fadeIn = keyframes`
         from {
             height: 0;
@@ -31,7 +67,10 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
             opacity: 0,
             height: 0,
             animation: `${fadeIn} 500ms ease forwards`,
-            animationDelay: `${scaleDuration}ms`
+            animationDelay: `${scaleDuration}ms`,
+            h2: {
+                marginTop: 0
+            }
         }
     });
 
@@ -46,20 +85,25 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual }) => {
 
     return (
         <div css={containerStyle}>
-            <h2>Results</h2>
-            <Divider margin={"1rem 0"} />
-            <ResultsTable columns={2}>
-                <div>Your Guess:</div>
-                <Num>{guess}</Num>
-                <div>Actual:</div>
-                <Num>{actual}</Num>
-            </ResultsTable>
-            <Divider margin={"1rem 0"} />
-            <div css={resultStyle}>
+            {actual > 0 && <Summary />}
+            {guess !== actual && (
                 <React.Fragment>
-                    You were off by <Num>{distance}</Num>
+                    <h2>Results</h2>
+                    <Divider margin={"1rem 0"} />
+                    <ResultsTable columns={2}>
+                        <div>Your Guess:</div>
+                        <Num>{guess}</Num>
+                        <div>Actual:</div>
+                        <Num>{actual}</Num>
+                    </ResultsTable>
+                    <Divider margin={"1rem 0"} />
+                    <div css={resultStyle}>
+                        <React.Fragment>
+                            You were off by <Num>{distance}</Num>
+                        </React.Fragment>
+                    </div>
                 </React.Fragment>
-            </div>
+            )}
         </div>
     );
 };

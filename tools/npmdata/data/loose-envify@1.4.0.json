@@ -1,0 +1,1 @@
+{"name":"loose-envify","version":"1.4.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST"}

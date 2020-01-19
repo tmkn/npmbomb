@@ -6,7 +6,7 @@ import { Heading } from "./Heading";
 
 describe("<Heading />", () => {
     test("matches snapshot", () => {
-        const { asFragment } = render(<Heading name={"test"} />);
+        const { asFragment } = render(<Heading packageName={"test"} scope={undefined} />);
 
         expect(asFragment()).toMatchSnapshot();
     });

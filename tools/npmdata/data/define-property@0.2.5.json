@@ -1,0 +1,1 @@
+{"name":"define-property","version":"0.2.5","directDependencies":1,"dependencies":8,"distinctDependencies":6,"description":"Define a non-enumerable property on an object."}

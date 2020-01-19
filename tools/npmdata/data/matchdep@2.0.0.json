@@ -1,0 +1,1 @@
+{"name":"matchdep","version":"2.0.0","directDependencies":4,"dependencies":1824,"distinctDependencies":99,"description":"Use micromatch to filter npm module dependencies by name."}

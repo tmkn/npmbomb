@@ -1,0 +1,1 @@
+{"name":"normalize-path","version":"2.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Normalize file path slashes to be unix-like forward slashes. Also condenses repeat slashes to a single slash and removes and trailing slashes unless disabled."}

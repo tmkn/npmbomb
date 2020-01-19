@@ -1,0 +1,1 @@
+{"name":"set-value","version":"2.0.0","directDependencies":4,"dependencies":11,"distinctDependencies":8,"description":"Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths."}

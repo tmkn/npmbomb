@@ -1,0 +1,1 @@
+{"name":"@babel/helper-create-class-features-plugin","version":"7.4.4","directDependencies":6,"dependencies":120,"distinctDependencies":31,"description":"Compile class public and private fields, private methods and decorators to ES6"}

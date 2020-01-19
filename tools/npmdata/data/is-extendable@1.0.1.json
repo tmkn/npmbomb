@@ -1,0 +1,1 @@
+{"name":"is-extendable","version":"1.0.1","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Returns true if a value is a plain object, array or function."}

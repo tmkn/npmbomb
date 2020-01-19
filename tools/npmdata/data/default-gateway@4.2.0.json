@@ -1,0 +1,1 @@
+{"name":"default-gateway","version":"4.2.0","directDependencies":2,"dependencies":23,"distinctDependencies":20,"description":"Get the default network gateway, cross-platform."}

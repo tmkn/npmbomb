@@ -1,0 +1,1 @@
+{"name":"multicast-dns","version":"6.2.3","directDependencies":2,"dependencies":4,"distinctDependencies":4,"description":"Low level multicast-dns implementation in pure javascript"}

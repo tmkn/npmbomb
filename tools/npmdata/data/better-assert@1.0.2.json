@@ -1,0 +1,1 @@
+{"name":"better-assert","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Better assertions for node, reporting the expr, filename, lineno etc"}

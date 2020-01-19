@@ -1,0 +1,1 @@
+{"name":"html-encoding-sniffer","version":"1.0.2","directDependencies":1,"dependencies":3,"distinctDependencies":3,"description":"Sniff the encoding from a HTML byte stream"}

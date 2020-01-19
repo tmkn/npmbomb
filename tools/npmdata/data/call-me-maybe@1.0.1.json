@@ -1,0 +1,1 @@
+{"name":"call-me-maybe","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Let your JS API users either give you a callback or receive a promise"}

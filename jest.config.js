@@ -16,6 +16,11 @@ module.exports = {
         "@testing-library/jest-dom/extend-expect"
     ],
 
+    automock: false,
+    setupFiles: [
+        "./setupJest.js"
+    ],
+
     // Test spec file resolution pattern
     // Matches parent folder `__tests__` and filename
     // should contain `test` or `spec`.

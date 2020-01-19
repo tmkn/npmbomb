@@ -1,0 +1,1 @@
+{"name":"blank-object","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A faster alternative to Object.create(null)"}
