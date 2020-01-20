@@ -3,8 +3,11 @@
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/tmkn/npmbomb)
 
 # npmbomb
-Guess NPM dependencies
+![npmbomb screenshot](npmbomb.png)
+Guess the dependency count for popular NPM packages
+https://npmbomb.tmkn.dev
 
 ## Development
+`yarn install`
 ### Watch mode
 `yarn start`
