@@ -24,12 +24,16 @@ const Results: React.FC = () => {
     if (appState.guesses.length === 0) return <Redirect to="/" />;
 
     const alignRight = css({
-        textAlign: "right",
-        alignSelf: "center"
+        [mq[0]]: {
+            textAlign: "right",
+            alignSelf: "center"
+        }
     });
 
     const primary = css({
-        color: primaryColor
+        [mq[0]]: {
+            color: primaryColor
+        }
     });
 
     const fadeIn = keyframes`
@@ -72,9 +76,11 @@ const Results: React.FC = () => {
                 <div css={[mobileOnly, alignRight]}>You</div>
                 {appState.guesses.map(({ pkg, dependencies, guess }, i) => {
                     const animation = css({
-                        opacity: 0,
-                        animation: `${fadeIn} 1s ease forwards, ${moveIn} 500ms ease forwards`,
-                        animationDelay: `${500 * i}ms`
+                        [mq[0]]: {
+                            opacity: 0,
+                            animation: `${fadeIn} 1s ease forwards, ${moveIn} 500ms ease forwards`,
+                            animationDelay: `${500 * i}ms`
+                        }
                     });
 
                     return (

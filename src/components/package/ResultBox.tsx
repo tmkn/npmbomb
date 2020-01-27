@@ -21,22 +21,24 @@ export const Summary: React.FC = () => {
         <React.Fragment>
             <h2>Summary</h2>
             <Info>
-                <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
-                    {pkg.name}@{pkg.version}
-                </TextLink>{" "}
-                defines{" "}
-                <b>
-                    {pkg.directDependencies} direct {plural(pkg.directDependencies)}
-                </b>{" "}
-                which explode into{" "}
-                <b>
-                    {pkg.dependencies} {plural(pkg.dependencies)} overall
-                </b>
-                , resulting in{" "}
-                <b>
-                    {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
-                </b>
-                .
+                <span>
+                    <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
+                        {pkg.name}@{pkg.version}
+                    </TextLink>{" "}
+                    defines{" "}
+                    <b>
+                        {pkg.directDependencies} direct {plural(pkg.directDependencies)}
+                    </b>{" "}
+                    which explode into{" "}
+                    <b>
+                        {pkg.dependencies} {plural(pkg.dependencies)} overall
+                    </b>
+                    , resulting in{" "}
+                    <b>
+                        {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
+                    </b>
+                    .
+                </span>
             </Info>
         </React.Fragment>
     );
