@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<PrimaryButton /> matches disabled snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-o2285k"
+  >
+    Label
+  </div>
+</DocumentFragment>
+`;
+
 exports[`<PrimaryButton /> matches snapshot 1`] = `
 <DocumentFragment>
   <div

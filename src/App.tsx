@@ -90,7 +90,7 @@ export interface IGuessResult {
     guess: number;
 }
 
-interface IAppContext {
+export interface IAppContext {
     appState: IAppState;
     setAppState: (state: IAppState) => void;
 }
