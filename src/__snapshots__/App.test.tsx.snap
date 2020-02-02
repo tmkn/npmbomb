@@ -121,6 +121,33 @@ exports[`<App /> matches snapshot 1`] = `
           >
             &gt;
           </span>
+           Is there an overview page?
+        </span>
+      </h2>
+      <div
+        class="css-osfowl-Faq"
+        style="display: none;"
+      >
+        All available packages can be found on the 
+        <a
+          class="css-1ka21sq"
+          href="/overview"
+          target="_blank"
+        >
+          overview page
+        </a>
+      </div>
+      <h2
+        class="css-1c8urde"
+      >
+        <span
+          style="cursor: pointer;"
+        >
+          <span
+            class="css-swfxel-Faq"
+          >
+            &gt;
+          </span>
            Why is it called npmbomb?
         </span>
       </h2>

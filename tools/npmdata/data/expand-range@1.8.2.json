@@ -1,0 +1,1 @@
+{"name":"expand-range","version":"1.8.2","directDependencies":1,"dependencies":12,"distinctDependencies":12,"description":"Fast, bash-like range expansion. Expand a range of numbers or letters, uppercase or lowercase. See the benchmarks. Used by micromatch."}

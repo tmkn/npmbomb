@@ -231,6 +231,9 @@ export default () => {
                 <br />
                 <Highlight>Multiple same version dependencies will only be counted once.</Highlight>
             </Faq>
+            <Faq header="Is there an overview page?" collapsed>
+                All available packages can be found on the <TextLink href="/overview">overview page</TextLink>
+            </Faq>
             <Faq header="Why is it called npmbomb?" collapsed>
                 It's a hommage to the word zip bomb. Wikipedia defines it as:
                 <blockquote css={{ fontFamily: `"${serifFont}"` }}>

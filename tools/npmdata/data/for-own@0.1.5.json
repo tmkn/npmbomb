@@ -1,0 +1,1 @@
+{"name":"for-own","version":"0.1.5","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Iterate over the own enumerable properties of an object, and return an object with properties that evaluate to true from the callback. Exit early by returning `false`. JavaScript/Node.js."}
