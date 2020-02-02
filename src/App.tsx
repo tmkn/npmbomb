@@ -9,6 +9,7 @@ import Results from "./components/results/Results";
 import Header from "./components/shared/header/Header";
 import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
+import Overview from "./components/overview/Overview";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
 
 const globalStyle: SerializedStyles = css`
@@ -89,7 +90,7 @@ export interface IGuessResult {
     guess: number;
 }
 
-interface IAppContext {
+export interface IAppContext {
     appState: IAppState;
     setAppState: (state: IAppState) => void;
 }
@@ -136,6 +137,9 @@ export const App: React.FC = () => {
                         </Route>
                         <Route path="/results">
                             <Results />
+                        </Route>
+                        <Route path="/overview">
+                            <Overview />
                         </Route>
                         <Route path="/">
                             <Index />

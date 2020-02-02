@@ -140,7 +140,7 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
     };
 }
 
-const Package: React.FC = () => {
+export const Package: React.FC = () => {
     const history = useHistory();
     const { pkgName, scope } = useParams<{ pkgName: string; scope?: string }>();
     const { appState, setAppState } = useContext(AppContext);
@@ -160,6 +160,7 @@ const Package: React.FC = () => {
 
     if (error) return <NotFound pkgName={pkgName} />;
 
+    /* istanbul ignore next */
     function onNext(): void {
         const { guesses, remaining } = appState;
 
@@ -274,6 +275,7 @@ const Next: React.FC = () => {
     );
 };
 
+/* istanbul ignore next */
 export default () => {
     let match = useRouteMatch();
 

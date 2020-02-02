@@ -1,0 +1,1 @@
+{"name":"braces","version":"1.8.5","directDependencies":3,"dependencies":15,"distinctDependencies":14,"description":"Fastest brace expansion for node.js, with the most complete support for the Bash 4.3 braces specification."}

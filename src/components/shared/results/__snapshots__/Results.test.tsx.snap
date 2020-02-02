@@ -3,14 +3,14 @@
 exports[`<ResultsTable /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-60ri6o"
+    class="css-1xvm6s7"
   >
     <div>
       1
     </div>
     <div>
       <span
-        class="css-12eoq8x"
+        class="css-1naol83"
       >
         2
       </span>

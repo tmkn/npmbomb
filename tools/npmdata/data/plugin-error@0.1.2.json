@@ -1,0 +1,1 @@
+{"name":"plugin-error","version":"0.1.2","directDependencies":5,"dependencies":10,"distinctDependencies":9,"description":"Error handling for vinyl plugins. Just an abstraction of what's in gulp-util with minor changes."}

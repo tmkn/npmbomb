@@ -4,7 +4,16 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
-import { mq, serifFont, sansSerifFont, primaryColor, secondaryColor, textColor } from "../../css";
+import {
+    mq,
+    serifFont,
+    sansSerifFont,
+    primaryColor,
+    secondaryColor,
+    textColor,
+    secondaryColorLight,
+    primaryColorLight
+} from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
@@ -13,10 +22,13 @@ import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
 import { Highlight } from "../shared/highlight/Highlight";
 import { setDefaultTitle } from "../../title";
+import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 
 const faqStyle = css({
-    fontFamily: `"${sansSerifFont}"`,
-    color: `${textColor}`
+    [mq[0]]: {
+        fontFamily: `"${sansSerifFont}"`,
+        color: `${textColor}`
+    }
 });
 
 const arrowStyle = css({
@@ -142,10 +154,12 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
 };
 
 const h2Style = css({
-    fontFamily: `"${serifFont}"`,
-    color: `${secondaryColor}`,
-    fontWeight: 200,
-    marginBottom: "0.5rem"
+    [mq[0]]: {
+        fontFamily: `"${serifFont}"`,
+        color: `${secondaryColor}`,
+        fontWeight: 200,
+        marginBottom: "0.5rem"
+    }
 });
 
 interface IH2Props {
@@ -163,9 +177,11 @@ const H2: React.FC<IH2Props> = ({ children, onClick }) => {
 };
 
 const style = css({
-    fontFamily: `"${serifFont}"`,
-    display: "flex",
-    flexDirection: "column"
+    [mq[0]]: {
+        fontFamily: `"${serifFont}"`,
+        display: "flex",
+        flexDirection: "column"
+    }
 });
 
 export default () => {
@@ -215,6 +231,9 @@ export default () => {
                 <br />
                 <Highlight>Multiple same version dependencies will only be counted once.</Highlight>
             </Faq>
+            <Faq header="Is there an overview page?" collapsed>
+                All available packages can be found on the <TextLink href="/overview">overview page</TextLink>
+            </Faq>
             <Faq header="Why is it called npmbomb?" collapsed>
                 It's a hommage to the word zip bomb. Wikipedia defines it as:
                 <blockquote css={{ fontFamily: `"${serifFont}"` }}>
@@ -247,7 +266,7 @@ interface IAvailablePackgesHookResponse {
     error: boolean;
 }
 
-function useAvailablePackagesLoader(): IAvailablePackgesHookResponse {
+export function useAvailablePackagesLoader(): IAvailablePackgesHookResponse {
     const { appState, setAppState } = useContext(AppContext);
 
     const [packages, setPackages] = useState<string[]>([]);

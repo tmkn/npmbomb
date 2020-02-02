@@ -18,9 +18,9 @@
     "cypress:run": "cypress run",
     "percy": "percy exec -- cypress run",
     "ci:e2e": "node tools/server.js",
-    "build:npmdata": "tsc --project ./tools/npmdata/tsconfig.json",
-    "watch:npmdata": "tsc --project ./tools/npmdata/tsconfig.json --watch",
-    "run:npmdata": "node ./tools/npmdata/build/tools/npmdata/npmdata.js E:\\npm.json"
+    "npmdata:build": "tsc --project ./tools/npmdata/tsconfig.json",
+    "npmdata:watch": "tsc --project ./tools/npmdata/tsconfig.json --watch",
+    "npmdata:run": "node ./tools/npmdata/build/tools/npmdata/npmdata.js E:\\npm.json"
   },
   "keywords": [],
   "author": "tmkn",

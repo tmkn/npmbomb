@@ -1,0 +1,1 @@
+{"name":"is-dotfile","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Return true if a file path is (or has) a dotfile. Returns false if the path is a dot directory."}

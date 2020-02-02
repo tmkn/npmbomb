@@ -1,0 +1,1 @@
+{"name":"fs-extra","version":"1.0.0","directDependencies":3,"dependencies":5,"distinctDependencies":3,"description":"fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as mkdir -p, cp -r, and rm -rf."}

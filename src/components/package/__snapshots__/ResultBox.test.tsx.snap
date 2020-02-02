@@ -9,44 +9,46 @@ exports[`<ResultBox /> matches snapshot 1`] = `
       Summary
     </h2>
     <p
-      class="css-1axajee"
+      class="css-1cwnpiq"
     >
-      <a
-        class="css-1ka21sq"
-        href="https://www.npmjs.com/package//v/"
-        target="_blank"
-      >
-        @
-      </a>
-       defines 
-      <b>
-        0 direct dependencies
-      </b>
-       which explode into 
-      <b>
-        0 dependencies overall
-      </b>
-      , resulting in 
-      <b>
-        0 distinct dependencies
-      </b>
-      .
+      <span>
+        <a
+          class="css-1ka21sq"
+          href="https://www.npmjs.com/package//v/"
+          target="_blank"
+        >
+          @
+        </a>
+         defines 
+        <b>
+          0 direct dependencies
+        </b>
+         which explode into 
+        <b>
+          0 dependencies overall
+        </b>
+        , resulting in 
+        <b>
+          0 distinct dependencies
+        </b>
+        .
+      </span>
     </p>
     <h2>
       Results
     </h2>
     <div
-      class="css-14vnwjz"
+      class="css-khmwet"
       style="margin: 1rem 0px;"
     />
     <div
-      class="css-60ri6o"
+      class="css-1xvm6s7"
     >
       <div>
         Your Guess:
       </div>
       <span
-        class="css-12eoq8x"
+        class="css-1naol83"
       >
         23
       </span>
@@ -54,13 +56,13 @@ exports[`<ResultBox /> matches snapshot 1`] = `
         Actual:
       </div>
       <span
-        class="css-12eoq8x"
+        class="css-1naol83"
       >
         45
       </span>
     </div>
     <div
-      class="css-14vnwjz"
+      class="css-khmwet"
       style="margin: 1rem 0px;"
     />
     <div
@@ -68,7 +70,7 @@ exports[`<ResultBox /> matches snapshot 1`] = `
     >
       You were off by 
       <span
-        class="css-12eoq8x"
+        class="css-1naol83"
       >
         22
       </span>

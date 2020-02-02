@@ -1,11 +1,15 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 
+import { mq } from "../../../css";
+
 const dividerStyle = css({
-    height: "0px",
-    borderBottom: "1px solid #ececec",
-    display: "flex",
-    flex: 1
+    [mq[0]]: {
+        height: "0px",
+        borderBottom: "1px solid #ececec",
+        display: "flex",
+        flex: 1
+    }
 });
 
 interface IDividerProps {

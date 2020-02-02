@@ -1,0 +1,1 @@
+{"name":"object.omit","version":"2.0.1","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Return a copy of an object excluding the given key, or array of keys. Also accepts an optional filter function as the last argument."}

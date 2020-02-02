@@ -25,6 +25,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
         }
     });
 
+    /* istanbul ignore next */
     function onClick(): void {
         setAppState({
             inGameMode: false,
@@ -51,6 +52,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
 export const NotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => {
     const [sentFeedback, setFeedback] = useState<boolean>(false);
 
+    /* istanbul ignore next */
     function proposePackage() {
         Sentry.configureScope(function(scope) {
             scope.setExtra("pkg", pkgName);
