@@ -14,7 +14,7 @@ describe("<GuessBox />", () => {
         const guess = "1337";
         const { container } = render(<GuessBox />);
         const input = await waitForElement(() =>
-            container.querySelector<HTMLInputElement>("input[type='number']")
+            container.querySelector<HTMLInputElement>("input[type='text']")
         );
 
         fireEvent.change(input!, { target: { value: guess } });
@@ -25,7 +25,7 @@ describe("<GuessBox />", () => {
     test("do invalid input", async () => {
         const { container } = render(<GuessBox />);
         const input = await waitForElement(() =>
-            container.querySelector<HTMLInputElement>("input[type='number']")
+            container.querySelector<HTMLInputElement>("input[type='text']")
         );
 
         fireEvent.change(input!, { target: { value: "abc" } });
@@ -46,7 +46,7 @@ describe("<GuessBox />", () => {
             </GuessContext.Provider>
         );
         const input = await waitForElement(() =>
-            container.querySelector<HTMLInputElement>("input[type='number']")
+            container.querySelector<HTMLInputElement>("input[type='text']")
         );
         const btn = await waitForElement(() => getByText("Guess"));
 

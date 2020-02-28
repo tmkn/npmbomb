@@ -80,7 +80,7 @@ export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
             <input
                 css={inputStyle}
                 value={guess}
-                type="number"
+                type="text"
                 pattern="[0-9]"
                 inputMode="numeric"
                 onChange={validate}

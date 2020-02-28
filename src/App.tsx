@@ -1,15 +1,17 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/core";
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Index from "./components/index/Index";
-import Package from "./components/package/Package";
-import Results from "./components/results/Results";
+const Index = lazy(() => import("./components/index/Index"));
+const Package = lazy(() => import("./components/package/Package"));
+const Results = lazy(() => import("./components/results/Results"));
+const Overview = lazy(() => import("./components/overview/Overview"));
+
 import Header from "./components/shared/header/Header";
 import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
-import Overview from "./components/overview/Overview";
+import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
 
 const globalStyle: SerializedStyles = css`
@@ -133,16 +135,24 @@ export const App: React.FC = () => {
                 <Content>
                     <Switch>
                         <Route path="/package">
-                            <Package />
+                            <Suspense fallback={<LoadingIndicator />}>
+                                <Package />
+                            </Suspense>
                         </Route>
                         <Route path="/results">
-                            <Results />
+                            <Suspense fallback={<LoadingIndicator />}>
+                                <Results />
+                            </Suspense>
                         </Route>
                         <Route path="/overview">
-                            <Overview />
+                            <Suspense fallback={<LoadingIndicator />}>
+                                <Overview />
+                            </Suspense>
                         </Route>
                         <Route path="/">
-                            <Index />
+                            <Suspense fallback={<LoadingIndicator />}>
+                                <Index />
+                            </Suspense>
                         </Route>
                     </Switch>
                 </Content>
