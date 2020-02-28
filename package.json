@@ -26,7 +26,7 @@
   "author": "tmkn",
   "license": "MIT",
   "dependencies": {
-    "@emotion/core": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@sentry/browser": "5.12.5",
     "lodash.shuffle": "^4.2.0",
