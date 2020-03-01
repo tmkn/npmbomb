@@ -9,7 +9,7 @@ exports[`<GuessBox /> matches snapshot 1`] = `
       class="css-rznvji"
       inputmode="numeric"
       pattern="[0-9]"
-      type="number"
+      type="text"
       value=""
     />
     <div
