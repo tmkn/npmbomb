@@ -15,5 +15,5 @@ describe("<GuessBox />", () => {
 
         await waitForElement(() => getByText("32"), { timeout: 6000 });
         await wait();
-    });
+    }, 6000);
 });
