@@ -8,8 +8,7 @@
     "jsx": "react",
     "sourceMap": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["jest-fetch-mock"]
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"

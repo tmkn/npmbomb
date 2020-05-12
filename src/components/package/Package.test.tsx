@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, MemoryRouter, Route } from "react-router-dom";
 import { render, fireEvent, waitForElement, wait } from "@testing-library/react";
+import fetchMock from "jest-fetch-mock";
 
 import { Package, IPackageInfo } from "./Package";
 import { AppContext, IAppContext } from "../../App";
