@@ -139,7 +139,7 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
         <React.Fragment>
             <H2 onClick={onClick}>
                 <span style={{ cursor: "pointer" }}>
-                    <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>></span>{" "}
+                    <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>&gt;</span>{" "}
                     {header}
                 </span>
             </H2>
