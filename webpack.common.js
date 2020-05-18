@@ -34,9 +34,11 @@ module.exports = {
                 'twitter:description': 'Guess the number of dependencies for popular NPM packages'
             },
         }),
-        new CopyPlugin([
-            { from: 'tools/npmdata/data', to: 'data' }
-        ]),
+        new CopyPlugin({
+            patterns: [
+                { from: 'tools/npmdata/data', to: 'data' }
+            ]
+        }),
     ],
     output: {
         filename: '[name].bundle.js',
