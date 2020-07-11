@@ -1,1 +1,0 @@
-{"name":"@babel/plugin-transform-sticky-regex","version":"7.2.0","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Compile ES2015 sticky regex to an ES5 RegExp constructor"}

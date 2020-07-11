@@ -1,0 +1,1 @@
+{"name":"encoding","version":"0.1.13","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Convert encodings, uses iconv-lite"}

@@ -1,1 +1,0 @@
-{"name":"jest-worker","version":"24.6.0","directDependencies":2,"dependencies":12,"distinctDependencies":11,"description":"Module for executing heavy tasks under forked processes in parallel, by providing a `Promise` based interface, minimum overhead, and bound workers."}

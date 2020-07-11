@@ -1,0 +1,1 @@
+{"name":"array.prototype.flatmap","version":"1.2.3","directDependencies":3,"dependencies":32,"distinctDependencies":15,"description":"An ESnext spec-compliant `Array.prototype.flatMap` shim/polyfill/replacement that works as far down as ES3."}

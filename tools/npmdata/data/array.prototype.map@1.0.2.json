@@ -1,0 +1,1 @@
+{"name":"array.prototype.map","version":"1.0.2","directDependencies":4,"dependencies":33,"distinctDependencies":17,"description":"An ES5 spec-compliant `Array.prototype.map` shim/polyfill/replacement that works as far down as ES3."}

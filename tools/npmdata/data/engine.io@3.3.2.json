@@ -1,1 +1,0 @@
-{"name":"engine.io","version":"3.3.2","directDependencies":6,"dependencies":17,"distinctDependencies":17,"description":"The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server"}

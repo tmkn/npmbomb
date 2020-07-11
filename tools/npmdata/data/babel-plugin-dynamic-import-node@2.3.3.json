@@ -1,0 +1,1 @@
+{"name":"babel-plugin-dynamic-import-node","version":"2.3.3","directDependencies":1,"dependencies":6,"distinctDependencies":5,"description":"Babel plugin to transpile import() to a deferred require(), for node"}

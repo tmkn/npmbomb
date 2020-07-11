@@ -1,0 +1,1 @@
+{"name":"iterate-value","version":"1.0.2","directDependencies":2,"dependencies":37,"distinctDependencies":22,"description":"Iterate any iterable JS value. Works robustly in all environments, all versions."}

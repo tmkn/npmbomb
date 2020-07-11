@@ -1,0 +1,1 @@
+{"name":"request-promise","version":"4.2.5","directDependencies":4,"dependencies":7,"distinctDependencies":7,"description":"The simplified HTTP request client 'request' with Promise support. Powered by Bluebird."}

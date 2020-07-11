@@ -1,0 +1,1 @@
+{"name":"yargs-unparser","version":"1.6.0","directDependencies":3,"dependencies":43,"distinctDependencies":29,"description":"Converts back a yargs argv object to its original array form"}

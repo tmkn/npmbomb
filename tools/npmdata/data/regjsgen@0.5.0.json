@@ -1,1 +1,0 @@
-{"name":"regjsgen","version":"0.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generate regular expressions from regjsparser’s AST."}

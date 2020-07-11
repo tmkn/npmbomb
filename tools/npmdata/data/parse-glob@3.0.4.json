@@ -1,1 +1,0 @@
-{"name":"parse-glob","version":"3.0.4","directDependencies":4,"dependencies":10,"distinctDependencies":5,"description":"Parse a glob pattern into an object of tokens."}

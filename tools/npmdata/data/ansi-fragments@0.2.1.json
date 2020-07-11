@@ -1,0 +1,1 @@
+{"name":"ansi-fragments","version":"0.2.1","directDependencies":3,"dependencies":9,"distinctDependencies":9,"description":"A tiny library with builders to help making logs/CLI pretty with a nice DX."}

@@ -1,1 +1,1 @@
-{"name":"cache-base","version":"1.0.1","directDependencies":9,"dependencies":53,"distinctDependencies":29,"description":"Basic object cache with `get`, `set`, `del`, and `has` methods for node.js/javascript projects."}
+{"name":"cache-base","version":"1.0.1","directDependencies":9,"dependencies":56,"distinctDependencies":28,"description":"Basic object cache with `get`, `set`, `del`, and `has` methods for node.js/javascript projects."}

@@ -1,1 +1,0 @@
-{"name":"array-includes","version":"3.0.3","directDependencies":2,"dependencies":16,"distinctDependencies":11,"description":"An ES7/ES2016 spec-compliant `Array.prototype.includes` shim/polyfill/replacement that works as far down as ES3."}

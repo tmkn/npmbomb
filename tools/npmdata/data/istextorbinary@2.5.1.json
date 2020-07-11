@@ -1,1 +1,0 @@
-{"name":"istextorbinary","version":"2.5.1","directDependencies":3,"dependencies":6,"distinctDependencies":5,"description":"Determine if a filename and/or buffer is text or binary. Smarter detection than the other solutions."}

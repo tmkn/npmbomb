@@ -1,0 +1,1 @@
+{"name":"node-notifier","version":"7.0.1","directDependencies":6,"dependencies":8,"distinctDependencies":8,"description":"A Node.js module for sending notifications on native Mac, Windows (post and pre 8) and Linux (or Growl as fallback)"}

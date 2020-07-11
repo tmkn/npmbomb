@@ -1,0 +1,1 @@
+{"name":"import-fresh","version":"3.2.1","directDependencies":2,"dependencies":3,"distinctDependencies":3,"description":"Import a module while bypassing the cache"}

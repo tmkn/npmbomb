@@ -1,1 +1,0 @@
-{"name":"@babel/plugin-transform-literals","version":"7.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Compile ES2015 unicode string and number literals to ES5"}

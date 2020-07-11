@@ -1,1 +1,1 @@
-{"name":"extglob","version":"2.0.4","directDependencies":8,"dependencies":347,"distinctDependencies":69,"description":"Extended glob support for JavaScript. Adds (almost) the expressive power of regular expressions to glob patterns."}
+{"name":"extglob","version":"2.0.4","directDependencies":8,"dependencies":353,"distinctDependencies":68,"description":"Extended glob support for JavaScript. Adds (almost) the expressive power of regular expressions to glob patterns."}

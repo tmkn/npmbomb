@@ -1,0 +1,1 @@
+{"name":"test-exclude","version":"6.0.0","directDependencies":3,"dependencies":19,"distinctDependencies":12,"description":"test for inclusion or exclusion of paths using globs"}

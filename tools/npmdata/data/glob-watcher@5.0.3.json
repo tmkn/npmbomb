@@ -1,1 +1,1 @@
-{"name":"glob-watcher","version":"5.0.3","directDependencies":6,"dependencies":3031,"distinctDependencies":179,"description":"Watch globs and execute a function upon change, with intelligent defaults for debouncing and queueing."}
+{"name":"glob-watcher","version":"5.0.3","directDependencies":6,"dependencies":2988,"distinctDependencies":121,"description":"Watch globs and execute a function upon change, with intelligent defaults for debouncing and queueing."}

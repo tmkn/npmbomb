@@ -1,1 +1,0 @@
-{"name":"@babel/plugin-external-helpers","version":"7.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"This plugin contains helper functions that’ll be placed at the top of the generated code"}

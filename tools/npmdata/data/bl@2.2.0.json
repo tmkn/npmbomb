@@ -1,0 +1,1 @@
+{"name":"bl","version":"2.2.0","directDependencies":2,"dependencies":10,"distinctDependencies":9,"description":"Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!"}

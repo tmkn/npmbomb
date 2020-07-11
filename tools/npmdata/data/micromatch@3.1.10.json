@@ -1,1 +1,1 @@
-{"name":"micromatch","version":"3.1.10","directDependencies":13,"dependencies":899,"distinctDependencies":82,"description":"Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch."}
+{"name":"micromatch","version":"3.1.10","directDependencies":13,"dependencies":914,"distinctDependencies":81,"description":"Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch."}

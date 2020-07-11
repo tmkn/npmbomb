@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-named-capturing-groups-regex","version":"7.10.4","directDependencies":1,"dependencies":19,"distinctDependencies":17,"description":"Compile regular expressions using named groups to ES5."}

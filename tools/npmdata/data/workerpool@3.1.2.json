@@ -1,1 +1,1 @@
-{"name":"workerpool","version":"3.1.2","directDependencies":3,"dependencies":202,"distinctDependencies":38,"description":"Offload tasks to a pool of workers on node.js and in the browser"}
+{"name":"workerpool","version":"3.1.2","directDependencies":3,"dependencies":331,"distinctDependencies":44,"description":"Offload tasks to a pool of workers on node.js and in the browser"}

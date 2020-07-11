@@ -1,0 +1,1 @@
+{"name":"babel-preset-jest","version":"26.1.0","directDependencies":2,"dependencies":72,"distinctDependencies":34,"description":"> Babel preset for all Jest plugins. This preset is automatically included when using [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest)."}

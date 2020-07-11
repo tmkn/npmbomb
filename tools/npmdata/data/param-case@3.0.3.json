@@ -1,0 +1,1 @@
+{"name":"param-case","version":"3.0.3","directDependencies":2,"dependencies":7,"distinctDependencies":4,"description":"Transform into a lower cased string with dashes between words"}

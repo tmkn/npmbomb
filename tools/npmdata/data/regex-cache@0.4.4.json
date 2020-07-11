@@ -1,1 +1,0 @@
-{"name":"regex-cache","version":"0.4.4","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Memoize the results of a call to the RegExp constructor, avoiding repetitious runtime compilation of the same string and options, resulting in surprising performance improvements."}

@@ -1,1 +1,1 @@
-{"name":"semver-greatest-satisfied-range","version":"1.1.0","directDependencies":1,"dependencies":48,"distinctDependencies":7,"description":"Find the greatest satisfied semver range from an array of ranges."}
+{"name":"semver-greatest-satisfied-range","version":"1.1.0","directDependencies":1,"dependencies":41,"distinctDependencies":9,"description":"Find the greatest satisfied semver range from an array of ranges."}
