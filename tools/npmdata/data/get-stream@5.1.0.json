@@ -1,0 +1,1 @@
+{"name":"get-stream","version":"5.1.0","directDependencies":1,"dependencies":6,"distinctDependencies":4,"description":"Get a stream as a string, buffer, or array"}

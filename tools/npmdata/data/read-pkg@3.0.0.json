@@ -1,1 +1,0 @@
-{"name":"read-pkg","version":"3.0.0","directDependencies":3,"dependencies":24,"distinctDependencies":19,"description":"Read a package.json file"}

@@ -1,0 +1,1 @@
+{"name":"jest-leak-detector","version":"26.1.0","directDependencies":2,"dependencies":23,"distinctDependencies":17,"description":"Module for verifying whether an object has been garbage collected or not."}

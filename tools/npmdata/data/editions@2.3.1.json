@@ -1,0 +1,1 @@
+{"name":"editions","version":"2.3.1","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Publish multiple editions for your JavaScript packages consistently and easily (e.g. source edition, esnext edition, es2015 edition)"}

@@ -1,0 +1,1 @@
+{"name":"is-potential-custom-element-name","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check whether a given string matches the `PotentialCustomElementName` production as defined in the HTML Standard."}

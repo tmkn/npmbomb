@@ -1,0 +1,1 @@
+{"name":"eslint-import-resolver-node","version":"0.3.4","directDependencies":2,"dependencies":4,"distinctDependencies":4,"description":"Node default behavior import resolution plugin for eslint-plugin-import."}

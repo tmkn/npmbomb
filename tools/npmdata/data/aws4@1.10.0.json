@@ -1,0 +1,1 @@
+{"name":"aws4","version":"1.10.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Signs and prepares requests using AWS Signature Version 4"}

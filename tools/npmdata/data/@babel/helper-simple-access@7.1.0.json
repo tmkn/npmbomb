@@ -1,1 +1,0 @@
-{"name":"@babel/helper-simple-access","version":"7.1.0","directDependencies":2,"dependencies":21,"distinctDependencies":16,"description":"Babel helper for ensuring that access to a given value is performed through simple accesses"}

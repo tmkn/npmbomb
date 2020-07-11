@@ -1,0 +1,1 @@
+{"name":"redis","version":"3.0.2","directDependencies":4,"dependencies":5,"distinctDependencies":4,"description":"A high performance Redis client."}

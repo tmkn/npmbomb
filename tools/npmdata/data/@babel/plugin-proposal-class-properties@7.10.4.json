@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-proposal-class-properties","version":"7.10.4","directDependencies":2,"dependencies":121,"distinctDependencies":31,"description":"This plugin transforms static class properties as well as properties declared with the property initializer syntax"}

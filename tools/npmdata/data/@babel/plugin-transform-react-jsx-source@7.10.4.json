@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-react-jsx-source","version":"7.10.4","directDependencies":2,"dependencies":3,"distinctDependencies":2,"description":"Add a __source prop to all JSX Elements"}

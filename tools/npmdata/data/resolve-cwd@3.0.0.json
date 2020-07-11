@@ -1,0 +1,1 @@
+{"name":"resolve-cwd","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Resolve the path of a module like `require.resolve()` but from the current working directory"}

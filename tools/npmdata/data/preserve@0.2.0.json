@@ -1,1 +1,0 @@
-{"name":"preserve","version":"0.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Temporarily substitute tokens in the given `string` with placeholders, then put them back after transforming the string."}

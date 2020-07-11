@@ -1,0 +1,1 @@
+{"name":"object.fromentries","version":"2.0.2","directDependencies":4,"dependencies":34,"distinctDependencies":15,"description":"ES proposal-spec-compliant Object.fromEntries shim."}

@@ -1,0 +1,1 @@
+{"name":"string.prototype.matchall","version":"4.0.2","directDependencies":6,"dependencies":158,"distinctDependencies":18,"description":"Spec-compliant polyfill for String.prototype.matchAll ESnext proposal."}

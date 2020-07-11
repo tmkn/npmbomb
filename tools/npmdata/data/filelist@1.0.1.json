@@ -1,0 +1,1 @@
+{"name":"filelist","version":"1.0.1","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Lazy-evaluating list of files, based on globs or regex patterns"}

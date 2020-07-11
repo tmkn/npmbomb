@@ -1,0 +1,1 @@
+{"name":"npm-api","version":"1.0.0","directDependencies":6,"dependencies":89,"distinctDependencies":69,"description":"Base class for retrieving data from the npm registry."}

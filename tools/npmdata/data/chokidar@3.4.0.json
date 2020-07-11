@@ -1,0 +1,1 @@
+{"name":"chokidar","version":"3.4.0","directDependencies":8,"dependencies":18,"distinctDependencies":14,"description":"A neat wrapper around node.js fs.watch / fs.watchFile / fsevents."}

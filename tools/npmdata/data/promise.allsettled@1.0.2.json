@@ -1,0 +1,1 @@
+{"name":"promise.allsettled","version":"1.0.2","directDependencies":5,"dependencies":104,"distinctDependencies":25,"description":"ES Proposal spec-compliant shim for Promise.allSettled"}

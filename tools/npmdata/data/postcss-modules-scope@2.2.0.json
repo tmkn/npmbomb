@@ -1,0 +1,1 @@
+{"name":"postcss-modules-scope","version":"2.2.0","directDependencies":2,"dependencies":15,"distinctDependencies":14,"description":"A CSS Modules transform to extract export statements from local-scope classes"}

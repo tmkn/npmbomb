@@ -1,1 +1,0 @@
-{"name":"react-proxy","version":"1.1.8","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Proxies React components without unmounting or losing their state."}

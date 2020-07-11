@@ -1,0 +1,1 @@
+{"name":"@babel/plugin-transform-block-scoping","version":"7.10.4","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Compile ES2015 block scoping (const and let) to ES5"}

@@ -1,0 +1,1 @@
+{"name":"object.getownpropertydescriptors","version":"2.1.0","directDependencies":2,"dependencies":31,"distinctDependencies":15,"description":"ES2017 spec-compliant shim for `Object.getOwnPropertyDescriptors` that works in ES5."}

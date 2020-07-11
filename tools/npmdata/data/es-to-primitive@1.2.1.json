@@ -1,0 +1,1 @@
+{"name":"es-to-primitive","version":"1.2.1","directDependencies":3,"dependencies":4,"distinctDependencies":4,"description":"ECMAScript “ToPrimitive” algorithm. Provides ES5 and ES2015 versions."}

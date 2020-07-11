@@ -1,0 +1,1 @@
+{"name":"broccoli-babel-transpiler","version":"7.6.0","directDependencies":12,"dependencies":1040,"distinctDependencies":114,"description":"A Broccoli plugin which transpile ES6 to readable ES5 by using babel."}

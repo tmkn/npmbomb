@@ -1,1 +1,0 @@
-{"name":"mixin-object","version":"2.0.1","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Mixin the own and inherited properties of other objects onto the first object. Pass an empty object as the first arg to shallow clone."}

@@ -1,0 +1,1 @@
+{"name":"hoist-non-react-statics","version":"3.3.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Copies non-react specific statics from a child component to a parent component"}

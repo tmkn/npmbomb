@@ -1,1 +1,0 @@
-{"name":"stacktrace-parser","version":"0.1.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Parses every stack trace into a nicely formatted array of hashes."}

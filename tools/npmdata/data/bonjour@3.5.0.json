@@ -1,1 +1,1 @@
-{"name":"bonjour","version":"3.5.0","directDependencies":6,"dependencies":11,"distinctDependencies":11,"description":"A Bonjour/Zeroconf implementation in pure JavaScript"}
+{"name":"bonjour","version":"3.5.0","directDependencies":6,"dependencies":80,"distinctDependencies":29,"description":"A Bonjour/Zeroconf implementation in pure JavaScript"}

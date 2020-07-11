@@ -1,0 +1,1 @@
+{"name":"@babel/helper-remap-async-to-generator","version":"7.10.4","directDependencies":5,"dependencies":197,"distinctDependencies":28,"description":"Helper function to remap async functions to generators"}

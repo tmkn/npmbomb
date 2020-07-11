@@ -1,0 +1,1 @@
+{"name":"lazy-cache","version":"2.0.2","directDependencies":1,"dependencies":4,"distinctDependencies":4,"description":"Cache requires to be lazy-loaded when needed."}

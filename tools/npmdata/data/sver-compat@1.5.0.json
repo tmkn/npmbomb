@@ -1,1 +1,1 @@
-{"name":"sver-compat","version":"1.5.0","directDependencies":2,"dependencies":47,"distinctDependencies":6,"description":"Simple Semver and SemverRange classes"}
+{"name":"sver-compat","version":"1.5.0","directDependencies":2,"dependencies":40,"distinctDependencies":8,"description":"Simple Semver and SemverRange classes"}

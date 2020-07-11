@@ -1,1 +1,0 @@
-{"name":"glob-base","version":"0.3.0","directDependencies":2,"dependencies":5,"distinctDependencies":3,"description":"Returns an object with the (non-glob) base path and the actual pattern."}

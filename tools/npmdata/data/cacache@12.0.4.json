@@ -1,0 +1,1 @@
+{"name":"cacache","version":"12.0.4","directDependencies":15,"dependencies":225,"distinctDependencies":57,"description":"Fast, fault-tolerant, cross-platform, disk-based, data-agnostic, content-addressable cache."}

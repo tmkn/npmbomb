@@ -1,0 +1,1 @@
+{"name":"v8-to-istanbul","version":"4.1.4","directDependencies":3,"dependencies":4,"distinctDependencies":4,"description":"convert from v8 coverage format to istanbul's format"}
