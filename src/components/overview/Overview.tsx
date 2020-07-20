@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext, useState, useEffect, useRef } from "react";
+import { BehaviorSubject } from "rxjs";
+import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
 
 import {
     mq,
@@ -122,30 +124,39 @@ const OverviewLink: React.FC<{ p: string }> = ({ p }) => {
 };
 
 const OverviewSearch: React.FC = () => {
+    const inputEl = useRef<HTMLInputElement>(null);
+    let [inputObserver] = useState(() => new BehaviorSubject<string>(null!));
     const [query, setQuery] = useState<string>("");
-    const [dispatchText, setDispatchText] = useState<string>("");
     const overviewContext = useContext(OverviewContext);
-    let timeoutId: number | undefined = undefined;
 
     useEffect(() => {
-        timeoutId = window.setTimeout(() => setDispatchText(query), 400);
+        inputObserver
+            .pipe(debounceTime(250))
+            .pipe(filter(value => value !== null))
+            .pipe(distinctUntilChanged())
+            .subscribe(value => {
+                overviewContext.setQuery(value);
+            });
 
         return () => {
-            window.clearTimeout(timeoutId);
+            inputObserver.unsubscribe();
         };
-    }, [query]);
-
-    useEffect(() => {
-        overviewContext.setQuery(dispatchText);
-    }, [dispatchText]);
+    }, []);
 
     function doQuery(e: React.ChangeEvent<HTMLInputElement>) {
+        inputObserver.next(e.target.value);
         setQuery(e.target.value);
     }
 
     return (
         <Info>
-            <input type="text" placeholder={`Search packages`} value={query} onChange={doQuery} />
+            <input
+                ref={inputEl}
+                type="text"
+                placeholder={`Search packages`}
+                value={query}
+                onChange={doQuery}
+            />
         </Info>
     );
 };
