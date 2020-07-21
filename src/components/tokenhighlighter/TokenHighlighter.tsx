@@ -14,8 +14,8 @@ export const TokenHighlighter: React.FC<ITokenHighlighterProps> = memo(
         let matchResult: RegExpExecArray | null;
 
         const indexes: Map<number, { isHighlight: boolean }> = new Map([
-            [0, { matchIndex: 0, isHighlight: false }],
-            [text.length, { matchIndex: text.length, isHighlight: false }]
+            [0, { isHighlight: false }],
+            [text.length, { isHighlight: false }]
         ]);
 
         while (null != (matchResult = test.exec(text))) {
@@ -37,7 +37,7 @@ export const TokenHighlighter: React.FC<ITokenHighlighterProps> = memo(
             if (i === indexes.size - 1) break;
 
             const [end] = sortedMatches[i + 1];
-            const token = text.substring(i, end);
+            const token = text.substring(index, end);
 
             const jsx = isHighlight ? (
                 formatter(token, i)
