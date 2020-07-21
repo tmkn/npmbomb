@@ -50,4 +50,11 @@ module.exports = {
             chunks: 'all',
         },
     },
+    devServer: {
+        overlay: true,
+        contentBase: path.join(__dirname),
+        historyApiFallback: {
+            disableDotRule: true
+        }
+    },
 };

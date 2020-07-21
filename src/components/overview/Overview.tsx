@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext, useState, useEffect, useRef } from "react";
+import React, { useContext, useState, useEffect, useRef, memo } from "react";
 import { BehaviorSubject } from "rxjs";
 import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
+import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 
 import {
     mq,
@@ -18,6 +19,7 @@ import { useAvailablePackagesLoader } from "../index/Index";
 import { AppContext } from "../../App";
 import { Info } from "../shared/info/Info";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
+import { TokenHighlighter } from "../tokenhighlighter/TokenHighlighter";
 
 interface IOverviewContext {
     query: string;
@@ -35,12 +37,8 @@ const overviewStyle = css({
             display: "flex",
             paddingBottom: "0.5rem"
         },
-        "a:last-child": {
-            paddingBottom: 0
-        },
         input: {
             flex: 1,
-            //fontSize: "1.1rem",
             color: primaryColor,
             border: `1px solid ${primaryColorLight}`,
             padding: "0.5rem",
@@ -71,24 +69,6 @@ export default () => {
 
     const filteredPackages = packages.filter(p => matches(p, query)).sort();
 
-    const ResultListing: React.FC<{ packages: string[] }> = ({ packages }) => {
-        const countStyle = css({
-            [mq[0]]: {
-                fontFamily: serifFont,
-                marginBottom: "1rem"
-            }
-        });
-
-        return (
-            <React.Fragment>
-                <span css={countStyle}>Found {filteredPackages.length} packages</span>
-                {packages.map(p => (
-                    <OverviewLink key={p} p={p} />
-                ))}
-            </React.Fragment>
-        );
-    };
-
     return (
         <OverviewContext.Provider value={context}>
             <div css={overviewStyle}>
@@ -106,19 +86,84 @@ export default () => {
     );
 };
 
+const ResultListing: React.FC<{ packages: string[] }> = ({ packages }) => {
+    const countStyle = css({
+        [mq[0]]: {
+            fontFamily: serifFont,
+            marginBottom: "1rem"
+        }
+    });
+
+    const resultsStyle = css({
+        [mq[0]]: {
+            minHeight: `300px`
+        }
+    });
+
+    const rowStyle = css({
+        overflow: "auto"
+    });
+
+    const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
+        const p = packages[index];
+
+        return (
+            <div key={key} style={style} css={rowStyle}>
+                <OverviewLink key={p} p={p} />
+            </div>
+        );
+    };
+
+    return (
+        <React.Fragment>
+            <span css={countStyle}>Found {packages.length} packages</span>
+            <div css={resultsStyle}>
+                <AutoSizer defaultHeight={600}>
+                    {({ height, width }) => (
+                        <List
+                            overscanRowCount={10}
+                            width={width}
+                            height={height}
+                            rowCount={packages.length}
+                            rowHeight={30}
+                            rowRenderer={rowRenderer}
+                        />
+                    )}
+                </AutoSizer>
+            </div>
+        </React.Fragment>
+    );
+};
+
 const overviewLinkStyle = css({
     [mq[0]]: {
         textDecoration: "underline",
         textDecorationColor: secondaryColor,
         color: primaryColor,
-        cursor: "pointer"
+        cursor: "pointer",
+        whiteSpace: "pre",
+        paddingLeft: "1rem",
+        ":hover": {
+            backgroundColor: primaryColorLight,
+            color: secondaryColorLight
+        }
     }
 });
 
+const tokenFormatter = (token: string, i: number): JSX.Element => {
+    return (
+        <span key={i}>
+            <b>{token}</b>
+        </span>
+    );
+};
+
 const OverviewLink: React.FC<{ p: string }> = ({ p }) => {
+    const { query } = useContext(OverviewContext);
+
     return (
         <a css={overviewLinkStyle} href={`/package/${p}`}>
-            {p}
+            <TokenHighlighter text={p} highlight={query} formatter={tokenFormatter} />
         </a>
     );
 };
