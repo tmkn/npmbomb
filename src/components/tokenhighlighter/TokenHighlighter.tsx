@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef, memo } from "react";
+import React, { memo } from "react";
 
 interface ITokenHighlighterProps {
     text: string;
@@ -11,36 +11,41 @@ export const TokenHighlighter: React.FC<ITokenHighlighterProps> = memo(
         if (highlight === ``) return <React.Fragment>{text}</React.Fragment>;
 
         const test = new RegExp(`${highlight}`, `gi`);
-        const matches: Array<{ matchIndex: number; isHighlight: boolean }> = [];
         let matchResult: RegExpExecArray | null;
+
+        const indexes: Map<number, { isHighlight: boolean }> = new Map([
+            [0, { matchIndex: 0, isHighlight: false }],
+            [text.length, { matchIndex: text.length, isHighlight: false }]
+        ]);
 
         while (null != (matchResult = test.exec(text))) {
             const { index } = matchResult;
+            const item = indexes.get(index);
 
-            matches.push({ matchIndex: index, isHighlight: true });
-            matches.push({ matchIndex: index + highlight.length, isHighlight: false });
+            if (typeof item !== "undefined") {
+                item.isHighlight = true;
+            } else {
+                indexes.set(index, { isHighlight: true });
+            }
+
+            indexes.set(index + highlight.length, { isHighlight: false });
         }
 
-        if (matches.length === 0) return <React.Fragment>{text}</React.Fragment>;
+        const tokens: JSX.Element[] = [];
+        const sortedMatches = [...indexes].sort(([i], [i2]) => i - i2);
+        for (const [i, [index, { isHighlight }]] of sortedMatches.entries()) {
+            if (i === indexes.size - 1) break;
 
-        const tokens: JSX.Element[] = matches.map(({ matchIndex, isHighlight }, i) => {
-            let token: string;
+            const [end] = sortedMatches[i + 1];
+            const token = text.substring(i, end);
 
-            if (i === 0 && matchIndex !== 0) {
-                token = text.substring(0, matchIndex);
-            }
-            else if (i === matches.length - 1) {
-                token = text.substring(matchIndex);
-            } else {
-                token = text.substring(matchIndex, matches[i + 1].matchIndex);
-            }
-
-            return isHighlight ? (
+            const jsx = isHighlight ? (
                 formatter(token, i)
             ) : (
                 <React.Fragment key={i}>{token}</React.Fragment>
             );
-        });
+            tokens.push(jsx);
+        }
 
         return <React.Fragment>{tokens}</React.Fragment>;
     }
