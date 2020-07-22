@@ -54,7 +54,7 @@ export const NotFound: React.FC<{ pkgName: string }> = ({ pkgName }) => {
 
     /* istanbul ignore next */
     function proposePackage() {
-        Sentry.configureScope(function(scope) {
+        Sentry.configureScope(function (scope) {
             scope.setExtra("pkg", pkgName);
         });
         Sentry.captureMessage(`Propose ${pkgName}`);

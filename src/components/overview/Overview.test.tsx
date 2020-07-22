@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-    render,
-    fireEvent,
-    waitForElement,
-    wait,
-    waitForElementToBeRemoved
-} from "@testing-library/react";
+import { render, fireEvent, waitForElement, wait } from "@testing-library/react";
 
 import Overview from "./Overview";
 import { AppContext, IAppContext } from "../../App";
@@ -25,6 +19,10 @@ describe("<Overview />", () => {
 
     beforeEach(() => {
         fetchMock.resetMocks();
+
+        //needed by react-virtualized for rendering the list
+        jest.spyOn(HTMLElement.prototype, "offsetHeight", "get").mockReturnValue(300);
+        jest.spyOn(HTMLElement.prototype, "offsetWidth", "get").mockReturnValue(300);
     });
 
     test("matches snapshot", async () => {

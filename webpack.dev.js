@@ -6,11 +6,4 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
     mode: 'development',
     devtool: 'source-map',
-    devServer: {
-        overlay: true,
-        contentBase: path.join(__dirname),
-        historyApiFallback: {
-            disableDotRule: true
-        }
-    },
 });
