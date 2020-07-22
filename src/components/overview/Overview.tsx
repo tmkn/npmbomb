@@ -19,7 +19,7 @@ import { useAvailablePackagesLoader } from "../index/Index";
 import { AppContext } from "../../App";
 import { Info } from "../shared/info/Info";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
-import { TokenHighlighter } from "../tokenhighlighter/TokenHighlighter";
+import { TokenHighlighter, TokenFormatter } from "../tokenhighlighter/TokenHighlighter";
 
 interface IOverviewContext {
     query: string;
@@ -135,6 +135,20 @@ const ResultListing: React.FC<{ packages: string[] }> = ({ packages }) => {
     );
 };
 
+const tokenFormatterStyle = css({
+    [mq[0]]: {
+        fontWeight: "bold"
+    }
+});
+
+const tokenFormatter: TokenFormatter = (token, i) => {
+    return (
+        <span key={i} css={tokenFormatterStyle}>
+            {token}
+        </span>
+    );
+};
+
 const overviewLinkStyle = css({
     [mq[0]]: {
         textDecoration: "underline",
@@ -149,14 +163,6 @@ const overviewLinkStyle = css({
         }
     }
 });
-
-const tokenFormatter = (token: string, i: number): JSX.Element => {
-    return (
-        <span key={i}>
-            <b>{token}</b>
-        </span>
-    );
-};
 
 const OverviewLink: React.FC<{ p: string }> = ({ p }) => {
     const { query } = useContext(OverviewContext);

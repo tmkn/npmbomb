@@ -1,9 +1,11 @@
 import React, { memo } from "react";
 
+export type TokenFormatter = (token: string, i: number) => JSX.Element;
+
 interface ITokenHighlighterProps {
     text: string;
     highlight: string;
-    formatter: (token: string, i: number) => JSX.Element;
+    formatter: TokenFormatter;
 }
 
 export const TokenHighlighter: React.FC<ITokenHighlighterProps> = memo(
