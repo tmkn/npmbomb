@@ -13,6 +13,7 @@ import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
 import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
+import { TreeTest } from "./components/tree/Tree";
 
 const globalStyle: SerializedStyles = css`
     body {
@@ -126,6 +127,8 @@ export const App: React.FC = () => {
         appState,
         setAppState
     };
+
+    return <TreeTest />;
 
     return (
         <AppContext.Provider value={context}>
