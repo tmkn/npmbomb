@@ -5,6 +5,8 @@ let id = 0;
 interface ITreeNode<T> {
     data: T;
     active: boolean;
+    canExpand: boolean;
+    expanded: boolean;
     children: ITreeNode<T>[];
 }
 
@@ -15,23 +17,33 @@ interface ITestNode {
 const nodes: ITreeNode<ITestNode> = {
     data: { label: `root` },
     active: false,
+    canExpand: true,
+    expanded: true,
     children: [
         {
             data: { label: `child 1` },
             active: false,
+            canExpand: true,
+            expanded: true,
             children: [
                 {
                     data: { label: `child 1 1` },
                     active: false,
+                    canExpand: false,
+                    expanded: false,
                     children: []
                 },
                 {
                     data: { label: `child 1 2` },
                     active: false,
+                    canExpand: true,
+                    expanded: true,
                     children: [
                         {
                             data: { label: `child 1 2 1` },
                             active: false,
+                            canExpand: false,
+                            expanded: false,
                             children: []
                         }
                     ]
@@ -41,6 +53,8 @@ const nodes: ITreeNode<ITestNode> = {
         {
             data: { label: `child 2` },
             active: false,
+            canExpand: false,
+            expanded: false,
             children: []
         }
     ]
@@ -53,16 +67,25 @@ enum PrefixType {
     NestedSpacer //│
 }
 
+type PrefixFormatter<T> = (node: T, i: number) => JSX.Element;
+type OnClickCallback<T> = (node: ITreeNode<T>, equals: ITreeNode<T>[]) => void;
+interface INodeFormatterOptions {
+    canExpand: boolean;
+    isExpanded: boolean;
+}
+type NodeFormatter<T> = (
+    node: ITreeNode<T>,
+    path: string[],
+    options: INodeFormatterOptions,
+    onClick: (callback: OnClickCallback<T>) => void
+) => JSX.Element;
+
 interface ITreeFormatter<T> {
-    prefixLeafFormatter: (node: T, i: number) => JSX.Element;
-    prefixEntryFormatter: (node: T, i: number) => JSX.Element;
-    prefixEmptySpacerFormatter: (node: T, i: number) => JSX.Element;
-    prefixNestedSpacerFormatter: (node: T, i: number) => JSX.Element;
-    nodeFormatter: (
-        node: ITreeNode<T>,
-        path: string[],
-        onClick: (callback: (node: ITreeNode<T>, equals: ITreeNode<T>[]) => void) => void
-    ) => JSX.Element;
+    prefixLeafFormatter: PrefixFormatter<T>;
+    prefixEntryFormatter: PrefixFormatter<T>;
+    prefixEmptySpacerFormatter: PrefixFormatter<T>;
+    prefixNestedSpacerFormatter: PrefixFormatter<T>;
+    nodeFormatter: NodeFormatter<T>;
     nodeKey: (node: T) => string;
 }
 
@@ -143,7 +166,13 @@ function visit<T>(
         parent.active = true;
         callback(parent, [...(equalLookup.get(key) ?? [])]);
     };
-    const node = <div>{nodeFormatter(parent, [...path, nodeKey(parent.data)], onChildClick)}</div>;
+    const options: INodeFormatterOptions = {
+        canExpand: parent.canExpand,
+        isExpanded: parent.expanded
+    };
+    const node = (
+        <div>{nodeFormatter(parent, [...path, nodeKey(parent.data)], options, onChildClick)}</div>
+    );
     const lastPrefix = prefixes.pop();
 
     if (typeof lastPrefix !== "undefined") {
@@ -198,36 +227,31 @@ function visit<T>(
         equalLookup.set(equalsKey, newEquals);
     }
 
-    for (const [i, child] of parent.children.entries()) {
-        treeNodes.push(
-            ...visit(
-                child,
-                i,
-                parent.children.length,
-                [...prefixes],
-                [...path, nodeKey(parent.data)],
-                treeFormatter,
-                equalLookup,
-                equal
-            )
-        );
-    }
+    if (parent.expanded === true)
+        for (const [i, child] of parent.children.entries()) {
+            treeNodes.push(
+                ...visit(
+                    child,
+                    i,
+                    parent.children.length,
+                    [...prefixes],
+                    [...path, nodeKey(parent.data)],
+                    treeFormatter,
+                    equalLookup,
+                    equal
+                )
+            );
+        }
 
     return treeNodes;
 }
 
-const fooasdf = createMockData(10, 2); //nodes
+const treeNodes = createMockData(10, 2); //nodes
 
 export const TreeTest: React.FC = () => {
-    const [root, setRoot] = useState<ITreeNode<ITestNode>>(fooasdf);
-    const nodeFormatter = (
-        node: ITreeNode<ITestNode>,
-        path: string[],
-        onClick: (
-            callback: (node: ITreeNode<ITestNode>, equals: ITreeNode<ITestNode>[]) => void
-        ) => void
-    ) => {
-        const customClick = (node: ITreeNode<ITestNode>, equals: ITreeNode<ITestNode>[]) => {
+    const [root, setRoot] = useState<ITreeNode<ITestNode>>(treeNodes);
+    const nodeFormatter: NodeFormatter<ITestNode> = (node, path, options, onClick) => {
+        const customClick: OnClickCallback<ITestNode> = (node, equals) => {
             const treeUtility = new TreeUtility(root, setRoot);
             console.log(node.data.label, path, node.active, equals);
 
@@ -238,23 +262,36 @@ export const TreeTest: React.FC = () => {
             //setRoot({ ...root });
         };
 
+        const expandClick = () => {
+            if (options.canExpand) {
+                node.expanded = !node.expanded;
+                setRoot({ ...root });
+            }
+        };
+        const expandEl: JSX.Element | null = options.canExpand ? (
+            <span onClick={expandClick}>{options.isExpanded ? `e` : `c`}</span>
+        ) : null;
+
         return (
-            <span key={JSON.stringify(node)} onClick={() => onClick(customClick)}>
-                {node.active ? `[${node.data.label}]` : node.data.label}
-            </span>
+            <React.Fragment>
+                <span>{expandEl} </span>
+                <span key={JSON.stringify(node)} onClick={() => onClick(customClick)}>
+                    {node.active ? `[${node.data.label}]` : node.data.label}
+                </span>
+            </React.Fragment>
         );
     };
     const nodeKey = (node: ITestNode) => node.label;
-    const prefixEntryFormatter = (node: ITestNode, i: number): JSX.Element => {
+    const prefixEntryFormatter: PrefixFormatter<ITestNode> = (node, i) => {
         return <span key={i}>├</span>;
     };
-    const prefixLeafFormatter = (node: ITestNode, i: number): JSX.Element => {
+    const prefixLeafFormatter: PrefixFormatter<ITestNode> = (node, i) => {
         return <span key={i}>└</span>;
     };
-    const prefixEmptySpacerFormatter = (node: ITestNode, i: number): JSX.Element => {
+    const prefixEmptySpacerFormatter: PrefixFormatter<ITestNode> = (node, i) => {
         return <span key={i}> </span>;
     };
-    const prefixNestedSpacerFormatter = (node: ITestNode, i: number): JSX.Element => {
+    const prefixNestedSpacerFormatter: PrefixFormatter<ITestNode> = (node, i) => {
         return <span key={i}>│</span>;
     };
     const treeFormatter: ITreeFormatter<ITestNode> = {
@@ -290,14 +327,20 @@ function createMockData(
     const _parent: ITreeNode<ITestNode> = parent ?? {
         active: false,
         data: { label: `foo ${id++}` },
+        expanded: true,
+        canExpand: true,
         children: []
     };
 
     if (depth === 0) return _parent;
 
+    _parent.canExpand = true;
+
     for (let i = 0; i < childCount; i++) {
         const child: ITreeNode<ITestNode> = {
             active: false,
+            expanded: true,
+            canExpand: false,
             children: [],
             data: { label: `label ${id++}` }
         };
