@@ -13,7 +13,7 @@ import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
 import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
-import { TreeTest } from "./components/tree/Tree";
+import { TreeTest } from "./components/shared/tree/Tree";
 
 const globalStyle: SerializedStyles = css`
     body {
