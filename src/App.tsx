@@ -14,6 +14,7 @@ import Footer from "./components/shared/footer/Footer";
 import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
 import { TreeTest } from "./components/shared/tree/Tree";
+import { TabView, TestTabView } from "./components/shared/tabview/TabView";
 
 const globalStyle: SerializedStyles = css`
     body {
@@ -128,7 +129,7 @@ export const App: React.FC = () => {
         setAppState
     };
 
-    return <TreeTest />;
+    return <TestTabView />;
 
     return (
         <AppContext.Provider value={context}>
