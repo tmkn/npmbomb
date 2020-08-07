@@ -4,7 +4,7 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import { fromEvent, combineLatest } from "rxjs";
 import { merge, filter, debounceTime } from "rxjs/operators";
 
-import { mq, textColor, serifFont, secondaryColorLight, secondaryColor } from "../../../css";
+import { mq, textColor, serifFont, secondaryColorLight, secondaryColor, primaryColorLight, primaryColor, primaryColorDark } from "../../../css";
 
 interface ITabContext {
     activeTab: ITab | null;
@@ -16,7 +16,7 @@ const TabViewContext = React.createContext<ITabContext>({
     setActiveTab: () => {}
 });
 
-interface ITab {
+export interface ITab {
     header: string;
     content: JSX.Element | null;
 }
@@ -32,6 +32,12 @@ const tabViewStyle = css({
     }
 });
 
+const contentStyle = css({
+    [mq[0]]: {
+        padding: `2rem 0`
+    }
+});
+
 export const TabView: React.FC<ITabView> = ({ tabs }) => {
     const [activeTab, setActiveTab] = useState<ITab>(tabs[0]);
 
@@ -39,7 +45,7 @@ export const TabView: React.FC<ITabView> = ({ tabs }) => {
         <TabViewContext.Provider value={{ activeTab, setActiveTab }}>
             <div css={tabViewStyle}>
                 <TabHeaders tabs={tabs} />
-                <div>{activeTab.content}</div>
+                <div css={contentStyle}>{activeTab.content}</div>
             </div>
         </TabViewContext.Provider>
     );
@@ -48,12 +54,18 @@ export const TabView: React.FC<ITabView> = ({ tabs }) => {
 const tabHeadersStyle = css({
     [mq[0]]: {
         display: `flex`,
-        //flexDirection: `column`,
         height: `2rem`,
         ">div": {
+            display: `flex`,
+            justifyContent: `center`,
+            fontSize: `1.5rem`,
+            fontFamily: serifFont,
             flex: 1,
             alignSelf: `center`,
-            cursor: `pointer`
+            cursor: `pointer`,
+            "&:hover": {
+                backgroundColor: `#e8eaf6`
+            }
         }
     }
 });
@@ -61,9 +73,8 @@ const tabHeadersStyle = css({
 const lineStyle = css({
     [mq[0]]: {
         position: `relative`,
-        height: `2px`,
-        background: secondaryColorLight
-        //background: `linear-gradient(to right, ${secondaryColorLight}, ${secondaryColorLight} 50%, white 50%, white 100%)`
+        height: `1px`,
+        background: primaryColorDark
     }
 });
 
@@ -73,8 +84,12 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
     const [highlightWidth, setHighlightWidth] = useState<number>(0);
 
     const headerTabs: JSX.Element[] = tabs.map((tab, i) => {
-        const label: string =
-            tab.header === activeTab?.header ? `${tab.header} (active)` : tab.header;
+        const isActive: boolean = tab.header === activeTab?.header;
+        const style = css({
+            [mq[0]]: {
+                color: isActive ? primaryColor : secondaryColor
+            }
+        });
         const onTabClick = () => {
             if (lineRef.current) {
                 const { width } = lineRef.current.getBoundingClientRect();
@@ -88,7 +103,7 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
 
         return (
             <div key={i} onClick={onTabClick}>
-                <span>{label}</span>
+                <span css={style}>{tab.header}</span>
             </div>
         );
     });
@@ -126,7 +141,7 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
 };
 
 const tabs: ITab[] = [
-    { header: `Info`, content: <div>info content</div> },
+    { header: `Summary`, content: <div>info content</div> },
     { header: `Tree`, content: <div>tree content</div> }
 ];
 

@@ -104,11 +104,11 @@ const scale = keyframes`
 
 const countupStyle = css({
     [mq[0]]: {
-        fontSize: "3rem",
+        fontSize: "2rem",
         fontFamily: `"${serifFont}"`,
         color: `${primaryColor}`,
         fontWeight: "bold",
-        margin: "3rem",
+        margin: "1rem",
         animation: `${scale} ${scaleDuration}ms ease forwards`
     }
 });

@@ -9,6 +9,8 @@ import { scaleDuration } from "./CountUp";
 import { Info } from "../shared/info/Info";
 import { GuessContext } from "./GuessBox";
 import { TextLink } from "../shared/link/TextLink";
+import { TabView, ITab } from "../shared/tabview/TabView";
+import { TreeTest } from "../shared/tree/Tree";
 
 function plural(count: number): string {
     return count === 1 ? "dependency" : "dependencies";
@@ -16,10 +18,8 @@ function plural(count: number): string {
 
 export const Summary: React.FC = () => {
     const { package: pkg } = useContext(GuessContext);
-
-    return (
+    const SummaryTab =  (
         <React.Fragment>
-            <h2>Summary</h2>
             <Info>
                 <span>
                     <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
@@ -42,6 +42,12 @@ export const Summary: React.FC = () => {
             </Info>
         </React.Fragment>
     );
+    const tabs: ITab[] = [
+        {header:`Summary`, content: SummaryTab},
+        {header: `Tree`, content: <React.Fragment><TreeTest /></React.Fragment>}
+    ]
+
+    return <TabView tabs={tabs} />
 };
 
 interface IResultBoxProps {

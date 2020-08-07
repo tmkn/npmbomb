@@ -15,6 +15,7 @@ import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
+import { TabView, TestTabView } from "../shared/tabview/TabView";
 
 const blink = keyframes`
     from {
