@@ -1,1 +1,1 @@
-{"name":"copy-descriptor","version":"0.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Copy a descriptor from object A to object B"}
+{"name":"copy-descriptor","version":"0.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Copy a descriptor from object A to object B","dependencyTree":{"name":"copy-descriptor","version":"0.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}

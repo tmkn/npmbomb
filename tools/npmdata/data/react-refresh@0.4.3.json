@@ -1,1 +1,1 @@
-{"name":"react-refresh","version":"0.4.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"React is a JavaScript library for building user interfaces."}
+{"name":"react-refresh","version":"0.4.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"React is a JavaScript library for building user interfaces.","dependencyTree":{"name":"react-refresh","version":"0.4.3","transitiveCount":0,"loop":false,"dependencies":[]}}

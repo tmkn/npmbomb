@@ -1,1 +1,1 @@
-{"name":"@webassemblyjs/leb128","version":"1.9.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"LEB128 decoder and encoder"}
+{"name":"@webassemblyjs/leb128","version":"1.9.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"LEB128 decoder and encoder","dependencyTree":{"name":"@webassemblyjs/leb128","version":"1.9.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"@xtuc/long","version":"4.2.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

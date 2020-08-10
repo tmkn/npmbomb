@@ -1,1 +1,1 @@
-{"name":"debug","version":"4.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility"}
+{"name":"debug","version":"4.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility","dependencyTree":{"name":"debug","version":"4.2.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"ms","version":"2.1.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

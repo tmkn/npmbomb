@@ -1,1 +1,1 @@
-{"name":"brorand","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Random number generator for browsers and node.js"}
+{"name":"brorand","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Random number generator for browsers and node.js","dependencyTree":{"name":"brorand","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}

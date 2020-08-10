@@ -1,1 +1,1 @@
-{"name":"browserify-zlib","version":"0.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Full zlib module for the browser"}
+{"name":"browserify-zlib","version":"0.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Full zlib module for the browser","dependencyTree":{"name":"browserify-zlib","version":"0.2.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"pako","version":"1.0.11","transitiveCount":0,"loop":false,"dependencies":[]}]}}

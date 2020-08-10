@@ -1,1 +1,1 @@
-{"name":"redis-commands","version":"1.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Redis commands"}
+{"name":"redis-commands","version":"1.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Redis commands","dependencyTree":{"name":"redis-commands","version":"1.5.0","transitiveCount":0,"loop":false,"dependencies":[]}}

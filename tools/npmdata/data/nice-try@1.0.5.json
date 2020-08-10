@@ -1,1 +1,1 @@
-{"name":"nice-try","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tries to execute a function and discards any error that occurs"}
+{"name":"nice-try","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tries to execute a function and discards any error that occurs","dependencyTree":{"name":"nice-try","version":"1.0.5","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"babylon","version":"6.18.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript parser"}
+{"name":"babylon","version":"6.18.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript parser","dependencyTree":{"name":"babylon","version":"6.18.0","transitiveCount":0,"loop":false,"dependencies":[]}}

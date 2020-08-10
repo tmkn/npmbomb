@@ -1,1 +1,1 @@
-{"name":"exit","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A replacement for process.exit that ensures stdio are fully drained before exiting."}
+{"name":"exit","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A replacement for process.exit that ensures stdio are fully drained before exiting.","dependencyTree":{"name":"exit","version":"0.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}

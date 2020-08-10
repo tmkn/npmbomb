@@ -2,7 +2,7 @@
 import { jsx, css, keyframes, SerializedStyles } from "@emotion/core";
 import React, { useRef, useState, useContext, useEffect, memo } from "react";
 
-import { primaryColor, serifFont, mq, secondaryColor } from "../../css";
+import { primaryColor, serifFont, mq, secondaryColor, secondaryColorLight } from "../../css";
 import { Center } from "../shared/center/Center";
 
 function getBetween(min: number, max: number): number {
@@ -93,7 +93,7 @@ export const scaleDuration = 1500;
 const scale = keyframes`
     from, 0%, to {
         transform: scale(1);
-        color: #e0f7fa;
+        color: ${secondaryColorLight};
     }
 
     100% {

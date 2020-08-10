@@ -1,1 +1,1 @@
-{"name":"doctrine","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSDoc parser"}
+{"name":"doctrine","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSDoc parser","dependencyTree":{"name":"doctrine","version":"3.0.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"esutils","version":"2.0.3","transitiveCount":0,"loop":false,"dependencies":[]}]}}

@@ -1,1 +1,1 @@
-{"name":"is-plain-obj","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a value is a plain object"}
+{"name":"is-plain-obj","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a value is a plain object","dependencyTree":{"name":"is-plain-obj","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}

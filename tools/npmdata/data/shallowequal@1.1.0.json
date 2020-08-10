@@ -1,1 +1,1 @@
-{"name":"shallowequal","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like lodash isEqualWith but for shallow equal."}
+{"name":"shallowequal","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like lodash isEqualWith but for shallow equal.","dependencyTree":{"name":"shallowequal","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}

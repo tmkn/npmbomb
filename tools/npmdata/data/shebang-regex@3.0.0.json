@@ -1,1 +1,1 @@
-{"name":"shebang-regex","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching a shebang line"}
+{"name":"shebang-regex","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching a shebang line","dependencyTree":{"name":"shebang-regex","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

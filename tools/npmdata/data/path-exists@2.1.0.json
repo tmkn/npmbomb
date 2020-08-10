@@ -1,1 +1,1 @@
-{"name":"path-exists","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Check if a path exists"}
+{"name":"path-exists","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Check if a path exists","dependencyTree":{"name":"path-exists","version":"2.1.0","transitiveCount":2,"loop":false,"dependencies":[{"name":"pinkie-promise","version":"2.0.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"pinkie","version":"2.0.4","transitiveCount":0,"loop":false,"dependencies":[]}]}]}}

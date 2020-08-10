@@ -2,7 +2,7 @@
 import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext } from "react";
 
-import { mq, textColor } from "../../css";
+import { mq, textColor, secondaryColorLight, primaryColorDark } from "../../css";
 import { ResultsTable, Num } from "../shared/results/Results";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
@@ -16,9 +16,22 @@ function plural(count: number): string {
     return count === 1 ? "dependency" : "dependencies";
 }
 
-export const Summary: React.FC = () => {
+export const SummaryTabs: React.FC = () => {
+    const tabs: ITab[] = [
+        { header: `Summary`, content: <DependencyOverviewTab /> },
+        {
+            header: `Dependency Tree`,
+            content: <DependencyTreeTab />
+        }
+    ];
+
+    return <TabView tabs={tabs} />;
+};
+
+const DependencyOverviewTab: React.FC = () => {
     const { package: pkg } = useContext(GuessContext);
-    const SummaryTab =  (
+
+    return (
         <React.Fragment>
             <Info>
                 <span>
@@ -42,12 +55,17 @@ export const Summary: React.FC = () => {
             </Info>
         </React.Fragment>
     );
-    const tabs: ITab[] = [
-        {header:`Summary`, content: SummaryTab},
-        {header: `Tree`, content: <React.Fragment><TreeTest /></React.Fragment>}
-    ]
+};
 
-    return <TabView tabs={tabs} />
+//todo, replace with real data
+const DependencyTreeTab: React.FC = () => {
+    const { package: pkg } = useContext(GuessContext);
+
+    return (
+        <Info>
+            <TreeTest />
+        </Info>
+    );
 };
 
 interface IResultBoxProps {
@@ -93,7 +111,7 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual, distinct }
 
     return (
         <div css={containerStyle}>
-            {actual > 0 && <Summary />}
+            {actual > 0 && <SummaryTabs />}
             {guess !== actual && (
                 <React.Fragment>
                     <h2>Results</h2>

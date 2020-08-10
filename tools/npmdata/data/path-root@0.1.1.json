@@ -1,1 +1,1 @@
-{"name":"path-root","version":"0.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Get the root of a posix or windows filepath."}
+{"name":"path-root","version":"0.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Get the root of a posix or windows filepath.","dependencyTree":{"name":"path-root","version":"0.1.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"path-root-regex","version":"0.1.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

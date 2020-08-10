@@ -1,1 +1,1 @@
-{"name":"strip-bom","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Strip UTF-8 byte order mark (BOM) from a string/buffer"}
+{"name":"strip-bom","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Strip UTF-8 byte order mark (BOM) from a string/buffer","dependencyTree":{"name":"strip-bom","version":"2.0.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"is-utf8","version":"0.2.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

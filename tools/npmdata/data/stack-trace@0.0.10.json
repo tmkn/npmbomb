@@ -1,1 +1,1 @@
-{"name":"stack-trace","version":"0.0.10","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get v8 stack traces as an array of CallSite objects."}
+{"name":"stack-trace","version":"0.0.10","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get v8 stack traces as an array of CallSite objects.","dependencyTree":{"name":"stack-trace","version":"0.0.10","transitiveCount":0,"loop":false,"dependencies":[]}}

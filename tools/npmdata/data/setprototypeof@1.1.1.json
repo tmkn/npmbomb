@@ -1,1 +1,1 @@
-{"name":"setprototypeof","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small polyfill for Object.setprototypeof"}
+{"name":"setprototypeof","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small polyfill for Object.setprototypeof","dependencyTree":{"name":"setprototypeof","version":"1.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"stream-shift","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns the next buffer/object in a stream's readable queue"}
+{"name":"stream-shift","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns the next buffer/object in a stream's readable queue","dependencyTree":{"name":"stream-shift","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

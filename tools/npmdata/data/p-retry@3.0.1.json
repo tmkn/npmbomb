@@ -1,1 +1,1 @@
-{"name":"p-retry","version":"3.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Retry a promise-returning or async function"}
+{"name":"p-retry","version":"3.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Retry a promise-returning or async function","dependencyTree":{"name":"p-retry","version":"3.0.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"retry","version":"0.12.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

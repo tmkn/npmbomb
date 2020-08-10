@@ -1,1 +1,1 @@
-{"name":"basic-auth","version":"2.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"node.js basic auth parser"}
+{"name":"basic-auth","version":"2.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"node.js basic auth parser","dependencyTree":{"name":"basic-auth","version":"2.0.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"safe-buffer","version":"5.1.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

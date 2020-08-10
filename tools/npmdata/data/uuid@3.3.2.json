@@ -1,1 +1,1 @@
-{"name":"uuid","version":"3.3.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"RFC4122 (v1, v4, and v5) UUIDs"}
+{"name":"uuid","version":"3.3.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"RFC4122 (v1, v4, and v5) UUIDs","dependencyTree":{"name":"uuid","version":"3.3.2","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"iconv-lite","version":"0.4.24","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Convert character encodings in pure javascript."}
+{"name":"iconv-lite","version":"0.4.24","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Convert character encodings in pure javascript.","dependencyTree":{"name":"iconv-lite","version":"0.4.24","transitiveCount":1,"loop":false,"dependencies":[{"name":"safer-buffer","version":"2.1.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

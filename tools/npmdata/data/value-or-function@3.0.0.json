@@ -1,1 +1,1 @@
-{"name":"value-or-function","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Normalize a value or function, applying extra args to the function"}
+{"name":"value-or-function","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Normalize a value or function, applying extra args to the function","dependencyTree":{"name":"value-or-function","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

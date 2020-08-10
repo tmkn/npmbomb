@@ -1,1 +1,1 @@
-{"name":"word-wrap","version":"1.2.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Wrap words to a specified length."}
+{"name":"word-wrap","version":"1.2.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Wrap words to a specified length.","dependencyTree":{"name":"word-wrap","version":"1.2.3","transitiveCount":0,"loop":false,"dependencies":[]}}

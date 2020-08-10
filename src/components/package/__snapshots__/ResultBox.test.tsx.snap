@@ -5,35 +5,62 @@ exports[`<ResultBox /> matches snapshot 1`] = `
   <div
     class="css-7emoiw"
   >
-    <h2>
-      Summary
-    </h2>
-    <p
-      class="css-1cwnpiq"
+    <div
+      class="css-1788elh"
     >
-      <span>
-        <a
-          class="css-1ka21sq"
-          href="https://www.npmjs.com/package//v/"
-          target="_blank"
+      <div
+        class="css-zxjiyd-TabHeaders"
+      >
+        <div>
+          <span
+            class="css-gvuyi4"
+          >
+            Summary
+          </span>
+        </div>
+        <div>
+          <span
+            class="css-qmn0xh"
+          >
+            Dependency Tree
+          </span>
+        </div>
+      </div>
+      <div
+        class="css-1036lci-TabHeaders"
+        style="width: 50%;"
+      />
+      <div
+        class="css-1lr5315"
+      >
+        <p
+          class="css-1cwnpiq"
         >
-          @
-        </a>
-         defines 
-        <b>
-          0 direct dependencies
-        </b>
-         which explode into 
-        <b>
-          0 dependencies overall
-        </b>
-        , resulting in 
-        <b>
-          0 distinct dependencies
-        </b>
-        .
-      </span>
-    </p>
+          <span>
+            <a
+              class="css-1ka21sq"
+              href="https://www.npmjs.com/package//v/"
+              target="_blank"
+            >
+              @
+            </a>
+             defines 
+            <b>
+              0 direct dependencies
+            </b>
+             which explode into 
+            <b>
+              0 dependencies overall
+            </b>
+            , resulting in 
+            <b>
+              0 distinct dependencies
+            </b>
+            .
+          </span>
+        </p>
+      </div>
+    </div>
     <h2>
       Results
     </h2>

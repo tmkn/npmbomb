@@ -1,1 +1,1 @@
-{"name":"path-is-absolute","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js 0.12 path.isAbsolute() ponyfill"}
+{"name":"path-is-absolute","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js 0.12 path.isAbsolute() ponyfill","dependencyTree":{"name":"path-is-absolute","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

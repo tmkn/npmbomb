@@ -1,1 +1,1 @@
-{"name":"timers-browserify","version":"2.0.11","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"timers module for browserify"}
+{"name":"timers-browserify","version":"2.0.11","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"timers module for browserify","dependencyTree":{"name":"timers-browserify","version":"2.0.11","transitiveCount":1,"loop":false,"dependencies":[{"name":"setimmediate","version":"1.0.5","transitiveCount":0,"loop":false,"dependencies":[]}]}}

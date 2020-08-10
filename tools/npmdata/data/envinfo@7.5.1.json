@@ -1,1 +1,1 @@
-{"name":"envinfo","version":"7.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Info about your dev environment for debugging purposes"}
+{"name":"envinfo","version":"7.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Info about your dev environment for debugging purposes","dependencyTree":{"name":"envinfo","version":"7.5.1","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"lines-and-columns","version":"1.1.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Maps lines and columns to character offsets and back."}
+{"name":"lines-and-columns","version":"1.1.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Maps lines and columns to character offsets and back.","dependencyTree":{"name":"lines-and-columns","version":"1.1.6","transitiveCount":0,"loop":false,"dependencies":[]}}

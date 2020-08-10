@@ -1,1 +1,1 @@
-{"name":"has","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Object.prototype.hasOwnProperty.call shortcut"}
+{"name":"has","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Object.prototype.hasOwnProperty.call shortcut","dependencyTree":{"name":"has","version":"1.0.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"function-bind","version":"1.1.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

@@ -1,1 +1,1 @@
-{"name":"base64-arraybuffer","version":"0.1.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Encode/decode base64 data into ArrayBuffers"}
+{"name":"base64-arraybuffer","version":"0.1.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Encode/decode base64 data into ArrayBuffers","dependencyTree":{"name":"base64-arraybuffer","version":"0.1.5","transitiveCount":0,"loop":false,"dependencies":[]}}

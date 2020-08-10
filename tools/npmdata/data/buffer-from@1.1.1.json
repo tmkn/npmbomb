@@ -1,1 +1,1 @@
-{"name":"buffer-from","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A [ponyfill](https://ponyfill.com) for `Buffer.from`, uses native implementation if available."}
+{"name":"buffer-from","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A [ponyfill](https://ponyfill.com) for `Buffer.from`, uses native implementation if available.","dependencyTree":{"name":"buffer-from","version":"1.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}

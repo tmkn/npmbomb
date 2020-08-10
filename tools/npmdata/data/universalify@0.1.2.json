@@ -1,1 +1,1 @@
-{"name":"universalify","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make a callback- or promise-based function support both promises and callbacks."}
+{"name":"universalify","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make a callback- or promise-based function support both promises and callbacks.","dependencyTree":{"name":"universalify","version":"0.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}

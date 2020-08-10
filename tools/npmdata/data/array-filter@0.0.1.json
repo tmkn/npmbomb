@@ -1,1 +1,1 @@
-{"name":"array-filter","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#filter for older browsers."}
+{"name":"array-filter","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#filter for older browsers.","dependencyTree":{"name":"array-filter","version":"0.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

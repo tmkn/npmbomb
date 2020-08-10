@@ -1,1 +1,1 @@
-{"name":"cssstyle","version":"2.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"CSSStyleDeclaration Object Model implementation"}
+{"name":"cssstyle","version":"2.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"CSSStyleDeclaration Object Model implementation","dependencyTree":{"name":"cssstyle","version":"2.3.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"cssom","version":"0.3.8","transitiveCount":0,"loop":false,"dependencies":[]}]}}

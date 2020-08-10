@@ -1,1 +1,1 @@
-{"name":"glogg","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Global logging utility"}
+{"name":"glogg","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Global logging utility","dependencyTree":{"name":"glogg","version":"1.0.2","transitiveCount":1,"loop":false,"dependencies":[{"name":"sparkles","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

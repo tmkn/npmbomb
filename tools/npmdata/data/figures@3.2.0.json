@@ -1,1 +1,1 @@
-{"name":"figures","version":"3.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Unicode symbols with Windows CMD fallbacks"}
+{"name":"figures","version":"3.2.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Unicode symbols with Windows CMD fallbacks","dependencyTree":{"name":"figures","version":"3.2.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"escape-string-regexp","version":"1.0.5","transitiveCount":0,"loop":false,"dependencies":[]}]}}

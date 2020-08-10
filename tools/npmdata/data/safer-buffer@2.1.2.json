@@ -1,1 +1,1 @@
-{"name":"safer-buffer","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Modern Buffer API polyfill without footguns"}
+{"name":"safer-buffer","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Modern Buffer API polyfill without footguns","dependencyTree":{"name":"safer-buffer","version":"2.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}

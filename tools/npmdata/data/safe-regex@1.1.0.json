@@ -1,1 +1,1 @@
-{"name":"safe-regex","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"detect possibly catastrophic, exponential-time regular expressions"}
+{"name":"safe-regex","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"detect possibly catastrophic, exponential-time regular expressions","dependencyTree":{"name":"safe-regex","version":"1.1.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"ret","version":"0.1.15","transitiveCount":0,"loop":false,"dependencies":[]}]}}

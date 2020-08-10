@@ -1,1 +1,1 @@
-{"name":"strip-ansi","version":"4.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Strip ANSI escape codes"}
+{"name":"strip-ansi","version":"4.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Strip ANSI escape codes","dependencyTree":{"name":"strip-ansi","version":"4.0.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"ansi-regex","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

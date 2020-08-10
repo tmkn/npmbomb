@@ -1,1 +1,1 @@
-{"name":"@hapi/address","version":"2.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Email address and domain validation"}
+{"name":"@hapi/address","version":"2.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Email address and domain validation","dependencyTree":{"name":"@hapi/address","version":"2.1.4","transitiveCount":0,"loop":false,"dependencies":[]}}

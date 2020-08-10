@@ -1,1 +1,1 @@
-{"name":"cookie","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP server cookie parsing and serialization"}
+{"name":"cookie","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP server cookie parsing and serialization","dependencyTree":{"name":"cookie","version":"0.4.0","transitiveCount":0,"loop":false,"dependencies":[]}}

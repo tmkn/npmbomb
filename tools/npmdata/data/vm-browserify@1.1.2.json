@@ -1,1 +1,1 @@
-{"name":"vm-browserify","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"vm module for the browser"}
+{"name":"vm-browserify","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"vm module for the browser","dependencyTree":{"name":"vm-browserify","version":"1.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}

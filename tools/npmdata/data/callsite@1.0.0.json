@@ -1,1 +1,1 @@
-{"name":"callsite","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"access to v8's CallSites"}
+{"name":"callsite","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"access to v8's CallSites","dependencyTree":{"name":"callsite","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

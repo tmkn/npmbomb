@@ -1,1 +1,1 @@
-{"name":"invariant","version":"2.2.4","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"invariant"}
+{"name":"invariant","version":"2.2.4","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"invariant","dependencyTree":{"name":"invariant","version":"2.2.4","transitiveCount":2,"loop":false,"dependencies":[{"name":"loose-envify","version":"1.4.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"js-tokens","version":"4.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}]}}

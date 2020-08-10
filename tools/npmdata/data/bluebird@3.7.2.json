@@ -1,1 +1,1 @@
-{"name":"bluebird","version":"3.7.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Full featured Promises/A+ implementation with exceptionally good performance"}
+{"name":"bluebird","version":"3.7.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Full featured Promises/A+ implementation with exceptionally good performance","dependencyTree":{"name":"bluebird","version":"3.7.2","transitiveCount":0,"loop":false,"dependencies":[]}}

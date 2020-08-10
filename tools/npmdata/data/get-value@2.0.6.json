@@ -1,1 +1,1 @@
-{"name":"get-value","version":"2.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Use property paths (`a.b.c`) to get a nested value from an object."}
+{"name":"get-value","version":"2.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Use property paths (`a.b.c`) to get a nested value from an object.","dependencyTree":{"name":"get-value","version":"2.0.6","transitiveCount":0,"loop":false,"dependencies":[]}}

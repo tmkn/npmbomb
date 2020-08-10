@@ -1,1 +1,1 @@
-{"name":"denque","version":"1.4.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The fastest javascript implementation of a double-ended queue. Maintains compatability with deque."}
+{"name":"denque","version":"1.4.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The fastest javascript implementation of a double-ended queue. Maintains compatability with deque.","dependencyTree":{"name":"denque","version":"1.4.1","transitiveCount":0,"loop":false,"dependencies":[]}}

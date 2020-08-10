@@ -1,1 +1,1 @@
-{"name":"array-differ","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create an array with values that are present in the first input array but not additional ones"}
+{"name":"array-differ","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create an array with values that are present in the first input array but not additional ones","dependencyTree":{"name":"array-differ","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

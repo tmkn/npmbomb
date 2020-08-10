@@ -1,1 +1,1 @@
-{"name":"@emotion/stylis","version":"0.8.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A custom build of Stylis"}
+{"name":"@emotion/stylis","version":"0.8.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A custom build of Stylis","dependencyTree":{"name":"@emotion/stylis","version":"0.8.5","transitiveCount":0,"loop":false,"dependencies":[]}}

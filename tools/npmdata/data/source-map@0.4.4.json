@@ -1,1 +1,1 @@
-{"name":"source-map","version":"0.4.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Generates and consumes source maps"}
+{"name":"source-map","version":"0.4.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Generates and consumes source maps","dependencyTree":{"name":"source-map","version":"0.4.4","transitiveCount":1,"loop":false,"dependencies":[{"name":"amdefine","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

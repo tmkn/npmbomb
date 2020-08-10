@@ -1,1 +1,1 @@
-{"name":"json5","version":"2.1.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSON for humans."}
+{"name":"json5","version":"2.1.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSON for humans.","dependencyTree":{"name":"json5","version":"2.1.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"minimist","version":"1.2.5","transitiveCount":0,"loop":false,"dependencies":[]}]}}

@@ -1,1 +1,1 @@
-{"name":"simple-swizzle","version":"0.2.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Simply swizzle your arguments"}
+{"name":"simple-swizzle","version":"0.2.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Simply swizzle your arguments","dependencyTree":{"name":"simple-swizzle","version":"0.2.2","transitiveCount":1,"loop":false,"dependencies":[{"name":"is-arrayish","version":"0.3.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

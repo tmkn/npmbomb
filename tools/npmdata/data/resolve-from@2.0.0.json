@@ -1,1 +1,1 @@
-{"name":"resolve-from","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Resolve the path of a module like require.resolve() but from a given path"}
+{"name":"resolve-from","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Resolve the path of a module like require.resolve() but from a given path","dependencyTree":{"name":"resolve-from","version":"2.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

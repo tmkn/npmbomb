@@ -1,1 +1,1 @@
-{"name":"heimdalljs","version":"0.2.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Structured instrumentation library"}
+{"name":"heimdalljs","version":"0.2.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Structured instrumentation library","dependencyTree":{"name":"heimdalljs","version":"0.2.6","transitiveCount":1,"loop":false,"dependencies":[{"name":"rsvp","version":"3.2.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

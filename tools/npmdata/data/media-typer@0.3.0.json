@@ -1,1 +1,1 @@
-{"name":"media-typer","version":"0.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Simple RFC 6838 media type parser and formatter"}
+{"name":"media-typer","version":"0.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Simple RFC 6838 media type parser and formatter","dependencyTree":{"name":"media-typer","version":"0.3.0","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"browser-process-hrtime","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Shim for process.hrtime in the browser"}
+{"name":"browser-process-hrtime","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Shim for process.hrtime in the browser","dependencyTree":{"name":"browser-process-hrtime","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

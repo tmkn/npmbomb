@@ -1,1 +1,1 @@
-{"name":"on-finished","version":"2.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Execute a callback when a request closes, finishes, or errors"}
+{"name":"on-finished","version":"2.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Execute a callback when a request closes, finishes, or errors","dependencyTree":{"name":"on-finished","version":"2.3.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"ee-first","version":"1.1.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

@@ -1,1 +1,1 @@
-{"name":"kareem","version":"2.3.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Next-generation take on pre/post function hooks"}
+{"name":"kareem","version":"2.3.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Next-generation take on pre/post function hooks","dependencyTree":{"name":"kareem","version":"2.3.1","transitiveCount":0,"loop":false,"dependencies":[]}}

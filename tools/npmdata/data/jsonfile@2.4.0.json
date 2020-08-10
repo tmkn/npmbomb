@@ -1,1 +1,1 @@
-{"name":"jsonfile","version":"2.4.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Easily read/write JSON files."}
+{"name":"jsonfile","version":"2.4.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Easily read/write JSON files.","dependencyTree":{"name":"jsonfile","version":"2.4.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"graceful-fs","version":"4.2.4","transitiveCount":0,"loop":false,"dependencies":[]}]}}

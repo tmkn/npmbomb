@@ -1,1 +1,1 @@
-{"name":"num2fraction","version":"1.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert number to fraction"}
+{"name":"num2fraction","version":"1.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert number to fraction","dependencyTree":{"name":"num2fraction","version":"1.2.2","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"parse-passwd","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Parse a passwd file into a list of users."}
+{"name":"parse-passwd","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Parse a passwd file into a list of users.","dependencyTree":{"name":"parse-passwd","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

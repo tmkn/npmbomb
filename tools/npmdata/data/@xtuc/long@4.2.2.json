@@ -1,1 +1,1 @@
-{"name":"@xtuc/long","version":"4.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A Long class for representing a 64-bit two's-complement integer value."}
+{"name":"@xtuc/long","version":"4.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A Long class for representing a 64-bit two's-complement integer value.","dependencyTree":{"name":"@xtuc/long","version":"4.2.2","transitiveCount":0,"loop":false,"dependencies":[]}}

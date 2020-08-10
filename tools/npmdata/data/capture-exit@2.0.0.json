@@ -1,1 +1,1 @@
-{"name":"capture-exit","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"safely cleanup in signal handlers"}
+{"name":"capture-exit","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"safely cleanup in signal handlers","dependencyTree":{"name":"capture-exit","version":"2.0.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"rsvp","version":"4.8.5","transitiveCount":0,"loop":false,"dependencies":[]}]}}

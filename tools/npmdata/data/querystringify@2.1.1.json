@@ -1,1 +1,1 @@
-{"name":"querystringify","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Querystringify - Small, simple but powerful query string parser."}
+{"name":"querystringify","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Querystringify - Small, simple but powerful query string parser.","dependencyTree":{"name":"querystringify","version":"2.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}

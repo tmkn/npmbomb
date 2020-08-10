@@ -1,1 +1,1 @@
-{"name":"http-deceiver","version":"1.2.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Deceive HTTP parser"}
+{"name":"http-deceiver","version":"1.2.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Deceive HTTP parser","dependencyTree":{"name":"http-deceiver","version":"1.2.7","transitiveCount":0,"loop":false,"dependencies":[]}}

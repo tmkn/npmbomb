@@ -1,1 +1,1 @@
-{"name":"string_decoder","version":"1.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"The string_decoder module from Node core"}
+{"name":"string_decoder","version":"1.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"The string_decoder module from Node core","dependencyTree":{"name":"string_decoder","version":"1.1.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"safe-buffer","version":"5.1.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

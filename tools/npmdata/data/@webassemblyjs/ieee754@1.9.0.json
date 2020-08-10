@@ -1,1 +1,1 @@
-{"name":"@webassemblyjs/ieee754","version":"1.9.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"IEEE754 decoder and encoder"}
+{"name":"@webassemblyjs/ieee754","version":"1.9.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"IEEE754 decoder and encoder","dependencyTree":{"name":"@webassemblyjs/ieee754","version":"1.9.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"@xtuc/ieee754","version":"1.2.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

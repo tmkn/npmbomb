@@ -1,1 +1,1 @@
-{"name":"language-tags","version":"1.0.5","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Work with IANA language tags."}
+{"name":"language-tags","version":"1.0.5","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Work with IANA language tags.","dependencyTree":{"name":"language-tags","version":"1.0.5","transitiveCount":1,"loop":false,"dependencies":[{"name":"language-subtag-registry","version":"0.3.20","transitiveCount":0,"loop":false,"dependencies":[]}]}}

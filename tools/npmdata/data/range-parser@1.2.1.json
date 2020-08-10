@@ -1,1 +1,1 @@
-{"name":"range-parser","version":"1.2.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Range header field string parser"}
+{"name":"range-parser","version":"1.2.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Range header field string parser","dependencyTree":{"name":"range-parser","version":"1.2.1","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"archy","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"render nested hierarchies `npm ls` style with unicode pipes"}
+{"name":"archy","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"render nested hierarchies `npm ls` style with unicode pipes","dependencyTree":{"name":"archy","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

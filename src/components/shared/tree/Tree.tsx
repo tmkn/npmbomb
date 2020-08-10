@@ -1,4 +1,7 @@
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
 import React, { useState } from "react";
+import { mq, secondaryColor } from "../../../css";
 
 let id = 0;
 
@@ -137,7 +140,7 @@ export const Tree: React.FC<ITreeProps<ITestNode>> = ({ treeFormatter, root: _ro
         true
     );
 
-    return <pre>{nodes}</pre>;
+    return <div>{nodes}</div>;
 };
 
 function visit<T>(
@@ -170,8 +173,17 @@ function visit<T>(
         canExpand: parent.canExpand,
         isExpanded: parent.expanded
     };
+    const nodeStyle = css({
+        [mq[0]]: {
+            display: `flex`,
+            overflow: `auto`,
+            wordBreak: `normal`
+        }
+    });
     const node = (
-        <div>{nodeFormatter(parent, [...path, nodeKey(parent.data)], options, onChildClick)}</div>
+        <div css={nodeStyle}>
+            {nodeFormatter(parent, [...path, nodeKey(parent.data)], options, onChildClick)}
+        </div>
     );
     const lastPrefix = prefixes.pop();
 
@@ -268,13 +280,21 @@ export const TreeTest: React.FC = () => {
                 setRoot({ ...root });
             }
         };
+
+        const expandElStyle = css({
+            [mq[0]]: {
+                minWidth: `1rem`
+            }
+        });
         const expandEl: JSX.Element | null = options.canExpand ? (
-            <span onClick={expandClick}>{options.isExpanded ? `e` : `c`}</span>
+            <span css={expandElStyle} onClick={expandClick}>
+                {options.isExpanded ? `e` : `c`}
+            </span>
         ) : null;
 
         return (
             <React.Fragment>
-                <span>{expandEl} </span>
+                {expandEl}
                 <span key={JSON.stringify(node)} onClick={() => onClick(customClick)}>
                     {node.active ? `[${node.data.label}]` : node.data.label}
                 </span>
@@ -282,17 +302,26 @@ export const TreeTest: React.FC = () => {
         );
     };
     const nodeKey = (node: ITestNode) => node.label;
+    const treeIdentationStyle = css({
+        [mq[0]]: {
+            minWidth: `1rem`,
+            borderLeft: `1px solid ${secondaryColor}`
+        }
+    });
     const prefixEntryFormatter: PrefixFormatter<ITestNode> = (node, i) => {
-        return <span key={i}>├</span>;
+        //return <span key={i}>├</span>;
+        return <span css={treeIdentationStyle}></span>;
     };
     const prefixLeafFormatter: PrefixFormatter<ITestNode> = (node, i) => {
-        return <span key={i}>└</span>;
+        //return <span key={i}>└</span>;
+        return <span css={treeIdentationStyle}></span>;
     };
     const prefixEmptySpacerFormatter: PrefixFormatter<ITestNode> = (node, i) => {
         return <span key={i}> </span>;
     };
     const prefixNestedSpacerFormatter: PrefixFormatter<ITestNode> = (node, i) => {
-        return <span key={i}>│</span>;
+        //return <span key={i}>│</span>;
+        return <span css={treeIdentationStyle}></span>;
     };
     const treeFormatter: ITreeFormatter<ITestNode> = {
         nodeFormatter,

@@ -1,1 +1,1 @@
-{"name":"unzip-response","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Unzip a HTTP response if needed"}
+{"name":"unzip-response","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Unzip a HTTP response if needed","dependencyTree":{"name":"unzip-response","version":"2.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

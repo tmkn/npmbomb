@@ -1,10 +1,18 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/core";
 import React, { useState, useEffect, useContext, useRef } from "react";
-import { fromEvent, combineLatest } from "rxjs";
-import { merge, filter, debounceTime } from "rxjs/operators";
 
-import { mq, textColor, serifFont, secondaryColorLight, secondaryColor, primaryColorLight, primaryColor, primaryColorDark } from "../../../css";
+import {
+    mq,
+    textColor,
+    serifFont,
+    secondaryColorLight,
+    secondaryColor,
+    primaryColorLight,
+    primaryColor,
+    primaryColorDark
+} from "../../../css";
+import { TreeTest } from "../tree/Tree";
 
 interface ITabContext {
     activeTab: ITab | null;
@@ -63,6 +71,8 @@ const tabHeadersStyle = css({
             flex: 1,
             alignSelf: `center`,
             cursor: `pointer`,
+            whiteSpace: `nowrap`,
+            overflow: `hidden`,
             "&:hover": {
                 backgroundColor: `#e8eaf6`
             }
@@ -85,9 +95,11 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
 
     const headerTabs: JSX.Element[] = tabs.map((tab, i) => {
         const isActive: boolean = tab.header === activeTab?.header;
-        const style = css({
+        const tabTitleStyle = css({
             [mq[0]]: {
-                color: isActive ? primaryColor : secondaryColor
+                color: isActive ? primaryColor : secondaryColor,
+                textOverflow: `ellipsis`,
+                overflow: `hidden`
             }
         });
         const onTabClick = () => {
@@ -103,13 +115,13 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
 
         return (
             <div key={i} onClick={onTabClick}>
-                <span css={style}>{tab.header}</span>
+                <span css={tabTitleStyle}>{tab.header}</span>
             </div>
         );
     });
 
+    /* istanbul ignore next */
     useEffect(() => {
-        console.log(lineRef.current);
         if (lineRef.current) {
             const { width } = lineRef.current.getBoundingClientRect();
 
@@ -139,10 +151,3 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
         </React.Fragment>
     );
 };
-
-const tabs: ITab[] = [
-    { header: `Summary`, content: <div>info content</div> },
-    { header: `Tree`, content: <div>tree content</div> }
-];
-
-export const TestTabView: React.FC = () => <TabView tabs={tabs} />;

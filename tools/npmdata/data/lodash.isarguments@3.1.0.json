@@ -1,1 +1,1 @@
-{"name":"lodash.isarguments","version":"3.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.isArguments` exported as a module."}
+{"name":"lodash.isarguments","version":"3.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.isArguments` exported as a module.","dependencyTree":{"name":"lodash.isarguments","version":"3.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}

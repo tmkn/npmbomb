@@ -1,1 +1,1 @@
-{"name":"gulplog","version":"1.0.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Logger for gulp and gulp plugins"}
+{"name":"gulplog","version":"1.0.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Logger for gulp and gulp plugins","dependencyTree":{"name":"gulplog","version":"1.0.0","transitiveCount":2,"loop":false,"dependencies":[{"name":"glogg","version":"1.0.2","transitiveCount":1,"loop":false,"dependencies":[{"name":"sparkles","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}]}}

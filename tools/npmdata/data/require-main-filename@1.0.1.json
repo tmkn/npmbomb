@@ -1,1 +1,1 @@
-{"name":"require-main-filename","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"shim for require.main.filename() that works in as many environments as possible"}
+{"name":"require-main-filename","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"shim for require.main.filename() that works in as many environments as possible","dependencyTree":{"name":"require-main-filename","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

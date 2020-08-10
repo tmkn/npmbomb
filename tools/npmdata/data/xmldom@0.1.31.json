@@ -1,1 +1,1 @@
-{"name":"xmldom","version":"0.1.31","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer)."}
+{"name":"xmldom","version":"0.1.31","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer).","dependencyTree":{"name":"xmldom","version":"0.1.31","transitiveCount":0,"loop":false,"dependencies":[]}}

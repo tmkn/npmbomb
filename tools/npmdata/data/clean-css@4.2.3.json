@@ -1,1 +1,1 @@
-{"name":"clean-css","version":"4.2.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"A well-tested CSS minifier"}
+{"name":"clean-css","version":"4.2.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"A well-tested CSS minifier","dependencyTree":{"name":"clean-css","version":"4.2.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"source-map","version":"0.6.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

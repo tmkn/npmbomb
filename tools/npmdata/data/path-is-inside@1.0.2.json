@@ -1,1 +1,1 @@
-{"name":"path-is-inside","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tests whether one path is inside another path"}
+{"name":"path-is-inside","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tests whether one path is inside another path","dependencyTree":{"name":"path-is-inside","version":"1.0.2","transitiveCount":0,"loop":false,"dependencies":[]}}

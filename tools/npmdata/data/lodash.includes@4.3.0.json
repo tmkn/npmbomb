@@ -1,1 +1,1 @@
-{"name":"lodash.includes","version":"4.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.includes` exported as a module."}
+{"name":"lodash.includes","version":"4.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.includes` exported as a module.","dependencyTree":{"name":"lodash.includes","version":"4.3.0","transitiveCount":0,"loop":false,"dependencies":[]}}

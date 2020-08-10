@@ -1,1 +1,1 @@
-{"name":"saxes","version":"5.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"An evented streaming XML parser in JavaScript"}
+{"name":"saxes","version":"5.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"An evented streaming XML parser in JavaScript","dependencyTree":{"name":"saxes","version":"5.0.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"xmlchars","version":"2.2.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

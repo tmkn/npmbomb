@@ -1,1 +1,1 @@
-{"name":"is-extglob","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns true if a string has an extglob."}
+{"name":"is-extglob","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns true if a string has an extglob.","dependencyTree":{"name":"is-extglob","version":"2.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}

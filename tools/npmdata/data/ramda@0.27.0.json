@@ -1,1 +1,1 @@
-{"name":"ramda","version":"0.27.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A practical functional library for JavaScript programmers."}
+{"name":"ramda","version":"0.27.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A practical functional library for JavaScript programmers.","dependencyTree":{"name":"ramda","version":"0.27.0","transitiveCount":0,"loop":false,"dependencies":[]}}

@@ -1,1 +1,1 @@
-{"name":"indexof","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Microsoft sucks"}
+{"name":"indexof","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Microsoft sucks","dependencyTree":{"name":"indexof","version":"0.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}

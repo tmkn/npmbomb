@@ -1,1 +1,1 @@
-{"name":"bser","version":"2.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JavaScript implementation of the BSER Binary Serialization"}
+{"name":"bser","version":"2.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JavaScript implementation of the BSER Binary Serialization","dependencyTree":{"name":"bser","version":"2.1.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"node-int64","version":"0.4.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

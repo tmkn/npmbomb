@@ -1,1 +1,1 @@
-{"name":"cssesc","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript library for escaping CSS strings and identifiers while generating the shortest possible ASCII-only output."}
+{"name":"cssesc","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript library for escaping CSS strings and identifiers while generating the shortest possible ASCII-only output.","dependencyTree":{"name":"cssesc","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

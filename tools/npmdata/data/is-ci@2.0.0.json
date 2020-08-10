@@ -1,1 +1,1 @@
-{"name":"is-ci","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Detect if the current environment is a CI server"}
+{"name":"is-ci","version":"2.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Detect if the current environment is a CI server","dependencyTree":{"name":"is-ci","version":"2.0.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"ci-info","version":"2.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

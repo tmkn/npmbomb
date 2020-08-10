@@ -1,1 +1,1 @@
-{"name":"serialize-error","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Serialize an error into a plain object"}
+{"name":"serialize-error","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Serialize an error into a plain object","dependencyTree":{"name":"serialize-error","version":"2.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}

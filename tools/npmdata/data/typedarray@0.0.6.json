@@ -1,1 +1,1 @@
-{"name":"typedarray","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"TypedArray polyfill for old browsers"}
+{"name":"typedarray","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"TypedArray polyfill for old browsers","dependencyTree":{"name":"typedarray","version":"0.0.6","transitiveCount":0,"loop":false,"dependencies":[]}}

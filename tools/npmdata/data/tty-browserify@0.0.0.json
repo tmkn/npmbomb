@@ -1,1 +1,1 @@
-{"name":"tty-browserify","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the tty module from node core for browsers"}
+{"name":"tty-browserify","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the tty module from node core for browsers","dependencyTree":{"name":"tty-browserify","version":"0.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

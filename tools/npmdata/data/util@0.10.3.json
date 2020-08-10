@@ -1,1 +1,1 @@
-{"name":"util","version":"0.10.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Node.JS util module"}
+{"name":"util","version":"0.10.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Node.JS util module","dependencyTree":{"name":"util","version":"0.10.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"inherits","version":"2.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}

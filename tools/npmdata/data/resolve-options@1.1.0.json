@@ -1,1 +1,1 @@
-{"name":"resolve-options","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Resolve an options object based on configuration."}
+{"name":"resolve-options","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Resolve an options object based on configuration.","dependencyTree":{"name":"resolve-options","version":"1.1.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"value-or-function","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

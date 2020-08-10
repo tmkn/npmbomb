@@ -1,1 +1,1 @@
-{"name":"select-hose","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Select protocol using first bytes of incoming data and hose stuff to the handler"}
+{"name":"select-hose","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Select protocol using first bytes of incoming data and hose stuff to the handler","dependencyTree":{"name":"select-hose","version":"2.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}

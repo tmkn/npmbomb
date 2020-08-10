@@ -1,1 +1,1 @@
-{"name":"@babel/plugin-syntax-flow","version":"7.10.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Allow parsing of the flow syntax"}
+{"name":"@babel/plugin-syntax-flow","version":"7.10.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Allow parsing of the flow syntax","dependencyTree":{"name":"@babel/plugin-syntax-flow","version":"7.10.4","transitiveCount":1,"loop":false,"dependencies":[{"name":"@babel/helper-plugin-utils","version":"7.10.4","transitiveCount":0,"loop":false,"dependencies":[]}]}}

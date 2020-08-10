@@ -1,1 +1,1 @@
-{"name":"promise-map-series","version":"0.2.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Map over array avoiding parallel execution, using promises"}
+{"name":"promise-map-series","version":"0.2.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Map over array avoiding parallel execution, using promises","dependencyTree":{"name":"promise-map-series","version":"0.2.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"rsvp","version":"3.6.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}

@@ -1,1 +1,1 @@
-{"name":"homedir-polyfill","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Node.js os.homedir polyfill for older versions of node.js."}
+{"name":"homedir-polyfill","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Node.js os.homedir polyfill for older versions of node.js.","dependencyTree":{"name":"homedir-polyfill","version":"1.0.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"parse-passwd","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}

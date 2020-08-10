@@ -1,1 +1,1 @@
-{"name":"atob","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"atob for Node.JS and Linux / Mac / Windows CLI (it's a one-liner)"}
+{"name":"atob","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"atob for Node.JS and Linux / Mac / Windows CLI (it's a one-liner)","dependencyTree":{"name":"atob","version":"2.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}
