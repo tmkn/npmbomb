@@ -12,7 +12,6 @@ import {
     primaryColor,
     primaryColorDark
 } from "../../../css";
-import { TreeTest } from "../tree/Tree";
 
 interface ITabContext {
     activeTab: ITab | null;

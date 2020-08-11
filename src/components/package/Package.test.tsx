@@ -13,7 +13,14 @@ describe("<Package />", () => {
         description: `foo`,
         dependencies: 123,
         directDependencies: 10,
-        distinctDependencies: 50
+        distinctDependencies: 50,
+        dependencyTree: {
+            dependencies: [],
+            name: ``,
+            version: ``,
+            transitiveCount: 0,
+            loop: false
+        }
     };
 
     const scopedTestData: IPackageInfo = {
@@ -22,7 +29,14 @@ describe("<Package />", () => {
         description: `foo`,
         dependencies: 123,
         directDependencies: 10,
-        distinctDependencies: 50
+        distinctDependencies: 50,
+        dependencyTree: {
+            dependencies: [],
+            name: ``,
+            version: ``,
+            transitiveCount: 0,
+            loop: false
+        }
     };
 
     beforeEach(() => {

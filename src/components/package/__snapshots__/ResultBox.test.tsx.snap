@@ -33,7 +33,7 @@ exports[`<ResultBox /> matches snapshot 1`] = `
       <div
         class="css-1lr5315"
       >
-        <p
+        <div
           class="css-1cwnpiq"
         >
           <span>
@@ -58,7 +58,7 @@ exports[`<ResultBox /> matches snapshot 1`] = `
             </b>
             .
           </span>
-        </p>
+        </div>
       </div>
     </div>
     <h2>

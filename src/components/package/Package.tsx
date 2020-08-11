@@ -10,7 +10,7 @@ import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
-import { ResultBox } from "./ResultBox";
+import { ResultBox, IDependencyTreeInfo } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
@@ -57,6 +57,14 @@ export function getNameVersion(pkg: string): [string, string] {
     return [parts[0], parts[1]];
 }
 
+export interface IDependencyTreeData {
+    name: string;
+    version: string;
+    transitiveCount: number;
+    loop: boolean;
+    dependencies: IDependencyTreeData[];
+}
+
 export interface IPackageInfo {
     name: string;
     version: string;
@@ -64,6 +72,10 @@ export interface IPackageInfo {
     dependencies: number;
     distinctDependencies: number;
     directDependencies: number;
+    //todo remove
+    dependencyTree: IDependencyTreeData;
+    //compressed format of dependency tree
+    dependencyTree2?: IDependencyTreeInfo;
 }
 
 async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
@@ -102,7 +114,14 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
         description: ``,
         distinctDependencies: 0,
         dependencies: 0,
-        directDependencies: 0
+        directDependencies: 0,
+        dependencyTree: {
+            dependencies: [],
+            name: ``,
+            version: ``,
+            transitiveCount: 0,
+            loop: false
+        }
     });
 
     async function loadData() {

@@ -8,11 +8,11 @@ exports[`<Index /> matches snapshot 1`] = `
     <h1>
       About
     </h1>
-    <p
+    <div
       class="css-1cwnpiq"
     >
       Test your knowledge of the NPM ecosystem by guessing the number of dependencies for popular NPM packages.
-    </p>
+    </div>
     <div
       class="css-8a5j6a"
     >
