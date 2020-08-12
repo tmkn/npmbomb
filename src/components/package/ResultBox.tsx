@@ -100,12 +100,17 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
 
         const expandElStyle = css({
             [mq[0]]: {
-                minWidth: `1rem`
+                minWidth: `1rem`,
+                fontFamily: `IconFont`
             }
         });
         const expandEl: JSX.Element | null = options.canExpand ? (
             <span css={expandElStyle} onClick={expandClick}>
-                {options.isExpanded ? `>` : `<`}
+                {options.isExpanded ? (
+                    <div className="codicon codicon-chevron-down"></div>
+                ) : (
+                    <div className="codicon codicon-chevron-right"></div>
+                )}
             </span>
         ) : null;
         const Count: React.FC = () => {

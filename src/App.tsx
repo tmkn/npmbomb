@@ -13,6 +13,8 @@ import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
 import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
 import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
+import IconFont from "./codicon.ttf";
+import "./codicon.css";
 
 const globalStyle: SerializedStyles = css`
     body {
@@ -41,6 +43,11 @@ const globalStyle: SerializedStyles = css`
         color: ${secondaryColor};
         font-weight: 200;
     }
+
+    @font-face {
+        font-family: "IconFont";
+        src: url(${IconFont}) format("ttf"),
+    }  
 
     @font-face {
         font-family: "Muli";

@@ -14,7 +14,20 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: [/node_modules/],
             },
-        ],
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                ],
+            },
+        ]
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
