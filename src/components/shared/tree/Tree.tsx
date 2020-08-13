@@ -151,6 +151,8 @@ function visit<T>(
         }
     }
 
+    path.push(nodeKey(parent.data));
+
     if (!isRoot) {
         const prefixType = parentI === parentLength - 1 ? PrefixType.Leaf : PrefixType.Entry;
         prefixes.push(prefixType);
@@ -183,11 +185,8 @@ function visit<T>(
         }
     });
 
-    const childKey = { ...parent };
-    childKey.children = [];
-
     treeNodes.push(
-        <div key={`${JSON.stringify(childKey)} ${JSON.stringify(path)}`} css={lineStyle}>
+        <div key={JSON.stringify(path)} css={lineStyle}>
             {allPrefixes}
             {node}
         </div>
@@ -213,7 +212,7 @@ function visit<T>(
                     i,
                     parent.children.length,
                     [...prefixes],
-                    [...path, nodeKey(parent.data)],
+                    [...path],
                     treeFormatter,
                     equalLookup,
                     equal
