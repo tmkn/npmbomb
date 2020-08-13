@@ -3,7 +3,7 @@ import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext, useState } from "react";
 
 import { mq, textColor, secondaryColorLight, primaryColorDark, secondaryColor } from "../../css";
-import { ResultsTable, Num } from "../shared/results/Results";
+import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
 import { Info } from "../shared/info/Info";

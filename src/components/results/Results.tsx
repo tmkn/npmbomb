@@ -3,7 +3,7 @@ import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext, useEffect } from "react";
 import { Redirect, Link, useHistory } from "react-router-dom";
 
-import { ResultsTable, Num } from "../shared/results/Results";
+import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { primaryColor, mq, mobileOnly, hideOnMobile } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
