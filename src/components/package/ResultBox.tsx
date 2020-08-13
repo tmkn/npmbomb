@@ -100,8 +100,11 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
 
         const expandElStyle = css({
             [mq[0]]: {
-                minWidth: `1rem`,
-                fontFamily: `IconFont`
+                fontFamily: `IconFont`,
+                cursor: `pointer`,
+                ">div": {
+                    verticalAlign: `middle`
+                }
             }
         });
         const expandEl: JSX.Element | null = options.canExpand ? (
@@ -124,12 +127,17 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
             return <span css={style}>({node.data.transitiveCount})</span>;
         };
         const label: string = `${node.data.name}@${node.data.version}`;
+        const labelStyle = css({
+            [mq[0]]: {
+                marginLeft: options.canExpand ? 0 : `1rem`
+            }
+        });
 
         return (
             <React.Fragment>
                 {expandEl}
                 <span
-                    key={`${JSON.stringify(node)} ${JSON.stringify(path)}`}
+                    css={labelStyle}
                     onClick={() => onClick(customClick)}
                 >
                     {label}
@@ -142,6 +150,7 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
     const treeIdentationStyle = css({
         [mq[0]]: {
             minWidth: `1rem`,
+            marginLeft: `0.5rem`,
             borderLeft: `1px solid ${secondaryColor}`
         }
     });

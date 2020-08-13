@@ -130,7 +130,11 @@ function visit<T>(
         [mq[0]]: {
             display: `flex`,
             overflow: `auto`,
-            wordBreak: `normal`
+            wordBreak: `normal`,
+            flex: 1,
+            ":hover": {
+                backgroundColor: `white`
+            }
         }
     });
     const node = (
