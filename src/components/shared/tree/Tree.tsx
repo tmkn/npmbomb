@@ -1,15 +1,17 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React from "react";
+import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
+
 import { mq, serifFont } from "../../../css";
 import { IDependencyTreeData } from "../../package/Package";
 
-export interface ITreeNode<T> {
+export interface ITreeNodeData<T> {
     data: T;
     active: boolean;
     canExpand: boolean;
     expanded: boolean;
-    children: ITreeNode<T>[];
+    children: ITreeNodeData<T>[];
 }
 
 enum PrefixType {
@@ -20,13 +22,13 @@ enum PrefixType {
 }
 
 export type PrefixFormatter<T> = (node: T, i: number) => JSX.Element;
-export type OnClickCallback<T> = (node: ITreeNode<T>, equals: ITreeNode<T>[]) => void;
+export type OnClickCallback<T> = (node: ITreeNodeData<T>, equals: ITreeNodeData<T>[]) => void;
 interface INodeFormatterOptions {
     canExpand: boolean;
     isExpanded: boolean;
 }
 export type NodeFormatter<T> = (
-    node: ITreeNode<T>,
+    node: ITreeNodeData<T>,
     path: string[],
     options: INodeFormatterOptions,
     onClick: (callback: OnClickCallback<T>) => void
@@ -42,26 +44,26 @@ export interface ITreeFormatter<T> {
 }
 
 interface ITreeUtilty<T> {
-    root: ITreeNode<T>;
+    root: ITreeNodeData<T>;
     render: () => void;
-    forEach: (callback: (node: ITreeNode<T>) => void) => void;
+    forEach: (callback: (node: ITreeNodeData<T>) => void) => void;
 }
 
 export class TreeUtility<T> implements ITreeUtilty<T> {
     constructor(
-        public root: ITreeNode<T>,
-        private _setRoot: React.Dispatch<React.SetStateAction<ITreeNode<T>>>
+        public root: ITreeNodeData<T>,
+        private _setRoot: React.Dispatch<React.SetStateAction<ITreeNodeData<T>>>
     ) {}
 
     render(): void {
         this._setRoot({ ...this.root });
     }
 
-    forEach(callback: (node: ITreeNode<T>) => void): void {
+    forEach(callback: (node: ITreeNodeData<T>) => void): void {
         this._visit(this.root, callback);
     }
 
-    private _visit(node: ITreeNode<T>, callback: (node: ITreeNode<T>) => void): void {
+    private _visit(node: ITreeNodeData<T>, callback: (node: ITreeNodeData<T>) => void): void {
         callback(node);
 
         for (const child of node.children) {
@@ -72,8 +74,8 @@ export class TreeUtility<T> implements ITreeUtilty<T> {
 
 interface ITreeProps<T> {
     treeFormatter: ITreeFormatter<T>;
-    root: ITreeNode<T>;
-    equal: (node: ITreeNode<T>, path: string[]) => string;
+    root: ITreeNodeData<T>;
+    equal: (node: ITreeNodeData<T>, path: string[]) => string;
 }
 
 export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
@@ -81,32 +83,53 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
     root: _root,
     equal
 }) => {
-    const nodes: JSX.Element[] = visit(
-        _root,
-        0,
-        1,
-        [],
-        [],
-        treeFormatter,
-        new Map<string, Set<ITreeNode<IDependencyTreeData>>>(),
-        equal,
-        true
-    );
+    console.time(`toTreeList`);
+    const treeList1 = toTreeList<IDependencyTreeData>([], _root);
+    console.timeEnd(`toTreeList`);
 
-    return <div>{nodes}</div>;
+    const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
+        const p = treeList1[index];
+
+        return (
+            <div key={key} style={style}>
+                <TreeNode node={p} treeFormatter={treeFormatter} />
+            </div>
+        );
+    };
+
+    const treeList = `treeList`;
+    const treeStyle = css({
+        [mq[0]]: {
+            minHeight: treeList1.length > 10 ? `15rem` : `${treeList1.length * 1.5}rem`,
+            [`.${treeList}`]: {
+                outline: `none`
+            }
+        }
+    });
+
+    return (
+        <div css={treeStyle}>
+            <AutoSizer defaultHeight={24}>
+                {({ height, width }) => (
+                    <List
+                        className={treeList}
+                        overscanRowCount={10}
+                        width={width}
+                        height={height}
+                        rowCount={treeList1.length}
+                        rowHeight={24}
+                        rowRenderer={rowRenderer}
+                    />
+                )}
+            </AutoSizer>
+        </div>
+    );
 };
 
-function visit<T>(
-    parent: ITreeNode<T>,
-    parentI: number,
-    parentLength: number,
-    prefixes: PrefixType[],
-    path: string[],
-    treeFormatter: ITreeFormatter<T>,
-    equalLookup: Map<string, Set<ITreeNode<T>>>,
-    equal: (node: ITreeNode<T>, path: string[]) => string,
-    isRoot = false
-): JSX.Element[] {
+function createPrefixes(
+    { prefixes, treeData }: ITreeListEntry<IDependencyTreeData>,
+    treeFormatter: ITreeFormatter<IDependencyTreeData>
+): Array<JSX.Element | null> {
     const {
         prefixEntryFormatter,
         prefixLeafFormatter,
@@ -115,59 +138,16 @@ function visit<T>(
         prefixNestedSpacerFormatter,
         nodeKey
     } = treeFormatter;
-    const treeNodes: JSX.Element[] = [];
-    const onChildClick = (callback: (node: ITreeNode<T>, equals: ITreeNode<T>[]) => void): void => {
-        const key = equal(parent, path);
-
-        parent.active = true;
-        callback(parent, [...(equalLookup.get(key) ?? [])]);
-    };
-    const options: INodeFormatterOptions = {
-        canExpand: parent.canExpand,
-        isExpanded: parent.expanded
-    };
-    const nodeStyle = css({
-        [mq[0]]: {
-            display: `flex`,
-            overflow: `auto`,
-            wordBreak: `normal`,
-            flex: 1,
-            ":hover": {
-                backgroundColor: `white`
-            }
-        }
-    });
-    const node = (
-        <div css={nodeStyle}>
-            {nodeFormatter(parent, [...path, nodeKey(parent.data)], options, onChildClick)}
-        </div>
-    );
-    const lastPrefix = prefixes.pop();
-
-    if (typeof lastPrefix !== "undefined") {
-        if (lastPrefix === PrefixType.Leaf) prefixes.push(PrefixType.EmptySpacer);
-        else if (lastPrefix === PrefixType.Entry) {
-            prefixes.push(PrefixType.NestedSpacer);
-        }
-    }
-
-    path.push(nodeKey(parent.data));
-
-    if (!isRoot) {
-        const prefixType = parentI === parentLength - 1 ? PrefixType.Leaf : PrefixType.Entry;
-        prefixes.push(prefixType);
-    }
-
     const allPrefixes: Array<JSX.Element | null> = [...prefixes].map((type, i) => {
         switch (type) {
             case PrefixType.Entry:
-                return prefixEntryFormatter(parent.data, i);
+                return prefixEntryFormatter(treeData.data, i);
             case PrefixType.Leaf:
-                return prefixLeafFormatter(parent.data, i);
+                return prefixLeafFormatter(treeData.data, i);
             case PrefixType.EmptySpacer:
-                return prefixEmptySpacerFormatter(parent.data, i);
+                return prefixEmptySpacerFormatter(treeData.data, i);
             case PrefixType.NestedSpacer:
-                return prefixNestedSpacerFormatter(parent.data, i);
+                return prefixNestedSpacerFormatter(treeData.data, i);
             default:
                 let unhandled: never = type;
                 console.log(`Unknown prefix type: "${type}"`);
@@ -176,49 +156,95 @@ function visit<T>(
         }
     });
 
+    return allPrefixes;
+}
+
+interface ITreeNode {
+    node: ITreeListEntry<IDependencyTreeData>;
+    treeFormatter: ITreeFormatter<IDependencyTreeData>;
+}
+
+const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
+    const {nodeFormatter, nodeKey} = treeFormatter;
     const lineStyle = css({
         [mq[0]]: {
             display: `flex`,
             lineHeight: `1.5rem`,
             fontFamily: serifFont,
-            cursor: `default`
+            cursor: `default`,
+            flex: 1,
+            ":hover": {
+                backgroundColor: `white`
+            }
         }
     });
-
-    treeNodes.push(
-        <div key={JSON.stringify(path)} css={lineStyle}>
-            {allPrefixes}
-            {node}
+    const prefixes = createPrefixes(node, treeFormatter);
+    const onChildClick= (callback: (node: ITreeNodeData<IDependencyTreeData>, equals: ITreeNodeData<IDependencyTreeData>[]) => void): void => {
+        node.treeData.active = true;
+        callback(node.treeData, [/*todo path*/]);
+    };
+    const options: INodeFormatterOptions = {
+        canExpand: node.treeData.canExpand,
+        isExpanded: node.treeData.expanded
+    };
+    const nodeStyle = css({
+        [mq[0]]: {
+            display: `flex`,
+            overflow: `auto`,
+            wordBreak: `normal`
+        }
+    });
+    const labelNode = (
+        <div css={nodeStyle}>
+            {nodeFormatter(node.treeData, [/*todo path*/], options, onChildClick)}
         </div>
     );
 
-    //calculate equals
-    const equalsKey = equal(parent, path);
-    const existingEquals = equalLookup.get(equalsKey);
+    return (
+        <div css={lineStyle}>
+            {prefixes}
+            {labelNode}
+        </div>
+    );
+};
 
-    if (typeof existingEquals !== "undefined") {
-        existingEquals.add(parent);
-    } else {
-        const newEquals = new Set([parent]);
+interface ITreeListEntry<T> {
+    prefixes: PrefixType[];
+    treeData: ITreeNodeData<T>;
+}
 
-        equalLookup.set(equalsKey, newEquals);
-    }
+function toTreeList<T>(
+    _prefixes: ReadonlyArray<PrefixType>,
+    node: ITreeNodeData<T>
+): ITreeListEntry<T>[] {
+    //console.log(_prefixes, (node.data as any).name);
 
-    if (parent.expanded === true)
-        for (const [i, child] of parent.children.entries()) {
-            treeNodes.push(
-                ...visit(
-                    child,
-                    i,
-                    parent.children.length,
-                    [...prefixes],
-                    [...path],
-                    treeFormatter,
-                    equalLookup,
-                    equal
-                )
-            );
+    const prefixes = [..._prefixes];
+    const lastPrefix: PrefixType | undefined = prefixes.pop();
+    const updatedPrefixes: PrefixType[] =
+        lastPrefix === PrefixType.Leaf
+            ? [...prefixes, PrefixType.EmptySpacer]
+            : lastPrefix === PrefixType.Entry
+            ? [...prefixes, PrefixType.NestedSpacer]
+            : [...prefixes];
+    const entries: ITreeListEntry<T>[] = [];
+    const entry: ITreeListEntry<T> = {
+        prefixes: [..._prefixes],
+        treeData: node
+    };
+
+    entries.push(entry);
+    if (node.expanded)
+        for (const [i, child] of node.children.entries()) {
+            const childPrefix: PrefixType =
+                i === node.children.length - 1 ? PrefixType.Leaf : PrefixType.Entry;
+            const childPrefixes = [...updatedPrefixes, childPrefix];
+
+            //dont use ...spread operator -> call stack overflow for large trees
+            for (const c of toTreeList(childPrefixes, child)) {
+                entries.push(c);
+            }
         }
 
-    return treeNodes;
+    return entries;
 }

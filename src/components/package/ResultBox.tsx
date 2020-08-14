@@ -11,7 +11,7 @@ import { GuessContext } from "./GuessBox";
 import { TextLink } from "../shared/link/TextLink";
 import { TabView, ITab } from "../shared/tabview/TabView";
 import {
-    ITreeNode,
+    ITreeNodeData,
     NodeFormatter,
     OnClickCallback,
     PrefixFormatter,
@@ -71,6 +71,7 @@ const DependencyTreeTab: React.FC = () => {
         package: { dependencyTree }
     } = useContext(GuessContext);
     const treeData = convertToTree(dependencyTree);
+    treeData.expanded = true;
     return (
         <Info>
             <DependencyTree root={treeData} />
@@ -78,8 +79,8 @@ const DependencyTreeTab: React.FC = () => {
     );
 };
 
-const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ root: _root }) => {
-    const [root, setRoot] = useState<ITreeNode<IDependencyTreeData>>(_root);
+const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = ({ root: _root }) => {
+    const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeData>>(_root);
     const nodeFormatter: NodeFormatter<IDependencyTreeData> = (node, path, options, onClick) => {
         const customClick: OnClickCallback<IDependencyTreeData> = (node, equals) => {
             const treeUtility = new TreeUtility(root, setRoot);
@@ -136,10 +137,7 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
         return (
             <React.Fragment>
                 {expandEl}
-                <span
-                    css={labelStyle}
-                    onClick={() => onClick(customClick)}
-                >
+                <span css={labelStyle} onClick={() => onClick(customClick)}>
                     {label}
                     <Count />
                 </span>
@@ -183,7 +181,7 @@ const DependencyTree: React.FC<{ root: ITreeNode<IDependencyTreeData> }> = ({ ro
         prefixEmptySpacerFormatter,
         prefixNestedSpacerFormatter
     };
-    const equal = (node: ITreeNode<IDependencyTreeData>): string => {
+    const equal = (node: ITreeNodeData<IDependencyTreeData>): string => {
         return `${node.data.name}@${node.data.version}`;
     };
 
@@ -200,8 +198,8 @@ export interface IDependencyTreeInfo {
     root: IDependencyTreeStructure;
 }
 
-function convertToTree(root: IDependencyTreeData): ITreeNode<IDependencyTreeData> {
-    const node: ITreeNode<IDependencyTreeData> = {
+function convertToTree(root: IDependencyTreeData): ITreeNodeData<IDependencyTreeData> {
+    const node: ITreeNodeData<IDependencyTreeData> = {
         data: root,
         active: false,
         canExpand: root.dependencies.length > 0,
