@@ -165,7 +165,7 @@ interface ITreeNode {
 }
 
 const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
-    const {nodeFormatter, nodeKey} = treeFormatter;
+    const { nodeFormatter, nodeKey } = treeFormatter;
     const lineStyle = css({
         [mq[0]]: {
             display: `flex`,
@@ -179,9 +179,16 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
         }
     });
     const prefixes = createPrefixes(node, treeFormatter);
-    const onChildClick= (callback: (node: ITreeNodeData<IDependencyTreeData>, equals: ITreeNodeData<IDependencyTreeData>[]) => void): void => {
+    const onChildClick = (
+        callback: (
+            node: ITreeNodeData<IDependencyTreeData>,
+            equals: ITreeNodeData<IDependencyTreeData>[]
+        ) => void
+    ): void => {
         node.treeData.active = true;
-        callback(node.treeData, [/*todo path*/]);
+        callback(node.treeData, [
+            /*todo path*/
+        ]);
     };
     const options: INodeFormatterOptions = {
         canExpand: node.treeData.canExpand,
@@ -196,7 +203,14 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
     });
     const labelNode = (
         <div css={nodeStyle}>
-            {nodeFormatter(node.treeData, [/*todo path*/], options, onChildClick)}
+            {nodeFormatter(
+                node.treeData,
+                [
+                    /*todo path*/
+                ],
+                options,
+                onChildClick
+            )}
         </div>
     );
 

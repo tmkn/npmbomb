@@ -79,7 +79,9 @@ const DependencyTreeTab: React.FC = () => {
     );
 };
 
-const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = ({ root: _root }) => {
+const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = ({
+    root: _root
+}) => {
     const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeData>>(_root);
     const nodeFormatter: NodeFormatter<IDependencyTreeData> = (node, path, options, onClick) => {
         const customClick: OnClickCallback<IDependencyTreeData> = (node, equals) => {

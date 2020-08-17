@@ -37,7 +37,10 @@ interface IDependencyTreeData {
     d: IDependencyTreeData[];
 }
 
-function createDependencyTree(pa: PackageAnalytics, root?: IDependencyTreeData): IDependencyTreeData {
+function createDependencyTree(
+    pa: PackageAnalytics,
+    root?: IDependencyTreeData
+): IDependencyTreeData {
     const parent: IDependencyTreeData = {
         n: pa.name,
         v: pa.version,
@@ -45,7 +48,7 @@ function createDependencyTree(pa: PackageAnalytics, root?: IDependencyTreeData):
         d: []
     };
 
-    if(pa.isLoop) {
+    if (pa.isLoop) {
         parent.l = true;
     }
 
