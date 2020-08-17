@@ -1,1 +1,1 @@
-{"name":"dargs","version":"6.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Reverse minimist. Convert an object of options into an array of command-line arguments.","dependencyTree":{"name":"dargs","version":"6.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"dargs","version":"6.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Reverse minimist. Convert an object of options into an array of command-line arguments.","dependencyTree":{"n":"dargs","v":"6.1.0","c":0,"d":[]}}

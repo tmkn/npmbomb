@@ -1,1 +1,1 @@
-{"name":"buffer-crc32","version":"0.2.13","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A pure javascript CRC32 algorithm that plays nice with binary data","dependencyTree":{"name":"buffer-crc32","version":"0.2.13","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"buffer-crc32","version":"0.2.13","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A pure javascript CRC32 algorithm that plays nice with binary data","dependencyTree":{"n":"buffer-crc32","v":"0.2.13","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"fast-safe-stringify","version":"2.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safely and quickly serialize JavaScript objects","dependencyTree":{"name":"fast-safe-stringify","version":"2.0.7","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"fast-safe-stringify","version":"2.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safely and quickly serialize JavaScript objects","dependencyTree":{"n":"fast-safe-stringify","v":"2.0.7","c":0,"d":[]}}

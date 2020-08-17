@@ -1,1 +1,1 @@
-{"name":"array-map","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].map(f)` for older browsers","dependencyTree":{"name":"array-map","version":"0.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"array-map","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].map(f)` for older browsers","dependencyTree":{"n":"array-map","v":"0.0.0","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"stream-exhaust","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Ensure that a stream is flowing data without mutating it","dependencyTree":{"name":"stream-exhaust","version":"1.0.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"stream-exhaust","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Ensure that a stream is flowing data without mutating it","dependencyTree":{"n":"stream-exhaust","v":"1.0.2","c":0,"d":[]}}

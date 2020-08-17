@@ -1,1 +1,1 @@
-{"name":"vue","version":"2.6.11","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Reactive, component-oriented view layer for modern web interfaces.","dependencyTree":{"name":"vue","version":"2.6.11","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"vue","version":"2.6.11","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Reactive, component-oriented view layer for modern web interfaces.","dependencyTree":{"n":"vue","v":"2.6.11","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"is-absolute-url","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a URL is absolute","dependencyTree":{"name":"is-absolute-url","version":"3.0.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"is-absolute-url","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a URL is absolute","dependencyTree":{"n":"is-absolute-url","v":"3.0.3","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"array-reduce","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].reduce()` for old browsers","dependencyTree":{"name":"array-reduce","version":"0.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"array-reduce","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].reduce()` for old browsers","dependencyTree":{"n":"array-reduce","v":"0.0.0","c":0,"d":[]}}

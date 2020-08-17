@@ -1,1 +1,1 @@
-{"name":"formidable","version":"1.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A node.js module for parsing form data, especially file uploads.","dependencyTree":{"name":"formidable","version":"1.2.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"formidable","version":"1.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A node.js module for parsing form data, especially file uploads.","dependencyTree":{"n":"formidable","v":"1.2.2","c":0,"d":[]}}

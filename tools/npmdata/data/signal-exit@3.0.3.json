@@ -1,1 +1,1 @@
-{"name":"signal-exit","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"when you want to fire an event no matter how a process exits.","dependencyTree":{"name":"signal-exit","version":"3.0.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"signal-exit","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"when you want to fire an event no matter how a process exits.","dependencyTree":{"n":"signal-exit","v":"3.0.3","c":0,"d":[]}}

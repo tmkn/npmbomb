@@ -1,1 +1,1 @@
-{"name":"jsonify","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JSON without touching any globals","dependencyTree":{"name":"jsonify","version":"0.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"jsonify","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JSON without touching any globals","dependencyTree":{"n":"jsonify","v":"0.0.0","c":0,"d":[]}}

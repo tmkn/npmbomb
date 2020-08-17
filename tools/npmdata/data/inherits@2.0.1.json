@@ -1,1 +1,1 @@
-{"name":"inherits","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Browser-friendly inheritance fully compatible with standard node.js inherits()","dependencyTree":{"name":"inherits","version":"2.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"inherits","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Browser-friendly inheritance fully compatible with standard node.js inherits()","dependencyTree":{"n":"inherits","v":"2.0.1","c":0,"d":[]}}

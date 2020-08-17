@@ -125,9 +125,9 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
                 }
             });
 
-            return <span css={style}>({node.data.transitiveCount})</span>;
+            return <span css={style}>({node.data.c})</span>;
         };
-        const label: string = `${node.data.name}@${node.data.version}`;
+        const label: string = `${node.data.n}@${node.data.v}`;
         const labelStyle = css({
             [mq[0]]: {
                 marginLeft: options.canExpand ? 0 : `1rem`
@@ -144,7 +144,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
             </React.Fragment>
         );
     };
-    const nodeKey = (node: IDependencyTreeData) => `${node.name}@${node.version}`;
+    const nodeKey = (node: IDependencyTreeData) => `${node.n}@${node.v}`;
     const treeIdentationStyle = css({
         [mq[0]]: {
             minWidth: `1rem`,
@@ -182,7 +182,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         prefixNestedSpacerFormatter
     };
     const equal = (node: ITreeNodeData<IDependencyTreeData>): string => {
-        return `${node.data.name}@${node.data.version}`;
+        return `${node.data.n}@${node.data.v}`;
     };
 
     return <Tree treeFormatter={treeFormatter} root={root} equal={equal} />;
@@ -202,12 +202,12 @@ function convertToTree(root: IDependencyTreeData): ITreeNodeData<IDependencyTree
     const node: ITreeNodeData<IDependencyTreeData> = {
         data: root,
         active: false,
-        canExpand: root.dependencies.length > 0,
+        canExpand: root.d.length > 0,
         children: [],
         expanded: false
     };
 
-    for (const child of root.dependencies) {
+    for (const child of root.d) {
         node.children.push(convertToTree(child));
     }
 

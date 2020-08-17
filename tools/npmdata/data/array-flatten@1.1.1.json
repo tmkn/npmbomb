@@ -1,1 +1,1 @@
-{"name":"array-flatten","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Flatten an array of nested arrays into a single flat array","dependencyTree":{"name":"array-flatten","version":"1.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"array-flatten","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Flatten an array of nested arrays into a single flat array","dependencyTree":{"n":"array-flatten","v":"1.1.1","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"component-inherit","version":"0.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Prototype inheritance utility","dependencyTree":{"name":"component-inherit","version":"0.0.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"component-inherit","version":"0.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Prototype inheritance utility","dependencyTree":{"n":"component-inherit","v":"0.0.3","c":0,"d":[]}}

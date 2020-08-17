@@ -1,1 +1,1 @@
-{"name":"colorette","version":"1.2.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Color your terminal using pure idiomatic JavaScript.","dependencyTree":{"name":"colorette","version":"1.2.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"colorette","version":"1.2.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Color your terminal using pure idiomatic JavaScript.","dependencyTree":{"n":"colorette","v":"1.2.1","c":0,"d":[]}}

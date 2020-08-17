@@ -1,1 +1,1 @@
-{"name":"resolve-pathname","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Resolve URL pathnames using JavaScript","dependencyTree":{"name":"resolve-pathname","version":"3.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"resolve-pathname","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Resolve URL pathnames using JavaScript","dependencyTree":{"n":"resolve-pathname","v":"3.0.0","c":0,"d":[]}}

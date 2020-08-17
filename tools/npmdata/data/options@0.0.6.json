@@ -1,1 +1,1 @@
-{"name":"options","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A very light-weight in-code option parsers for node.js.","dependencyTree":{"name":"options","version":"0.0.6","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"options","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A very light-weight in-code option parsers for node.js.","dependencyTree":{"n":"options","v":"0.0.6","c":0,"d":[]}}

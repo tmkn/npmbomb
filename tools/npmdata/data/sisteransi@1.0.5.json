@@ -1,1 +1,1 @@
-{"name":"sisteransi","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ANSI escape codes for some terminal swag","dependencyTree":{"name":"sisteransi","version":"1.0.5","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"sisteransi","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ANSI escape codes for some terminal swag","dependencyTree":{"n":"sisteransi","v":"1.0.5","c":0,"d":[]}}

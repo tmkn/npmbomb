@@ -1,1 +1,1 @@
-{"name":"throat","version":"4.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Throttle the parallelism of an asynchronous (promise returning) function / functions","dependencyTree":{"name":"throat","version":"4.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"throat","version":"4.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Throttle the parallelism of an asynchronous (promise returning) function / functions","dependencyTree":{"n":"throat","v":"4.1.0","c":0,"d":[]}}

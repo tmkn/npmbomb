@@ -1,1 +1,1 @@
-{"name":"xpipe","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Use cross-platform IPC paths in node.","dependencyTree":{"name":"xpipe","version":"1.0.5","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"xpipe","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Use cross-platform IPC paths in node.","dependencyTree":{"n":"xpipe","v":"1.0.5","c":0,"d":[]}}

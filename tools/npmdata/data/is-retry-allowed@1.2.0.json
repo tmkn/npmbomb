@@ -1,1 +1,1 @@
-{"name":"is-retry-allowed","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Is retry allowed for Error?","dependencyTree":{"name":"is-retry-allowed","version":"1.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"is-retry-allowed","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Is retry allowed for Error?","dependencyTree":{"n":"is-retry-allowed","v":"1.2.0","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"is-buffer","version":"1.1.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Determine if an object is a Buffer","dependencyTree":{"name":"is-buffer","version":"1.1.6","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"is-buffer","version":"1.1.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Determine if an object is a Buffer","dependencyTree":{"n":"is-buffer","v":"1.1.6","c":0,"d":[]}}

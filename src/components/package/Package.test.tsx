@@ -15,11 +15,11 @@ describe("<Package />", () => {
         directDependencies: 10,
         distinctDependencies: 50,
         dependencyTree: {
-            dependencies: [],
-            name: ``,
-            version: ``,
-            transitiveCount: 0,
-            loop: false
+            d: [],
+            n: ``,
+            v: ``,
+            c: 0,
+            l: false
         }
     };
 
@@ -31,11 +31,11 @@ describe("<Package />", () => {
         directDependencies: 10,
         distinctDependencies: 50,
         dependencyTree: {
-            dependencies: [],
-            name: ``,
-            version: ``,
-            transitiveCount: 0,
-            loop: false
+            d: [],
+            n: ``,
+            v: ``,
+            c: 0,
+            l: false
         }
     };
 

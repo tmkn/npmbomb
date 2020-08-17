@@ -1,1 +1,1 @@
-{"name":"uid-number","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a username/group name to a uid/gid number","dependencyTree":{"name":"uid-number","version":"0.0.6","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"uid-number","version":"0.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a username/group name to a uid/gid number","dependencyTree":{"n":"uid-number","v":"0.0.6","c":0,"d":[]}}

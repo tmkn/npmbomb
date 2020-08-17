@@ -1,1 +1,1 @@
-{"name":"negotiator","version":"0.6.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP content negotiation","dependencyTree":{"name":"negotiator","version":"0.6.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"negotiator","version":"0.6.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP content negotiation","dependencyTree":{"n":"negotiator","v":"0.6.2","c":0,"d":[]}}

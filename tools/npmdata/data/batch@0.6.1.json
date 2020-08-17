@@ -1,1 +1,1 @@
-{"name":"batch","version":"0.6.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Simple async batch with concurrency control and progress reporting.","dependencyTree":{"name":"batch","version":"0.6.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"batch","version":"0.6.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Simple async batch with concurrency control and progress reporting.","dependencyTree":{"n":"batch","v":"0.6.1","c":0,"d":[]}}

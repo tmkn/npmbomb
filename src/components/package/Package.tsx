@@ -58,11 +58,11 @@ export function getNameVersion(pkg: string): [string, string] {
 }
 
 export interface IDependencyTreeData {
-    name: string;
-    version: string;
-    transitiveCount: number;
-    loop: boolean;
-    dependencies: IDependencyTreeData[];
+    n: string;
+    v: string;
+    c: number;
+    l?: boolean;
+    d: IDependencyTreeData[];
 }
 
 export interface IPackageInfo {
@@ -116,11 +116,11 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
         dependencies: 0,
         directDependencies: 0,
         dependencyTree: {
-            dependencies: [],
-            name: ``,
-            version: ``,
-            transitiveCount: 0,
-            loop: false
+            d: [],
+            n: ``,
+            v: ``,
+            c: 0,
+            l: false
         }
     });
 

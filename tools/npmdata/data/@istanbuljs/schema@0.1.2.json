@@ -1,1 +1,1 @@
-{"name":"@istanbuljs/schema","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Schemas describing various structures used by nyc and istanbuljs","dependencyTree":{"name":"@istanbuljs/schema","version":"0.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"@istanbuljs/schema","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Schemas describing various structures used by nyc and istanbuljs","dependencyTree":{"n":"@istanbuljs/schema","v":"0.1.2","c":0,"d":[]}}

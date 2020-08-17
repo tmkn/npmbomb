@@ -1,1 +1,1 @@
-{"name":"stream-buffers","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Buffer-backed Streams for reading and writing.","dependencyTree":{"name":"stream-buffers","version":"2.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"stream-buffers","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Buffer-backed Streams for reading and writing.","dependencyTree":{"n":"stream-buffers","v":"2.2.0","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"socket.io-adapter","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"default socket.io in-memory adapter","dependencyTree":{"name":"socket.io-adapter","version":"1.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"socket.io-adapter","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"default socket.io in-memory adapter","dependencyTree":{"n":"socket.io-adapter","v":"1.1.2","c":0,"d":[]}}

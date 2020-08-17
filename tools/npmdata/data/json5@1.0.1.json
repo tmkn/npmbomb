@@ -1,1 +1,1 @@
-{"name":"json5","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSON for humans.","dependencyTree":{"name":"json5","version":"1.0.1","transitiveCount":1,"loop":false,"dependencies":[{"name":"minimist","version":"1.2.5","transitiveCount":0,"loop":false,"dependencies":[]}]}}
+{"name":"json5","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"JSON for humans.","dependencyTree":{"n":"json5","v":"1.0.1","c":1,"d":[{"n":"minimist","v":"1.2.5","c":0,"d":[]}]}}

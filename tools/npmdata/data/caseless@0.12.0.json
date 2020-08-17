@@ -1,1 +1,1 @@
-{"name":"caseless","version":"0.12.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Caseless object set/get/has, very useful when working with HTTP headers.","dependencyTree":{"name":"caseless","version":"0.12.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"caseless","version":"0.12.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Caseless object set/get/has, very useful when working with HTTP headers.","dependencyTree":{"n":"caseless","v":"0.12.0","c":0,"d":[]}}

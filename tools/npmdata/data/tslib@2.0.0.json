@@ -1,1 +1,1 @@
-{"name":"tslib","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Runtime library for TypeScript helper functions","dependencyTree":{"name":"tslib","version":"2.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"tslib","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Runtime library for TypeScript helper functions","dependencyTree":{"n":"tslib","v":"2.0.0","c":0,"d":[]}}

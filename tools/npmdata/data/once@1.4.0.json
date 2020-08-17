@@ -1,1 +1,1 @@
-{"name":"once","version":"1.4.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Run a function exactly one time","dependencyTree":{"name":"once","version":"1.4.0","transitiveCount":1,"loop":false,"dependencies":[{"name":"wrappy","version":"1.0.2","transitiveCount":0,"loop":false,"dependencies":[]}]}}
+{"name":"once","version":"1.4.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Run a function exactly one time","dependencyTree":{"n":"once","v":"1.4.0","c":1,"d":[{"n":"wrappy","v":"1.0.2","c":0,"d":[]}]}}

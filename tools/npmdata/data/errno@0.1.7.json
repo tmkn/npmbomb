@@ -1,1 +1,1 @@
-{"name":"errno","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"libuv errno details exposed","dependencyTree":{"name":"errno","version":"0.1.7","transitiveCount":1,"loop":false,"dependencies":[{"name":"prr","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}
+{"name":"errno","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"libuv errno details exposed","dependencyTree":{"n":"errno","v":"0.1.7","c":1,"d":[{"n":"prr","v":"1.0.1","c":0,"d":[]}]}}

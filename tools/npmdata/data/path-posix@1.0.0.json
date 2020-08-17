@@ -1,1 +1,1 @@
-{"name":"path-posix","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"posix-specific core path module","dependencyTree":{"name":"path-posix","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"path-posix","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"posix-specific core path module","dependencyTree":{"n":"path-posix","v":"1.0.0","c":0,"d":[]}}

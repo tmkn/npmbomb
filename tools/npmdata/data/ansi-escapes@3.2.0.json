@@ -1,1 +1,1 @@
-{"name":"ansi-escapes","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ANSI escape codes for manipulating the terminal","dependencyTree":{"name":"ansi-escapes","version":"3.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"ansi-escapes","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ANSI escape codes for manipulating the terminal","dependencyTree":{"n":"ansi-escapes","v":"3.2.0","c":0,"d":[]}}

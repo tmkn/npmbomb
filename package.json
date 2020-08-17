@@ -20,7 +20,7 @@
     "ci:e2e": "node tools/server.js",
     "npmdata:build": "webpack --config ./tools/npmdata/webpack.js",
     "npmdata:watch": "webpack --config ./tools/npmdata/webpack.js --watch",
-    "npmdata:run": "node ./tools/npmdata/build/npmdata.js E:\\npm.json"
+    "npmdata:run": "node ./tools/npmdata/build/npmdata.js C:\\Users\\tuoma\\Downloads\\npm2020.json"
   },
   "keywords": [],
   "author": "tmkn",

@@ -1,1 +1,1 @@
-{"name":"dateformat","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A node.js package for Steven Levithan's excellent dateFormat() function.","dependencyTree":{"name":"dateformat","version":"2.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"dateformat","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A node.js package for Steven Levithan's excellent dateFormat() function.","dependencyTree":{"n":"dateformat","v":"2.2.0","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"qs","version":"6.5.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A querystring parser that supports nesting and arrays, with a depth limit","dependencyTree":{"name":"qs","version":"6.5.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"qs","version":"6.5.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A querystring parser that supports nesting and arrays, with a depth limit","dependencyTree":{"n":"qs","v":"6.5.2","c":0,"d":[]}}

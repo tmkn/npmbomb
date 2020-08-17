@@ -1,1 +1,1 @@
-{"name":"colors","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"get colors in your node.js console","dependencyTree":{"name":"colors","version":"1.0.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"colors","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"get colors in your node.js console","dependencyTree":{"n":"colors","v":"1.0.3","c":0,"d":[]}}

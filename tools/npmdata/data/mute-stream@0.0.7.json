@@ -1,1 +1,1 @@
-{"name":"mute-stream","version":"0.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Bytes go in, but they don't come out (when muted).","dependencyTree":{"name":"mute-stream","version":"0.0.7","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"mute-stream","version":"0.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Bytes go in, but they don't come out (when muted).","dependencyTree":{"n":"mute-stream","v":"0.0.7","c":0,"d":[]}}

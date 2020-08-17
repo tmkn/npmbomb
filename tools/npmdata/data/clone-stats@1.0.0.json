@@ -1,1 +1,1 @@
-{"name":"clone-stats","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safely clone node's fs.Stats instances without losing their class methods","dependencyTree":{"name":"clone-stats","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"clone-stats","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safely clone node's fs.Stats instances without losing their class methods","dependencyTree":{"n":"clone-stats","v":"1.0.0","c":0,"d":[]}}

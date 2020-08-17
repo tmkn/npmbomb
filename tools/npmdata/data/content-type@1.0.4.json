@@ -1,1 +1,1 @@
-{"name":"content-type","version":"1.0.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create and parse HTTP Content-Type header","dependencyTree":{"name":"content-type","version":"1.0.4","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"content-type","version":"1.0.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create and parse HTTP Content-Type header","dependencyTree":{"n":"content-type","v":"1.0.4","c":0,"d":[]}}

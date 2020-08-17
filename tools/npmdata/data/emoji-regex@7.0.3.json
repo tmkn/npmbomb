@@ -1,1 +1,1 @@
-{"name":"emoji-regex","version":"7.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A regular expression to match all Emoji-only symbols as per the Unicode Standard.","dependencyTree":{"name":"emoji-regex","version":"7.0.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"emoji-regex","version":"7.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A regular expression to match all Emoji-only symbols as per the Unicode Standard.","dependencyTree":{"n":"emoji-regex","v":"7.0.3","c":0,"d":[]}}

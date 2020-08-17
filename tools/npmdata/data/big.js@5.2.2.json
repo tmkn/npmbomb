@@ -1,1 +1,1 @@
-{"name":"big.js","version":"5.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic","dependencyTree":{"name":"big.js","version":"5.2.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"big.js","version":"5.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic","dependencyTree":{"n":"big.js","v":"5.2.2","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"parse5","version":"5.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTML parser and serializer.","dependencyTree":{"name":"parse5","version":"5.1.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"parse5","version":"5.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTML parser and serializer.","dependencyTree":{"n":"parse5","v":"5.1.1","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"is-finite","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 Number.isFinite() ponyfill","dependencyTree":{"name":"is-finite","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"is-finite","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 Number.isFinite() ponyfill","dependencyTree":{"n":"is-finite","v":"1.1.0","c":0,"d":[]}}

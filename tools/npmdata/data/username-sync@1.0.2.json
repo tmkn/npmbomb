@@ -1,1 +1,1 @@
-{"name":"username-sync","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"username but only sync and for node 0.12","dependencyTree":{"name":"username-sync","version":"1.0.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"username-sync","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"username but only sync and for node 0.12","dependencyTree":{"n":"username-sync","v":"1.0.2","c":0,"d":[]}}

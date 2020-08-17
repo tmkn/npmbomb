@@ -1,1 +1,1 @@
-{"name":"@webassemblyjs/helper-api-error","version":"1.9.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Common API errors","dependencyTree":{"name":"@webassemblyjs/helper-api-error","version":"1.9.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"@webassemblyjs/helper-api-error","version":"1.9.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Common API errors","dependencyTree":{"n":"@webassemblyjs/helper-api-error","v":"1.9.0","c":0,"d":[]}}

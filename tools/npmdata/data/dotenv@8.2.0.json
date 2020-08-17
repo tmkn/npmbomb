@@ -1,1 +1,1 @@
-{"name":"dotenv","version":"8.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Loads environment variables from .env file","dependencyTree":{"name":"dotenv","version":"8.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"dotenv","version":"8.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Loads environment variables from .env file","dependencyTree":{"n":"dotenv","v":"8.2.0","c":0,"d":[]}}

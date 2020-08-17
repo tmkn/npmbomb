@@ -1,1 +1,1 @@
-{"name":"string_decoder","version":"0.10.31","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The string_decoder module from Node core","dependencyTree":{"name":"string_decoder","version":"0.10.31","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"string_decoder","version":"0.10.31","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The string_decoder module from Node core","dependencyTree":{"n":"string_decoder","v":"0.10.31","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"getpass","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"getpass for node.js","dependencyTree":{"name":"getpass","version":"0.1.7","transitiveCount":1,"loop":false,"dependencies":[{"name":"assert-plus","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}]}}
+{"name":"getpass","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"getpass for node.js","dependencyTree":{"n":"getpass","v":"0.1.7","c":1,"d":[{"n":"assert-plus","v":"1.0.0","c":0,"d":[]}]}}

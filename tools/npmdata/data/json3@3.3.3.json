@@ -1,1 +1,1 @@
-{"name":"json3","version":"3.3.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JSON polyfill for older JavaScript platforms.","dependencyTree":{"name":"json3","version":"3.3.3","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"json3","version":"3.3.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JSON polyfill for older JavaScript platforms.","dependencyTree":{"n":"json3","v":"3.3.3","c":0,"d":[]}}

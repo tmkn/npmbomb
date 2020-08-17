@@ -29,25 +29,28 @@ function createOutDir(outDir: string): void {
     fs.mkdirSync(outDir, { recursive: true });
 }
 
-interface IDependencyTree {
-    name: string;
-    version: string;
-    transitiveCount: number;
-    loop: boolean;
-    dependencies: IDependencyTree[];
+interface IDependencyTreeData {
+    n: string;
+    v: string;
+    c: number;
+    l?: boolean;
+    d: IDependencyTreeData[];
 }
 
-function createDependencyTree(pa: PackageAnalytics, root?: IDependencyTree): IDependencyTree {
-    const parent: IDependencyTree = {
-        name: pa.name,
-        version: pa.version,
-        transitiveCount: pa.transitiveDependenciesCount,
-        loop: pa.isLoop,
-        dependencies: []
+function createDependencyTree(pa: PackageAnalytics, root?: IDependencyTreeData): IDependencyTreeData {
+    const parent: IDependencyTreeData = {
+        n: pa.name,
+        v: pa.version,
+        c: pa.transitiveDependenciesCount,
+        d: []
     };
 
+    if(pa.isLoop) {
+        parent.l = true;
+    }
+
     for (const dependency of pa.directDependencies) {
-        parent.dependencies.push(createDependencyTree(dependency));
+        parent.d.push(createDependencyTree(dependency));
     }
 
     return parent;

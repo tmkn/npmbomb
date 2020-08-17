@@ -1,1 +1,1 @@
-{"name":"wbuf","version":"1.7.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Write buffer","dependencyTree":{"name":"wbuf","version":"1.7.3","transitiveCount":1,"loop":false,"dependencies":[{"name":"minimalistic-assert","version":"1.0.1","transitiveCount":0,"loop":false,"dependencies":[]}]}}
+{"name":"wbuf","version":"1.7.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Write buffer","dependencyTree":{"n":"wbuf","v":"1.7.3","c":1,"d":[{"n":"minimalistic-assert","v":"1.0.1","c":0,"d":[]}]}}

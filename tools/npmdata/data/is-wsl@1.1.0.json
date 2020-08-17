@@ -1,1 +1,1 @@
-{"name":"is-wsl","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if the process is running inside Windows Subsystem for Linux (Bash on Windows)","dependencyTree":{"name":"is-wsl","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"is-wsl","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if the process is running inside Windows Subsystem for Linux (Bash on Windows)","dependencyTree":{"n":"is-wsl","v":"1.1.0","c":0,"d":[]}}

@@ -1,1 +1,1 @@
-{"name":"pako","version":"1.0.11","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"zlib port to javascript - fast, modularized, with browser support","dependencyTree":{"name":"pako","version":"1.0.11","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"pako","version":"1.0.11","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"zlib port to javascript - fast, modularized, with browser support","dependencyTree":{"n":"pako","v":"1.0.11","c":0,"d":[]}}

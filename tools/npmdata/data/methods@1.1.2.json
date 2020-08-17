@@ -1,1 +1,1 @@
-{"name":"methods","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP methods that node supports","dependencyTree":{"name":"methods","version":"1.1.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"methods","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP methods that node supports","dependencyTree":{"n":"methods","v":"1.1.2","c":0,"d":[]}}

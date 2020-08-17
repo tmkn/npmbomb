@@ -1,1 +1,1 @@
-{"name":"time-stamp","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get a formatted timestamp.","dependencyTree":{"name":"time-stamp","version":"1.1.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"time-stamp","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get a formatted timestamp.","dependencyTree":{"n":"time-stamp","v":"1.1.0","c":0,"d":[]}}

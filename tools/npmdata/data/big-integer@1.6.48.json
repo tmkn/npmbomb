@@ -1,1 +1,1 @@
-{"name":"big-integer","version":"1.6.48","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An arbitrary length integer library for Javascript","dependencyTree":{"name":"big-integer","version":"1.6.48","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"big-integer","version":"1.6.48","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An arbitrary length integer library for Javascript","dependencyTree":{"n":"big-integer","v":"1.6.48","c":0,"d":[]}}

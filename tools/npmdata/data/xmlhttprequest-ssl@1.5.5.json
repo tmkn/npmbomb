@@ -1,1 +1,1 @@
-{"name":"xmlhttprequest-ssl","version":"1.5.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"XMLHttpRequest for Node","dependencyTree":{"name":"xmlhttprequest-ssl","version":"1.5.5","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"xmlhttprequest-ssl","version":"1.5.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"XMLHttpRequest for Node","dependencyTree":{"n":"xmlhttprequest-ssl","v":"1.5.5","c":0,"d":[]}}

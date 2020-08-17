@@ -1,1 +1,1 @@
-{"name":"dns-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Compare DNS record strings for equality","dependencyTree":{"name":"dns-equal","version":"1.0.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"dns-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Compare DNS record strings for equality","dependencyTree":{"n":"dns-equal","v":"1.0.0","c":0,"d":[]}}

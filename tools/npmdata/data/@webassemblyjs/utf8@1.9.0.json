@@ -1,1 +1,1 @@
-{"name":"@webassemblyjs/utf8","version":"1.9.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"UTF8 encoder/decoder for WASM","dependencyTree":{"name":"@webassemblyjs/utf8","version":"1.9.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"@webassemblyjs/utf8","version":"1.9.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"UTF8 encoder/decoder for WASM","dependencyTree":{"n":"@webassemblyjs/utf8","v":"1.9.0","c":0,"d":[]}}

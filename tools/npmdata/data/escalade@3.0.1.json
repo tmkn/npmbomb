@@ -1,1 +1,1 @@
-{"name":"escalade","version":"3.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A tiny (183B to 210B) and fast utility to ascend parent directories","dependencyTree":{"name":"escalade","version":"3.0.1","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"escalade","version":"3.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A tiny (183B to 210B) and fast utility to ascend parent directories","dependencyTree":{"n":"escalade","v":"3.0.1","c":0,"d":[]}}

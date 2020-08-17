@@ -1,1 +1,1 @@
-{"name":"acorn-walk","version":"7.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript (ESTree) AST walker","dependencyTree":{"name":"acorn-walk","version":"7.2.0","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"acorn-walk","version":"7.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript (ESTree) AST walker","dependencyTree":{"n":"acorn-walk","v":"7.2.0","c":0,"d":[]}}

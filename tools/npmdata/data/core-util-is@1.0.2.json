@@ -1,1 +1,1 @@
-{"name":"core-util-is","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The `util.is*` functions introduced in Node v0.12.","dependencyTree":{"name":"core-util-is","version":"1.0.2","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"core-util-is","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The `util.is*` functions introduced in Node v0.12.","dependencyTree":{"n":"core-util-is","v":"1.0.2","c":0,"d":[]}}

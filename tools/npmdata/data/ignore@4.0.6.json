@@ -1,1 +1,1 @@
-{"name":"ignore","version":"4.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Ignore is a manager and filter for .gitignore rules.","dependencyTree":{"name":"ignore","version":"4.0.6","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"ignore","version":"4.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Ignore is a manager and filter for .gitignore rules.","dependencyTree":{"n":"ignore","v":"4.0.6","c":0,"d":[]}}

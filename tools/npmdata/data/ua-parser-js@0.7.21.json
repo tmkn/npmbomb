@@ -1,1 +1,1 @@
-{"name":"ua-parser-js","version":"0.7.21","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight JavaScript-based user-agent string parser","dependencyTree":{"name":"ua-parser-js","version":"0.7.21","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"ua-parser-js","version":"0.7.21","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight JavaScript-based user-agent string parser","dependencyTree":{"n":"ua-parser-js","v":"0.7.21","c":0,"d":[]}}

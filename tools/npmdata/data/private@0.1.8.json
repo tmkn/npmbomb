@@ -1,1 +1,1 @@
-{"name":"private","version":"0.1.8","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Utility for associating truly private state with any JavaScript object","dependencyTree":{"name":"private","version":"0.1.8","transitiveCount":0,"loop":false,"dependencies":[]}}
+{"name":"private","version":"0.1.8","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Utility for associating truly private state with any JavaScript object","dependencyTree":{"n":"private","v":"0.1.8","c":0,"d":[]}}
