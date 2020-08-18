@@ -144,8 +144,10 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         const label: string = `${node.data.n}@${node.data.v}`;
         const labelStyle = css({
             [mq[0]]: {
+                display: `flex`,
                 fontFamily: monospaceFont,
-                marginLeft: options.canExpand ? 0 : `1rem`
+                marginLeft: options.canExpand ? 0 : `1rem`,
+                whiteSpace: `nowrap`
             }
         });
 
@@ -153,9 +155,10 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
             const style = css({
                 [mq[0]]: {
                     marginLeft: `0.5rem`,
-                    textDecoration: `underline`,
+                    textDecoration: `none`,
                     color: `black`,
-                    verticalAlign: `middle`,
+                    display: `flex`,
+                    alignSelf: `center`,
                     ">div": {
                         fontFamily: `IconFont`
                     }
@@ -176,7 +179,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
             <React.Fragment>
                 {expandEl}
                 <span css={labelStyle} onClick={() => onClick(customClick)}>
-                    {label}
+                    <span>{label}</span>
                     <Count />
                     <NpmLink name={node.data.n} version={node.data.v} />
                 </span>
