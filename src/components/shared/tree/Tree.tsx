@@ -49,6 +49,7 @@ interface ITreeUtilty<T> {
     forEach: (callback: (node: ITreeNodeData<T>) => void) => void;
 }
 
+/* istanbul ignore next */
 export class TreeUtility<T> implements ITreeUtilty<T> {
     constructor(
         public root: ITreeNodeData<T>,
@@ -129,16 +130,14 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
 function createPrefixes(
     { prefixes, treeData }: ITreeListEntry<IDependencyTreeData>,
     treeFormatter: ITreeFormatter<IDependencyTreeData>
-): Array<JSX.Element | null> {
+): JSX.Element[] {
     const {
         prefixEntryFormatter,
         prefixLeafFormatter,
-        nodeFormatter,
         prefixEmptySpacerFormatter,
-        prefixNestedSpacerFormatter,
-        nodeKey
+        prefixNestedSpacerFormatter
     } = treeFormatter;
-    const allPrefixes: Array<JSX.Element | null> = [...prefixes].map((type, i) => {
+    const allPrefixes: JSX.Element[] = [...prefixes].map((type, i) => {
         switch (type) {
             case PrefixType.Entry:
                 return prefixEntryFormatter(treeData.data, i);
@@ -148,11 +147,6 @@ function createPrefixes(
                 return prefixEmptySpacerFormatter(treeData.data, i);
             case PrefixType.NestedSpacer:
                 return prefixNestedSpacerFormatter(treeData.data, i);
-            default:
-                let unhandled: never = type;
-                console.log(`Unknown prefix type: "${type}"`);
-
-                return null;
         }
     });
 
@@ -231,16 +225,6 @@ function toTreeList<T>(
     _prefixes: ReadonlyArray<PrefixType>,
     node: ITreeNodeData<T>
 ): ITreeListEntry<T>[] {
-    //console.log(_prefixes, (node.data as any).name);
-
-    const prefixes = [..._prefixes];
-    const lastPrefix: PrefixType | undefined = prefixes.pop();
-    const updatedPrefixes: PrefixType[] =
-        lastPrefix === PrefixType.Leaf
-            ? [...prefixes, PrefixType.EmptySpacer]
-            : lastPrefix === PrefixType.Entry
-            ? [...prefixes, PrefixType.NestedSpacer]
-            : [...prefixes];
     const entries: ITreeListEntry<T>[] = [];
     const entry: ITreeListEntry<T> = {
         prefixes: [..._prefixes],
@@ -248,7 +232,9 @@ function toTreeList<T>(
     };
 
     entries.push(entry);
-    if (node.expanded)
+    if (node.expanded) {
+        const updatedPrefixes: ReadonlyArray<PrefixType> = updatePrefixes(_prefixes);
+
         for (const [i, child] of node.children.entries()) {
             const childPrefix: PrefixType =
                 i === node.children.length - 1 ? PrefixType.Leaf : PrefixType.Entry;
@@ -259,6 +245,18 @@ function toTreeList<T>(
                 entries.push(c);
             }
         }
+    }
 
     return entries;
+}
+
+function updatePrefixes(_prefixes: ReadonlyArray<PrefixType>): ReadonlyArray<PrefixType> {
+    const prefixes = [..._prefixes];
+    const lastPrefix: PrefixType | undefined = prefixes.pop();
+    const updatedPrefixes: PrefixType[] = [...prefixes];
+
+    if (lastPrefix === PrefixType.Leaf) updatedPrefixes.push(PrefixType.EmptySpacer);
+    else if (lastPrefix === PrefixType.Entry) updatedPrefixes.push(PrefixType.NestedSpacer);
+
+    return updatedPrefixes;
 }

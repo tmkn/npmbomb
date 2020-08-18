@@ -2,7 +2,15 @@
 import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext, useState } from "react";
 
-import { mq, textColor, secondaryColorLight, primaryColorDark, secondaryColor } from "../../css";
+import {
+    mq,
+    textColor,
+    secondaryColorLight,
+    primaryColorDark,
+    secondaryColor,
+    monospaceFont,
+    serifFont
+} from "../../css";
 import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
@@ -41,28 +49,26 @@ const DependencyOverviewTab: React.FC = () => {
     const { package: pkg } = useContext(GuessContext);
 
     return (
-        <React.Fragment>
-            <Info>
-                <span>
-                    <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
-                        {pkg.name}@{pkg.version}
-                    </TextLink>{" "}
-                    defines{" "}
-                    <b>
-                        {pkg.directDependencies} direct {plural(pkg.directDependencies)}
-                    </b>{" "}
-                    which explode into{" "}
-                    <b>
-                        {pkg.dependencies} {plural(pkg.dependencies)} overall
-                    </b>
-                    , resulting in{" "}
-                    <b>
-                        {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
-                    </b>
-                    .
-                </span>
-            </Info>
-        </React.Fragment>
+        <Info>
+            <span>
+                <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
+                    {pkg.name}@{pkg.version}
+                </TextLink>{" "}
+                defines{" "}
+                <b>
+                    {pkg.directDependencies} direct {plural(pkg.directDependencies)}
+                </b>{" "}
+                which explode into{" "}
+                <b>
+                    {pkg.dependencies} {plural(pkg.dependencies)} overall
+                </b>
+                , resulting in{" "}
+                <b>
+                    {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
+                </b>
+                .
+            </span>
+        </Info>
     );
 };
 
@@ -85,15 +91,16 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
     const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeData>>(_root);
     const nodeFormatter: NodeFormatter<IDependencyTreeData> = (node, path, options, onClick) => {
         const customClick: OnClickCallback<IDependencyTreeData> = (node, equals) => {
-            const treeUtility = new TreeUtility(root, setRoot);
+            /*const treeUtility = new TreeUtility(root, setRoot);
 
             treeUtility.forEach(_node => {
                 if (_node !== node) _node.active = false;
             });
             treeUtility.render();
-            //setRoot({ ...root });
+            //setRoot({ ...root });*/
         };
 
+        /* istanbul ignore next */
         const expandClick = () => {
             if (options.canExpand) {
                 node.expanded = !node.expanded;
@@ -111,7 +118,11 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
             }
         });
         const expandEl: JSX.Element | null = options.canExpand ? (
-            <span css={expandElStyle} onClick={expandClick}>
+            <span
+                css={expandElStyle}
+                onClick={expandClick}
+                data-testid={`${node.data.n}@${node.data.v}`}
+            >
                 {options.isExpanded ? (
                     <div className="codicon codicon-chevron-down"></div>
                 ) : (
@@ -122,6 +133,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         const Count: React.FC = () => {
             const style = css({
                 [mq[0]]: {
+                    fontFamily: serifFont,
                     color: `black`,
                     marginLeft: `0.5rem`
                 }
@@ -132,9 +144,33 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         const label: string = `${node.data.n}@${node.data.v}`;
         const labelStyle = css({
             [mq[0]]: {
+                fontFamily: monospaceFont,
                 marginLeft: options.canExpand ? 0 : `1rem`
             }
         });
+
+        const NpmLink: React.FC<{ name: string; version: string }> = ({ name, version }) => {
+            const style = css({
+                [mq[0]]: {
+                    marginLeft: `0.5rem`,
+                    textDecoration: `underline`,
+                    color: `black`,
+                    verticalAlign: `middle`,
+                    ">div": {
+                        fontFamily: `IconFont`
+                    }
+                }
+            });
+            const link = `https://www.npmjs.com/package/${encodeURIComponent(
+                name
+            )}/v/${encodeURIComponent(version)}`;
+
+            return (
+                <a css={style} href={link} target="_blank">
+                    <div className="codicon codicon-link-external"></div>
+                </a>
+            );
+        };
 
         return (
             <React.Fragment>
@@ -142,6 +178,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
                 <span css={labelStyle} onClick={() => onClick(customClick)}>
                     {label}
                     <Count />
+                    <NpmLink name={node.data.n} version={node.data.v} />
                 </span>
             </React.Fragment>
         );
@@ -163,13 +200,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         return <span key={i} css={treeIdentationStyle}></span>;
     };
     const prefixEmptySpacerFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
-        const style = css({
-            [mq[0]]: {
-                minWidth: `1rem`
-            }
-        });
-
-        return <span key={i} css={style}></span>;
+        return <span key={i} css={treeIdentationStyle}></span>;
     };
     //│
     const prefixNestedSpacerFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
