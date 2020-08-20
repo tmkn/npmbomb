@@ -167,6 +167,7 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
             fontFamily: serifFont,
             cursor: `default`,
             flex: 1,
+            overflow: `auto`,
             ":hover": {
                 backgroundColor: `white`
             }
@@ -191,7 +192,6 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
     const nodeStyle = css({
         [mq[0]]: {
             display: `flex`,
-            overflow: `auto`,
             wordBreak: `normal`
         }
     });
