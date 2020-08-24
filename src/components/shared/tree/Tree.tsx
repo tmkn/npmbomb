@@ -5,6 +5,7 @@ import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 
 import { mq, serifFont } from "../../../css";
 import { IDependencyTreeData } from "../../package/Package";
+import Worker from 'worker-loader!../../../tree.worker';
 
 export interface ITreeNodeData<T> {
     data: T;
@@ -86,6 +87,14 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
 }) => {
     console.time(`toTreeList`);
     const treeList1 = toTreeList<IDependencyTreeData>([], _root);
+
+    const worker = new Worker();
+
+    worker.postMessage(_root);
+    worker.onmessage = (event) => {};
+    
+    worker.addEventListener('message', (event) => {console.log(`hello`)});
+
     console.timeEnd(`toTreeList`);
 
     const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
