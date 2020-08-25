@@ -32,7 +32,7 @@ import {
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { ErrorBanner } from "./ErrorComponent";
 import { IDependencyTreeNodeData } from "./Package";
-import { IDependencyTree, ITreeData } from "../../../tools/npmdata/utils";
+import { IDependencyTreeStructure, ITreeData } from "../../../tools/npmdata/utils";
 
 function plural(count: number): string {
     return count === 1 ? "dependency" : "dependencies";
@@ -79,7 +79,7 @@ const DependencyOverviewTab: React.FC = () => {
 
 function mapTree(
     lookup: Map<string, ITreeData>,
-    { id, dependencies = [] }: IDependencyTree
+    { id, dependencies = [] }: IDependencyTreeStructure
 ): IDependencyTreeNodeData {
     const info = lookup.get(id);
 

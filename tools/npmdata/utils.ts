@@ -1,6 +1,6 @@
 export interface IDependencyTreeConfig {
-    data: TreeData[];
-    tree: IDependencyTree;
+    data: TreeLookupData[];
+    tree: IDependencyTreeStructure;
 }
 
 export interface ITreeData {
@@ -8,9 +8,9 @@ export interface ITreeData {
     version: string;
     count: number;
 }
-export type TreeData = [id: string, data: ITreeData];
+export type TreeLookupData = [id: string, data: ITreeData];
 
-export interface IDependencyTree {
+export interface IDependencyTreeStructure {
     id: string;
-    dependencies?: IDependencyTree[];
+    dependencies?: IDependencyTreeStructure[];
 }
