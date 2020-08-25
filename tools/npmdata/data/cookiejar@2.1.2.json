@@ -1,1 +1,1 @@
-{"name":"cookiejar","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"simple persistent cookiejar system","dependencyTree":{"n":"cookiejar","v":"2.1.2","c":0,"d":[]}}
+{"name":"cookiejar","version":"2.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"simple persistent cookiejar system","tree":{"data":[["cookiejar@2.1.2",{"name":"cookiejar","version":"2.1.2","count":0}]],"tree":{"id":"cookiejar@2.1.2"}}}

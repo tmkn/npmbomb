@@ -1,1 +1,1 @@
-{"name":"acorn","version":"7.3.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript parser","dependencyTree":{"n":"acorn","v":"7.3.1","c":0,"d":[]}}
+{"name":"acorn","version":"7.3.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript parser","tree":{"data":[["acorn@7.3.1",{"name":"acorn","version":"7.3.1","count":0}]],"tree":{"id":"acorn@7.3.1"}}}

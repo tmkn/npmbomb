@@ -1,1 +1,1 @@
-{"name":"ansi-regex","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching ANSI escape codes","dependencyTree":{"n":"ansi-regex","v":"2.1.1","c":0,"d":[]}}
+{"name":"ansi-regex","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching ANSI escape codes","tree":{"data":[["ansi-regex@2.1.1",{"name":"ansi-regex","version":"2.1.1","count":0}]],"tree":{"id":"ansi-regex@2.1.1"}}}

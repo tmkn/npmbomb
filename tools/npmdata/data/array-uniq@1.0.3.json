@@ -1,1 +1,1 @@
-{"name":"array-uniq","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create an array without duplicates","dependencyTree":{"n":"array-uniq","v":"1.0.3","c":0,"d":[]}}
+{"name":"array-uniq","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Create an array without duplicates","tree":{"data":[["array-uniq@1.0.3",{"name":"array-uniq","version":"1.0.3","count":0}]],"tree":{"id":"array-uniq@1.0.3"}}}

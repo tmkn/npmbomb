@@ -1,1 +1,1 @@
-{"name":"vary","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Manipulate the HTTP Vary header","dependencyTree":{"n":"vary","v":"1.1.2","c":0,"d":[]}}
+{"name":"vary","version":"1.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Manipulate the HTTP Vary header","tree":{"data":[["vary@1.1.2",{"name":"vary","version":"1.1.2","count":0}]],"tree":{"id":"vary@1.1.2"}}}

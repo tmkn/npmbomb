@@ -1,1 +1,1 @@
-{"name":"get-func-name","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Utility for getting a function's name for node and the browser","dependencyTree":{"n":"get-func-name","v":"2.0.0","c":0,"d":[]}}
+{"name":"get-func-name","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Utility for getting a function's name for node and the browser","tree":{"data":[["get-func-name@2.0.0",{"name":"get-func-name","version":"2.0.0","count":0}]],"tree":{"id":"get-func-name@2.0.0"}}}

@@ -1,1 +1,1 @@
-{"name":"source-map-url","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tools for working with sourceMappingURL comments.","dependencyTree":{"n":"source-map-url","v":"0.4.0","c":0,"d":[]}}
+{"name":"source-map-url","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tools for working with sourceMappingURL comments.","tree":{"data":[["source-map-url@0.4.0",{"name":"source-map-url","version":"0.4.0","count":0}]],"tree":{"id":"source-map-url@0.4.0"}}}

@@ -1,1 +1,1 @@
-{"name":"@bcoe/v8-coverage","version":"0.2.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Helper functions for V8 coverage files.","dependencyTree":{"n":"@bcoe/v8-coverage","v":"0.2.3","c":0,"d":[]}}
+{"name":"@bcoe/v8-coverage","version":"0.2.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Helper functions for V8 coverage files.","tree":{"data":[["@bcoe/v8-coverage@0.2.3",{"name":"@bcoe/v8-coverage","version":"0.2.3","count":0}]],"tree":{"id":"@bcoe/v8-coverage@0.2.3"}}}

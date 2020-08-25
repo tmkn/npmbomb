@@ -1,1 +1,1 @@
-{"name":"escape-string-regexp","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Escape RegExp special characters","dependencyTree":{"n":"escape-string-regexp","v":"1.0.5","c":0,"d":[]}}
+{"name":"escape-string-regexp","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Escape RegExp special characters","tree":{"data":[["escape-string-regexp@1.0.5",{"name":"escape-string-regexp","version":"1.0.5","count":0}]],"tree":{"id":"escape-string-regexp@1.0.5"}}}

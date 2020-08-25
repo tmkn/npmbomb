@@ -1,1 +1,1 @@
-{"name":"jquery","version":"3.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript library for DOM operations","dependencyTree":{"n":"jquery","v":"3.5.1","c":0,"d":[]}}
+{"name":"jquery","version":"3.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript library for DOM operations","tree":{"data":[["jquery@3.5.1",{"name":"jquery","version":"3.5.1","count":0}]],"tree":{"id":"jquery@3.5.1"}}}

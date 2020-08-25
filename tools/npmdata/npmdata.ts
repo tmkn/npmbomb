@@ -57,7 +57,7 @@ function createLookup(pa: PackageAnalytics): TreeLookupData[] {
                 version: dep.version,
                 count: dep.transitiveDependenciesCount
             });
-    });
+    }, true);
 
     return [...lookup.entries()];
 }

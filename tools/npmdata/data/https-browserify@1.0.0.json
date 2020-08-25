@@ -1,1 +1,1 @@
-{"name":"https-browserify","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"https module compatability for browserify","dependencyTree":{"n":"https-browserify","v":"1.0.0","c":0,"d":[]}}
+{"name":"https-browserify","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"https module compatability for browserify","tree":{"data":[["https-browserify@1.0.0",{"name":"https-browserify","version":"1.0.0","count":0}]],"tree":{"id":"https-browserify@1.0.0"}}}

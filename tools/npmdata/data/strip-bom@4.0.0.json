@@ -1,1 +1,1 @@
-{"name":"strip-bom","version":"4.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Strip UTF-8 byte order mark (BOM) from a string","dependencyTree":{"n":"strip-bom","v":"4.0.0","c":0,"d":[]}}
+{"name":"strip-bom","version":"4.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Strip UTF-8 byte order mark (BOM) from a string","tree":{"data":[["strip-bom@4.0.0",{"name":"strip-bom","version":"4.0.0","count":0}]],"tree":{"id":"strip-bom@4.0.0"}}}

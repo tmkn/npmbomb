@@ -1,1 +1,1 @@
-{"name":"extsprintf","version":"1.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"extended POSIX-style sprintf","dependencyTree":{"n":"extsprintf","v":"1.4.0","c":0,"d":[]}}
+{"name":"extsprintf","version":"1.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"extended POSIX-style sprintf","tree":{"data":[["extsprintf@1.4.0",{"name":"extsprintf","version":"1.4.0","count":0}]],"tree":{"id":"extsprintf@1.4.0"}}}

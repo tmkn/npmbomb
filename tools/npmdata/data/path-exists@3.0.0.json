@@ -1,1 +1,1 @@
-{"name":"path-exists","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a path exists","dependencyTree":{"n":"path-exists","v":"3.0.0","c":0,"d":[]}}
+{"name":"path-exists","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a path exists","tree":{"data":[["path-exists@3.0.0",{"name":"path-exists","version":"3.0.0","count":0}]],"tree":{"id":"path-exists@3.0.0"}}}

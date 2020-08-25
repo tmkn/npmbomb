@@ -1,1 +1,1 @@
-{"name":"to-fast-properties","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Force V8 to use fast properties for an object","dependencyTree":{"n":"to-fast-properties","v":"1.0.3","c":0,"d":[]}}
+{"name":"to-fast-properties","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Force V8 to use fast properties for an object","tree":{"data":[["to-fast-properties@1.0.3",{"name":"to-fast-properties","version":"1.0.3","count":0}]],"tree":{"id":"to-fast-properties@1.0.3"}}}

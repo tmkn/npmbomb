@@ -1,1 +1,1 @@
-{"name":"lodash.once","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.once` exported as a module.","dependencyTree":{"n":"lodash.once","v":"4.1.1","c":0,"d":[]}}
+{"name":"lodash.once","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.once` exported as a module.","tree":{"data":[["lodash.once@4.1.1",{"name":"lodash.once","version":"4.1.1","count":0}]],"tree":{"id":"lodash.once@4.1.1"}}}

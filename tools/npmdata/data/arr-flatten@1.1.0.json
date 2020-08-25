@@ -1,1 +1,1 @@
-{"name":"arr-flatten","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Recursively flatten an array or arrays.","dependencyTree":{"n":"arr-flatten","v":"1.1.0","c":0,"d":[]}}
+{"name":"arr-flatten","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Recursively flatten an array or arrays.","tree":{"data":[["arr-flatten@1.1.0",{"name":"arr-flatten","version":"1.1.0","count":0}]],"tree":{"id":"arr-flatten@1.1.0"}}}

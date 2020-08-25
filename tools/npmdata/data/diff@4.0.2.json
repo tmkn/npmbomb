@@ -1,1 +1,1 @@
-{"name":"diff","version":"4.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A javascript text diff implementation.","dependencyTree":{"n":"diff","v":"4.0.2","c":0,"d":[]}}
+{"name":"diff","version":"4.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A javascript text diff implementation.","tree":{"data":[["diff@4.0.2",{"name":"diff","version":"4.0.2","count":0}]],"tree":{"id":"diff@4.0.2"}}}

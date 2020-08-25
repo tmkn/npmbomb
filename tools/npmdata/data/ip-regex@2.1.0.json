@@ -1,1 +1,1 @@
-{"name":"ip-regex","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching IP addresses (IPv4 & IPv6)","dependencyTree":{"n":"ip-regex","v":"2.1.0","c":0,"d":[]}}
+{"name":"ip-regex","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching IP addresses (IPv4 & IPv6)","tree":{"data":[["ip-regex@2.1.0",{"name":"ip-regex","version":"2.1.0","count":0}]],"tree":{"id":"ip-regex@2.1.0"}}}

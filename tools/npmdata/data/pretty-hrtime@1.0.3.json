@@ -1,1 +1,1 @@
-{"name":"pretty-hrtime","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"process.hrtime() to words","dependencyTree":{"n":"pretty-hrtime","v":"1.0.3","c":0,"d":[]}}
+{"name":"pretty-hrtime","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"process.hrtime() to words","tree":{"data":[["pretty-hrtime@1.0.3",{"name":"pretty-hrtime","version":"1.0.3","count":0}]],"tree":{"id":"pretty-hrtime@1.0.3"}}}

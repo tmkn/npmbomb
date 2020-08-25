@@ -1,1 +1,1 @@
-{"name":"asynckit","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Minimal async jobs utility library, with streams support","dependencyTree":{"n":"asynckit","v":"0.4.0","c":0,"d":[]}}
+{"name":"asynckit","version":"0.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Minimal async jobs utility library, with streams support","tree":{"data":[["asynckit@0.4.0",{"name":"asynckit","version":"0.4.0","count":0}]],"tree":{"id":"asynckit@0.4.0"}}}

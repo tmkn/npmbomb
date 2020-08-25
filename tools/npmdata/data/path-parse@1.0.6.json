@@ -1,1 +1,1 @@
-{"name":"path-parse","version":"1.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js path.parse() ponyfill","dependencyTree":{"n":"path-parse","v":"1.0.6","c":0,"d":[]}}
+{"name":"path-parse","version":"1.0.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js path.parse() ponyfill","tree":{"data":[["path-parse@1.0.6",{"name":"path-parse","version":"1.0.6","count":0}]],"tree":{"id":"path-parse@1.0.6"}}}

@@ -1,1 +1,1 @@
-{"name":"deepmerge","version":"4.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A library for deep (recursive) merging of Javascript objects","dependencyTree":{"n":"deepmerge","v":"4.2.2","c":0,"d":[]}}
+{"name":"deepmerge","version":"4.2.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A library for deep (recursive) merging of Javascript objects","tree":{"data":[["deepmerge@4.2.2",{"name":"deepmerge","version":"4.2.2","count":0}]],"tree":{"id":"deepmerge@4.2.2"}}}

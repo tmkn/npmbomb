@@ -1,1 +1,1 @@
-{"name":"interpret","version":"1.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A dictionary of file extensions and associated module loaders.","dependencyTree":{"n":"interpret","v":"1.4.0","c":0,"d":[]}}
+{"name":"interpret","version":"1.4.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A dictionary of file extensions and associated module loaders.","tree":{"data":[["interpret@1.4.0",{"name":"interpret","version":"1.4.0","count":0}]],"tree":{"id":"interpret@1.4.0"}}}

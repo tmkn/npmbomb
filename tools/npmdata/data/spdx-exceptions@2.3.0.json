@@ -1,1 +1,1 @@
-{"name":"spdx-exceptions","version":"2.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"list of SPDX standard license exceptions","dependencyTree":{"n":"spdx-exceptions","v":"2.3.0","c":0,"d":[]}}
+{"name":"spdx-exceptions","version":"2.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"list of SPDX standard license exceptions","tree":{"data":[["spdx-exceptions@2.3.0",{"name":"spdx-exceptions","version":"2.3.0","count":0}]],"tree":{"id":"spdx-exceptions@2.3.0"}}}

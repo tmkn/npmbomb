@@ -1,1 +1,1 @@
-{"name":"immutable","version":"4.0.0-rc.12","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Immutable Data Collections","dependencyTree":{"n":"immutable","v":"4.0.0-rc.12","c":0,"d":[]}}
+{"name":"immutable","version":"4.0.0-rc.12","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Immutable Data Collections","tree":{"data":[["immutable@4.0.0-rc.12",{"name":"immutable","version":"4.0.0-rc.12","count":0}]],"tree":{"id":"immutable@4.0.0-rc.12"}}}

@@ -1,1 +1,1 @@
-{"name":"lodash._root","version":"3.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The internal lodash function `root` exported as a module.","dependencyTree":{"n":"lodash._root","v":"3.0.1","c":0,"d":[]}}
+{"name":"lodash._root","version":"3.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The internal lodash function `root` exported as a module.","tree":{"data":[["lodash._root@3.0.1",{"name":"lodash._root","version":"3.0.1","count":0}]],"tree":{"id":"lodash._root@3.0.1"}}}

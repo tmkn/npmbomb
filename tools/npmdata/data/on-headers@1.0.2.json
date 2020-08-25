@@ -1,1 +1,1 @@
-{"name":"on-headers","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Execute a listener when a response is about to write headers","dependencyTree":{"n":"on-headers","v":"1.0.2","c":0,"d":[]}}
+{"name":"on-headers","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Execute a listener when a response is about to write headers","tree":{"data":[["on-headers@1.0.2",{"name":"on-headers","version":"1.0.2","count":0}]],"tree":{"id":"on-headers@1.0.2"}}}

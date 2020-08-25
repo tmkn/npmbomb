@@ -1,1 +1,1 @@
-{"name":"nice-try","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tries to execute a function and discards any error that occurs","dependencyTree":{"n":"nice-try","v":"1.0.5","c":0,"d":[]}}
+{"name":"nice-try","version":"1.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tries to execute a function and discards any error that occurs","tree":{"data":[["nice-try@1.0.5",{"name":"nice-try","version":"1.0.5","count":0}]],"tree":{"id":"nice-try@1.0.5"}}}

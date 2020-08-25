@@ -1,1 +1,1 @@
-{"name":"underscore","version":"1.10.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript's functional programming helper library.","dependencyTree":{"n":"underscore","v":"1.10.2","c":0,"d":[]}}
+{"name":"underscore","version":"1.10.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript's functional programming helper library.","tree":{"data":[["underscore@1.10.2",{"name":"underscore","version":"1.10.2","count":0}]],"tree":{"id":"underscore@1.10.2"}}}

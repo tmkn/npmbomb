@@ -1,1 +1,1 @@
-{"name":"isarray","version":"2.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#isArray for older browsers","dependencyTree":{"n":"isarray","v":"2.0.5","c":0,"d":[]}}
+{"name":"isarray","version":"2.0.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#isArray for older browsers","tree":{"data":[["isarray@2.0.5",{"name":"isarray","version":"2.0.5","count":0}]],"tree":{"id":"isarray@2.0.5"}}}

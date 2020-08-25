@@ -1,1 +1,1 @@
-{"name":"querystring","version":"0.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node's querystring module for all engines.","dependencyTree":{"n":"querystring","v":"0.2.0","c":0,"d":[]}}
+{"name":"querystring","version":"0.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node's querystring module for all engines.","tree":{"data":[["querystring@0.2.0",{"name":"querystring","version":"0.2.0","count":0}]],"tree":{"id":"querystring@0.2.0"}}}

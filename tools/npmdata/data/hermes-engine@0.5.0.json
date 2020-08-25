@@ -1,1 +1,1 @@
-{"name":"hermes-engine","version":"0.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript engine optimized for running React Native on Android","dependencyTree":{"n":"hermes-engine","v":"0.5.0","c":0,"d":[]}}
+{"name":"hermes-engine","version":"0.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A JavaScript engine optimized for running React Native on Android","tree":{"data":[["hermes-engine@0.5.0",{"name":"hermes-engine","version":"0.5.0","count":0}]],"tree":{"id":"hermes-engine@0.5.0"}}}

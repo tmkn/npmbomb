@@ -1,1 +1,1 @@
-{"name":"deep-extend","version":"0.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Recursive object extending","dependencyTree":{"n":"deep-extend","v":"0.6.0","c":0,"d":[]}}
+{"name":"deep-extend","version":"0.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Recursive object extending","tree":{"data":[["deep-extend@0.6.0",{"name":"deep-extend","version":"0.6.0","count":0}]],"tree":{"id":"deep-extend@0.6.0"}}}

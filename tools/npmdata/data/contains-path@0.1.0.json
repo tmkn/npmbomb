@@ -1,1 +1,1 @@
-{"name":"contains-path","version":"0.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Return true if a file path contains the given path.","dependencyTree":{"n":"contains-path","v":"0.1.0","c":0,"d":[]}}
+{"name":"contains-path","version":"0.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Return true if a file path contains the given path.","tree":{"data":[["contains-path@0.1.0",{"name":"contains-path","version":"0.1.0","count":0}]],"tree":{"id":"contains-path@0.1.0"}}}

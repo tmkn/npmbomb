@@ -1,1 +1,1 @@
-{"name":"enabled","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a certain debug flag is enabled.","dependencyTree":{"n":"enabled","v":"2.0.0","c":0,"d":[]}}
+{"name":"enabled","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a certain debug flag is enabled.","tree":{"data":[["enabled@2.0.0",{"name":"enabled","version":"2.0.0","count":0}]],"tree":{"id":"enabled@2.0.0"}}}

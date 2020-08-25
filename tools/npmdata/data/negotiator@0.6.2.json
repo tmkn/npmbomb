@@ -1,1 +1,1 @@
-{"name":"negotiator","version":"0.6.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP content negotiation","dependencyTree":{"n":"negotiator","v":"0.6.2","c":0,"d":[]}}
+{"name":"negotiator","version":"0.6.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP content negotiation","tree":{"data":[["negotiator@0.6.2",{"name":"negotiator","version":"0.6.2","count":0}]],"tree":{"id":"negotiator@0.6.2"}}}

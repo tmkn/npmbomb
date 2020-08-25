@@ -1,1 +1,1 @@
-{"name":"urix","version":"0.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Makes Windows-style paths more unix and URI friendly.","dependencyTree":{"n":"urix","v":"0.1.0","c":0,"d":[]}}
+{"name":"urix","version":"0.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Makes Windows-style paths more unix and URI friendly.","tree":{"data":[["urix@0.1.0",{"name":"urix","version":"0.1.0","count":0}]],"tree":{"id":"urix@0.1.0"}}}

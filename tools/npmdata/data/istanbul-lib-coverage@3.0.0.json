@@ -1,1 +1,1 @@
-{"name":"istanbul-lib-coverage","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Data library for istanbul coverage objects","dependencyTree":{"n":"istanbul-lib-coverage","v":"3.0.0","c":0,"d":[]}}
+{"name":"istanbul-lib-coverage","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Data library for istanbul coverage objects","tree":{"data":[["istanbul-lib-coverage@3.0.0",{"name":"istanbul-lib-coverage","version":"3.0.0","count":0}]],"tree":{"id":"istanbul-lib-coverage@3.0.0"}}}

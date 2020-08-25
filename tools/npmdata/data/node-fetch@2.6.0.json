@@ -1,1 +1,1 @@
-{"name":"node-fetch","version":"2.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A light-weight module that brings window.fetch to node.js","dependencyTree":{"n":"node-fetch","v":"2.6.0","c":0,"d":[]}}
+{"name":"node-fetch","version":"2.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A light-weight module that brings window.fetch to node.js","tree":{"data":[["node-fetch@2.6.0",{"name":"node-fetch","version":"2.6.0","count":0}]],"tree":{"id":"node-fetch@2.6.0"}}}

@@ -1,1 +1,1 @@
-{"name":"commondir","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"compute the closest common parent for file paths","dependencyTree":{"n":"commondir","v":"1.0.1","c":0,"d":[]}}
+{"name":"commondir","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"compute the closest common parent for file paths","tree":{"data":[["commondir@1.0.1",{"name":"commondir","version":"1.0.1","count":0}]],"tree":{"id":"commondir@1.0.1"}}}

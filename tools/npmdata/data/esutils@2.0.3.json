@@ -1,1 +1,1 @@
-{"name":"esutils","version":"2.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"utility box for ECMAScript language tools","dependencyTree":{"n":"esutils","v":"2.0.3","c":0,"d":[]}}
+{"name":"esutils","version":"2.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"utility box for ECMAScript language tools","tree":{"data":[["esutils@2.0.3",{"name":"esutils","version":"2.0.3","count":0}]],"tree":{"id":"esutils@2.0.3"}}}

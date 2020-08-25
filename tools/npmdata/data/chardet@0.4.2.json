@@ -1,1 +1,1 @@
-{"name":"chardet","version":"0.4.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Character detector","dependencyTree":{"n":"chardet","v":"0.4.2","c":0,"d":[]}}
+{"name":"chardet","version":"0.4.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Character detector","tree":{"data":[["chardet@0.4.2",{"name":"chardet","version":"0.4.2","count":0}]],"tree":{"id":"chardet@0.4.2"}}}

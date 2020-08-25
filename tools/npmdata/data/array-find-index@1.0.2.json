@@ -1,1 +1,1 @@
-{"name":"array-find-index","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 `Array#findIndex()` ponyfill","dependencyTree":{"n":"array-find-index","v":"1.0.2","c":0,"d":[]}}
+{"name":"array-find-index","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 `Array#findIndex()` ponyfill","tree":{"data":[["array-find-index@1.0.2",{"name":"array-find-index","version":"1.0.2","count":0}]],"tree":{"id":"array-find-index@1.0.2"}}}

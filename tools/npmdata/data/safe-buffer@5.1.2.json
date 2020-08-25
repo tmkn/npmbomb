@@ -1,1 +1,1 @@
-{"name":"safe-buffer","version":"5.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safer Node.js Buffer API","dependencyTree":{"n":"safe-buffer","v":"5.1.2","c":0,"d":[]}}
+{"name":"safe-buffer","version":"5.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Safer Node.js Buffer API","tree":{"data":[["safe-buffer@5.1.2",{"name":"safe-buffer","version":"5.1.2","count":0}]],"tree":{"id":"safe-buffer@5.1.2"}}}

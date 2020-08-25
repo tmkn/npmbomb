@@ -1,1 +1,1 @@
-{"name":"lodash.throttle","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.throttle` exported as a module.","dependencyTree":{"n":"lodash.throttle","v":"4.1.1","c":0,"d":[]}}
+{"name":"lodash.throttle","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.throttle` exported as a module.","tree":{"data":[["lodash.throttle@4.1.1",{"name":"lodash.throttle","version":"4.1.1","count":0}]],"tree":{"id":"lodash.throttle@4.1.1"}}}

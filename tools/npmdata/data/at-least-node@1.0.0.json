@@ -1,1 +1,1 @@
-{"name":"at-least-node","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight Node.js version sniffing/comparison","dependencyTree":{"n":"at-least-node","v":"1.0.0","c":0,"d":[]}}
+{"name":"at-least-node","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight Node.js version sniffing/comparison","tree":{"data":[["at-least-node@1.0.0",{"name":"at-least-node","version":"1.0.0","count":0}]],"tree":{"id":"at-least-node@1.0.0"}}}

@@ -1,1 +1,1 @@
-{"name":"flatted","version":"2.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A super light and fast circular JSON parser.","dependencyTree":{"n":"flatted","v":"2.0.2","c":0,"d":[]}}
+{"name":"flatted","version":"2.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A super light and fast circular JSON parser.","tree":{"data":[["flatted@2.0.2",{"name":"flatted","version":"2.0.2","count":0}]],"tree":{"id":"flatted@2.0.2"}}}

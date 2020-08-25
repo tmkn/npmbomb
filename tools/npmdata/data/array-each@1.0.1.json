@@ -1,1 +1,1 @@
-{"name":"array-each","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Loop over each item in an array and call the given function on every element.","dependencyTree":{"n":"array-each","v":"1.0.1","c":0,"d":[]}}
+{"name":"array-each","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Loop over each item in an array and call the given function on every element.","tree":{"data":[["array-each@1.0.1",{"name":"array-each","version":"1.0.1","count":0}]],"tree":{"id":"array-each@1.0.1"}}}

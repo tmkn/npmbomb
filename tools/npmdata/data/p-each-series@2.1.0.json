@@ -1,1 +1,1 @@
-{"name":"p-each-series","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Iterate over promises serially","dependencyTree":{"n":"p-each-series","v":"2.1.0","c":0,"d":[]}}
+{"name":"p-each-series","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Iterate over promises serially","tree":{"data":[["p-each-series@2.1.0",{"name":"p-each-series","version":"2.1.0","count":0}]],"tree":{"id":"p-each-series@2.1.0"}}}

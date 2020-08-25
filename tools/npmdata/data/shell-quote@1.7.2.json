@@ -1,1 +1,1 @@
-{"name":"shell-quote","version":"1.7.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"quote and parse shell commands","dependencyTree":{"n":"shell-quote","v":"1.7.2","c":0,"d":[]}}
+{"name":"shell-quote","version":"1.7.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"quote and parse shell commands","tree":{"data":[["shell-quote@1.7.2",{"name":"shell-quote","version":"1.7.2","count":0}]],"tree":{"id":"shell-quote@1.7.2"}}}

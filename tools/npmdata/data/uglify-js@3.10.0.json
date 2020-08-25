@@ -1,1 +1,1 @@
-{"name":"uglify-js","version":"3.10.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript parser, mangler/compressor and beautifier toolkit","dependencyTree":{"n":"uglify-js","v":"3.10.0","c":0,"d":[]}}
+{"name":"uglify-js","version":"3.10.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript parser, mangler/compressor and beautifier toolkit","tree":{"data":[["uglify-js@3.10.0",{"name":"uglify-js","version":"3.10.0","count":0}]],"tree":{"id":"uglify-js@3.10.0"}}}

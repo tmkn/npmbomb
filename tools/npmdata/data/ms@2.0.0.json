@@ -1,1 +1,1 @@
-{"name":"ms","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tiny milisecond conversion utility","dependencyTree":{"n":"ms","v":"2.0.0","c":0,"d":[]}}
+{"name":"ms","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tiny milisecond conversion utility","tree":{"data":[["ms@2.0.0",{"name":"ms","version":"2.0.0","count":0}]],"tree":{"id":"ms@2.0.0"}}}

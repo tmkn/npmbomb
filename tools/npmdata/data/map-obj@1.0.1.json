@@ -1,1 +1,1 @@
-{"name":"map-obj","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Map object keys and values into a new object","dependencyTree":{"n":"map-obj","v":"1.0.1","c":0,"d":[]}}
+{"name":"map-obj","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Map object keys and values into a new object","tree":{"data":[["map-obj@1.0.1",{"name":"map-obj","version":"1.0.1","count":0}]],"tree":{"id":"map-obj@1.0.1"}}}

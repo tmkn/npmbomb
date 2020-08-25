@@ -1,1 +1,1 @@
-{"name":"check-error","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Error comparison and information related utility for node and the browser","dependencyTree":{"n":"check-error","v":"1.0.2","c":0,"d":[]}}
+{"name":"check-error","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Error comparison and information related utility for node and the browser","tree":{"data":[["check-error@1.0.2",{"name":"check-error","version":"1.0.2","count":0}]],"tree":{"id":"check-error@1.0.2"}}}

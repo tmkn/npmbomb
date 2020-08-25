@@ -1,1 +1,1 @@
-{"name":"relateurl","version":"0.2.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Minify URLs by converting them from absolute to relative.","dependencyTree":{"n":"relateurl","v":"0.2.7","c":0,"d":[]}}
+{"name":"relateurl","version":"0.2.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Minify URLs by converting them from absolute to relative.","tree":{"data":[["relateurl@0.2.7",{"name":"relateurl","version":"0.2.7","count":0}]],"tree":{"id":"relateurl@0.2.7"}}}

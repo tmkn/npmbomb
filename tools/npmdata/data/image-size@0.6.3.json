@@ -1,1 +1,1 @@
-{"name":"image-size","version":"0.6.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"get dimensions of any image file","dependencyTree":{"n":"image-size","v":"0.6.3","c":0,"d":[]}}
+{"name":"image-size","version":"0.6.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"get dimensions of any image file","tree":{"data":[["image-size@0.6.3",{"name":"image-size","version":"0.6.3","count":0}]],"tree":{"id":"image-size@0.6.3"}}}

@@ -1,1 +1,1 @@
-{"name":"jest-get-type","version":"26.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A utility function to get the type of a value","dependencyTree":{"n":"jest-get-type","v":"26.0.0","c":0,"d":[]}}
+{"name":"jest-get-type","version":"26.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A utility function to get the type of a value","tree":{"data":[["jest-get-type@26.0.0",{"name":"jest-get-type","version":"26.0.0","count":0}]],"tree":{"id":"jest-get-type@26.0.0"}}}

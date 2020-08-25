@@ -1,1 +1,1 @@
-{"name":"object-component","version":"0.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Object utils.","dependencyTree":{"n":"object-component","v":"0.0.3","c":0,"d":[]}}
+{"name":"object-component","version":"0.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Object utils.","tree":{"data":[["object-component@0.0.3",{"name":"object-component","version":"0.0.3","count":0}]],"tree":{"id":"object-component@0.0.3"}}}

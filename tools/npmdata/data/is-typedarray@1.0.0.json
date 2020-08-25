@@ -1,1 +1,1 @@
-{"name":"is-typedarray","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Detect whether or not an object is a Typed Array","dependencyTree":{"n":"is-typedarray","v":"1.0.0","c":0,"d":[]}}
+{"name":"is-typedarray","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Detect whether or not an object is a Typed Array","tree":{"data":[["is-typedarray@1.0.0",{"name":"is-typedarray","version":"1.0.0","count":0}]],"tree":{"id":"is-typedarray@1.0.0"}}}

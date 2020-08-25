@@ -1,1 +1,1 @@
-{"name":"minimist","version":"1.2.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"parse argument options","dependencyTree":{"n":"minimist","v":"1.2.5","c":0,"d":[]}}
+{"name":"minimist","version":"1.2.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"parse argument options","tree":{"data":[["minimist@1.2.5",{"name":"minimist","version":"1.2.5","count":0}]],"tree":{"id":"minimist@1.2.5"}}}

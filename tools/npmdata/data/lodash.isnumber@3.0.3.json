@@ -1,1 +1,1 @@
-{"name":"lodash.isnumber","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.isNumber` exported as a module.","dependencyTree":{"n":"lodash.isnumber","v":"3.0.3","c":0,"d":[]}}
+{"name":"lodash.isnumber","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"The lodash method `_.isNumber` exported as a module.","tree":{"data":[["lodash.isnumber@3.0.3",{"name":"lodash.isnumber","version":"3.0.3","count":0}]],"tree":{"id":"lodash.isnumber@3.0.3"}}}

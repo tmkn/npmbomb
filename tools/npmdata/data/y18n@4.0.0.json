@@ -1,1 +1,1 @@
-{"name":"y18n","version":"4.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the bare-bones internationalization library used by yargs","dependencyTree":{"n":"y18n","v":"4.0.0","c":0,"d":[]}}
+{"name":"y18n","version":"4.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the bare-bones internationalization library used by yargs","tree":{"data":[["y18n@4.0.0",{"name":"y18n","version":"4.0.0","count":0}]],"tree":{"id":"y18n@4.0.0"}}}

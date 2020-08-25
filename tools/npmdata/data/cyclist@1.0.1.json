@@ -1,1 +1,1 @@
-{"name":"cyclist","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Cyclist is an efficient cyclic list implemention.","dependencyTree":{"n":"cyclist","v":"1.0.1","c":0,"d":[]}}
+{"name":"cyclist","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Cyclist is an efficient cyclic list implemention.","tree":{"data":[["cyclist@1.0.1",{"name":"cyclist","version":"1.0.1","count":0}]],"tree":{"id":"cyclist@1.0.1"}}}

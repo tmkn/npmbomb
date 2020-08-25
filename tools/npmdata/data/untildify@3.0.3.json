@@ -1,1 +1,1 @@
-{"name":"untildify","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a tilde path to an absolute path: ~/dev => /Users/sindresorhus/dev","dependencyTree":{"n":"untildify","v":"3.0.3","c":0,"d":[]}}
+{"name":"untildify","version":"3.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a tilde path to an absolute path: ~/dev => /Users/sindresorhus/dev","tree":{"data":[["untildify@3.0.3",{"name":"untildify","version":"3.0.3","count":0}]],"tree":{"id":"untildify@3.0.3"}}}

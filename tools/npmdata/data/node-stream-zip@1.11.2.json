@@ -1,1 +1,1 @@
-{"name":"node-stream-zip","version":"1.11.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"node.js library for reading and extraction of ZIP archives","dependencyTree":{"n":"node-stream-zip","v":"1.11.2","c":0,"d":[]}}
+{"name":"node-stream-zip","version":"1.11.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"node.js library for reading and extraction of ZIP archives","tree":{"data":[["node-stream-zip@1.11.2",{"name":"node-stream-zip","version":"1.11.2","count":0}]],"tree":{"id":"node-stream-zip@1.11.2"}}}

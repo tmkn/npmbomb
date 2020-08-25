@@ -1,1 +1,1 @@
-{"name":"glob-to-regexp","version":"0.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert globs to regular expressions","dependencyTree":{"n":"glob-to-regexp","v":"0.3.0","c":0,"d":[]}}
+{"name":"glob-to-regexp","version":"0.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert globs to regular expressions","tree":{"data":[["glob-to-regexp@0.3.0",{"name":"glob-to-regexp","version":"0.3.0","count":0}]],"tree":{"id":"glob-to-regexp@0.3.0"}}}

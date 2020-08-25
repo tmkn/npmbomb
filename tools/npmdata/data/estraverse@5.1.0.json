@@ -1,1 +1,1 @@
-{"name":"estraverse","version":"5.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript JS AST traversal functions","dependencyTree":{"n":"estraverse","v":"5.1.0","c":0,"d":[]}}
+{"name":"estraverse","version":"5.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ECMAScript JS AST traversal functions","tree":{"data":[["estraverse@5.1.0",{"name":"estraverse","version":"5.1.0","count":0}]],"tree":{"id":"estraverse@5.1.0"}}}

@@ -1,1 +1,1 @@
-{"name":"concat-map","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"concatenative mapdashery","dependencyTree":{"n":"concat-map","v":"0.0.1","c":0,"d":[]}}
+{"name":"concat-map","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"concatenative mapdashery","tree":{"data":[["concat-map@0.0.1",{"name":"concat-map","version":"0.0.1","count":0}]],"tree":{"id":"concat-map@0.0.1"}}}

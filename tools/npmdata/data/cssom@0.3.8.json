@@ -1,1 +1,1 @@
-{"name":"cssom","version":"0.3.8","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"CSS Object Model implementation and CSS parser","dependencyTree":{"n":"cssom","v":"0.3.8","c":0,"d":[]}}
+{"name":"cssom","version":"0.3.8","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"CSS Object Model implementation and CSS parser","tree":{"data":[["cssom@0.3.8",{"name":"cssom","version":"0.3.8","count":0}]],"tree":{"id":"cssom@0.3.8"}}}

@@ -1,1 +1,1 @@
-{"name":"regexp-clone","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Clone RegExps with options","dependencyTree":{"n":"regexp-clone","v":"1.0.0","c":0,"d":[]}}
+{"name":"regexp-clone","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Clone RegExps with options","tree":{"data":[["regexp-clone@1.0.0",{"name":"regexp-clone","version":"1.0.0","count":0}]],"tree":{"id":"regexp-clone@1.0.0"}}}

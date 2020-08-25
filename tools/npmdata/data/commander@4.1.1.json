@@ -1,1 +1,1 @@
-{"name":"commander","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the complete solution for node.js command-line programs","dependencyTree":{"n":"commander","v":"4.1.1","c":0,"d":[]}}
+{"name":"commander","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"the complete solution for node.js command-line programs","tree":{"data":[["commander@4.1.1",{"name":"commander","version":"4.1.1","count":0}]],"tree":{"id":"commander@4.1.1"}}}

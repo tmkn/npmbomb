@@ -1,1 +1,1 @@
-{"name":"has-flag","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if argv has a specific flag","dependencyTree":{"n":"has-flag","v":"3.0.0","c":0,"d":[]}}
+{"name":"has-flag","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if argv has a specific flag","tree":{"data":[["has-flag@3.0.0",{"name":"has-flag","version":"3.0.0","count":0}]],"tree":{"id":"has-flag@3.0.0"}}}

@@ -1,1 +1,1 @@
-{"name":"debug","version":"3.2.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility","dependencyTree":{"n":"debug","v":"3.2.6","c":1,"d":[{"n":"ms","v":"2.1.2","c":0,"d":[]}]}}
+{"name":"debug","version":"3.2.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility","tree":{"data":[["debug@3.2.6",{"name":"debug","version":"3.2.6","count":1}],["ms@2.1.2",{"name":"ms","version":"2.1.2","count":0}]],"tree":{"id":"debug@3.2.6","dependencies":[{"id":"ms@2.1.2"}]}}}

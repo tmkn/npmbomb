@@ -1,1 +1,1 @@
-{"name":"ajv-keywords","version":"3.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Custom JSON-Schema keywords for Ajv validator","dependencyTree":{"n":"ajv-keywords","v":"3.5.1","c":0,"d":[]}}
+{"name":"ajv-keywords","version":"3.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Custom JSON-Schema keywords for Ajv validator","tree":{"data":[["ajv-keywords@3.5.1",{"name":"ajv-keywords","version":"3.5.1","count":0}]],"tree":{"id":"ajv-keywords@3.5.1"}}}

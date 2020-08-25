@@ -1,1 +1,1 @@
-{"name":"uuid","version":"7.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"RFC4122 (v1, v4, and v5) UUIDs","dependencyTree":{"n":"uuid","v":"7.0.3","c":0,"d":[]}}
+{"name":"uuid","version":"7.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"RFC4122 (v1, v4, and v5) UUIDs","tree":{"data":[["uuid@7.0.3",{"name":"uuid","version":"7.0.3","count":0}]],"tree":{"id":"uuid@7.0.3"}}}

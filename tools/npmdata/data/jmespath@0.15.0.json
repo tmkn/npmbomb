@@ -1,1 +1,1 @@
-{"name":"jmespath","version":"0.15.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JMESPath implementation in javascript","dependencyTree":{"n":"jmespath","v":"0.15.0","c":0,"d":[]}}
+{"name":"jmespath","version":"0.15.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JMESPath implementation in javascript","tree":{"data":[["jmespath@0.15.0",{"name":"jmespath","version":"0.15.0","count":0}]],"tree":{"id":"jmespath@0.15.0"}}}

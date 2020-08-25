@@ -1,1 +1,1 @@
-{"name":"cli-width","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get stdout window width, with two fallbacks, tty and then a default.","dependencyTree":{"n":"cli-width","v":"3.0.0","c":0,"d":[]}}
+{"name":"cli-width","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get stdout window width, with two fallbacks, tty and then a default.","tree":{"data":[["cli-width@3.0.0",{"name":"cli-width","version":"3.0.0","count":0}]],"tree":{"id":"cli-width@3.0.0"}}}
