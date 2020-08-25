@@ -1,1 +1,1 @@
-{"name":"js-tokens","version":"3.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A regex that tokenizes JavaScript.","tree":{"data":[["js-tokens@3.0.2",{"name":"js-tokens","version":"3.0.2","count":0}]],"tree":{"id":"js-tokens@3.0.2"}}}
+{"name":"js-tokens","version":"3.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A regex that tokenizes JavaScript.","tree":{"data":[{"id":0,"name":"js-tokens","version":"3.0.2","count":0}],"tree":{"id":0}}}

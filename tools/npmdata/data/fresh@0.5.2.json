@@ -1,1 +1,1 @@
-{"name":"fresh","version":"0.5.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP response freshness testing","tree":{"data":[["fresh@0.5.2",{"name":"fresh","version":"0.5.2","count":0}]],"tree":{"id":"fresh@0.5.2"}}}
+{"name":"fresh","version":"0.5.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"HTTP response freshness testing","tree":{"data":[{"id":0,"name":"fresh","version":"0.5.2","count":0}],"tree":{"id":0}}}

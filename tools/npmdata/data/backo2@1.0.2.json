@@ -1,1 +1,1 @@
-{"name":"backo2","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"simple backoff based on segmentio/backo","tree":{"data":[["backo2@1.0.2",{"name":"backo2","version":"1.0.2","count":0}]],"tree":{"id":"backo2@1.0.2"}}}
+{"name":"backo2","version":"1.0.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"simple backoff based on segmentio/backo","tree":{"data":[{"id":0,"name":"backo2","version":"1.0.2","count":0}],"tree":{"id":0}}}

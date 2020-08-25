@@ -1,1 +1,1 @@
-{"name":"co","version":"4.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"generator async control flow goodness","tree":{"data":[["co@4.6.0",{"name":"co","version":"4.6.0","count":0}]],"tree":{"id":"co@4.6.0"}}}
+{"name":"co","version":"4.6.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"generator async control flow goodness","tree":{"data":[{"id":0,"name":"co","version":"4.6.0","count":0}],"tree":{"id":0}}}

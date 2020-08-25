@@ -1,1 +1,1 @@
-{"name":"array-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"check if two arrays are equal","tree":{"data":[["array-equal@1.0.0",{"name":"array-equal","version":"1.0.0","count":0}]],"tree":{"id":"array-equal@1.0.0"}}}
+{"name":"array-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"check if two arrays are equal","tree":{"data":[{"id":0,"name":"array-equal","version":"1.0.0","count":0}],"tree":{"id":0}}}

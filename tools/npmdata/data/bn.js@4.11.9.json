@@ -1,1 +1,1 @@
-{"name":"bn.js","version":"4.11.9","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Big number implementation in pure javascript","tree":{"data":[["bn.js@4.11.9",{"name":"bn.js","version":"4.11.9","count":0}]],"tree":{"id":"bn.js@4.11.9"}}}
+{"name":"bn.js","version":"4.11.9","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Big number implementation in pure javascript","tree":{"data":[{"id":0,"name":"bn.js","version":"4.11.9","count":0}],"tree":{"id":0}}}

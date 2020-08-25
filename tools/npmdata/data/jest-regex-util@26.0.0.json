@@ -1,1 +1,1 @@
-{"name":"jest-regex-util","version":"26.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"tree":{"data":[["jest-regex-util@26.0.0",{"name":"jest-regex-util","version":"26.0.0","count":0}]],"tree":{"id":"jest-regex-util@26.0.0"}}}
+{"name":"jest-regex-util","version":"26.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"tree":{"data":[{"id":0,"name":"jest-regex-util","version":"26.0.0","count":0}],"tree":{"id":0}}}

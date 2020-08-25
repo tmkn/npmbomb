@@ -1,1 +1,1 @@
-{"name":"clean-up-path","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make paths absolute and normalize them.","tree":{"data":[["clean-up-path@1.0.0",{"name":"clean-up-path","version":"1.0.0","count":0}]],"tree":{"id":"clean-up-path@1.0.0"}}}
+{"name":"clean-up-path","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make paths absolute and normalize them.","tree":{"data":[{"id":0,"name":"clean-up-path","version":"1.0.0","count":0}],"tree":{"id":0}}}

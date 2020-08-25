@@ -1,1 +1,1 @@
-{"name":"clone-buffer","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Easier Buffer cloning in node.","tree":{"data":[["clone-buffer@1.0.0",{"name":"clone-buffer","version":"1.0.0","count":0}]],"tree":{"id":"clone-buffer@1.0.0"}}}
+{"name":"clone-buffer","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Easier Buffer cloning in node.","tree":{"data":[{"id":0,"name":"clone-buffer","version":"1.0.0","count":0}],"tree":{"id":0}}}

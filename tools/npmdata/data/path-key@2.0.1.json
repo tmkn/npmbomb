@@ -1,1 +1,1 @@
-{"name":"path-key","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get the PATH environment variable key cross-platform","tree":{"data":[["path-key@2.0.1",{"name":"path-key","version":"2.0.1","count":0}]],"tree":{"id":"path-key@2.0.1"}}}
+{"name":"path-key","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get the PATH environment variable key cross-platform","tree":{"data":[{"id":0,"name":"path-key","version":"2.0.1","count":0}],"tree":{"id":0}}}

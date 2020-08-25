@@ -1,1 +1,1 @@
-{"name":"trim-newlines","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Trim newlines from the start and/or end of a string","tree":{"data":[["trim-newlines@1.0.0",{"name":"trim-newlines","version":"1.0.0","count":0}]],"tree":{"id":"trim-newlines@1.0.0"}}}
+{"name":"trim-newlines","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Trim newlines from the start and/or end of a string","tree":{"data":[{"id":0,"name":"trim-newlines","version":"1.0.0","count":0}],"tree":{"id":0}}}

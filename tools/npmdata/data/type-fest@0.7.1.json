@@ -1,1 +1,1 @@
-{"name":"type-fest","version":"0.7.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A collection of essential TypeScript types","tree":{"data":[["type-fest@0.7.1",{"name":"type-fest","version":"0.7.1","count":0}]],"tree":{"id":"type-fest@0.7.1"}}}
+{"name":"type-fest","version":"0.7.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A collection of essential TypeScript types","tree":{"data":[{"id":0,"name":"type-fest","version":"0.7.1","count":0}],"tree":{"id":0}}}

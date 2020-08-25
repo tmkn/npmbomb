@@ -1,1 +1,1 @@
-{"name":"component-bind","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"function binding utility","tree":{"data":[["component-bind@1.0.0",{"name":"component-bind","version":"1.0.0","count":0}]],"tree":{"id":"component-bind@1.0.0"}}}
+{"name":"component-bind","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"function binding utility","tree":{"data":[{"id":0,"name":"component-bind","version":"1.0.0","count":0}],"tree":{"id":0}}}

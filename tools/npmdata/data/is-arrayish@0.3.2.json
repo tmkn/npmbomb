@@ -1,1 +1,1 @@
-{"name":"is-arrayish","version":"0.3.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Determines if an object can be used as an array","tree":{"data":[["is-arrayish@0.3.2",{"name":"is-arrayish","version":"0.3.2","count":0}]],"tree":{"id":"is-arrayish@0.3.2"}}}
+{"name":"is-arrayish","version":"0.3.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Determines if an object can be used as an array","tree":{"data":[{"id":0,"name":"is-arrayish","version":"0.3.2","count":0}],"tree":{"id":0}}}

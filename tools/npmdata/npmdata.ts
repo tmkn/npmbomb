@@ -4,12 +4,7 @@ import * as fs from "fs";
 import { Extractor } from "../../packageanalyzer/src/extractor";
 import { PackageAnalytics } from "../../packageanalyzer/src/analyzers/package";
 
-import {
-    IDependencyTreeStructure,
-    IDependencyTreeConfig,
-    ITreeData,
-    TreeLookupData
-} from "./utils";
+import { IDependencyTreeStructure, IDependencyTreeConfig, ITreeData } from "./utils";
 
 const [, , npmDump] = process.argv;
 
@@ -39,13 +34,15 @@ function createOutDir(outDir: string): void {
 const getId = (pa: PackageAnalytics) => pa.fullName;
 
 function createDependencyTree(pa: PackageAnalytics): IDependencyTreeConfig {
+    const lookup = createLookup(pa);
+
     return {
-        data: createLookup(pa),
-        tree: createTree(pa)
+        data: [...lookup.values()],
+        tree: createTree(pa, lookup)
     };
 }
 
-function createLookup(pa: PackageAnalytics): TreeLookupData[] {
+function createLookup(pa: PackageAnalytics): Map<string, ITreeData> {
     const lookup: Map<string, ITreeData> = new Map();
 
     pa.visit(dep => {
@@ -53,24 +50,33 @@ function createLookup(pa: PackageAnalytics): TreeLookupData[] {
 
         if (!lookup.has(id))
             lookup.set(id, {
+                id: lookup.size,
                 name: dep.name,
                 version: dep.version,
                 count: dep.transitiveDependenciesCount
             });
     }, true);
 
-    return [...lookup.entries()];
+    return lookup;
 }
 
-function createTree(pa: PackageAnalytics): IDependencyTreeStructure {
+function createTree(
+    pa: PackageAnalytics,
+    lookup: Map<string, ITreeData>
+): IDependencyTreeStructure {
+    const id = getId(pa);
+    const data = lookup.get(id);
+
+    if (typeof data === "undefined") throw new Error(`Couldn't find id (${id}) for ${pa.fullName}`);
+
     const root: IDependencyTreeStructure = {
-        id: getId(pa)
+        id: data.id
     };
 
     for (const dependency of pa.directDependencies) {
         const dependencies = root?.dependencies ?? [];
 
-        dependencies.push(createTree(dependency));
+        dependencies.push(createTree(dependency, lookup));
 
         root.dependencies = dependencies;
     }

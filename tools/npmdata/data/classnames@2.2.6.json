@@ -1,1 +1,1 @@
-{"name":"classnames","version":"2.2.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A simple utility for conditionally joining classNames together","tree":{"data":[["classnames@2.2.6",{"name":"classnames","version":"2.2.6","count":0}]],"tree":{"id":"classnames@2.2.6"}}}
+{"name":"classnames","version":"2.2.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A simple utility for conditionally joining classNames together","tree":{"data":[{"id":0,"name":"classnames","version":"2.2.6","count":0}],"tree":{"id":0}}}

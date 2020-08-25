@@ -1,1 +1,1 @@
-{"name":"detect-file","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Detects if a file exists and returns the resolved filepath.","tree":{"data":[["detect-file@1.0.0",{"name":"detect-file","version":"1.0.0","count":0}]],"tree":{"id":"detect-file@1.0.0"}}}
+{"name":"detect-file","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Detects if a file exists and returns the resolved filepath.","tree":{"data":[{"id":0,"name":"detect-file","version":"1.0.0","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"console-browserify","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Emulate console for all the browsers","tree":{"data":[["console-browserify@1.2.0",{"name":"console-browserify","version":"1.2.0","count":0}]],"tree":{"id":"console-browserify@1.2.0"}}}
+{"name":"console-browserify","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Emulate console for all the browsers","tree":{"data":[{"id":0,"name":"console-browserify","version":"1.2.0","count":0}],"tree":{"id":0}}}

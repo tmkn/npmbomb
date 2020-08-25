@@ -1,1 +1,1 @@
-{"name":"delegates","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"delegate methods and accessors to another property","tree":{"data":[["delegates@1.0.0",{"name":"delegates","version":"1.0.0","count":0}]],"tree":{"id":"delegates@1.0.0"}}}
+{"name":"delegates","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"delegate methods and accessors to another property","tree":{"data":[{"id":0,"name":"delegates","version":"1.0.0","count":0}],"tree":{"id":0}}}

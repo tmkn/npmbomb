@@ -1,1 +1,1 @@
-{"name":"depd","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Deprecate all the things","tree":{"data":[["depd@2.0.0",{"name":"depd","version":"2.0.0","count":0}]],"tree":{"id":"depd@2.0.0"}}}
+{"name":"depd","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Deprecate all the things","tree":{"data":[{"id":0,"name":"depd","version":"2.0.0","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"sprintf-js","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript sprintf implementation","tree":{"data":[["sprintf-js@1.0.3",{"name":"sprintf-js","version":"1.0.3","count":0}]],"tree":{"id":"sprintf-js@1.0.3"}}}
+{"name":"sprintf-js","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"JavaScript sprintf implementation","tree":{"data":[{"id":0,"name":"sprintf-js","version":"1.0.3","count":0}],"tree":{"id":0}}}

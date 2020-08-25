@@ -1,1 +1,1 @@
-{"name":"jetifier","version":"1.6.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"jetifier from Android Studio, in npm package format","tree":{"data":[["jetifier@1.6.6",{"name":"jetifier","version":"1.6.6","count":0}]],"tree":{"id":"jetifier@1.6.6"}}}
+{"name":"jetifier","version":"1.6.6","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"jetifier from Android Studio, in npm package format","tree":{"data":[{"id":0,"name":"jetifier","version":"1.6.6","count":0}],"tree":{"id":0}}}

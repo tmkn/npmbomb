@@ -1,1 +1,1 @@
-{"name":"binary-extensions","version":"1.13.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"List of binary file extensions","tree":{"data":[["binary-extensions@1.13.1",{"name":"binary-extensions","version":"1.13.1","count":0}]],"tree":{"id":"binary-extensions@1.13.1"}}}
+{"name":"binary-extensions","version":"1.13.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"List of binary file extensions","tree":{"data":[{"id":0,"name":"binary-extensions","version":"1.13.1","count":0}],"tree":{"id":0}}}

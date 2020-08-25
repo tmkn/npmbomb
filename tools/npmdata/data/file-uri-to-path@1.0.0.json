@@ -1,1 +1,1 @@
-{"name":"file-uri-to-path","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a file: URI to a file path","tree":{"data":[["file-uri-to-path@1.0.0",{"name":"file-uri-to-path","version":"1.0.0","count":0}]],"tree":{"id":"file-uri-to-path@1.0.0"}}}
+{"name":"file-uri-to-path","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a file: URI to a file path","tree":{"data":[{"id":0,"name":"file-uri-to-path","version":"1.0.0","count":0}],"tree":{"id":0}}}

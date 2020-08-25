@@ -1,1 +1,1 @@
-{"name":"absolute-path","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js 0.11.x path.isAbsolute as a separate module","tree":{"data":[["absolute-path@0.0.0",{"name":"absolute-path","version":"0.0.0","count":0}]],"tree":{"id":"absolute-path@0.0.0"}}}
+{"name":"absolute-path","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Node.js 0.11.x path.isAbsolute as a separate module","tree":{"data":[{"id":0,"name":"absolute-path","version":"0.0.0","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"psl","version":"1.8.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Domain name parser based on the Public Suffix List","tree":{"data":[["psl@1.8.0",{"name":"psl","version":"1.8.0","count":0}]],"tree":{"id":"psl@1.8.0"}}}
+{"name":"psl","version":"1.8.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Domain name parser based on the Public Suffix List","tree":{"data":[{"id":0,"name":"psl","version":"1.8.0","count":0}],"tree":{"id":0}}}

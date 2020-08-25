@@ -1,1 +1,1 @@
-{"name":"unzip-response","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Unzip a HTTP response if needed","tree":{"data":[["unzip-response@2.0.1",{"name":"unzip-response","version":"2.0.1","count":0}]],"tree":{"id":"unzip-response@2.0.1"}}}
+{"name":"unzip-response","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Unzip a HTTP response if needed","tree":{"data":[{"id":0,"name":"unzip-response","version":"2.0.1","count":0}],"tree":{"id":0}}}

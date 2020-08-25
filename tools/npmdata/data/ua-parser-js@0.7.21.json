@@ -1,1 +1,1 @@
-{"name":"ua-parser-js","version":"0.7.21","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight JavaScript-based user-agent string parser","tree":{"data":[["ua-parser-js@0.7.21",{"name":"ua-parser-js","version":"0.7.21","count":0}]],"tree":{"id":"ua-parser-js@0.7.21"}}}
+{"name":"ua-parser-js","version":"0.7.21","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Lightweight JavaScript-based user-agent string parser","tree":{"data":[{"id":0,"name":"ua-parser-js","version":"0.7.21","count":0}],"tree":{"id":0}}}

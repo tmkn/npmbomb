@@ -1,1 +1,1 @@
-{"name":"graceful-fs","version":"4.2.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A drop-in replacement for fs, making various improvements.","tree":{"data":[["graceful-fs@4.2.4",{"name":"graceful-fs","version":"4.2.4","count":0}]],"tree":{"id":"graceful-fs@4.2.4"}}}
+{"name":"graceful-fs","version":"4.2.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A drop-in replacement for fs, making various improvements.","tree":{"data":[{"id":0,"name":"graceful-fs","version":"4.2.4","count":0}],"tree":{"id":0}}}

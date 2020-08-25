@@ -1,1 +1,1 @@
-{"name":"handle-thing","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Wrap Streams2 instance into a HandleWrap","tree":{"data":[["handle-thing@2.0.1",{"name":"handle-thing","version":"2.0.1","count":0}]],"tree":{"id":"handle-thing@2.0.1"}}}
+{"name":"handle-thing","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Wrap Streams2 instance into a HandleWrap","tree":{"data":[{"id":0,"name":"handle-thing","version":"2.0.1","count":0}],"tree":{"id":0}}}

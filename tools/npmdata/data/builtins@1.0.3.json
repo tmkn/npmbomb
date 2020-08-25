@@ -1,1 +1,1 @@
-{"name":"builtins","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"List of node.js builtin modules","tree":{"data":[["builtins@1.0.3",{"name":"builtins","version":"1.0.3","count":0}]],"tree":{"id":"builtins@1.0.3"}}}
+{"name":"builtins","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"List of node.js builtin modules","tree":{"data":[{"id":0,"name":"builtins","version":"1.0.3","count":0}],"tree":{"id":0}}}

@@ -16,7 +16,7 @@ describe("<Package />", () => {
         distinctDependencies: 50,
         tree: {
             data: [],
-            tree: { id: `` }
+            tree: { id: 0 }
         }
     };
 
@@ -29,7 +29,7 @@ describe("<Package />", () => {
         distinctDependencies: 50,
         tree: {
             data: [],
-            tree: { id: `` }
+            tree: { id: 0 }
         }
     };
 

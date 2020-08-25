@@ -1,1 +1,1 @@
-{"name":"pretty-bytes","version":"5.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert bytes to a human readable string: 1337 → 1.34 kB","tree":{"data":[["pretty-bytes@5.3.0",{"name":"pretty-bytes","version":"5.3.0","count":0}]],"tree":{"id":"pretty-bytes@5.3.0"}}}
+{"name":"pretty-bytes","version":"5.3.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert bytes to a human readable string: 1337 → 1.34 kB","tree":{"data":[{"id":0,"name":"pretty-bytes","version":"5.3.0","count":0}],"tree":{"id":0}}}

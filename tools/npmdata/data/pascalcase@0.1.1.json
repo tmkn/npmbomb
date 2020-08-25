@@ -1,1 +1,1 @@
-{"name":"pascalcase","version":"0.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a string to pascal-case.","tree":{"data":[["pascalcase@0.1.1",{"name":"pascalcase","version":"0.1.1","count":0}]],"tree":{"id":"pascalcase@0.1.1"}}}
+{"name":"pascalcase","version":"0.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a string to pascal-case.","tree":{"data":[{"id":0,"name":"pascalcase","version":"0.1.1","count":0}],"tree":{"id":0}}}

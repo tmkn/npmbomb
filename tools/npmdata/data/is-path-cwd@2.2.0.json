@@ -1,1 +1,1 @@
-{"name":"is-path-cwd","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a path is the current working directory","tree":{"data":[["is-path-cwd@2.2.0",{"name":"is-path-cwd","version":"2.2.0","count":0}]],"tree":{"id":"is-path-cwd@2.2.0"}}}
+{"name":"is-path-cwd","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Check if a path is the current working directory","tree":{"data":[{"id":0,"name":"is-path-cwd","version":"2.2.0","count":0}],"tree":{"id":0}}}

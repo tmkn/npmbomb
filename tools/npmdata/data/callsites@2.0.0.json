@@ -1,1 +1,1 @@
-{"name":"callsites","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get callsites from the V8 stack trace API","tree":{"data":[["callsites@2.0.0",{"name":"callsites","version":"2.0.0","count":0}]],"tree":{"id":"callsites@2.0.0"}}}
+{"name":"callsites","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get callsites from the V8 stack trace API","tree":{"data":[{"id":0,"name":"callsites","version":"2.0.0","count":0}],"tree":{"id":0}}}

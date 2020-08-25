@@ -22,7 +22,7 @@ export const GuessContext = React.createContext<IGuessContext>({
         description: "",
         tree: {
             data: [],
-            tree: { id: `` }
+            tree: { id: 0 }
         }
     },
     guess: undefined,

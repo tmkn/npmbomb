@@ -1,1 +1,1 @@
-{"name":"human-signals","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Human-friendly process signals","tree":{"data":[["human-signals@1.1.1",{"name":"human-signals","version":"1.1.1","count":0}]],"tree":{"id":"human-signals@1.1.1"}}}
+{"name":"human-signals","version":"1.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Human-friendly process signals","tree":{"data":[{"id":0,"name":"human-signals","version":"1.1.1","count":0}],"tree":{"id":0}}}

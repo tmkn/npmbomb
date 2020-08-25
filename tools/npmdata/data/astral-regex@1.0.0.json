@@ -1,1 +1,1 @@
-{"name":"astral-regex","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching astral symbols","tree":{"data":[["astral-regex@1.0.0",{"name":"astral-regex","version":"1.0.0","count":0}]],"tree":{"id":"astral-regex@1.0.0"}}}
+{"name":"astral-regex","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Regular expression for matching astral symbols","tree":{"data":[{"id":0,"name":"astral-regex","version":"1.0.0","count":0}],"tree":{"id":0}}}

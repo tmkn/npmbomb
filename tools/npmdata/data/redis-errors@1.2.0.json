@@ -1,1 +1,1 @@
-{"name":"redis-errors","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Error classes used in node_redis","tree":{"data":[["redis-errors@1.2.0",{"name":"redis-errors","version":"1.2.0","count":0}]],"tree":{"id":"redis-errors@1.2.0"}}}
+{"name":"redis-errors","version":"1.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Error classes used in node_redis","tree":{"data":[{"id":0,"name":"redis-errors","version":"1.2.0","count":0}],"tree":{"id":0}}}

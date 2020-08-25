@@ -32,45 +32,35 @@ describe("<SummaryTabs />", () => {
             directDependencies: 15,
             tree: {
                 data: [
-                    [
-                        `test@123`,
-                        {
-                            name: `test`,
-                            version: `123`,
-                            count: 1
-                        }
-                    ],
-                    [
-                        `dep1@1`,
-                        {
-                            name: `dep1`,
-                            version: `1`,
-                            count: 1
-                        }
-                    ],
-                    [
-                        `dep2@1`,
-                        {
-                            name: `dep2`,
-                            version: `1`,
-                            count: 1
-                        }
-                    ],
-                    [
-                        `dep3@1`,
-                        {
-                            name: `dep3`,
-                            version: `1`,
-                            count: 1
-                        }
-                    ]
+                    {
+                        id: 0,
+                        name: `test`,
+                        version: `123`,
+                        count: 1
+                    },
+                    {
+                        id: 1,
+                        name: `dep1`,
+                        version: `1`,
+                        count: 1
+                    },
+
+                    {
+                        id: 2,
+                        name: `dep2`,
+                        version: `1`,
+                        count: 1
+                    },
+                    {
+                        id: 3,
+                        name: `dep3`,
+                        version: `1`,
+                        count: 1
+                    }
                 ],
                 tree: {
-                    id: `test@123`,
-                    dependencies: [
-                        { id: `dep1@1` },
-                        { id: `dep2@1`, dependencies: [{ id: `dep3@1` }] }
-                    ]
+                    id: 0,
+                    dependencies: [{ id: 1 }, { id: 2, dependencies: [{ id: 3 }] }]
                 }
             }
         }

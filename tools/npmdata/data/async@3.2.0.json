@@ -1,1 +1,1 @@
-{"name":"async","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Higher-order functions and common patterns for asynchronous code","tree":{"data":[["async@3.2.0",{"name":"async","version":"3.2.0","count":0}]],"tree":{"id":"async@3.2.0"}}}
+{"name":"async","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Higher-order functions and common patterns for asynchronous code","tree":{"data":[{"id":0,"name":"async","version":"3.2.0","count":0}],"tree":{"id":0}}}

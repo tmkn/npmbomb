@@ -1,1 +1,1 @@
-{"name":"domelementtype","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"all the types of nodes in htmlparser2's dom","tree":{"data":[["domelementtype@2.0.1",{"name":"domelementtype","version":"2.0.1","count":0}]],"tree":{"id":"domelementtype@2.0.1"}}}
+{"name":"domelementtype","version":"2.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"all the types of nodes in htmlparser2's dom","tree":{"data":[{"id":0,"name":"domelementtype","version":"2.0.1","count":0}],"tree":{"id":0}}}

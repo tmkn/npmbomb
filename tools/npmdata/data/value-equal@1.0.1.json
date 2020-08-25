@@ -1,1 +1,1 @@
-{"name":"value-equal","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Are these two JavaScript values equal?","tree":{"data":[["value-equal@1.0.1",{"name":"value-equal","version":"1.0.1","count":0}]],"tree":{"id":"value-equal@1.0.1"}}}
+{"name":"value-equal","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Are these two JavaScript values equal?","tree":{"data":[{"id":0,"name":"value-equal","version":"1.0.1","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"babel-plugin-syntax-jsx","version":"6.18.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Allow parsing of jsx","tree":{"data":[["babel-plugin-syntax-jsx@6.18.0",{"name":"babel-plugin-syntax-jsx","version":"6.18.0","count":0}]],"tree":{"id":"babel-plugin-syntax-jsx@6.18.0"}}}
+{"name":"babel-plugin-syntax-jsx","version":"6.18.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Allow parsing of jsx","tree":{"data":[{"id":0,"name":"babel-plugin-syntax-jsx","version":"6.18.0","count":0}],"tree":{"id":0}}}

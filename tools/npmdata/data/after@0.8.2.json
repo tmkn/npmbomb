@@ -1,1 +1,1 @@
-{"name":"after","version":"0.8.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"after - tiny flow control","tree":{"data":[["after@0.8.2",{"name":"after","version":"0.8.2","count":0}]],"tree":{"id":"after@0.8.2"}}}
+{"name":"after","version":"0.8.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"after - tiny flow control","tree":{"data":[{"id":0,"name":"after","version":"0.8.2","count":0}],"tree":{"id":0}}}

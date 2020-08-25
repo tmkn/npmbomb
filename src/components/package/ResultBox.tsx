@@ -78,7 +78,7 @@ const DependencyOverviewTab: React.FC = () => {
 };
 
 function mapTree(
-    lookup: Map<string, ITreeData>,
+    lookup: Map<number, ITreeData>,
     { id, dependencies = [] }: IDependencyTreeStructure
 ): IDependencyTreeNodeData {
     const info = lookup.get(id);
@@ -86,6 +86,7 @@ function mapTree(
     if (typeof info === "undefined") throw new Error(`Couldn't find data for ${id}`);
 
     const root: IDependencyTreeNodeData = {
+        id: info.id,
         name: info.name,
         version: info.version,
         count: info.count,
@@ -108,7 +109,8 @@ const DependencyTreeTab: React.FC = () => {
 
     useEffect(() => {
         try {
-            const treeData = convertToTree(mapTree(new Map(tree.data), tree.tree));
+            const lookup: [number, ITreeData][] = tree.data.map(data => [data.id, data]);
+            const treeData = convertToTree(mapTree(new Map(lookup), tree.tree));
             treeData.expanded = true;
 
             setTreeData(treeData);

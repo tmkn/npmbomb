@@ -1,1 +1,1 @@
-{"name":"array-filter","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#filter for older browsers.","tree":{"data":[["array-filter@0.0.1",{"name":"array-filter","version":"0.0.1","count":0}]],"tree":{"id":"array-filter@0.0.1"}}}
+{"name":"array-filter","version":"0.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Array#filter for older browsers.","tree":{"data":[{"id":0,"name":"array-filter","version":"0.0.1","count":0}],"tree":{"id":0}}}

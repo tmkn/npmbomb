@@ -1,1 +1,1 @@
-{"name":"js-base64","version":"2.6.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Yet another Base64 transcoder in pure-JS","tree":{"data":[["js-base64@2.6.3",{"name":"js-base64","version":"2.6.3","count":0}]],"tree":{"id":"js-base64@2.6.3"}}}
+{"name":"js-base64","version":"2.6.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Yet another Base64 transcoder in pure-JS","tree":{"data":[{"id":0,"name":"js-base64","version":"2.6.3","count":0}],"tree":{"id":0}}}

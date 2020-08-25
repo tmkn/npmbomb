@@ -1,1 +1,1 @@
-{"name":"array-reduce","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].reduce()` for old browsers","tree":{"data":[["array-reduce@0.0.0",{"name":"array-reduce","version":"0.0.0","count":0}]],"tree":{"id":"array-reduce@0.0.0"}}}
+{"name":"array-reduce","version":"0.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"`[].reduce()` for old browsers","tree":{"data":[{"id":0,"name":"array-reduce","version":"0.0.0","count":0}],"tree":{"id":0}}}

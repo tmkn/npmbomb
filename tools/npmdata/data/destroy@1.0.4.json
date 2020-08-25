@@ -1,1 +1,1 @@
-{"name":"destroy","version":"1.0.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"destroy a stream if possible","tree":{"data":[["destroy@1.0.4",{"name":"destroy","version":"1.0.4","count":0}]],"tree":{"id":"destroy@1.0.4"}}}
+{"name":"destroy","version":"1.0.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"destroy a stream if possible","tree":{"data":[{"id":0,"name":"destroy","version":"1.0.4","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"buffer-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"return whether two buffers are equal","tree":{"data":[["buffer-equal@1.0.0",{"name":"buffer-equal","version":"1.0.0","count":0}]],"tree":{"id":"buffer-equal@1.0.0"}}}
+{"name":"buffer-equal","version":"1.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"return whether two buffers are equal","tree":{"data":[{"id":0,"name":"buffer-equal","version":"1.0.0","count":0}],"tree":{"id":0}}}

@@ -113,7 +113,7 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
         tree: {
             data: [],
             tree: {
-                id: ``
+                id: 0
             }
         }
     });

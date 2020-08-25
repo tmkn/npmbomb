@@ -1,1 +1,1 @@
-{"name":"mimic-fn","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make a function mimic another one","tree":{"data":[["mimic-fn@2.1.0",{"name":"mimic-fn","version":"2.1.0","count":0}]],"tree":{"id":"mimic-fn@2.1.0"}}}
+{"name":"mimic-fn","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Make a function mimic another one","tree":{"data":[{"id":0,"name":"mimic-fn","version":"2.1.0","count":0}],"tree":{"id":0}}}

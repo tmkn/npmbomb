@@ -1,1 +1,1 @@
-{"name":"nan","version":"2.14.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Native Abstractions for Node.js: C++ header for Node 0.8 -> 14 compatibility","tree":{"data":[["nan@2.14.1",{"name":"nan","version":"2.14.1","count":0}]],"tree":{"id":"nan@2.14.1"}}}
+{"name":"nan","version":"2.14.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Native Abstractions for Node.js: C++ header for Node 0.8 -> 14 compatibility","tree":{"data":[{"id":0,"name":"nan","version":"2.14.1","count":0}],"tree":{"id":0}}}

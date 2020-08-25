@@ -1,1 +1,1 @@
-{"name":"rsvp","version":"4.8.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A lightweight library that provides tools for organizing asynchronous code","tree":{"data":[["rsvp@4.8.5",{"name":"rsvp","version":"4.8.5","count":0}]],"tree":{"id":"rsvp@4.8.5"}}}
+{"name":"rsvp","version":"4.8.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A lightweight library that provides tools for organizing asynchronous code","tree":{"data":[{"id":0,"name":"rsvp","version":"4.8.5","count":0}],"tree":{"id":0}}}

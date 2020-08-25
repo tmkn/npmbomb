@@ -1,1 +1,1 @@
-{"name":"decimal.js","version":"10.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An arbitrary-precision Decimal type for JavaScript.","tree":{"data":[["decimal.js@10.2.0",{"name":"decimal.js","version":"10.2.0","count":0}]],"tree":{"id":"decimal.js@10.2.0"}}}
+{"name":"decimal.js","version":"10.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An arbitrary-precision Decimal type for JavaScript.","tree":{"data":[{"id":0,"name":"decimal.js","version":"10.2.0","count":0}],"tree":{"id":0}}}

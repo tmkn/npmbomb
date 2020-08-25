@@ -1,1 +1,1 @@
-{"name":"uniq","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Removes duplicates from a sorted array in place","tree":{"data":[["uniq@1.0.1",{"name":"uniq","version":"1.0.1","count":0}]],"tree":{"id":"uniq@1.0.1"}}}
+{"name":"uniq","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Removes duplicates from a sorted array in place","tree":{"data":[{"id":0,"name":"uniq","version":"1.0.1","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"p-map","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Map over promises concurrently","tree":{"data":[["p-map@2.1.0",{"name":"p-map","version":"2.1.0","count":0}]],"tree":{"id":"p-map@2.1.0"}}}
+{"name":"p-map","version":"2.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Map over promises concurrently","tree":{"data":[{"id":0,"name":"p-map","version":"2.1.0","count":0}],"tree":{"id":0}}}

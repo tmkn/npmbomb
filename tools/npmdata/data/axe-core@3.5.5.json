@@ -1,1 +1,1 @@
-{"name":"axe-core","version":"3.5.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Accessibility engine for automated Web UI testing","tree":{"data":[["axe-core@3.5.5",{"name":"axe-core","version":"3.5.5","count":0}]],"tree":{"id":"axe-core@3.5.5"}}}
+{"name":"axe-core","version":"3.5.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Accessibility engine for automated Web UI testing","tree":{"data":[{"id":0,"name":"axe-core","version":"3.5.5","count":0}],"tree":{"id":0}}}

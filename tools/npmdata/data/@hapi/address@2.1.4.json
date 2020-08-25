@@ -1,1 +1,1 @@
-{"name":"@hapi/address","version":"2.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Email address and domain validation","tree":{"data":[["@hapi/address@2.1.4",{"name":"@hapi/address","version":"2.1.4","count":0}]],"tree":{"id":"@hapi/address@2.1.4"}}}
+{"name":"@hapi/address","version":"2.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Email address and domain validation","tree":{"data":[{"id":0,"name":"@hapi/address","version":"2.1.4","count":0}],"tree":{"id":0}}}

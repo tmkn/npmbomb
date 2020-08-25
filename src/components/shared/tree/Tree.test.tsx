@@ -18,6 +18,7 @@ describe("<Tree />", () => {
             expanded: false,
             children: [],
             data: {
+                id: 0,
                 count: 13,
                 dependencies: [],
                 name: `foo`,

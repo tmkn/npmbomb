@@ -1,1 +1,1 @@
-{"name":"thunky","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"delay the evaluation of a paramless async function and cache the result","tree":{"data":[["thunky@1.1.0",{"name":"thunky","version":"1.1.0","count":0}]],"tree":{"id":"thunky@1.1.0"}}}
+{"name":"thunky","version":"1.1.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"delay the evaluation of a paramless async function and cache the result","tree":{"data":[{"id":0,"name":"thunky","version":"1.1.0","count":0}],"tree":{"id":0}}}

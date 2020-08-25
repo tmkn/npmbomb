@@ -1,1 +1,1 @@
-{"name":"@hapi/hoek","version":"8.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"General purpose node utilities","tree":{"data":[["@hapi/hoek@8.5.1",{"name":"@hapi/hoek","version":"8.5.1","count":0}]],"tree":{"id":"@hapi/hoek@8.5.1"}}}
+{"name":"@hapi/hoek","version":"8.5.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"General purpose node utilities","tree":{"data":[{"id":0,"name":"@hapi/hoek","version":"8.5.1","count":0}],"tree":{"id":0}}}

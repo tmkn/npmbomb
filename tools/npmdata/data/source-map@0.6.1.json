@@ -1,1 +1,1 @@
-{"name":"source-map","version":"0.6.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generates and consumes source maps","tree":{"data":[["source-map@0.6.1",{"name":"source-map","version":"0.6.1","count":0}]],"tree":{"id":"source-map@0.6.1"}}}
+{"name":"source-map","version":"0.6.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generates and consumes source maps","tree":{"data":[{"id":0,"name":"source-map","version":"0.6.1","count":0}],"tree":{"id":0}}}

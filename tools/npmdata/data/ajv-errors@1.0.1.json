@@ -1,1 +1,1 @@
-{"name":"ajv-errors","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Custom error messages in JSON-Schema for Ajv validator","tree":{"data":[["ajv-errors@1.0.1",{"name":"ajv-errors","version":"1.0.1","count":0}]],"tree":{"id":"ajv-errors@1.0.1"}}}
+{"name":"ajv-errors","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Custom error messages in JSON-Schema for Ajv validator","tree":{"data":[{"id":0,"name":"ajv-errors","version":"1.0.1","count":0}],"tree":{"id":0}}}
