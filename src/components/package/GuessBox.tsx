@@ -20,12 +20,9 @@ export const GuessContext = React.createContext<IGuessContext>({
         distinctDependencies: 0,
         directDependencies: 0,
         description: "",
-        dependencyTree: {
-            d: [],
-            n: ``,
-            v: ``,
-            c: 0,
-            l: false
+        tree: {
+            data: [],
+            tree: { id: `` }
         }
     },
     guess: undefined,

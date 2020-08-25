@@ -15,16 +15,6 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
     const { setAppState } = useContext(AppContext);
     const history = useHistory();
 
-    const style = css({
-        [mq[0]]: {
-            color: textColor,
-            margin: "1rem 0",
-            flex: 1,
-            backgroundColor: "#FBE9E7",
-            padding: "1rem"
-        }
-    });
-
     /* istanbul ignore next */
     function onClick(): void {
         setAppState({
@@ -39,13 +29,29 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
     return (
         <React.Fragment>
             <h1>{pkgName}</h1>
-            <Center>
-                <div css={style}>{children}</div>
-            </Center>
+            <ErrorBanner>{children}</ErrorBanner>
             <Center>
                 <PrimaryButton onClick={onClick}>Home</PrimaryButton>
             </Center>
         </React.Fragment>
+    );
+};
+
+export const ErrorBanner: React.FC = ({ children }) => {
+    const style = css({
+        [mq[0]]: {
+            color: textColor,
+            margin: "1rem 0",
+            flex: 1,
+            backgroundColor: "#FBE9E7",
+            padding: "1rem"
+        }
+    });
+
+    return (
+        <Center>
+            <div css={style}>{children}</div>
+        </Center>
     );
 };
 

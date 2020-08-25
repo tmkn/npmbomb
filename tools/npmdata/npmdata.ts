@@ -4,6 +4,13 @@ import * as fs from "fs";
 import { Extractor } from "../../packageanalyzer/src/extractor";
 import { PackageAnalytics } from "../../packageanalyzer/src/analyzers/package";
 
+import {
+    IDependencyTreeStructure,
+    IDependencyTreeConfig,
+    ITreeData,
+    TreeLookupData
+} from "./utils";
+
 const [, , npmDump] = process.argv;
 
 console.log(npmDump);
@@ -21,7 +28,7 @@ console.log(npmDump);
         dependencies: pa.transitiveDependenciesCount,
         distinctDependencies: pa.distinctByVersionCount,
         description: pa.getData("description"),
-        dependencyTree: createDependencyTree(pa)
+        tree: createDependencyTree(pa)
     }));
 })();
 
@@ -29,32 +36,44 @@ function createOutDir(outDir: string): void {
     fs.mkdirSync(outDir, { recursive: true });
 }
 
-interface IDependencyTreeData {
-    n: string;
-    v: string;
-    c: number;
-    l?: boolean;
-    d: IDependencyTreeData[];
+const getId = (pa: PackageAnalytics) => pa.fullName;
+
+function createDependencyTree(pa: PackageAnalytics): IDependencyTreeConfig {
+    return {
+        data: createLookup(pa),
+        tree: createTree(pa)
+    };
 }
 
-function createDependencyTree(
-    pa: PackageAnalytics,
-    root?: IDependencyTreeData
-): IDependencyTreeData {
-    const parent: IDependencyTreeData = {
-        n: pa.name,
-        v: pa.version,
-        c: pa.transitiveDependenciesCount,
-        d: []
+function createLookup(pa: PackageAnalytics): TreeLookupData[] {
+    const lookup: Map<string, ITreeData> = new Map();
+
+    pa.visit(dep => {
+        const id = getId(dep);
+
+        if (!lookup.has(id))
+            lookup.set(id, {
+                name: dep.name,
+                version: dep.version,
+                count: dep.transitiveDependenciesCount
+            });
+    });
+
+    return [...lookup.entries()];
+}
+
+function createTree(pa: PackageAnalytics): IDependencyTreeStructure {
+    const root: IDependencyTreeStructure = {
+        id: getId(pa)
     };
 
-    if (pa.isLoop) {
-        parent.l = true;
-    }
-
     for (const dependency of pa.directDependencies) {
-        parent.d.push(createDependencyTree(dependency));
+        const dependencies = root?.dependencies ?? [];
+
+        dependencies.push(createTree(dependency));
+
+        root.dependencies = dependencies;
     }
 
-    return parent;
+    return root;
 }

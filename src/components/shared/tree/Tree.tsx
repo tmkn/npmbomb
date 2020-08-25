@@ -1,11 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 
 import { mq, serifFont } from "../../../css";
-import { IDependencyTreeData } from "../../package/Package";
-import Worker from 'worker-loader!../../../tree.worker';
+import { IDependencyTreeNodeData } from "../../package/Package";
 
 export interface ITreeNodeData<T> {
     data: T;
@@ -23,7 +22,7 @@ enum PrefixType {
 }
 
 export type PrefixFormatter<T> = (node: T, i: number) => JSX.Element;
-export type OnClickCallback<T> = (node: ITreeNodeData<T>, equals: ITreeNodeData<T>[]) => void;
+export type OnClickCallback<T> = (node: ITreeNodeData<T>) => void;
 interface INodeFormatterOptions {
     canExpand: boolean;
     isExpanded: boolean;
@@ -76,29 +75,15 @@ export class TreeUtility<T> implements ITreeUtilty<T> {
 
 interface ITreeProps<T> {
     treeFormatter: ITreeFormatter<T>;
-    root: ITreeNodeData<T>;
-    equal: (node: ITreeNodeData<T>, path: string[]) => string;
+    treeData: ITreeListEntry<T>[];
 }
 
-export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
+export const Tree: React.FC<ITreeProps<IDependencyTreeNodeData>> = ({
     treeFormatter,
-    root: _root,
-    equal
+    treeData
 }) => {
-    console.time(`toTreeList`);
-    const treeList1 = toTreeList<IDependencyTreeData>([], _root);
-
-    const worker = new Worker();
-
-    worker.postMessage(_root);
-    worker.onmessage = (event) => {};
-    
-    worker.addEventListener('message', (event) => {console.log(`hello`)});
-
-    console.timeEnd(`toTreeList`);
-
     const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
-        const p = treeList1[index];
+        const p = treeData[index];
 
         return (
             <div key={key} style={style}>
@@ -110,7 +95,7 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
     const treeList = `treeList`;
     const treeStyle = css({
         [mq[0]]: {
-            minHeight: treeList1.length > 10 ? `15rem` : `${treeList1.length * 1.5}rem`,
+            minHeight: treeData.length > 10 ? `15rem` : `${treeData.length * 1.5}rem`,
             [`.${treeList}`]: {
                 outline: `none`
             }
@@ -126,7 +111,7 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
                         overscanRowCount={10}
                         width={width}
                         height={height}
-                        rowCount={treeList1.length}
+                        rowCount={treeData.length}
                         rowHeight={24}
                         rowRenderer={rowRenderer}
                     />
@@ -137,8 +122,8 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeData>> = ({
 };
 
 function createPrefixes(
-    { prefixes, treeData }: ITreeListEntry<IDependencyTreeData>,
-    treeFormatter: ITreeFormatter<IDependencyTreeData>
+    { prefixes, treeData }: ITreeListEntry<IDependencyTreeNodeData>,
+    treeFormatter: ITreeFormatter<IDependencyTreeNodeData>
 ): JSX.Element[] {
     const {
         prefixEntryFormatter,
@@ -163,8 +148,8 @@ function createPrefixes(
 }
 
 interface ITreeNode {
-    node: ITreeListEntry<IDependencyTreeData>;
-    treeFormatter: ITreeFormatter<IDependencyTreeData>;
+    node: ITreeListEntry<IDependencyTreeNodeData>;
+    treeFormatter: ITreeFormatter<IDependencyTreeNodeData>;
 }
 
 const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
@@ -184,15 +169,10 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
     });
     const prefixes = createPrefixes(node, treeFormatter);
     const onChildClick = (
-        callback: (
-            node: ITreeNodeData<IDependencyTreeData>,
-            equals: ITreeNodeData<IDependencyTreeData>[]
-        ) => void
+        callback: (node: ITreeNodeData<IDependencyTreeNodeData>) => void
     ): void => {
         node.treeData.active = true;
-        callback(node.treeData, [
-            /*todo path*/
-        ]);
+        callback(node.treeData);
     };
     const options: INodeFormatterOptions = {
         canExpand: node.treeData.canExpand,
@@ -205,20 +185,11 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
         }
     });
     const labelNode = (
-        <div css={nodeStyle}>
-            {nodeFormatter(
-                node.treeData,
-                [
-                    /*todo path*/
-                ],
-                options,
-                onChildClick
-            )}
-        </div>
+        <div css={nodeStyle}>{nodeFormatter(node.treeData, node.path, options, onChildClick)}</div>
     );
 
     return (
-        <div css={lineStyle}>
+        <div css={lineStyle} onMouseOver={() => console.log(node.path)}>
             {prefixes}
             {labelNode}
         </div>
@@ -228,16 +199,20 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
 interface ITreeListEntry<T> {
     prefixes: PrefixType[];
     treeData: ITreeNodeData<T>;
+    path: string[];
 }
 
-function toTreeList<T>(
+export function toTreeList<T>(
     _prefixes: ReadonlyArray<PrefixType>,
-    node: ITreeNodeData<T>
+    node: ITreeNodeData<T>,
+    path: string[],
+    key: (node: ITreeNodeData<T>) => string
 ): ITreeListEntry<T>[] {
     const entries: ITreeListEntry<T>[] = [];
     const entry: ITreeListEntry<T> = {
         prefixes: [..._prefixes],
-        treeData: node
+        treeData: node,
+        path: [...path, key(node)]
     };
 
     entries.push(entry);
@@ -250,7 +225,7 @@ function toTreeList<T>(
             const childPrefixes = [...updatedPrefixes, childPrefix];
 
             //dont use ...spread operator -> call stack overflow for large trees
-            for (const c of toTreeList(childPrefixes, child)) {
+            for (const c of toTreeList(childPrefixes, child, entry.path, key)) {
                 entries.push(c);
             }
         }

@@ -46,8 +46,8 @@ const globalStyle: SerializedStyles = css`
 
     @font-face {
         font-family: "IconFont";
-        src: url(${IconFont}) format("ttf"),
-    }  
+        src: url(${IconFont}) format("ttf");
+    }
 
     @font-face {
         font-family: "Muli";
@@ -92,7 +92,7 @@ const globalStyle: SerializedStyles = css`
             U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 `;
 
 export interface IGuessResult {

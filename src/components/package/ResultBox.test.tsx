@@ -30,31 +30,48 @@ describe("<SummaryTabs />", () => {
             dependencies: 1337,
             distinctDependencies: 10,
             directDependencies: 15,
-            dependencyTree: {
-                n: `test`,
-                v: `123`,
-                c: 1,
-                d: [
-                    {
-                        n: `dep1`,
-                        v: `1`,
-                        c: 1,
-                        d: []
-                    },
-                    {
-                        n: `dep2`,
-                        v: `1`,
-                        c: 1,
-                        d: [
-                            {
-                                n: `dep3`,
-                                v: `1`,
-                                c: 1,
-                                d: []
-                            }
-                        ]
-                    }
-                ]
+            tree: {
+                data: [
+                    [
+                        `test@123`,
+                        {
+                            name: `test`,
+                            version: `123`,
+                            count: 1
+                        }
+                    ],
+                    [
+                        `dep1@1`,
+                        {
+                            name: `dep1`,
+                            version: `1`,
+                            count: 1
+                        }
+                    ],
+                    [
+                        `dep2@1`,
+                        {
+                            name: `dep2`,
+                            version: `1`,
+                            count: 1
+                        }
+                    ],
+                    [
+                        `dep3@1`,
+                        {
+                            name: `dep3`,
+                            version: `1`,
+                            count: 1
+                        }
+                    ]
+                ],
+                tree: {
+                    id: `test@123`,
+                    dependencies: [
+                        { id: `dep1@1` },
+                        { id: `dep2@1`, dependencies: [{ id: `dep3@1` }] }
+                    ]
+                }
             }
         }
     };
@@ -72,6 +89,34 @@ describe("<SummaryTabs />", () => {
         await findByText(`test@123`);
         await findByText(`dep1@1`);
         await findByText(`dep2@1`);
+    });
+
+    test("Correctly displays error message for dependency tree", async () => {
+        const context: IGuessContext = {
+            guess: undefined,
+            setUserGuess: () => {},
+            package: {
+                name: `test`,
+                version: `123`,
+                description: `some description`,
+                dependencies: 1337,
+                distinctDependencies: 10,
+                directDependencies: 15,
+                // @ts-expect-error
+                tree: {}
+            }
+        };
+
+        const { findByText } = render(
+            <GuessContext.Provider value={context}>
+                <SummaryTabs />
+            </GuessContext.Provider>
+        );
+
+        const treeTabHeader = await findByText(/Dependency Tree/i);
+        fireEvent.click(treeTabHeader);
+
+        await findByText(`Whoops, cannot display dependency tree`);
     });
 
     test("Correctly toggles expand/collapse", async () => {

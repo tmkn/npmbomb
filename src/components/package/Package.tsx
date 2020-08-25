@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useState, useEffect, useContext, useLayoutEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
@@ -10,11 +10,16 @@ import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
-import { ResultBox, IDependencyTreeInfo } from "./ResultBox";
+import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
+import { ITreeData, IDependencyTreeConfig } from "../../../tools/npmdata/utils";
+
+export interface IDependencyTreeNodeData extends ITreeData {
+    dependencies: IDependencyTreeNodeData[];
+}
 
 const blink = keyframes`
     from {
@@ -57,14 +62,6 @@ export function getNameVersion(pkg: string): [string, string] {
     return [parts[0], parts[1]];
 }
 
-export interface IDependencyTreeData {
-    n: string;
-    v: string;
-    c: number;
-    l?: boolean;
-    d: IDependencyTreeData[];
-}
-
 export interface IPackageInfo {
     name: string;
     version: string;
@@ -72,10 +69,8 @@ export interface IPackageInfo {
     dependencies: number;
     distinctDependencies: number;
     directDependencies: number;
-    //todo remove
-    dependencyTree: IDependencyTreeData;
-    //compressed format of dependency tree
-    dependencyTree2?: IDependencyTreeInfo;
+    /** @deprecated */
+    tree: IDependencyTreeConfig;
 }
 
 async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
@@ -115,12 +110,11 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
         distinctDependencies: 0,
         dependencies: 0,
         directDependencies: 0,
-        dependencyTree: {
-            d: [],
-            n: ``,
-            v: ``,
-            c: 0,
-            l: false
+        tree: {
+            data: [],
+            tree: {
+                id: ``
+            }
         }
     });
 

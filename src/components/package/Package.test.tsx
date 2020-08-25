@@ -14,12 +14,9 @@ describe("<Package />", () => {
         dependencies: 123,
         directDependencies: 10,
         distinctDependencies: 50,
-        dependencyTree: {
-            d: [],
-            n: ``,
-            v: ``,
-            c: 0,
-            l: false
+        tree: {
+            data: [],
+            tree: { id: `` }
         }
     };
 
@@ -30,12 +27,9 @@ describe("<Package />", () => {
         dependencies: 123,
         directDependencies: 10,
         distinctDependencies: 50,
-        dependencyTree: {
-            d: [],
-            n: ``,
-            v: ``,
-            c: 0,
-            l: false
+        tree: {
+            data: [],
+            tree: { id: `` }
         }
     };
 

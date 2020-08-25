@@ -1,8 +1,8 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 
-import { Tree, ITreeNodeData, ITreeFormatter } from "./Tree";
-import { IDependencyTreeData } from "../../package/Package";
+import { Tree, ITreeNodeData, ITreeFormatter, toTreeList } from "./Tree";
+import { IDependencyTreeNodeData } from "../../package/Package";
 
 describe("<Tree />", () => {
     beforeEach(() => {
@@ -12,37 +12,37 @@ describe("<Tree />", () => {
     });
 
     test("correctly triggers onClick", async () => {
-        const root: ITreeNodeData<IDependencyTreeData> = {
+        const root: ITreeNodeData<IDependencyTreeNodeData> = {
             active: false,
             canExpand: false,
             expanded: false,
             children: [],
             data: {
-                c: 13,
-                d: [],
-                n: `foo`,
-                v: `1`
+                count: 13,
+                dependencies: [],
+                name: `foo`,
+                version: `1`
             }
         };
         const callbackMock = jest.fn();
-        const treeFormatter: ITreeFormatter<IDependencyTreeData> = {
+        const treeFormatter: ITreeFormatter<IDependencyTreeNodeData> = {
             nodeFormatter: (node, path, options, onClick) => {
                 return (
                     <div
                         onClick={() => onClick(callbackMock)}
-                    >{`${node.data.n}@${node.data.v}`}</div>
+                    >{`${node.data.name}@${node.data.version}`}</div>
                 );
             },
             prefixEmptySpacerFormatter: () => <div></div>,
             prefixEntryFormatter: () => <div></div>,
             prefixLeafFormatter: () => <div></div>,
             prefixNestedSpacerFormatter: () => <div></div>,
-            nodeKey: node => node.n
+            nodeKey: node => node.name
         };
-        const equal = (node: ITreeNodeData<IDependencyTreeData>) => node.data.n;
+        const equal = (node: ITreeNodeData<IDependencyTreeNodeData>) => node.data.name;
 
         const { findByText } = render(
-            <Tree root={root} treeFormatter={treeFormatter} equal={equal} />
+            <Tree treeData={toTreeList([], root, [], () => ``)} treeFormatter={treeFormatter} />
         );
         const el = await findByText(`foo@1`);
 

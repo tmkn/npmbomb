@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import * as Sentry from "@sentry/browser";
 
 import {
     mq,
@@ -25,9 +26,13 @@ import {
     PrefixFormatter,
     ITreeFormatter,
     Tree,
-    TreeUtility
+    TreeUtility,
+    toTreeList
 } from "../shared/tree/Tree";
-import { IDependencyTreeData } from "./Package";
+import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
+import { ErrorBanner } from "./ErrorComponent";
+import { IDependencyTreeNodeData } from "./Package";
+import { IDependencyTree, ITreeData } from "../../../tools/npmdata/utils";
 
 function plural(count: number): string {
     return count === 1 ? "dependency" : "dependencies";
@@ -72,25 +77,74 @@ const DependencyOverviewTab: React.FC = () => {
     );
 };
 
+function mapTree(
+    lookup: Map<string, ITreeData>,
+    { id, dependencies = [] }: IDependencyTree
+): IDependencyTreeNodeData {
+    const info = lookup.get(id);
+
+    if (typeof info === "undefined") throw new Error(`Couldn't find data for ${id}`);
+
+    const root: IDependencyTreeNodeData = {
+        name: info.name,
+        version: info.version,
+        count: info.count,
+        dependencies: []
+    };
+
+    for (const dependency of dependencies) {
+        root.dependencies.push(mapTree(lookup, dependency));
+    }
+
+    return root;
+}
+
 const DependencyTreeTab: React.FC = () => {
+    const [isError, setError] = useState<boolean>(false);
+    const [treeData, setTreeData] = useState<ITreeNodeData<IDependencyTreeNodeData>>();
     const {
-        package: { dependencyTree }
+        package: { tree }
     } = useContext(GuessContext);
-    const treeData = convertToTree(dependencyTree);
-    treeData.expanded = true;
+
+    useEffect(() => {
+        try {
+            const treeData = convertToTree(mapTree(new Map(tree.data), tree.tree));
+            treeData.expanded = true;
+
+            setTreeData(treeData);
+        } catch {
+            setError(true);
+            Sentry.captureMessage(`Couldn't display dependency tree`);
+        }
+    }, []);
+
+    if (isError) return <ErrorBanner>Whoops, cannot display dependency tree</ErrorBanner>;
+
+    if (typeof treeData !== "undefined")
+        return (
+            <Info>
+                <DependencyTree root={treeData} />
+            </Info>
+        );
+
     return (
         <Info>
-            <DependencyTree root={treeData} />
+            <LoadingIndicator />
         </Info>
     );
 };
 
-const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = ({
+const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeNodeData> }> = ({
     root: _root
 }) => {
-    const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeData>>(_root);
-    const nodeFormatter: NodeFormatter<IDependencyTreeData> = (node, path, options, onClick) => {
-        const customClick: OnClickCallback<IDependencyTreeData> = (node, equals) => {
+    const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeNodeData>>(_root);
+    const nodeFormatter: NodeFormatter<IDependencyTreeNodeData> = (
+        node,
+        path,
+        options,
+        onClick
+    ) => {
+        const customClick: OnClickCallback<IDependencyTreeNodeData> = node => {
             /*const treeUtility = new TreeUtility(root, setRoot);
 
             treeUtility.forEach(_node => {
@@ -121,7 +175,7 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
             <span
                 css={expandElStyle}
                 onClick={expandClick}
-                data-testid={`${node.data.n}@${node.data.v}`}
+                data-testid={`${node.data.name}@${node.data.version}`}
             >
                 {options.isExpanded ? (
                     <div className="codicon codicon-chevron-down"></div>
@@ -139,9 +193,9 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
                 }
             });
 
-            return <span css={style}>({node.data.c})</span>;
+            return <span css={style}>({node.data.count})</span>;
         };
-        const label: string = `${node.data.n}@${node.data.v}`;
+        const label: string = `${node.data.name}@${node.data.version}`;
         const labelStyle = css({
             [mq[0]]: {
                 display: `flex`,
@@ -181,12 +235,12 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
                 <span css={labelStyle} onClick={() => onClick(customClick)}>
                     <span>{label}</span>
                     <Count />
-                    <NpmLink name={node.data.n} version={node.data.v} />
+                    <NpmLink name={node.data.name} version={node.data.version} />
                 </span>
             </React.Fragment>
         );
     };
-    const nodeKey = (node: IDependencyTreeData) => `${node.n}@${node.v}`;
+    const nodeKey = (node: IDependencyTreeNodeData) => `${node.name}@${node.version}`;
     const treeIdentationStyle = css({
         [mq[0]]: {
             minWidth: `1rem`,
@@ -195,21 +249,21 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         }
     });
     //├
-    const prefixEntryFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
+    const prefixEntryFormatter: PrefixFormatter<IDependencyTreeNodeData> = (node, i) => {
         return <span key={i} css={treeIdentationStyle}></span>;
     };
     //└
-    const prefixLeafFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
+    const prefixLeafFormatter: PrefixFormatter<IDependencyTreeNodeData> = (node, i) => {
         return <span key={i} css={treeIdentationStyle}></span>;
     };
-    const prefixEmptySpacerFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
+    const prefixEmptySpacerFormatter: PrefixFormatter<IDependencyTreeNodeData> = (node, i) => {
         return <span key={i} css={treeIdentationStyle}></span>;
     };
     //│
-    const prefixNestedSpacerFormatter: PrefixFormatter<IDependencyTreeData> = (node, i) => {
+    const prefixNestedSpacerFormatter: PrefixFormatter<IDependencyTreeNodeData> = (node, i) => {
         return <span key={i} css={treeIdentationStyle}></span>;
     };
-    const treeFormatter: ITreeFormatter<IDependencyTreeData> = {
+    const treeFormatter: ITreeFormatter<IDependencyTreeNodeData> = {
         nodeFormatter,
         nodeKey,
         prefixEntryFormatter,
@@ -217,33 +271,27 @@ const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeData> }> = (
         prefixEmptySpacerFormatter,
         prefixNestedSpacerFormatter
     };
-    const equal = (node: ITreeNodeData<IDependencyTreeData>): string => {
-        return `${node.data.n}@${node.data.v}`;
+    const key = (node: ITreeNodeData<IDependencyTreeNodeData>): string => {
+        return `${node.data.name}@${node.data.version}`;
     };
 
-    return <Tree treeFormatter={treeFormatter} root={root} equal={equal} />;
+    return (
+        <React.Fragment>
+            <Tree treeFormatter={treeFormatter} treeData={toTreeList([], root, [], key)} />
+        </React.Fragment>
+    );
 };
 
-export interface IDependencyTreeStructure {
-    id: number;
-    dependencies: number[];
-}
-
-export interface IDependencyTreeInfo {
-    lookup: IDependencyTreeData[];
-    root: IDependencyTreeStructure;
-}
-
-function convertToTree(root: IDependencyTreeData): ITreeNodeData<IDependencyTreeData> {
-    const node: ITreeNodeData<IDependencyTreeData> = {
+function convertToTree(root: IDependencyTreeNodeData): ITreeNodeData<IDependencyTreeNodeData> {
+    const node: ITreeNodeData<IDependencyTreeNodeData> = {
         data: root,
         active: false,
-        canExpand: root.d.length > 0,
+        canExpand: root.dependencies.length > 0,
         children: [],
         expanded: false
     };
 
-    for (const child of root.d) {
+    for (const child of root.dependencies) {
         node.children.push(convertToTree(child));
     }
 
