@@ -1,1 +1,1 @@
-{"name":"dashdash","version":"1.14.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"A light, featureful and explicit option parsing library."}
+{"name":"dashdash","version":"1.14.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"A light, featureful and explicit option parsing library.","tree":{"data":[{"id":0,"name":"dashdash","version":"1.14.1","count":1},{"id":1,"name":"assert-plus","version":"1.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

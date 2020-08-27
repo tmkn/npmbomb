@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent, waitForElement } from "@testing-library/react";
 
-import { ResultsTable, Num } from "./Results";
+import { ResultsTable, Num } from "./ResultsTable";
 
 describe("<ResultsTable />", () => {
     test("matches snapshot", () => {

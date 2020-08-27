@@ -1,1 +1,1 @@
-{"name":"url-parse-lax","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"url.parse() with support for protocol-less URLs & IPs"}
+{"name":"url-parse-lax","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"url.parse() with support for protocol-less URLs & IPs","tree":{"data":[{"id":0,"name":"url-parse-lax","version":"1.0.0","count":1},{"id":1,"name":"prepend-http","version":"1.0.4","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

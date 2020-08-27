@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent, waitFor } from "@testing-library/react";
 
 import { GuessBox, IGuessContext, GuessContext } from "./GuessBox";
 
@@ -13,7 +13,7 @@ describe("<GuessBox />", () => {
     test("do valid input", async () => {
         const guess = "1337";
         const { container } = render(<GuessBox />);
-        const input = await waitForElement(() =>
+        const input = await waitFor(() =>
             container.querySelector<HTMLInputElement>("input[type='text']")
         );
 
@@ -24,7 +24,7 @@ describe("<GuessBox />", () => {
 
     test("do invalid input", async () => {
         const { container } = render(<GuessBox />);
-        const input = await waitForElement(() =>
+        const input = await waitFor(() =>
             container.querySelector<HTMLInputElement>("input[type='text']")
         );
 
@@ -40,15 +40,15 @@ describe("<GuessBox />", () => {
             package: null!,
             setUserGuess: callback
         };
-        const { container, getByText } = render(
+        const { container, findByText } = render(
             <GuessContext.Provider value={mockContext}>
                 <GuessBox />
             </GuessContext.Provider>
         );
-        const input = await waitForElement(() =>
+        const input = await waitFor(() =>
             container.querySelector<HTMLInputElement>("input[type='text']")
         );
-        const btn = await waitForElement(() => getByText("Guess"));
+        const btn = await findByText("Guess");
 
         fireEvent.change(input!, { target: { value: "1337" } });
         fireEvent.click(btn);

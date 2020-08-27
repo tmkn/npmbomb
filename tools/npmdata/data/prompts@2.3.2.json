@@ -1,1 +1,1 @@
-{"name":"prompts","version":"2.3.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Lightweight, beautiful and user-friendly prompts"}
+{"name":"prompts","version":"2.3.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Lightweight, beautiful and user-friendly prompts","tree":{"data":[{"id":0,"name":"prompts","version":"2.3.2","count":2},{"id":1,"name":"kleur","version":"3.0.3","count":0},{"id":2,"name":"sisteransi","version":"1.0.5","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

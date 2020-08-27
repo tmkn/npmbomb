@@ -1,1 +1,1 @@
-{"name":"ecc-jsbn","version":"0.1.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"ECC JS code based on JSBN"}
+{"name":"ecc-jsbn","version":"0.1.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"ECC JS code based on JSBN","tree":{"data":[{"id":0,"name":"ecc-jsbn","version":"0.1.2","count":2},{"id":1,"name":"jsbn","version":"0.1.1","count":0},{"id":2,"name":"safer-buffer","version":"2.1.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

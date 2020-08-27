@@ -1,1 +1,1 @@
-{"name":"temp","version":"0.8.3","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Temporary files and directories"}
+{"name":"temp","version":"0.8.3","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Temporary files and directories","tree":{"data":[{"id":0,"name":"temp","version":"0.8.3","count":2},{"id":1,"name":"os-tmpdir","version":"1.0.2","count":0},{"id":2,"name":"rimraf","version":"2.2.8","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

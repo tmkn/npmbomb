@@ -1,1 +1,1 @@
-{"name":"cipher-base","version":"1.0.4","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"abstract base class for crypto-streams"}
+{"name":"cipher-base","version":"1.0.4","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"abstract base class for crypto-streams","tree":{"data":[{"id":0,"name":"cipher-base","version":"1.0.4","count":2},{"id":1,"name":"inherits","version":"2.0.4","count":0},{"id":2,"name":"safe-buffer","version":"5.2.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

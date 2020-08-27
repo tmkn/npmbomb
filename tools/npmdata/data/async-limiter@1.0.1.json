@@ -1,1 +1,1 @@
-{"name":"async-limiter","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"asynchronous function queue with adjustable concurrency"}
+{"name":"async-limiter","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"asynchronous function queue with adjustable concurrency","tree":{"data":[{"id":0,"name":"async-limiter","version":"1.0.1","count":0}],"tree":{"id":0}}}

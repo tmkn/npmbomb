@@ -1,1 +1,1 @@
-{"name":"vinyl","version":"0.5.3","directDependencies":3,"dependencies":3,"distinctDependencies":3,"description":"A virtual file format"}
+{"name":"vinyl","version":"0.5.3","directDependencies":3,"dependencies":3,"distinctDependencies":3,"description":"A virtual file format","tree":{"data":[{"id":0,"name":"vinyl","version":"0.5.3","count":3},{"id":1,"name":"clone","version":"1.0.4","count":0},{"id":2,"name":"clone-stats","version":"0.0.1","count":0},{"id":3,"name":"replace-ext","version":"0.0.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2},{"id":3}]}}}

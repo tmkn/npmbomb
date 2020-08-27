@@ -1,1 +1,1 @@
-{"name":"currently-unhandled","version":"0.4.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Track the list of currently unhandled promise rejections."}
+{"name":"currently-unhandled","version":"0.4.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Track the list of currently unhandled promise rejections.","tree":{"data":[{"id":0,"name":"currently-unhandled","version":"0.4.1","count":1},{"id":1,"name":"array-find-index","version":"1.0.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

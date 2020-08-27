@@ -1,1 +1,1 @@
-{"name":"is-number","version":"7.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns true if a number or string value is a finite number. Useful for regex matches, parsing, user input, etc."}
+{"name":"is-number","version":"7.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Returns true if a number or string value is a finite number. Useful for regex matches, parsing, user input, etc.","tree":{"data":[{"id":0,"name":"is-number","version":"7.0.0","count":0}],"tree":{"id":0}}}

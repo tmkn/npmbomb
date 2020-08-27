@@ -1,1 +1,1 @@
-{"name":"isobject","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Returns true if the value is an object and not an array or null."}
+{"name":"isobject","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Returns true if the value is an object and not an array or null.","tree":{"data":[{"id":0,"name":"isobject","version":"2.1.0","count":1},{"id":1,"name":"isarray","version":"1.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

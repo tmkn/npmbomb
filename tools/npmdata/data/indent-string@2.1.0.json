@@ -1,1 +1,1 @@
-{"name":"indent-string","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Indent each line in a string"}
+{"name":"indent-string","version":"2.1.0","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Indent each line in a string","tree":{"data":[{"id":0,"name":"indent-string","version":"2.1.0","count":2},{"id":1,"name":"repeating","version":"2.0.1","count":1},{"id":2,"name":"is-finite","version":"1.1.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1,"dependencies":[{"id":2}]}]}}}

@@ -15,6 +15,11 @@ import { CountUp, scaleDuration } from "./CountUp";
 import { Heading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
+import { ITreeData, IDependencyTreeConfig } from "../../../tools/npmdata/utils";
+
+export interface IDependencyTreeNodeData extends ITreeData {
+    dependencies: IDependencyTreeNodeData[];
+}
 
 const blink = keyframes`
     from {
@@ -64,6 +69,8 @@ export interface IPackageInfo {
     dependencies: number;
     distinctDependencies: number;
     directDependencies: number;
+    /** @deprecated */
+    tree: IDependencyTreeConfig;
 }
 
 async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
@@ -102,35 +109,50 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
         description: ``,
         distinctDependencies: 0,
         dependencies: 0,
-        directDependencies: 0
+        directDependencies: 0,
+        tree: {
+            data: [],
+            tree: {
+                id: 0
+            }
+        }
     });
 
-    async function loadData() {
-        try {
-            const [name, version] = getNameVersion(pkgName);
-
-            setLoading(true);
-            setError(false);
-
-            if (version === "") {
-                const availableVersion = await getAvailableVersion(name);
-
-                setLoading(false);
-                history.push(`/package/${availableVersion}`);
-            } else {
-                const pkgInfo = await getPackageInfo(pkgName, scope);
-
-                setLoading(false);
-                setData(pkgInfo);
-            }
-        } catch {
-            setLoading(false);
-            setError(true);
-        }
-    }
-
     useEffect(() => {
-        loadData();
+        //keep track if there was a rerender while we fetched the data
+        let unmounted = false;
+
+        (async () => {
+            try {
+                const [name, version] = getNameVersion(pkgName);
+
+                setLoading(true);
+                setError(false);
+
+                if (version === "") {
+                    const availableVersion = await getAvailableVersion(name);
+
+                    if (!unmounted) {
+                        setLoading(false);
+                    }
+                    history.push(`/package/${availableVersion}`);
+                } else {
+                    const pkgInfo = await getPackageInfo(pkgName, scope);
+
+                    if (!unmounted) {
+                        setLoading(false);
+                        setData(pkgInfo);
+                    }
+                }
+            } catch {
+                setLoading(false);
+                setError(true);
+            }
+        })();
+
+        return () => {
+            unmounted = true;
+        };
     }, [pkgName]);
 
     return {
@@ -154,7 +176,7 @@ export const Package: React.FC = () => {
 
     useEffect(() => {
         setPackageTitle(`${pkgInfo.name}@${pkgInfo.version}`);
-    });
+    }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
     if (loading) return <LoadingIndicator />;
 

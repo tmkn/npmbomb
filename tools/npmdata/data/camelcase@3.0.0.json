@@ -1,1 +1,1 @@
-{"name":"camelcase","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a dash/dot/underscore/space separated string to camelCase: foo-bar → fooBar"}
+{"name":"camelcase","version":"3.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Convert a dash/dot/underscore/space separated string to camelCase: foo-bar → fooBar","tree":{"data":[{"id":0,"name":"camelcase","version":"3.0.0","count":0}],"tree":{"id":0}}}

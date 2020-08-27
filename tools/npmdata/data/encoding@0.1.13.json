@@ -1,1 +1,1 @@
-{"name":"encoding","version":"0.1.13","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Convert encodings, uses iconv-lite"}
+{"name":"encoding","version":"0.1.13","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"Convert encodings, uses iconv-lite","tree":{"data":[{"id":0,"name":"encoding","version":"0.1.13","count":2},{"id":1,"name":"iconv-lite","version":"0.6.2","count":1},{"id":2,"name":"safer-buffer","version":"2.1.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1,"dependencies":[{"id":2}]}]}}}

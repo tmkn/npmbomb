@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import { render, fireEvent, waitForElement, wait } from "@testing-library/react";
+import { render, fireEvent, waitFor } from "@testing-library/react";
 
 import Index from "./Index";
 
@@ -20,6 +20,6 @@ describe("<Index />", () => {
 
         expect(asFragment()).toMatchSnapshot();
 
-        await wait();
+        await waitFor(() => expect(asFragment()).toMatchSnapshot());
     });
 });

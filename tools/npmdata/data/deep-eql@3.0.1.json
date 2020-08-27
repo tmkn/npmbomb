@@ -1,1 +1,1 @@
-{"name":"deep-eql","version":"3.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Improved deep equality testing for Node.js and the browser."}
+{"name":"deep-eql","version":"3.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Improved deep equality testing for Node.js and the browser.","tree":{"data":[{"id":0,"name":"deep-eql","version":"3.0.1","count":1},{"id":1,"name":"type-detect","version":"4.0.8","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

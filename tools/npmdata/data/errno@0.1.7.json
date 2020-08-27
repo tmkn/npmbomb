@@ -1,1 +1,1 @@
-{"name":"errno","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"libuv errno details exposed"}
+{"name":"errno","version":"0.1.7","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"libuv errno details exposed","tree":{"data":[{"id":0,"name":"errno","version":"0.1.7","count":1},{"id":1,"name":"prr","version":"1.0.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

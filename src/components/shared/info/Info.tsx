@@ -17,5 +17,5 @@ const infoStyle = css({
 });
 
 export const Info: React.FC = ({ children }) => {
-    return <p css={infoStyle}>{children}</p>;
+    return <div css={infoStyle}>{children}</div>;
 };

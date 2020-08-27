@@ -1,1 +1,1 @@
-{"name":"bcrypt-pbkdf","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Port of the OpenBSD bcrypt_pbkdf function to pure JS"}
+{"name":"bcrypt-pbkdf","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Port of the OpenBSD bcrypt_pbkdf function to pure JS","tree":{"data":[{"id":0,"name":"bcrypt-pbkdf","version":"1.0.2","count":1},{"id":1,"name":"tweetnacl","version":"0.14.5","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

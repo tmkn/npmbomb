@@ -1,46 +1,65 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
-import { mq, textColor } from "../../css";
-import { ResultsTable, Num } from "../shared/results/Results";
+import {
+    mq,
+    textColor,
+    secondaryColorLight,
+    primaryColorDark,
+    secondaryColor,
+    monospaceFont,
+    serifFont
+} from "../../css";
+import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
 import { Info } from "../shared/info/Info";
 import { GuessContext } from "./GuessBox";
 import { TextLink } from "../shared/link/TextLink";
+import { TabView, ITab } from "../shared/tabview/TabView";
+import { DependencyTreeTab } from "./DependencyTree";
 
 function plural(count: number): string {
     return count === 1 ? "dependency" : "dependencies";
 }
 
-export const Summary: React.FC = () => {
+export const SummaryTabs: React.FC = () => {
+    const tabs: ITab[] = [
+        { header: `Summary`, content: <DependencyOverviewTab /> },
+        {
+            header: `Dependency Tree`,
+            content: <DependencyTreeTab />
+        }
+    ];
+
+    return <TabView tabs={tabs} />;
+};
+
+const DependencyOverviewTab: React.FC = () => {
     const { package: pkg } = useContext(GuessContext);
 
     return (
-        <React.Fragment>
-            <h2>Summary</h2>
-            <Info>
-                <span>
-                    <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
-                        {pkg.name}@{pkg.version}
-                    </TextLink>{" "}
-                    defines{" "}
-                    <b>
-                        {pkg.directDependencies} direct {plural(pkg.directDependencies)}
-                    </b>{" "}
-                    which explode into{" "}
-                    <b>
-                        {pkg.dependencies} {plural(pkg.dependencies)} overall
-                    </b>
-                    , resulting in{" "}
-                    <b>
-                        {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
-                    </b>
-                    .
-                </span>
-            </Info>
-        </React.Fragment>
+        <Info>
+            <span>
+                <TextLink href={`https://www.npmjs.com/package/${pkg.name}/v/${pkg.version}`}>
+                    {pkg.name}@{pkg.version}
+                </TextLink>{" "}
+                defines{" "}
+                <b>
+                    {pkg.directDependencies} direct {plural(pkg.directDependencies)}
+                </b>{" "}
+                which explode into{" "}
+                <b>
+                    {pkg.dependencies} {plural(pkg.dependencies)} overall
+                </b>
+                , resulting in{" "}
+                <b>
+                    {pkg.distinctDependencies} distinct {plural(pkg.distinctDependencies)}
+                </b>
+                .
+            </span>
+        </Info>
     );
 };
 
@@ -87,7 +106,7 @@ export const ResultBox: React.FC<IResultBoxProps> = ({ guess, actual, distinct }
 
     return (
         <div css={containerStyle}>
-            {actual > 0 && <Summary />}
+            {actual > 0 && <SummaryTabs />}
             {guess !== actual && (
                 <React.Fragment>
                     <h2>Results</h2>

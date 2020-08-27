@@ -1,1 +1,1 @@
-{"name":"tmp","version":"0.0.33","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Temporary file and directory creator"}
+{"name":"tmp","version":"0.0.33","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Temporary file and directory creator","tree":{"data":[{"id":0,"name":"tmp","version":"0.0.33","count":1},{"id":1,"name":"os-tmpdir","version":"1.0.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

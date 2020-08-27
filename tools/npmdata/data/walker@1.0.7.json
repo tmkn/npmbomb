@@ -1,1 +1,1 @@
-{"name":"walker","version":"1.0.7","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"A simple directory tree walker."}
+{"name":"walker","version":"1.0.7","directDependencies":1,"dependencies":2,"distinctDependencies":2,"description":"A simple directory tree walker.","tree":{"data":[{"id":0,"name":"walker","version":"1.0.7","count":2},{"id":1,"name":"makeerror","version":"1.0.11","count":1},{"id":2,"name":"tmpl","version":"1.0.4","count":0}],"tree":{"id":0,"dependencies":[{"id":1,"dependencies":[{"id":2}]}]}}}

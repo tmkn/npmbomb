@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 
 import Results from "./Results";
 import { AppContext, IAppContext } from "../../App";
@@ -42,7 +42,7 @@ describe("<Results />", () => {
             },
             setAppState: () => {}
         };
-        const { getByText } = render(
+        const { findByText } = render(
             <BrowserRouter>
                 <AppContext.Provider value={mockedAppContext}>
                     <Results />
@@ -51,9 +51,9 @@ describe("<Results />", () => {
         );
 
         for await (const { pkg, dependencies, guess } of guesses) {
-            await waitForElement(() => getByText(new RegExp(pkg)));
-            await waitForElement(() => getByText(new RegExp(dependencies.toString())));
-            await waitForElement(() => getByText(new RegExp(guess.toString())));
+            await findByText(new RegExp(pkg));
+            await findByText(new RegExp(dependencies.toString()));
+            await findByText(new RegExp(guess.toString()));
         }
     });
 });

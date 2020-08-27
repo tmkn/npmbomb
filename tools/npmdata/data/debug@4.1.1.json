@@ -1,1 +1,1 @@
-{"name":"debug","version":"4.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility"}
+{"name":"debug","version":"4.1.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"small debugging utility","tree":{"data":[{"id":0,"name":"debug","version":"4.1.1","count":1},{"id":1,"name":"ms","version":"2.1.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

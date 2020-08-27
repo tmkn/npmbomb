@@ -1,1 +1,1 @@
-{"name":"to-arraybuffer","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get an ArrayBuffer from a Buffer as fast as possible"}
+{"name":"to-arraybuffer","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get an ArrayBuffer from a Buffer as fast as possible","tree":{"data":[{"id":0,"name":"to-arraybuffer","version":"1.0.1","count":0}],"tree":{"id":0}}}

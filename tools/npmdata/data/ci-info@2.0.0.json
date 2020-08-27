@@ -1,1 +1,1 @@
-{"name":"ci-info","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get details about the current Continuous Integration environment"}
+{"name":"ci-info","version":"2.0.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Get details about the current Continuous Integration environment","tree":{"data":[{"id":0,"name":"ci-info","version":"2.0.0","count":0}],"tree":{"id":0}}}

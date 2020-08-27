@@ -1,1 +1,1 @@
-{"name":"rxjs","version":"6.6.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Reactive Extensions for modern JavaScript"}
+{"name":"rxjs","version":"6.6.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Reactive Extensions for modern JavaScript","tree":{"data":[{"id":0,"name":"rxjs","version":"6.6.0","count":1},{"id":1,"name":"tslib","version":"1.13.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

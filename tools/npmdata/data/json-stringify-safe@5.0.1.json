@@ -1,1 +1,1 @@
-{"name":"json-stringify-safe","version":"5.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like JSON.stringify, but doesn't blow up on circular refs."}
+{"name":"json-stringify-safe","version":"5.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like JSON.stringify, but doesn't blow up on circular refs.","tree":{"data":[{"id":0,"name":"json-stringify-safe","version":"5.0.1","count":0}],"tree":{"id":0}}}

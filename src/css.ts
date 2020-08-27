@@ -7,6 +7,7 @@ export const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`) as [strin
 export const serifFont = "Roboto Slab";
 export const sansSerifFont = "Open Sans";
 export const headerFont = "Muli";
+export const monospaceFont = `'Roboto Mono', monospace;`;
 
 export const primaryColor = "#673AB7";
 export const primaryColorLight = "#9575cd";

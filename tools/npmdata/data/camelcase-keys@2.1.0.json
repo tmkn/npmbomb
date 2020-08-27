@@ -1,1 +1,1 @@
-{"name":"camelcase-keys","version":"2.1.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Convert object keys to camelCase"}
+{"name":"camelcase-keys","version":"2.1.0","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Convert object keys to camelCase","tree":{"data":[{"id":0,"name":"camelcase-keys","version":"2.1.0","count":2},{"id":1,"name":"camelcase","version":"2.1.1","count":0},{"id":2,"name":"map-obj","version":"1.0.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

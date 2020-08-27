@@ -1,1 +1,1 @@
-{"name":"yeast","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tiny but linear growing unique id generator"}
+{"name":"yeast","version":"0.1.2","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Tiny but linear growing unique id generator","tree":{"data":[{"id":0,"name":"yeast","version":"0.1.2","count":0}],"tree":{"id":0}}}

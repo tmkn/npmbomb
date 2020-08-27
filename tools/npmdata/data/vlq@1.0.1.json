@@ -1,1 +1,1 @@
-{"name":"vlq","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generate, and decode, base64 VLQ mappings for source maps and other uses"}
+{"name":"vlq","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Generate, and decode, base64 VLQ mappings for source maps and other uses","tree":{"data":[{"id":0,"name":"vlq","version":"1.0.1","count":0}],"tree":{"id":0}}}

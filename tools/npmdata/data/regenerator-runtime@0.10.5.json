@@ -1,1 +1,1 @@
-{"name":"regenerator-runtime","version":"0.10.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Runtime for Regenerator-compiled generator and async functions."}
+{"name":"regenerator-runtime","version":"0.10.5","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Runtime for Regenerator-compiled generator and async functions.","tree":{"data":[{"id":0,"name":"regenerator-runtime","version":"0.10.5","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"ob1","version":"0.58.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small library for working with 0- and 1-based offsets in a type-checked way."}
+{"name":"ob1","version":"0.58.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A small library for working with 0- and 1-based offsets in a type-checked way.","tree":{"data":[{"id":0,"name":"ob1","version":"0.58.0","count":0}],"tree":{"id":0}}}

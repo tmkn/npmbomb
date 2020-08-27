@@ -1,1 +1,1 @@
-{"name":"buffer-equal-constant-time","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Constant-time comparison of Buffers"}
+{"name":"buffer-equal-constant-time","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Constant-time comparison of Buffers","tree":{"data":[{"id":0,"name":"buffer-equal-constant-time","version":"1.0.1","count":0}],"tree":{"id":0}}}

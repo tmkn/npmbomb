@@ -1,1 +1,1 @@
-{"name":"errlop","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An extended Error class that envelops a parent error, such that the stack trace contains the causation"}
+{"name":"errlop","version":"2.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"An extended Error class that envelops a parent error, such that the stack trace contains the causation","tree":{"data":[{"id":0,"name":"errlop","version":"2.2.0","count":0}],"tree":{"id":0}}}

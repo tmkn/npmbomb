@@ -1,1 +1,1 @@
-{"name":"error","version":"7.2.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Custom errors"}
+{"name":"error","version":"7.2.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Custom errors","tree":{"data":[{"id":0,"name":"error","version":"7.2.1","count":1},{"id":1,"name":"string-template","version":"0.2.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

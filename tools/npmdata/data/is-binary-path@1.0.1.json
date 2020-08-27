@@ -1,1 +1,1 @@
-{"name":"is-binary-path","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Check if a filepath is a binary file"}
+{"name":"is-binary-path","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Check if a filepath is a binary file","tree":{"data":[{"id":0,"name":"is-binary-path","version":"1.0.1","count":1},{"id":1,"name":"binary-extensions","version":"1.13.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

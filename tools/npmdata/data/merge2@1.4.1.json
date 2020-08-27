@@ -1,1 +1,1 @@
-{"name":"merge2","version":"1.4.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Merge multiple streams into one stream in sequence or parallel."}
+{"name":"merge2","version":"1.4.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Merge multiple streams into one stream in sequence or parallel.","tree":{"data":[{"id":0,"name":"merge2","version":"1.4.1","count":0}],"tree":{"id":0}}}

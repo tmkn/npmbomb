@@ -1,1 +1,1 @@
-{"name":"sliced","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A faster Node.js alternative to Array.prototype.slice.call(arguments)"}
+{"name":"sliced","version":"1.0.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A faster Node.js alternative to Array.prototype.slice.call(arguments)","tree":{"data":[{"id":0,"name":"sliced","version":"1.0.1","count":0}],"tree":{"id":0}}}

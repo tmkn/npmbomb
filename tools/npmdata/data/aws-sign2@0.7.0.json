@@ -1,1 +1,1 @@
-{"name":"aws-sign2","version":"0.7.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module."}
+{"name":"aws-sign2","version":"0.7.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"AWS signing. Originally pulled from LearnBoost/knox, maintained as vendor in request, now a standalone module.","tree":{"data":[{"id":0,"name":"aws-sign2","version":"0.7.0","count":0}],"tree":{"id":0}}}

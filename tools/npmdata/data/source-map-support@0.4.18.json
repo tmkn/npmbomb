@@ -1,1 +1,1 @@
-{"name":"source-map-support","version":"0.4.18","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Fixes stack traces for files with source maps"}
+{"name":"source-map-support","version":"0.4.18","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Fixes stack traces for files with source maps","tree":{"data":[{"id":0,"name":"source-map-support","version":"0.4.18","count":1},{"id":1,"name":"source-map","version":"0.5.7","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

@@ -1,1 +1,1 @@
-{"name":"object-assign","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 `Object.assign()` ponyfill"}
+{"name":"object-assign","version":"4.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"ES2015 `Object.assign()` ponyfill","tree":{"data":[{"id":0,"name":"object-assign","version":"4.1.1","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"proxy-addr","version":"2.0.6","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Determine address of proxied request"}
+{"name":"proxy-addr","version":"2.0.6","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"Determine address of proxied request","tree":{"data":[{"id":0,"name":"proxy-addr","version":"2.0.6","count":2},{"id":1,"name":"forwarded","version":"0.1.2","count":0},{"id":2,"name":"ipaddr.js","version":"1.9.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

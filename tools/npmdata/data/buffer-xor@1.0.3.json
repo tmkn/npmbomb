@@ -1,1 +1,1 @@
-{"name":"buffer-xor","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A simple module for bitwise-xor on buffers"}
+{"name":"buffer-xor","version":"1.0.3","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A simple module for bitwise-xor on buffers","tree":{"data":[{"id":0,"name":"buffer-xor","version":"1.0.3","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"whatwg-fetch","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A window.fetch polyfill."}
+{"name":"whatwg-fetch","version":"3.2.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"A window.fetch polyfill.","tree":{"data":[{"id":0,"name":"whatwg-fetch","version":"3.2.0","count":0}],"tree":{"id":0}}}

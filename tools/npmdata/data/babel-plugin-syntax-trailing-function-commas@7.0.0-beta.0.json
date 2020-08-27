@@ -1,1 +1,1 @@
-{"name":"babel-plugin-syntax-trailing-function-commas","version":"7.0.0-beta.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Compile trailing function commas to ES5"}
+{"name":"babel-plugin-syntax-trailing-function-commas","version":"7.0.0-beta.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Compile trailing function commas to ES5","tree":{"data":[{"id":0,"name":"babel-plugin-syntax-trailing-function-commas","version":"7.0.0-beta.0","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"supports-color","version":"5.5.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Detect whether a terminal supports color"}
+{"name":"supports-color","version":"5.5.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Detect whether a terminal supports color","tree":{"data":[{"id":0,"name":"supports-color","version":"5.5.0","count":1},{"id":1,"name":"has-flag","version":"3.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

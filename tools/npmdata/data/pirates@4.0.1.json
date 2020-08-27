@@ -1,1 +1,1 @@
-{"name":"pirates","version":"4.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Properly hijack require"}
+{"name":"pirates","version":"4.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Properly hijack require","tree":{"data":[{"id":0,"name":"pirates","version":"4.0.1","count":1},{"id":1,"name":"node-modules-regexp","version":"1.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

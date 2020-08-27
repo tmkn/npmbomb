@@ -1,1 +1,1 @@
-{"name":"regjsparser","version":"0.6.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Parsing the JavaScript's RegExp in JavaScript."}
+{"name":"regjsparser","version":"0.6.4","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Parsing the JavaScript's RegExp in JavaScript.","tree":{"data":[{"id":0,"name":"regjsparser","version":"0.6.4","count":1},{"id":1,"name":"jsesc","version":"0.5.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

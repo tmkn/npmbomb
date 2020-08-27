@@ -1,1 +1,1 @@
-{"name":"resolve","version":"1.17.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"resolve like require.resolve() on behalf of files asynchronously and synchronously"}
+{"name":"resolve","version":"1.17.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"resolve like require.resolve() on behalf of files asynchronously and synchronously","tree":{"data":[{"id":0,"name":"resolve","version":"1.17.0","count":1},{"id":1,"name":"path-parse","version":"1.0.6","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

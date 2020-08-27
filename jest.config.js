@@ -28,5 +28,9 @@ module.exports = {
 
     // Module file extensions for importing
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-    collectCoverageFrom: ['src/**/*.{ts,tsx}']
+    collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+
+    moduleNameMapper: {
+        "\\.(ttf|woff|woff2|css)$": "<rootDir>/jest/fileMock.js"
+      },
 };

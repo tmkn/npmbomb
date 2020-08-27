@@ -1,1 +1,1 @@
-{"name":"memory-pager","version":"1.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Access memory using small fixed sized buffers"}
+{"name":"memory-pager","version":"1.5.0","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Access memory using small fixed sized buffers","tree":{"data":[{"id":0,"name":"memory-pager","version":"1.5.0","count":0}],"tree":{"id":0}}}

@@ -1,1 +1,1 @@
-{"name":"error-ex","version":"1.3.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Easy error subclassing and stack customization"}
+{"name":"error-ex","version":"1.3.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Easy error subclassing and stack customization","tree":{"data":[{"id":0,"name":"error-ex","version":"1.3.2","count":1},{"id":1,"name":"is-arrayish","version":"0.2.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

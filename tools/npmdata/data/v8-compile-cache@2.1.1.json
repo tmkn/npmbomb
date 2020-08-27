@@ -1,1 +1,1 @@
-{"name":"v8-compile-cache","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Require hook for automatic V8 compile cache persistence"}
+{"name":"v8-compile-cache","version":"2.1.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Require hook for automatic V8 compile cache persistence","tree":{"data":[{"id":0,"name":"v8-compile-cache","version":"2.1.1","count":0}],"tree":{"id":0}}}

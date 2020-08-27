@@ -1,1 +1,1 @@
-{"name":"defaults","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"merge single level defaults over a config object"}
+{"name":"defaults","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"merge single level defaults over a config object","tree":{"data":[{"id":0,"name":"defaults","version":"1.0.3","count":1},{"id":1,"name":"clone","version":"1.0.4","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

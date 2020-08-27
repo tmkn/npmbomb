@@ -2,10 +2,10 @@
 
 exports[`<Info /> matches snapshot 1`] = `
 <DocumentFragment>
-  <p
+  <div
     class="css-1cwnpiq"
   >
     Hello
-  </p>
+  </div>
 </DocumentFragment>
 `;

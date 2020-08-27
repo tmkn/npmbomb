@@ -1,1 +1,1 @@
-{"name":"yargs-parser","version":"13.1.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"the mighty option parser used by yargs"}
+{"name":"yargs-parser","version":"13.1.2","directDependencies":2,"dependencies":2,"distinctDependencies":2,"description":"the mighty option parser used by yargs","tree":{"data":[{"id":0,"name":"yargs-parser","version":"13.1.2","count":2},{"id":1,"name":"camelcase","version":"5.3.1","count":0},{"id":2,"name":"decamelize","version":"1.2.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1},{"id":2}]}}}

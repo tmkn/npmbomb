@@ -1,1 +1,1 @@
-{"name":"nth-check","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"performant nth-check parser & compiler"}
+{"name":"nth-check","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"performant nth-check parser & compiler","tree":{"data":[{"id":0,"name":"nth-check","version":"1.0.2","count":1},{"id":1,"name":"boolbase","version":"1.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

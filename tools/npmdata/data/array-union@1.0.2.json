@@ -1,1 +1,1 @@
-{"name":"array-union","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Create an array of unique values, in order, from the input arrays"}
+{"name":"array-union","version":"1.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Create an array of unique values, in order, from the input arrays","tree":{"data":[{"id":0,"name":"array-union","version":"1.0.2","count":1},{"id":1,"name":"array-uniq","version":"1.0.3","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

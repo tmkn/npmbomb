@@ -1,1 +1,1 @@
-{"name":"is-unc-path","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Returns true if a filepath is a windows UNC file path."}
+{"name":"is-unc-path","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Returns true if a filepath is a windows UNC file path.","tree":{"data":[{"id":0,"name":"is-unc-path","version":"1.0.0","count":1},{"id":1,"name":"unc-path-regex","version":"0.1.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

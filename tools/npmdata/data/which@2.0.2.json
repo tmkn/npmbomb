@@ -1,1 +1,1 @@
-{"name":"which","version":"2.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Like which(1) unix command. Find the first instance of an executable in the PATH."}
+{"name":"which","version":"2.0.2","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Like which(1) unix command. Find the first instance of an executable in the PATH.","tree":{"data":[{"id":0,"name":"which","version":"2.0.2","count":1},{"id":1,"name":"isexe","version":"2.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

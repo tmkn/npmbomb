@@ -1,1 +1,1 @@
-{"name":"object-visit","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Call a specified method on each value in the given object."}
+{"name":"object-visit","version":"1.0.1","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Call a specified method on each value in the given object.","tree":{"data":[{"id":0,"name":"object-visit","version":"1.0.1","count":1},{"id":1,"name":"isobject","version":"3.0.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

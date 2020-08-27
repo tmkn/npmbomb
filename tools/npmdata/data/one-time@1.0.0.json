@@ -1,1 +1,1 @@
-{"name":"one-time","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Run the supplied function exactly one time (once)"}
+{"name":"one-time","version":"1.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Run the supplied function exactly one time (once)","tree":{"data":[{"id":0,"name":"one-time","version":"1.0.0","count":1},{"id":1,"name":"fn.name","version":"1.1.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

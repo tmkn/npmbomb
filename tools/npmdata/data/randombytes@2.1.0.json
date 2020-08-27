@@ -1,1 +1,1 @@
-{"name":"randombytes","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"random bytes from browserify stand alone"}
+{"name":"randombytes","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"random bytes from browserify stand alone","tree":{"data":[{"id":0,"name":"randombytes","version":"2.1.0","count":1},{"id":1,"name":"safe-buffer","version":"5.2.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

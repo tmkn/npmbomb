@@ -1,1 +1,1 @@
-{"name":"is-symbol","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Determine if a value is an ES6 Symbol or not."}
+{"name":"is-symbol","version":"1.0.3","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Determine if a value is an ES6 Symbol or not.","tree":{"data":[{"id":0,"name":"is-symbol","version":"1.0.3","count":1},{"id":1,"name":"has-symbols","version":"1.0.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

@@ -1,1 +1,1 @@
-{"name":"readdirp","version":"3.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Recursive version of fs.readdir with streaming API."}
+{"name":"readdirp","version":"3.3.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Recursive version of fs.readdir with streaming API.","tree":{"data":[{"id":0,"name":"readdirp","version":"3.3.0","count":1},{"id":1,"name":"picomatch","version":"2.2.2","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

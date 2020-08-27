@@ -1,1 +1,1 @@
-{"name":"nopt","version":"3.0.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Option parsing for Node, supporting types, shorthands, etc. Used by npm."}
+{"name":"nopt","version":"3.0.6","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Option parsing for Node, supporting types, shorthands, etc. Used by npm.","tree":{"data":[{"id":0,"name":"nopt","version":"3.0.6","count":1},{"id":1,"name":"abbrev","version":"1.1.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

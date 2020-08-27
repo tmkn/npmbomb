@@ -1,1 +1,1 @@
-{"name":"redis-parser","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Javascript Redis protocol (RESP) parser"}
+{"name":"redis-parser","version":"3.0.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Javascript Redis protocol (RESP) parser","tree":{"data":[{"id":0,"name":"redis-parser","version":"3.0.0","count":1},{"id":1,"name":"redis-errors","version":"1.2.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

@@ -1,1 +1,1 @@
-{"name":"grouped-queue","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"In memory queue system prioritizing tasks"}
+{"name":"grouped-queue","version":"1.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"In memory queue system prioritizing tasks","tree":{"data":[{"id":0,"name":"grouped-queue","version":"1.1.0","count":1},{"id":1,"name":"lodash","version":"4.17.19","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

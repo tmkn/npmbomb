@@ -1,1 +1,1 @@
-{"name":"import-from","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Import a module like with `require()` but from a given path"}
+{"name":"import-from","version":"2.1.0","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Import a module like with `require()` but from a given path","tree":{"data":[{"id":0,"name":"import-from","version":"2.1.0","count":1},{"id":1,"name":"resolve-from","version":"3.0.0","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}

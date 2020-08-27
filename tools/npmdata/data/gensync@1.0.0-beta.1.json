@@ -1,1 +1,1 @@
-{"name":"gensync","version":"1.0.0-beta.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Allows users to use generators in order to write common functions that can be both sync or async."}
+{"name":"gensync","version":"1.0.0-beta.1","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Allows users to use generators in order to write common functions that can be both sync or async.","tree":{"data":[{"id":0,"name":"gensync","version":"1.0.0-beta.1","count":0}],"tree":{"id":0}}}

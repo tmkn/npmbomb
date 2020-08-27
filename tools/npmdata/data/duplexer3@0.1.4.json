@@ -1,1 +1,1 @@
-{"name":"duplexer3","version":"0.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like duplexer but using streams3"}
+{"name":"duplexer3","version":"0.1.4","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Like duplexer but using streams3","tree":{"data":[{"id":0,"name":"duplexer3","version":"0.1.4","count":0}],"tree":{"id":0}}}

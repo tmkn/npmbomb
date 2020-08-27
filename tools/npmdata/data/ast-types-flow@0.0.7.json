@@ -1,1 +1,1 @@
-{"name":"ast-types-flow","version":"0.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Flow types for the Javascript AST"}
+{"name":"ast-types-flow","version":"0.0.7","directDependencies":0,"dependencies":0,"distinctDependencies":0,"description":"Flow types for the Javascript AST","tree":{"data":[{"id":0,"name":"ast-types-flow","version":"0.0.7","count":0}],"tree":{"id":0}}}

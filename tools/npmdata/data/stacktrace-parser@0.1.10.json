@@ -1,1 +1,1 @@
-{"name":"stacktrace-parser","version":"0.1.10","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Parses every stack trace into a nicely formatted array of hashes."}
+{"name":"stacktrace-parser","version":"0.1.10","directDependencies":1,"dependencies":1,"distinctDependencies":1,"description":"Parses every stack trace into a nicely formatted array of hashes.","tree":{"data":[{"id":0,"name":"stacktrace-parser","version":"0.1.10","count":1},{"id":1,"name":"type-fest","version":"0.7.1","count":0}],"tree":{"id":0,"dependencies":[{"id":1}]}}}
