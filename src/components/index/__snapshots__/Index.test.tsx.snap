@@ -27,12 +27,12 @@ exports[`<Index /> matches snapshot 1`] = `
       style="margin: 2rem 0px;"
     />
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       FAQ
     </h2>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -40,7 +40,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the dependency count calculated?
       </span>
@@ -58,7 +60,7 @@ exports[`<Index /> matches snapshot 1`] = `
       , as such the same package is counted multiple times if it is a dependency of other packages.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -66,7 +68,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the distinct dependency count calculated?
       </span>
@@ -84,7 +88,7 @@ exports[`<Index /> matches snapshot 1`] = `
       </span>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -92,7 +96,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is there an overview page?
       </span>
@@ -111,7 +117,7 @@ exports[`<Index /> matches snapshot 1`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -119,7 +125,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why is it called npmbomb?
       </span>
@@ -137,7 +145,7 @@ exports[`<Index /> matches snapshot 1`] = `
       Sounds familiar? 😈
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -145,7 +153,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Does it count dev dependencies?
       </span>
@@ -169,7 +179,7 @@ exports[`<Index /> matches snapshot 1`] = `
        all the way to the very last dependency.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -177,7 +187,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why can't I find library XYZ?
       </span>
@@ -196,7 +208,7 @@ exports[`<Index /> matches snapshot 1`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -204,7 +216,9 @@ exports[`<Index /> matches snapshot 1`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is it Open Source?
       </span>
@@ -252,12 +266,12 @@ exports[`<Index /> matches snapshot 2`] = `
       style="margin: 2rem 0px;"
     />
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       FAQ
     </h2>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -265,7 +279,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the dependency count calculated?
       </span>
@@ -283,7 +299,7 @@ exports[`<Index /> matches snapshot 2`] = `
       , as such the same package is counted multiple times if it is a dependency of other packages.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -291,7 +307,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the distinct dependency count calculated?
       </span>
@@ -309,7 +327,7 @@ exports[`<Index /> matches snapshot 2`] = `
       </span>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -317,7 +335,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is there an overview page?
       </span>
@@ -336,7 +356,7 @@ exports[`<Index /> matches snapshot 2`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -344,7 +364,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why is it called npmbomb?
       </span>
@@ -362,7 +384,7 @@ exports[`<Index /> matches snapshot 2`] = `
       Sounds familiar? 😈
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -370,7 +392,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Does it count dev dependencies?
       </span>
@@ -394,7 +418,7 @@ exports[`<Index /> matches snapshot 2`] = `
        all the way to the very last dependency.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -402,7 +426,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why can't I find library XYZ?
       </span>
@@ -421,7 +447,7 @@ exports[`<Index /> matches snapshot 2`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -429,7 +455,9 @@ exports[`<Index /> matches snapshot 2`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is it Open Source?
       </span>
@@ -477,12 +505,12 @@ exports[`<Index /> matches snapshot 3`] = `
       style="margin: 2rem 0px;"
     />
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       FAQ
     </h2>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -490,7 +518,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the dependency count calculated?
       </span>
@@ -508,7 +538,7 @@ exports[`<Index /> matches snapshot 3`] = `
       , as such the same package is counted multiple times if it is a dependency of other packages.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -516,7 +546,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          How is the distinct dependency count calculated?
       </span>
@@ -534,7 +566,7 @@ exports[`<Index /> matches snapshot 3`] = `
       </span>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -542,7 +574,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is there an overview page?
       </span>
@@ -561,7 +595,7 @@ exports[`<Index /> matches snapshot 3`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -569,7 +603,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why is it called npmbomb?
       </span>
@@ -587,7 +623,7 @@ exports[`<Index /> matches snapshot 3`] = `
       Sounds familiar? 😈
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -595,7 +631,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Does it count dev dependencies?
       </span>
@@ -619,7 +657,7 @@ exports[`<Index /> matches snapshot 3`] = `
        all the way to the very last dependency.
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -627,7 +665,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Why can't I find library XYZ?
       </span>
@@ -646,7 +686,7 @@ exports[`<Index /> matches snapshot 3`] = `
       </a>
     </div>
     <h2
-      class="css-1c8urde"
+      class="css-qpfzt4-FaqHeading"
     >
       <span
         style="cursor: pointer;"
@@ -654,7 +694,9 @@ exports[`<Index /> matches snapshot 3`] = `
         <span
           class="css-swfxel-Faq"
         >
-          &gt;
+          <div
+            class="codicon codicon-chevron-right"
+          />
         </span>
          Is it Open Source?
       </span>

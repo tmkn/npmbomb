@@ -12,7 +12,7 @@ import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
-import { Heading } from "./Heading";
+import { PackageHeading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
 import { ITreeData, IDependencyTreeConfig } from "../../../tools/npmdata/utils";
@@ -244,9 +244,9 @@ export const Package: React.FC = () => {
 
     return (
         <GuessContext.Provider value={guessContext}>
-            <Heading packageName={pkgName} scope={scope} />
+            <PackageHeading packageName={pkgName} scope={scope} />
             <Info>{pkgInfo.description}</Info>
-            <h2>How many dependencies?</h2>
+            <h2>How many total dependencies?</h2>
             {typeof userGuess === "undefined" && <GuessBox />}
             {typeof userGuess !== "undefined" && (
                 <React.Fragment>

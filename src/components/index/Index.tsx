@@ -4,16 +4,7 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
-import {
-    mq,
-    serifFont,
-    sansSerifFont,
-    primaryColor,
-    secondaryColor,
-    textColor,
-    secondaryColorLight,
-    primaryColorLight
-} from "../../css";
+import { mq, serifFont, sansSerifFont, secondaryColor, textColor } from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
@@ -22,7 +13,6 @@ import { AppContext } from "../../App";
 import { TextLink } from "../shared/link/TextLink";
 import { Highlight } from "../shared/highlight/Highlight";
 import { setDefaultTitle } from "../../title";
-import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 
 const faqStyle = css({
     [mq[0]]: {
@@ -137,12 +127,14 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
 
     return (
         <React.Fragment>
-            <H2 onClick={onClick}>
+            <FaqHeading onClick={onClick}>
                 <span style={{ cursor: "pointer" }}>
-                    <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>&gt;</span>{" "}
+                    <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>
+                        <div className="codicon codicon-chevron-right"></div>
+                    </span>{" "}
                     {header}
                 </span>
-            </H2>
+            </FaqHeading>
             <div
                 ref={contentEl}
                 css={[faqStyle, expanded ? contentExpandStyle : contentCollapseStyle]}
@@ -162,11 +154,11 @@ const h2Style = css({
     }
 });
 
-interface IH2Props {
+interface IFaqHeadingProps {
     onClick?: (e: React.MouseEvent<HTMLHeadingElement>) => void;
 }
 
-const H2: React.FC<IH2Props> = ({ children, onClick }) => {
+const FaqHeading: React.FC<IFaqHeadingProps> = ({ children, onClick }) => {
     const _onClick = onClick ?? (() => {});
 
     return (
@@ -218,7 +210,7 @@ export default () => {
                 </PrimaryButton>
             </Center>
             <Divider margin={"2rem 0"} />
-            <H2>FAQ</H2>
+            <FaqHeading>FAQ</FaqHeading>
             <Faq header="How is the dependency count calculated?" collapsed>
                 As the dependency tree is traversed, each dependency from the dependencies field in
                 the package.json is resolved according to their range and added to the overall

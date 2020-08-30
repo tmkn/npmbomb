@@ -6,12 +6,12 @@ import { AppContext } from "../../App";
 import { mq, serifFont, primaryColor } from "../../css";
 import { getNameVersion } from "./Package";
 
-interface IHeadingProps {
+interface IPackageHeadingProps {
     packageName: string;
     scope: string | undefined;
 }
 
-export const Heading: React.FC<IHeadingProps> = ({ packageName, scope }) => {
+export const PackageHeading: React.FC<IPackageHeadingProps> = ({ packageName, scope }) => {
     const {
         appState: { inGameMode: gameMode, guesses, remaining }
     } = useContext(AppContext);

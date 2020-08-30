@@ -153,7 +153,11 @@ export const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeNodeD
                 {expandEl}
                 <span css={labelStyle} onClick={() => onClick(customClick)}>
                     <span>{label}</span>
-                    <Count count={node.data.count} name={node.data.name} version={node.data.version} />
+                    <Count
+                        count={node.data.count}
+                        name={node.data.name}
+                        version={node.data.version}
+                    />
                     <NpmLink name={node.data.name} version={node.data.version} />
                 </span>
             </React.Fragment>
@@ -232,8 +236,11 @@ const Count: React.FC<ICountProps> = ({ count, name, version }) => {
     });
     const title = `${name}@${version} resolves to ${count} transitive dependencies`;
 
-
-    return <span css={style} title={title}>({count})</span>;
+    return (
+        <span css={style} title={title}>
+            ({count})
+        </span>
+    );
 };
 
 interface INpmLinkProps {
