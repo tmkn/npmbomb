@@ -29,11 +29,11 @@ exports[`<ErrorComponent /> matches snapshot 1`] = `
   <div
     class="css-8a5j6a"
   >
-    <div
-      class="css-16wgzhr"
+    <button
+      class="css-exwq4w"
     >
       Home
-    </div>
+    </button>
   </div>
 </DocumentFragment>
 `;
@@ -65,11 +65,11 @@ exports[`<NotFound /> matches snapshot 1`] = `
   <div
     class="css-8a5j6a"
   >
-    <div
-      class="css-16wgzhr"
+    <button
+      class="css-exwq4w"
     >
       Home
-    </div>
+    </button>
   </div>
 </DocumentFragment>
 `;

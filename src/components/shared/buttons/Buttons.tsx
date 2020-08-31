@@ -13,6 +13,7 @@ const buttonStyle = css({
         justifyContent: "center",
         padding: "0.5rem 0",
         cursor: "pointer",
+        border: `none`,
         ":hover": {
             backgroundColor: `${primaryColor}`
         }
@@ -25,7 +26,7 @@ const buttonStyle = css({
 });
 
 interface IPrimaryButtonProps {
-    onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
 }
 
@@ -44,13 +45,13 @@ export const PrimaryButton: React.FC<IPrimaryButtonProps> = ({ children, onClick
     const styles = [buttonStyle];
     if (isDisabled) styles.push(disabledStyle);
 
-    function onClickImpl(e: React.MouseEvent<HTMLDivElement>) {
+    function onClickImpl(e: React.MouseEvent<HTMLButtonElement>) {
         if (!isDisabled && onClick) onClick(e);
     }
 
     return (
-        <div css={styles} onClick={onClickImpl}>
+        <button css={styles} onClick={onClickImpl}>
             {children}
-        </div>
+        </button>
     );
 };
