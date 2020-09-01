@@ -4,7 +4,14 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
-import { mq, serifFont, sansSerifFont, secondaryColor, textColor } from "../../css";
+import {
+    mq,
+    serifFont,
+    sansSerifFont,
+    secondaryColor,
+    textColor,
+    globalFocusStyle
+} from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
@@ -98,6 +105,7 @@ interface IFaqProps {
 }
 
 const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
+    const faqEl = useRef<HTMLDivElement>(null);
     const [expanded, setExpandend] = useState(!collapsed ?? true);
     const contentEl = useRef<HTMLDivElement>(null);
 
@@ -125,8 +133,16 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
         setExpandend(!expanded);
     }
 
+    function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
+        if (document.activeElement === faqEl.current && e.key === " ") {
+            setExpandend(!expanded);
+        }
+
+        e.preventDefault();
+    }
+
     return (
-        <React.Fragment>
+        <div ref={faqEl} tabIndex={0} onKeyPress={a11yToggle} css={[faqStyle, globalFocusStyle]}>
             <FaqHeading onClick={onClick}>
                 <span style={{ cursor: "pointer" }}>
                     <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>
@@ -141,7 +157,7 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
             >
                 {children}
             </div>
-        </React.Fragment>
+        </div>
     );
 };
 
@@ -150,7 +166,8 @@ const h2Style = css({
         fontFamily: `"${serifFont}"`,
         color: `${secondaryColor}`,
         fontWeight: 200,
-        marginBottom: "0.5rem"
+        margin: "0.6rem 0",
+        overflow: "hidden"
     }
 });
 

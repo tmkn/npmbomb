@@ -1,10 +1,9 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 
 import { mq, serifFont } from "../../../css";
-import { IDependencyTreeNodeData } from "../../package/Package";
 
 export interface ITreeNodeData<T> {
     data: T;
@@ -13,6 +12,14 @@ export interface ITreeNodeData<T> {
     expanded: boolean;
     children: ITreeNodeData<T>[];
 }
+
+export interface ITreeControlProvider {
+    render: () => void;
+}
+
+export const TreeControlProvider = React.createContext<ITreeControlProvider>({
+    render: () => console.log(`Tree Control Provider not initialized`)
+});
 
 enum PrefixType {
     Entry, //├
@@ -43,51 +50,26 @@ export interface ITreeFormatter<T> {
     nodeKey: (node: T) => string;
 }
 
-interface ITreeUtilty<T> {
-    root: ITreeNodeData<T>;
-    render: () => void;
-    forEach: (callback: (node: ITreeNodeData<T>) => void) => void;
-}
-
-/* istanbul ignore next */
-export class TreeUtility<T> implements ITreeUtilty<T> {
-    constructor(
-        public root: ITreeNodeData<T>,
-        private _setRoot: React.Dispatch<React.SetStateAction<ITreeNodeData<T>>>
-    ) {}
-
-    render(): void {
-        this._setRoot({ ...this.root });
-    }
-
-    forEach(callback: (node: ITreeNodeData<T>) => void): void {
-        this._visit(this.root, callback);
-    }
-
-    private _visit(node: ITreeNodeData<T>, callback: (node: ITreeNodeData<T>) => void): void {
-        callback(node);
-
-        for (const child of node.children) {
-            this._visit(child, callback);
-        }
-    }
-}
-
 interface ITreeProps<T> {
     treeFormatter: ITreeFormatter<T>;
-    treeData: ITreeListEntry<T>[];
+    root: ITreeNodeData<T>;
+    keyFn: (node: ITreeNodeData<T>) => string;
 }
 
-export const Tree: React.FC<ITreeProps<IDependencyTreeNodeData>> = ({
+export const Tree = <T,>({
     treeFormatter,
-    treeData
-}) => {
+    root: _root,
+    keyFn: key
+}: React.PropsWithChildren<ITreeProps<T>>): React.ReactElement | null => {
+    const [root, setRoot] = useState<ITreeNodeData<T>>(_root);
+    const [treeData, setTreeData] = useState<ITreeListEntry<T>[]>(toTreeList([], _root, [], key));
+
     const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
         const p = treeData[index];
 
         return (
             <div key={key} style={style}>
-                <TreeNode node={p} treeFormatter={treeFormatter} />
+                <TreeNode<T> node={p} treeFormatter={treeFormatter} />
             </div>
         );
     };
@@ -102,28 +84,37 @@ export const Tree: React.FC<ITreeProps<IDependencyTreeNodeData>> = ({
         }
     });
 
+    const treeControlProvider: ITreeControlProvider = {
+        render: () => {
+            setRoot({ ...root });
+            setTreeData(toTreeList([], _root, [], key));
+        }
+    };
+
     return (
-        <div css={treeStyle}>
-            <AutoSizer defaultHeight={24}>
-                {({ height, width }) => (
-                    <List
-                        className={treeList}
-                        overscanRowCount={10}
-                        width={width}
-                        height={height}
-                        rowCount={treeData.length}
-                        rowHeight={24}
-                        rowRenderer={rowRenderer}
-                    />
-                )}
-            </AutoSizer>
-        </div>
+        <TreeControlProvider.Provider value={treeControlProvider}>
+            <div css={treeStyle}>
+                <AutoSizer defaultHeight={24}>
+                    {({ height, width }) => (
+                        <List
+                            className={treeList}
+                            overscanRowCount={10}
+                            width={width}
+                            height={height}
+                            rowCount={treeData.length}
+                            rowHeight={24}
+                            rowRenderer={rowRenderer}
+                        />
+                    )}
+                </AutoSizer>
+            </div>
+        </TreeControlProvider.Provider>
     );
 };
 
-function createPrefixes(
-    { prefixes, treeData }: ITreeListEntry<IDependencyTreeNodeData>,
-    treeFormatter: ITreeFormatter<IDependencyTreeNodeData>
+function createPrefixes<T>(
+    { prefixes, treeData }: ITreeListEntry<T>,
+    treeFormatter: ITreeFormatter<T>
 ): JSX.Element[] {
     const {
         prefixEntryFormatter,
@@ -147,13 +138,18 @@ function createPrefixes(
     return allPrefixes;
 }
 
-interface ITreeNode {
-    node: ITreeListEntry<IDependencyTreeNodeData>;
-    treeFormatter: ITreeFormatter<IDependencyTreeNodeData>;
+interface ITreeNode<T> {
+    node: ITreeListEntry<T>;
+    treeFormatter: ITreeFormatter<T>;
 }
 
-const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
+const TreeNode = <T,>({
+    node,
+    treeFormatter
+}: React.PropsWithChildren<ITreeNode<T>>): React.ReactElement | null => {
     const { nodeFormatter, nodeKey } = treeFormatter;
+    const treeControlProvider = useContext(TreeControlProvider);
+    const treeNodeEl = useRef<HTMLDivElement>(null);
     const lineStyle = css({
         [mq[0]]: {
             display: `flex`,
@@ -168,9 +164,7 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
         }
     });
     const prefixes = createPrefixes(node, treeFormatter);
-    const onChildClick = (
-        callback: (node: ITreeNodeData<IDependencyTreeNodeData>) => void
-    ): void => {
+    const onChildClick = (callback: (node: ITreeNodeData<T>) => void): void => {
         node.treeData.active = true;
         callback(node.treeData);
     };
@@ -188,8 +182,32 @@ const TreeNode: React.FC<ITreeNode> = ({ node, treeFormatter }) => {
         <div css={nodeStyle}>{nodeFormatter(node.treeData, node.path, options, onChildClick)}</div>
     );
 
+    function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
+        if (document.activeElement === treeNodeEl.current && e.key === " ") {
+            node.treeData.expanded = !node.treeData.expanded;
+            treeControlProvider.render();
+        }
+
+        e.preventDefault();
+    }
+
+    const focusStyle = css({
+        [mq[0]]: {
+            "&:focus": {
+                backgroundColor: `white`,
+                outline: 0
+            }
+        }
+    });
+
     return (
-        <div css={lineStyle} onMouseOver={() => console.log(node.path)}>
+        <div
+            ref={treeNodeEl}
+            css={[lineStyle, focusStyle]}
+            tabIndex={0}
+            onKeyPress={a11yToggle}
+            onMouseOver={() => console.log(node.path)}
+        >
             {prefixes}
             {labelNode}
         </div>
@@ -202,7 +220,7 @@ interface ITreeListEntry<T> {
     path: string[];
 }
 
-export function toTreeList<T>(
+function toTreeList<T>(
     _prefixes: ReadonlyArray<PrefixType>,
     node: ITreeNodeData<T>,
     path: string[],

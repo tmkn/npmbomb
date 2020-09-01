@@ -16,7 +16,7 @@ exports[`<GuessBox /> matches snapshot 1`] = `
       style="flex: 0.05;"
     />
     <button
-      class="css-x9wjhs"
+      class="css-1w798tj"
     >
       Guess
     </button>

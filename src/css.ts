@@ -2,7 +2,11 @@ import { css } from "@emotion/core";
 
 const breakpoints = [320, 768, 1200] as const;
 
-export const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`) as [string, string, string];
+export const mq = breakpoints.map(bp => `@media (min-width: ${bp}px)`) as [
+    mobile: string,
+    tablet: string,
+    desktop: string
+];
 
 export const serifFont = "Roboto Slab";
 export const sansSerifFont = "Open Sans";
@@ -33,5 +37,15 @@ export const mobileOnly = css({
     },
     [mq[1]]: {
         display: "none"
+    }
+});
+
+export const globalFocusStyle = css({
+    [mq[0]]: {
+        "&:focus": {
+            outlineColor: `${secondaryColor}`,
+            outlineOffset: `0.5rem`,
+            outlineStyle: `dotted`
+        }
     }
 });

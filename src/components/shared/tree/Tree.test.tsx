@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 
-import { Tree, ITreeNodeData, ITreeFormatter, toTreeList } from "./Tree";
+import { Tree, ITreeNodeData, ITreeFormatter } from "./Tree";
 import { IDependencyTreeNodeData } from "../../package/Package";
 
 describe("<Tree />", () => {
@@ -43,7 +43,7 @@ describe("<Tree />", () => {
         const equal = (node: ITreeNodeData<IDependencyTreeNodeData>) => node.data.name;
 
         const { findByText } = render(
-            <Tree treeData={toTreeList([], root, [], () => ``)} treeFormatter={treeFormatter} />
+            <Tree keyFn={equal} root={root} treeFormatter={treeFormatter} />
         );
         const el = await findByText(`foo@1`);
 

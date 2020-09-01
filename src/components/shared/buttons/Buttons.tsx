@@ -9,6 +9,7 @@ const buttonStyle = css({
         flex: 1,
         backgroundColor: `${primaryColorLight}`,
         color: "white",
+        fontSize: "1rem",
         fontFamily: `"${sansSerifFont}"`,
         justifyContent: "center",
         padding: "0.5rem 0",

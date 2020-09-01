@@ -8,14 +8,20 @@ exports[`<TabView /> matches snapshot 1`] = `
     <div
       class="css-zxjiyd-TabHeaders"
     >
-      <div>
+      <div
+        class="css-1gfx7cl"
+        tabindex="0"
+      >
         <span
           class="css-gvuyi4"
         >
           Tab 1
         </span>
       </div>
-      <div>
+      <div
+        class="css-1gfx7cl"
+        tabindex="0"
+      >
         <span
           class="css-qmn0xh"
         >
