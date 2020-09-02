@@ -1,17 +1,8 @@
 /** @jsx jsx */
-import { jsx, css, Global, SerializedStyles } from "@emotion/core";
+import { jsx, css } from "@emotion/core";
 import React, { useState, useEffect, useContext, useRef } from "react";
 
-import {
-    mq,
-    textColor,
-    serifFont,
-    secondaryColorLight,
-    secondaryColor,
-    primaryColorLight,
-    primaryColor,
-    primaryColorDark
-} from "../../../css";
+import { mq, serifFont, secondaryColor, primaryColor, primaryColorDark } from "../../../css";
 
 interface ITabContext {
     activeTab: ITab | null;
@@ -91,6 +82,7 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
     const { activeTab, setActiveTab } = useContext(TabViewContext);
     const lineRef = useRef<HTMLDivElement>(null);
     const [highlightWidth, setHighlightWidth] = useState<number>(0);
+    const tabHeaderRef = tabs.map(() => useRef<HTMLDivElement>(null));
 
     const headerTabs: JSX.Element[] = tabs.map((tab, i) => {
         const isActive: boolean = tab.header === activeTab?.header;
@@ -112,8 +104,23 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
             setActiveTab(tab);
         };
 
+        /* istanbul ignore next */
+        function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
+            if (document.activeElement === tabHeaderRef[i].current && e.key === " ") {
+                onTabClick();
+            }
+
+            e.preventDefault();
+        }
+
         return (
-            <div key={i} onClick={onTabClick}>
+            <div
+                ref={tabHeaderRef[i]}
+                key={i}
+                onClick={onTabClick}
+                onKeyPress={a11yToggle}
+                tabIndex={0}
+            >
                 <span css={tabTitleStyle}>{tab.header}</span>
             </div>
         );

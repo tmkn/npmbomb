@@ -21,8 +21,7 @@ import {
     PrefixFormatter,
     ITreeFormatter,
     Tree,
-    TreeUtility,
-    toTreeList
+    TreeControlProvider
 } from "../shared/tree/Tree";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { ErrorBanner } from "./ErrorComponent";
@@ -88,31 +87,25 @@ export const DependencyTreeTab: React.FC = () => {
     );
 };
 
-export const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeNodeData> }> = ({
-    root: _root
-}) => {
-    const [root, setRoot] = useState<ITreeNodeData<IDependencyTreeNodeData>>(_root);
+interface IDependencyTreeProps {
+    root: ITreeNodeData<IDependencyTreeNodeData>;
+}
+
+export const DependencyTree: React.FC<IDependencyTreeProps> = ({ root }) => {
     const nodeFormatter: NodeFormatter<IDependencyTreeNodeData> = (
         node,
         path,
         options,
         onClick
     ) => {
-        const customClick: OnClickCallback<IDependencyTreeNodeData> = node => {
-            /*const treeUtility = new TreeUtility(root, setRoot);
-
-            treeUtility.forEach(_node => {
-                if (_node !== node) _node.active = false;
-            });
-            treeUtility.render();
-            //setRoot({ ...root });*/
-        };
+        const treeControlProvider = useContext(TreeControlProvider);
+        const customClick: OnClickCallback<IDependencyTreeNodeData> = node => {};
 
         /* istanbul ignore next */
         const expandClick = () => {
             if (options.canExpand) {
                 node.expanded = !node.expanded;
-                setRoot({ ...root });
+                treeControlProvider.render();
             }
         };
 
@@ -198,11 +191,7 @@ export const DependencyTree: React.FC<{ root: ITreeNodeData<IDependencyTreeNodeD
         return `${node.data.name}@${node.data.version}`;
     };
 
-    return (
-        <React.Fragment>
-            <Tree treeFormatter={treeFormatter} treeData={toTreeList([], root, [], key)} />
-        </React.Fragment>
-    );
+    return <Tree<IDependencyTreeNodeData> treeFormatter={treeFormatter} root={root} keyFn={key} />;
 };
 
 function convertToTree(root: IDependencyTreeNodeData): ITreeNodeData<IDependencyTreeNodeData> {
@@ -260,12 +249,19 @@ const NpmLink: React.FC<INpmLinkProps> = ({ name, version }) => {
             }
         }
     });
+    const focusStyle = css({
+        [mq[0]]: {
+            "&:focus": {
+                outlineOffset: "0.2rem"
+            }
+        }
+    });
     const link = `https://www.npmjs.com/package/${encodeURIComponent(name)}/v/${encodeURIComponent(
         version
     )}`;
 
     return (
-        <a css={style} href={link} target="_blank">
+        <a css={[style, focusStyle]} href={link} target="_blank">
             <div className="codicon codicon-link-external"></div>
         </a>
     );

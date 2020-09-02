@@ -55,4 +55,28 @@ describe("<GuessBox />", () => {
 
         expect(callback).toHaveBeenCalled();
     });
+
+    test("submits on enter key", async () => {
+        const callback = jest.fn();
+        const mockContext: IGuessContext = {
+            guess: undefined,
+            package: null!,
+            setUserGuess: callback
+        };
+        const { container } = render(
+            <GuessContext.Provider value={mockContext}>
+                <GuessBox />
+            </GuessContext.Provider>
+        );
+        const input = await waitFor(() =>
+            container.querySelector<HTMLInputElement>("input[type='text']")
+        );
+
+        fireEvent.change(input!, { target: { value: "1337" } });
+        fireEvent.keyUp(input!, {
+            key: "Enter"
+        });
+
+        expect(callback).toHaveBeenCalled();
+    });
 });

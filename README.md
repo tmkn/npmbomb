@@ -54,7 +54,7 @@ Lastly it deploys the web application to netlify.
 ### Roadmap
 In no particular order.
 * ~~Increase code coverage to >90%~~
-* Visualize dependency tree
+* ~~Visualize dependency tree~~
 * Use React concurrent mode to load data
 * Explore hosting options for the data set
 * A11Y
