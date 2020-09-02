@@ -249,12 +249,19 @@ const NpmLink: React.FC<INpmLinkProps> = ({ name, version }) => {
             }
         }
     });
+    const focusStyle = css({
+        [mq[0]]: {
+            "&:focus": {
+                outlineOffset: "0.2rem"
+            }
+        }
+    });
     const link = `https://www.npmjs.com/package/${encodeURIComponent(name)}/v/${encodeURIComponent(
         version
     )}`;
 
     return (
-        <a css={style} href={link} target="_blank">
+        <a css={[style, focusStyle]} href={link} target="_blank">
             <div className="codicon codicon-link-external"></div>
         </a>
     );

@@ -1,3 +1,5 @@
+//todo move content to DependencyTree.tsx?
+
 export interface IDependencyTreeConfig {
     data: ITreeData[];
     tree: IDependencyTreeStructure;
@@ -9,7 +11,6 @@ export interface ITreeData {
     version: string;
     count: number;
 }
-//export type TreeLookupData = [id: string, data: ITreeData];
 
 export interface IDependencyTreeStructure {
     id: number;

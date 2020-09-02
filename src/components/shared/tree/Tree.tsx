@@ -182,6 +182,7 @@ const TreeNode = <T,>({
         <div css={nodeStyle}>{nodeFormatter(node.treeData, node.path, options, onChildClick)}</div>
     );
 
+    /* istanbul ignore next */
     function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
         if (document.activeElement === treeNodeEl.current && e.key === " ") {
             node.treeData.expanded = !node.treeData.expanded;

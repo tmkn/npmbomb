@@ -4,14 +4,7 @@ import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
-import {
-    mq,
-    serifFont,
-    sansSerifFont,
-    secondaryColor,
-    textColor,
-    globalFocusStyle
-} from "../../css";
+import { mq, serifFont, sansSerifFont, secondaryColor, textColor } from "../../css";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
@@ -133,6 +126,7 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
         setExpandend(!expanded);
     }
 
+    /* istanbul ignore next */
     function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
         if (document.activeElement === faqEl.current && e.key === " ") {
             setExpandend(!expanded);
@@ -142,7 +136,7 @@ const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
     }
 
     return (
-        <div ref={faqEl} tabIndex={0} onKeyPress={a11yToggle} css={[faqStyle, globalFocusStyle]}>
+        <div ref={faqEl} tabIndex={0} onKeyPress={a11yToggle} css={faqStyle}>
             <FaqHeading onClick={onClick}>
                 <span style={{ cursor: "pointer" }}>
                     <span css={[arrowStyle, expanded ? expandStyle : collapseStyle]}>

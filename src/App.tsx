@@ -12,7 +12,7 @@ import Header from "./components/shared/header/Header";
 import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
 import { LoadingIndicator } from "./components/shared/loading/LoadingIndicator";
-import { serifFont, sansSerifFont, primaryColor, secondaryColor } from "./css";
+import { serifFont, sansSerifFont, primaryColor, secondaryColor, globalFocusStyle } from "./css";
 import IconFont from "./codicon.ttf";
 import "./codicon.css";
 
@@ -139,7 +139,7 @@ export const App: React.FC = () => {
     return (
         <AppContext.Provider value={context}>
             <BrowserRouter>
-                <Global styles={globalStyle} />
+                <Global styles={[globalStyle, globalFocusStyle]} />
                 <Header />
                 <Content>
                     <Switch>

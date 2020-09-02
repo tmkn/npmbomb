@@ -79,6 +79,10 @@ export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
         }
     }
 
+    function submitOnEnter(e: React.KeyboardEvent<HTMLInputElement>): void {
+        if (e.key === "Enter") doConfirm();
+    }
+
     return (
         <div css={guessBoxStyle}>
             <input
@@ -88,6 +92,7 @@ export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
                 pattern="[0-9]"
                 inputMode="numeric"
                 onChange={validate}
+                onKeyUp={submitOnEnter}
                 autoFocus
             />
             <div style={{ flex: "0.05" }} />

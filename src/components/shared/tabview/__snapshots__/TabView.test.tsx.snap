@@ -9,7 +9,6 @@ exports[`<TabView /> matches snapshot 1`] = `
       class="css-zxjiyd-TabHeaders"
     >
       <div
-        class="css-1gfx7cl"
         tabindex="0"
       >
         <span
@@ -19,7 +18,6 @@ exports[`<TabView /> matches snapshot 1`] = `
         </span>
       </div>
       <div
-        class="css-1gfx7cl"
         tabindex="0"
       >
         <span

@@ -1,18 +1,8 @@
 /** @jsx jsx */
-import { jsx, css, Global, SerializedStyles } from "@emotion/core";
+import { jsx, css } from "@emotion/core";
 import React, { useState, useEffect, useContext, useRef } from "react";
 
-import {
-    mq,
-    textColor,
-    serifFont,
-    secondaryColorLight,
-    secondaryColor,
-    primaryColorLight,
-    primaryColor,
-    primaryColorDark,
-    globalFocusStyle
-} from "../../../css";
+import { mq, serifFont, secondaryColor, primaryColor, primaryColorDark } from "../../../css";
 
 interface ITabContext {
     activeTab: ITab | null;
@@ -114,9 +104,10 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
             setActiveTab(tab);
         };
 
+        /* istanbul ignore next */
         function a11yToggle(e: React.KeyboardEvent<HTMLDivElement>): void {
             if (document.activeElement === tabHeaderRef[i].current && e.key === " ") {
-                setActiveTab(tab);
+                onTabClick();
             }
 
             e.preventDefault();
@@ -129,7 +120,6 @@ const TabHeaders: React.FC<ITabView> = ({ tabs }) => {
                 onClick={onTabClick}
                 onKeyPress={a11yToggle}
                 tabIndex={0}
-                css={[globalFocusStyle]}
             >
                 <span css={tabTitleStyle}>{tab.header}</span>
             </div>
