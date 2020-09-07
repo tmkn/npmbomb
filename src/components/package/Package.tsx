@@ -6,7 +6,6 @@ import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "r
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
-import { AppContext } from "../../App";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
 import { NotFound } from "./ErrorComponent";
@@ -15,11 +14,9 @@ import { CountUp, scaleDuration } from "./CountUp";
 import { PackageHeading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
-import { ITreeData, IDependencyTreeConfig } from "../../../tools/npmdata/utils";
-
-export interface IDependencyTreeNodeData extends ITreeData {
-    dependencies: IDependencyTreeNodeData[];
-}
+import { AppContext } from "../../AppContext";
+import { IPackageInfo } from "./PackageData";
+import { getNameVersion } from "../../Common";
 
 const blink = keyframes`
     from {
@@ -51,39 +48,6 @@ const exactMatchMargin = css({
         marginBottom: `1.5rem`
     }
 });
-
-
-interface IPackageNaming {
-    name: string;
-    scope?: string;
-    version?: string;
-}
-
-export function getPackageNaming(str: string): IPackageNaming {
-    throw new Error(`Not implemented`);
-}
-
-//todo refactor use getPackageNaming instead
-export function getNameVersion(pkg: string): [string, string] {
-    const parts = pkg.split("@");
-
-    if (parts.length < 2) {
-        return [parts[0], ""];
-    }
-
-    return [parts[0], parts[1]];
-}
-
-export interface IPackageInfo {
-    name: string;
-    version: string;
-    description: string;
-    dependencies: number;
-    distinctDependencies: number;
-    directDependencies: number;
-    /** @deprecated */
-    tree: IDependencyTreeConfig;
-}
 
 async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
     const dataUrl: string = scope ? `${scope}/${pkgName}` : pkgName;

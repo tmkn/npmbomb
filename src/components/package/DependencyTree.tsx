@@ -25,8 +25,11 @@ import {
 } from "../shared/tree/Tree";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { ErrorBanner } from "./ErrorComponent";
-import { IDependencyTreeNodeData } from "./Package";
 import { IDependencyTreeStructure, ITreeData } from "../../../tools/npmdata/utils";
+
+export interface IDependencyTreeNodeData extends ITreeData {
+    dependencies: IDependencyTreeNodeData[];
+}
 
 function mapTree(
     lookup: Map<number, ITreeData>,

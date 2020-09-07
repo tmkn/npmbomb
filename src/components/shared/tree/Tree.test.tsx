@@ -2,7 +2,7 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 
 import { Tree, ITreeNodeData, ITreeFormatter } from "./Tree";
-import { IDependencyTreeNodeData } from "../../package/Package";
+import { IDependencyTreeNodeData } from "../../package/DependencyTree";
 
 describe("<Tree />", () => {
     beforeEach(() => {

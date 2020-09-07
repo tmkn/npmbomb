@@ -16,7 +16,7 @@ import {
     primaryColorLight
 } from "../../css";
 import { useAvailablePackagesLoader } from "../index/Index";
-import { AppContext } from "../../App";
+import { AppContext } from "../../AppContext";
 import { Info } from "../shared/info/Info";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
 import { TokenHighlighter, TokenFormatter } from "../tokenhighlighter/TokenHighlighter";

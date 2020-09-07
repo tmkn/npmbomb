@@ -4,7 +4,7 @@ import React, { useRef, useState, useContext } from "react";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark } from "../../css";
-import { IPackageInfo } from "./Package";
+import { IPackageInfo } from "./PackageData";
 
 export interface IGuessContext {
     package: IPackageInfo;

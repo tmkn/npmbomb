@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React, { useRef, useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import * as Sentry from "@sentry/browser";
 
-import { AppContext } from "../../App";
+import { AppContext } from "../../AppContext";
 import { mq, textColor } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
