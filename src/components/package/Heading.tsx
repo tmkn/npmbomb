@@ -2,9 +2,9 @@
 import { jsx, css } from "@emotion/core";
 import React, { useContext } from "react";
 
-import { AppContext } from "../../App";
+import { AppContext } from "../../AppContext";
+import { getNameVersion } from "../../Common";
 import { mq, serifFont, primaryColor } from "../../css";
-import { getNameVersion } from "./Package";
 
 interface IPackageHeadingProps {
     packageName: string;

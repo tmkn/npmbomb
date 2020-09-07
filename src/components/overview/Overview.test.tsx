@@ -3,7 +3,7 @@ import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 
 import Overview from "./Overview";
-import { AppContext, IAppContext } from "../../App";
+import { AppContext, IAppContext } from "../../AppContext";
 
 describe("<Overview />", () => {
     const packageNames = ["test", "foo-test", "@foo/test", "@blabla/foo"];

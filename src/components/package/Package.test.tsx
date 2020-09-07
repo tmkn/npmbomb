@@ -3,8 +3,9 @@ import { MemoryRouter, Route } from "react-router-dom";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import fetchMock from "jest-fetch-mock";
 
-import { Package, IPackageInfo } from "./Package";
-import { AppContext, IAppContext } from "../../App";
+import { Package } from "./Package";
+import { IPackageInfo } from "./PackageData";
+import { AppContext, IAppContext } from "../../AppContext";
 
 describe("<Package />", () => {
     const testData: IPackageInfo = {

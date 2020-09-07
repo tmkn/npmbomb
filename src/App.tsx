@@ -8,6 +8,7 @@ const Package = lazy(() => import("./components/package/Package"));
 const Results = lazy(() => import("./components/results/Results"));
 const Overview = lazy(() => import("./components/overview/Overview"));
 
+import { AppContext, IAppContext, IAppState, IGuessResult } from "./AppContext";
 import Header from "./components/shared/header/Header";
 import Content from "./components/shared/content/Content";
 import Footer from "./components/shared/footer/Footer";
@@ -94,34 +95,6 @@ const globalStyle: SerializedStyles = css`
 
     @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 `;
-
-export interface IGuessResult {
-    pkg: string;
-    dependencies: number;
-    guess: number;
-}
-
-export interface IAppContext {
-    appState: IAppState;
-    setAppState: (state: IAppState) => void;
-}
-
-export const AppContext = React.createContext<IAppContext>({
-    appState: {
-        inGameMode: false,
-        guesses: [],
-        remaining: [],
-        packages: []
-    },
-    setAppState: () => {}
-});
-
-interface IAppState {
-    inGameMode: boolean;
-    remaining: string[];
-    guesses: IGuessResult[];
-    packages: string[];
-}
 
 export const App: React.FC = () => {
     const [appState, setAppState] = useState<IAppState>({

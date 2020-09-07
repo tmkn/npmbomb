@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { render, fireEvent } from "@testing-library/react";
 
 import Results from "./Results";
-import { AppContext, IAppContext } from "../../App";
+import { AppContext, IAppContext } from "../../AppContext";
 
 describe("<Results />", () => {
     beforeEach(() => {

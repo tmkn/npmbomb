@@ -9,7 +9,7 @@ import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { Divider } from "../shared/divider/Divider";
-import { AppContext } from "../../App";
+import { AppContext } from "../../AppContext";
 import { TextLink } from "../shared/link/TextLink";
 import { Highlight } from "../shared/highlight/Highlight";
 import { setDefaultTitle } from "../../title";

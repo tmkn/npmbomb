@@ -8,8 +8,8 @@ import { primaryColor, mq, mobileOnly, hideOnMobile } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Divider } from "../shared/divider/Divider";
-import { IGuessResult, AppContext } from "../../App";
 import { setDefaultTitle } from "../../title";
+import { AppContext, IGuessResult } from "../../AppContext";
 
 type Results = IGuessResult[];
 
