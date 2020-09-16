@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { render, fireEvent } from "@testing-library/react";
 
 import { ResultBox, SummaryTabs } from "./ResultBox";
-import { GuessContext, IGuessContext } from "./GuessBox";
+import { GuessContext, IGuessContext } from "./guess/GuessContext";
 
 describe("<ResultBox />", () => {
     test("matches snapshot", () => {

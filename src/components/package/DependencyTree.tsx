@@ -13,7 +13,7 @@ import {
     serifFont
 } from "../../css";
 import { Info } from "../shared/info/Info";
-import { GuessContext } from "./GuessBox";
+import { GuessContext } from "./guess/GuessContext";
 import {
     ITreeNodeData,
     NodeFormatter,

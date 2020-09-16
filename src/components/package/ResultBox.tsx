@@ -15,7 +15,7 @@ import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { Divider } from "../shared/divider/Divider";
 import { scaleDuration } from "./CountUp";
 import { Info } from "../shared/info/Info";
-import { GuessContext } from "./GuessBox";
+import { GuessContext } from "./guess/GuessContext";
 import { TextLink } from "../shared/link/TextLink";
 import { TabView, ITab } from "../shared/tabview/TabView";
 import { DependencyTreeTab } from "./DependencyTree";

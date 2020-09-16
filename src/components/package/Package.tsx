@@ -7,7 +7,8 @@ import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
-import { IGuessContext, GuessContext, GuessBox } from "./GuessBox";
+import { GuessInput } from "./guess/GuessBox";
+import { IGuessContext, GuessContext } from "./guess/GuessContext";
 import { NotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
 import { CountUp, scaleDuration } from "./CountUp";
@@ -17,6 +18,7 @@ import { setPackageTitle } from "../../title";
 import { AppContext } from "../../AppContext";
 import { IPackageInfo } from "./PackageData";
 import { getNameVersion } from "../../Common";
+import { GuessRadioGroup } from "./guess/GuessRadioGroup";
 
 const blink = keyframes`
     from {
@@ -49,7 +51,10 @@ const exactMatchMargin = css({
     }
 });
 
-async function getPackageInfo(pkgName: string, scope: string | undefined): Promise<IPackageInfo> {
+export async function getPackageInfo(
+    pkgName: string,
+    scope: string | undefined
+): Promise<IPackageInfo> {
     const dataUrl: string = scope ? `${scope}/${pkgName}` : pkgName;
     const resp = await fetch(`/data/${dataUrl}.json`);
     const json = await resp.json();
@@ -140,6 +145,7 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
 
 export const Package: React.FC = () => {
     const history = useHistory();
+    const [isLoading, setIsLoading] = useState<boolean>(true);
     const { pkgName, scope } = useParams<{ pkgName: string; scope?: string }>();
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
@@ -151,10 +157,11 @@ export const Package: React.FC = () => {
     };
 
     useEffect(() => {
+        if (loading === false) setIsLoading(false);
         setPackageTitle(`${pkgInfo.name}@${pkgInfo.version}`);
     }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
-    if (loading) return <LoadingIndicator />;
+    if (isLoading) return <LoadingIndicator />;
 
     if (error) return <NotFound pkgName={pkgName} />;
 
@@ -223,7 +230,7 @@ export const Package: React.FC = () => {
             <PackageHeading packageName={pkgName} scope={scope} />
             <Info>{pkgInfo.description}</Info>
             <h2>How many total dependencies?</h2>
-            {typeof userGuess === "undefined" && <GuessBox />}
+            {typeof userGuess === "undefined" && <GuessRadioGroup />}
             {typeof userGuess !== "undefined" && (
                 <React.Fragment>
                     <CountUp target={pkgInfo.dependencies} userGuess={userGuess} />

@@ -1,18 +1,19 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 
-import { GuessBox, IGuessContext, GuessContext } from "./GuessBox";
+import { GuessInput } from "./GuessBox";
+import { IGuessContext, GuessContext } from "./GuessContext";
 
 describe("<GuessBox />", () => {
     test("matches snapshot", () => {
-        const { asFragment } = render(<GuessBox />);
+        const { asFragment } = render(<GuessInput />);
 
         expect(asFragment()).toMatchSnapshot();
     });
 
     test("do valid input", async () => {
         const guess = "1337";
-        const { container } = render(<GuessBox />);
+        const { container } = render(<GuessInput />);
         const input = await waitFor(() =>
             container.querySelector<HTMLInputElement>("input[type='text']")
         );
@@ -23,7 +24,7 @@ describe("<GuessBox />", () => {
     });
 
     test("do invalid input", async () => {
-        const { container } = render(<GuessBox />);
+        const { container } = render(<GuessInput />);
         const input = await waitFor(() =>
             container.querySelector<HTMLInputElement>("input[type='text']")
         );
@@ -42,7 +43,7 @@ describe("<GuessBox />", () => {
         };
         const { container, findByText } = render(
             <GuessContext.Provider value={mockContext}>
-                <GuessBox />
+                <GuessInput />
             </GuessContext.Provider>
         );
         const input = await waitFor(() =>
@@ -65,7 +66,7 @@ describe("<GuessBox />", () => {
         };
         const { container } = render(
             <GuessContext.Provider value={mockContext}>
-                <GuessBox />
+                <GuessInput />
             </GuessContext.Provider>
         );
         const input = await waitFor(() =>
