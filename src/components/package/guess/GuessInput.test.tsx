@@ -1,10 +1,10 @@
 import React from "react";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 
-import { GuessInput } from "./GuessBox";
+import { GuessInput } from "./GuessInput";
 import { IGuessContext, GuessContext } from "./GuessContext";
 
-describe("<GuessBox />", () => {
+describe("<GuessInput />", () => {
     test("matches snapshot", () => {
         const { asFragment } = render(<GuessInput />);
 

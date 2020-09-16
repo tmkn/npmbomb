@@ -7,7 +7,7 @@ import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
-import { GuessInput } from "./guess/GuessBox";
+import { GuessInput } from "./guess/GuessInput";
 import { IGuessContext, GuessContext } from "./guess/GuessContext";
 import { NotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
