@@ -5,7 +5,6 @@ import shuffle from "lodash.shuffle";
 
 import { PrimaryButton } from "../../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark, monospaceFont } from "../../../css";
-import { IPackageInfo } from "../PackageData";
 import { LoadingIndicator } from "../../shared/loading/LoadingIndicator";
 import { fetchAvailablePackages } from "../../index/Index";
 import { getPackageInfo } from "../Package";
@@ -45,8 +44,6 @@ export const GuessRadioGroup: React.FC = () => {
     });
 
     useEffect(() => {
-        console.log(pkgInfo);
-
         (async () => {
             try {
                 const packages = await fetchAvailablePackages();

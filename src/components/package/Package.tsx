@@ -161,9 +161,9 @@ export const Package: React.FC = () => {
         setPackageTitle(`${pkgInfo.name}@${pkgInfo.version}`);
     }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
-    if (isLoading) return <LoadingIndicator />;
-
     if (error) return <NotFound pkgName={pkgName} />;
+
+    if (isLoading) return <LoadingIndicator />;
 
     /* istanbul ignore next */
     function onNext(): void {

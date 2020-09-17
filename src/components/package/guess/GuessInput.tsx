@@ -1,14 +1,9 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
 import React, { useRef, useState, useContext, useEffect } from "react";
-import shuffle from "lodash.shuffle";
 
 import { PrimaryButton } from "../../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark, monospaceFont } from "../../../css";
-import { LoadingIndicator } from "../../shared/loading/LoadingIndicator";
-import { fetchAvailablePackages } from "../../index/Index";
-import { getPackageInfo } from "../Package";
-import { ErrorBanner } from "../ErrorComponent";
 import { GuessContext } from "./GuessContext";
 
 const guessBoxStyle = css({

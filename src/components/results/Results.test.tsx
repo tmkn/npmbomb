@@ -56,4 +56,6 @@ describe("<Results />", () => {
             await findByText(new RegExp(guess.toString()));
         }
     });
+
+    test.todo("navigates to home");
 });
