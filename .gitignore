@@ -3,3 +3,4 @@ package-lock.json
 dist
 coverage
 /packageanalyzer/**/*.js
+yarn-error.log
