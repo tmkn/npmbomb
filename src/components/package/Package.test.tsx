@@ -142,7 +142,7 @@ describe("<Package />", () => {
     test("renders not found view", async () => {
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -165,7 +165,7 @@ describe("<Package />", () => {
         };
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <AppContext.Provider value={mockAppContext}>
                         <Package />
                     </AppContext.Provider>
@@ -190,7 +190,7 @@ describe("<Package />", () => {
         };
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <AppContext.Provider value={mockAppContext}>
                         <Package />
                     </AppContext.Provider>
@@ -215,7 +215,7 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -236,7 +236,7 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -257,7 +257,7 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
-                <Route exact path={`/:scope/:pkgName`}>
+                <Route exact path={`/:routeScope/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -278,7 +278,7 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
-                <Route exact path={`/:scope/:pkgName`}>
+                <Route exact path={`/:routeScope/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -299,7 +299,7 @@ describe("<Package />", () => {
 
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>
@@ -314,10 +314,10 @@ describe("<Package />", () => {
 
         const { container } = render(
             <MemoryRouter initialEntries={["/typescript"]}>
-                <Route exact path={`/:pkgName`}>
+                <Route exact path={`/:routePkgName`}>
                     <Package />
                 </Route>
-                <Route exact path={`/package/:pkgName`}>
+                <Route exact path={`/package/:routePkgName`}>
                     <Package />
                 </Route>
             </MemoryRouter>

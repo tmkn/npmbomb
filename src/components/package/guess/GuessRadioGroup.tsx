@@ -7,9 +7,9 @@ import { PrimaryButton } from "../../shared/buttons/Buttons";
 import { mq, serifFont, primaryColorDark, monospaceFont } from "../../../css";
 import { LoadingIndicator } from "../../shared/loading/LoadingIndicator";
 import { fetchAvailablePackages } from "../../index/Index";
-import { getPackageInfo } from "../Package";
 import { ErrorBanner } from "../ErrorComponent";
 import { GuessContext } from "./GuessContext";
+import { getPackageInfo } from "../PackageData";
 
 export const GuessRadioGroup: React.FC = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -46,6 +46,8 @@ export const GuessRadioGroup: React.FC = () => {
     useEffect(() => {
         (async () => {
             try {
+                setIsLoading(true);
+
                 const packages = await fetchAvailablePackages();
                 const randomPackages = shuffle(packages).slice(0, 3);
                 const packageInfos = await Promise.all(
@@ -60,15 +62,15 @@ export const GuessRadioGroup: React.FC = () => {
                 setIsError(true);
             }
         })();
-    }, []);
+    }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
     function doConfirm(): void {
-        if (typeof guess === "undefined") return;
+        if(typeof guess !== "undefined") {
+            const number = parseInt(guess);
 
-        const number = parseInt(guess);
-
-        if (!Number.isNaN(number)) {
-            setUserGuess(number);
+            if (!Number.isNaN(number)) {
+                setUserGuess(number);
+            }
         }
     }
 

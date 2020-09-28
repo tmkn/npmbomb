@@ -10,3 +10,14 @@ export interface IPackageInfo {
     /** @deprecated */
     tree: IDependencyTreeConfig;
 }
+
+export async function getPackageInfo(
+    pkgName: string,
+    scope: string | undefined
+): Promise<IPackageInfo> {
+    const dataUrl: string = scope ? `${scope}/${pkgName}` : pkgName;
+    const resp = await fetch(`/data/${dataUrl}.json`);
+    const json = await resp.json();
+
+    return json;
+}

@@ -16,7 +16,7 @@ import { PackageHeading } from "./Heading";
 import { mq, primaryColor, secondaryColor, serifFont } from "../../css";
 import { setPackageTitle } from "../../title";
 import { AppContext } from "../../AppContext";
-import { IPackageInfo } from "./PackageData";
+import { getPackageInfo, IPackageInfo } from "./PackageData";
 import { getNameVersion } from "../../Common";
 import { GuessRadioGroup } from "./guess/GuessRadioGroup";
 
@@ -50,17 +50,6 @@ const exactMatchMargin = css({
         marginBottom: `1.5rem`
     }
 });
-
-export async function getPackageInfo(
-    pkgName: string,
-    scope: string | undefined
-): Promise<IPackageInfo> {
-    const dataUrl: string = scope ? `${scope}/${pkgName}` : pkgName;
-    const resp = await fetch(`/data/${dataUrl}.json`);
-    const json = await resp.json();
-
-    return json;
-}
 
 async function getAvailableVersion(pkgName: string): Promise<string> {
     const resp = await fetch(`/data/lookup.txt`);
@@ -143,13 +132,18 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
     };
 }
 
+interface IRouteParams {
+    routePkgName: string;
+    routeScope?: string;
+}
+
 export const Package: React.FC = () => {
     const history = useHistory();
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const { pkgName, scope } = useParams<{ pkgName: string; scope?: string }>();
+    const { routePkgName, routeScope } = useParams<IRouteParams>();
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
-    const { data: pkgInfo, loading, error } = useDataLoader(pkgName, scope);
+    const { data: pkgInfo, loading, error } = useDataLoader(routePkgName, routeScope);
     const guessContext: IGuessContext = {
         package: pkgInfo,
         guess: undefined,
@@ -161,7 +155,7 @@ export const Package: React.FC = () => {
         setPackageTitle(`${pkgInfo.name}@${pkgInfo.version}`);
     }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
-    if (error) return <NotFound pkgName={pkgName} />;
+    if (error) return <NotFound pkgName={routePkgName} />;
 
     if (isLoading) return <LoadingIndicator />;
 
@@ -169,41 +163,26 @@ export const Package: React.FC = () => {
     function onNext(): void {
         const { guesses, remaining } = appState;
 
-        if (remaining.length === 1) {
-            setAppState({
-                ...appState,
-                remaining: [],
-                guesses: [
-                    ...guesses,
-                    {
-                        pkg: pkgName,
-                        dependencies: pkgInfo.dependencies,
-                        guess: userGuess!
-                    }
-                ]
-            });
+        remaining.shift();
 
+        setUserGuess(undefined);
+        setAppState({
+            ...appState,
+            remaining: remaining,
+            guesses: [
+                ...guesses,
+                {
+                    pkgName: routeScope ? `${routeScope}/${routePkgName}` : routePkgName,
+                    actualDependencies: pkgInfo.dependencies,
+                    guess: userGuess!
+                }
+            ]
+        });
+
+        if (remaining.length === 0) {
             history.push("/results");
-
-            return;
         } else {
-            const _remaining = remaining.slice(1);
-
-            setUserGuess(undefined);
-            setAppState({
-                ...appState,
-                remaining: _remaining,
-                guesses: [
-                    ...guesses,
-                    {
-                        pkg: pkgName,
-                        dependencies: pkgInfo.dependencies,
-                        guess: userGuess!
-                    }
-                ]
-            });
-
-            history.push(`/package/${_remaining[0]}`);
+            history.push(`/package/${remaining[0]}`);
         }
     }
 
@@ -227,7 +206,7 @@ export const Package: React.FC = () => {
 
     return (
         <GuessContext.Provider value={guessContext}>
-            <PackageHeading packageName={pkgName} scope={scope} />
+            <PackageHeading packageName={routePkgName} scope={routeScope} />
             <Info>{pkgInfo.description}</Info>
             <h2>How many total dependencies?</h2>
             {typeof userGuess === "undefined" && <GuessRadioGroup />}
@@ -250,7 +229,7 @@ export const Package: React.FC = () => {
                         <div css={nextStyle}>
                             <Center>
                                 <PrimaryButton onClick={onNext}>
-                                    <Next />
+                                    <NextLabel />
                                 </PrimaryButton>
                             </Center>
                         </div>
@@ -261,23 +240,14 @@ export const Package: React.FC = () => {
     );
 };
 
-const Next: React.FC = () => {
+const NextLabel: React.FC = () => {
     const { appState } = useContext(AppContext);
     const current = appState.guesses.length + 1;
     const all = appState.guesses.length + appState.remaining.length;
     const showResults = current === all;
-    const nextLabel = showResults ? "Results" : "Next";
+    const nextLabel = showResults ? "Results" : `Next [${current}/${all}]`;
 
-    return (
-        <React.Fragment>
-            {nextLabel}{" "}
-            {!showResults && (
-                <React.Fragment>
-                    [{current}/{all}]
-                </React.Fragment>
-            )}
-        </React.Fragment>
-    );
+    return <React.Fragment>{nextLabel}</React.Fragment>;
 };
 
 /* istanbul ignore next */
@@ -286,10 +256,10 @@ export default () => {
 
     return (
         <Switch>
-            <Route exact path={`${match.path}/:pkgName`}>
+            <Route exact path={`${match.path}/:routePkgName`}>
                 <Package />
             </Route>
-            <Route exact path={`${match.path}/:scope/:pkgName`}>
+            <Route exact path={`${match.path}/:routeScope/:routePkgName`}>
                 <Package />
             </Route>
             <Route path={match.path}>
