@@ -2,8 +2,10 @@
 import { jsx, css } from "@emotion/core";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
+import { BehaviorSubject } from "rxjs";
+import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
 
-import { mq, serifFont } from "../../../css";
+import { mq, serifFont, textColor } from "../../../css";
 
 export interface ITreeNodeData<T> {
     data: T;
@@ -15,10 +17,13 @@ export interface ITreeNodeData<T> {
 
 export interface ITreeControlProvider {
     render: () => void;
+    setBreadcrumbs: (breadcrumbs: string[]) => void;
 }
 
+/* istanbul ignore next */
 export const TreeControlProvider = React.createContext<ITreeControlProvider>({
-    render: () => console.log(`Tree Control Provider not initialized`)
+    render: () => console.log(`Tree Control Provider not initialized`),
+    setBreadcrumbs: () => console.log(`Tree Control Provider not initialized`)
 });
 
 enum PrefixType {
@@ -63,6 +68,22 @@ export const Tree = <T,>({
 }: React.PropsWithChildren<ITreeProps<T>>): React.ReactElement | null => {
     const [root, setRoot] = useState<ITreeNodeData<T>>(_root);
     const [treeData, setTreeData] = useState<ITreeListEntry<T>[]>(toTreeList([], _root, [], key));
+    const [breadcrumbs, setBreadcrumbs] = useState<string[]>([]);
+    let [breadcrumbsObserver] = useState(() => new BehaviorSubject<string[]>(null!));
+
+    useEffect(() => {
+        breadcrumbsObserver
+            .pipe(debounceTime(250))
+            .pipe(filter(value => value !== null))
+            .pipe(distinctUntilChanged())
+            .subscribe(value => {
+                setBreadcrumbs(value);
+            });
+
+        return () => {
+            breadcrumbsObserver.unsubscribe();
+        };
+    }, []);
 
     const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
         const p = treeData[index];
@@ -88,26 +109,30 @@ export const Tree = <T,>({
         render: () => {
             setRoot({ ...root });
             setTreeData(toTreeList([], _root, [], key));
-        }
+        },
+        setBreadcrumbs: crumbs => breadcrumbsObserver.next(crumbs)
     };
 
     return (
         <TreeControlProvider.Provider value={treeControlProvider}>
-            <div css={treeStyle}>
-                <AutoSizer defaultHeight={24}>
-                    {({ height, width }) => (
-                        <List
-                            className={treeList}
-                            overscanRowCount={10}
-                            width={width}
-                            height={height}
-                            rowCount={treeData.length}
-                            rowHeight={24}
-                            rowRenderer={rowRenderer}
-                        />
-                    )}
-                </AutoSizer>
-            </div>
+            <BreadcrumbsContext.Provider value={{ breadcrumbs }}>
+                <Breadcrumbs />
+                <div css={treeStyle}>
+                    <AutoSizer defaultHeight={24}>
+                        {({ height, width }) => (
+                            <List
+                                className={treeList}
+                                overscanRowCount={10}
+                                width={width}
+                                height={height}
+                                rowCount={treeData.length}
+                                rowHeight={24}
+                                rowRenderer={rowRenderer}
+                            />
+                        )}
+                    </AutoSizer>
+                </div>
+            </BreadcrumbsContext.Provider>
         </TreeControlProvider.Provider>
     );
 };
@@ -207,7 +232,7 @@ const TreeNode = <T,>({
             css={[lineStyle, focusStyle]}
             tabIndex={0}
             onKeyPress={a11yToggle}
-            onMouseOver={() => console.log(node.path)}
+            onMouseOver={() => treeControlProvider.setBreadcrumbs(node.path)}
         >
             {prefixes}
             {labelNode}
@@ -263,3 +288,69 @@ function updatePrefixes(_prefixes: ReadonlyArray<PrefixType>): ReadonlyArray<Pre
 
     return updatedPrefixes;
 }
+
+export const Breadcrumbs: React.FC = () => {
+    const lastBreadcrumbEl = useRef<HTMLSpanElement>(null);
+    const { breadcrumbs } = useContext(BreadcrumbsContext);
+
+    useEffect(() => {
+        if (lastBreadcrumbEl.current) {
+            lastBreadcrumbEl.current.scrollIntoView(false);
+        }
+    });
+
+    const style = css({
+        [mq[0]]: {
+            fontFamily: serifFont,
+            display: `none`,
+            alignItems: `center`,
+            color: textColor,
+            marginBottom: `1rem`,
+            overflow: `hidden`,
+            whiteSpace: `nowrap`
+        },
+        [mq[1]]: {
+            display: `flex`
+        }
+    });
+    const spacerStyle = css({
+        [mq[0]]: {
+            color: `black`
+        }
+    });
+
+    const jsxBreadcrumbs = breadcrumbs.map((crumb, i, arr) => {
+        const needsSpacer: boolean = arr.length > 1 && i < arr.length - 1;
+
+        return (
+            <React.Fragment key={`${crumb}${i}`}>
+                <span ref={lastBreadcrumbEl} data-testid={`crumb_${crumb}`}>
+                    {crumb}
+                </span>
+                {needsSpacer && (
+                    <span css={spacerStyle} className="codicon codicon-chevron-right"></span>
+                )}
+            </React.Fragment>
+        );
+    });
+
+    const placeholderStyle = css({
+        [mq[0]]: {
+            fontStyle: `italic`
+            //color: `black`
+        }
+    });
+    const placeholder: JSX.Element = (
+        <span css={placeholderStyle}>Dependency Tree Breadcrumbs</span>
+    );
+
+    return <div css={style}>{breadcrumbs.length === 0 ? placeholder : jsxBreadcrumbs}</div>;
+};
+
+export interface IBreadcrumbsContext {
+    breadcrumbs: string[];
+}
+
+export const BreadcrumbsContext = React.createContext<IBreadcrumbsContext>({
+    breadcrumbs: [`todo`]
+});
