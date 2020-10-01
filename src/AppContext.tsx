@@ -8,8 +8,8 @@ export interface IAppState {
 }
 
 export interface IGuessResult {
-    pkg: string;
-    dependencies: number;
+    pkgName: string;
+    actualDependencies: number;
     guess: number;
 }
 

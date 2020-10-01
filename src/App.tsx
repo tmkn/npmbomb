@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/core";
 import React, { useState, lazy, Suspense } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 const Index = lazy(() => import("./components/index/Index"));
 const Package = lazy(() => import("./components/package/Package"));
@@ -136,6 +136,7 @@ export const App: React.FC = () => {
                                 <Index />
                             </Suspense>
                         </Route>
+                        <Redirect to="/" />
                     </Switch>
                 </Content>
                 <Footer />

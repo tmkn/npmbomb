@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/core";
 import React, { useContext, useEffect } from "react";
-import { Redirect, Link, useHistory } from "react-router-dom";
+import { Redirect, useHistory } from "react-router-dom";
 
 import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { primaryColor, mq, mobileOnly, hideOnMobile } from "../../css";
@@ -74,7 +74,7 @@ const Results: React.FC = () => {
                 <div css={mobileOnly}></div>
                 <div css={[mobileOnly, alignRight]}>Deps.</div>
                 <div css={[mobileOnly, alignRight]}>You</div>
-                {appState.guesses.map(({ pkg, dependencies, guess }, i) => {
+                {appState.guesses.map(({ pkgName, actualDependencies, guess }, i) => {
                     const animation = css({
                         [mq[0]]: {
                             opacity: 0,
@@ -84,11 +84,11 @@ const Results: React.FC = () => {
                     });
 
                     return (
-                        <React.Fragment key={pkg}>
-                            <div css={[animation, primary]}>{pkg}</div>
+                        <React.Fragment key={pkgName}>
+                            <div css={[animation, primary]}>{pkgName}</div>
                             <div css={[alignRight, animation]}>
                                 <span>
-                                    <Num>{dependencies}</Num>{" "}
+                                    <Num>{actualDependencies}</Num>{" "}
                                     <span css={hideOnMobile}>Dependencies</span>
                                 </span>
                             </div>

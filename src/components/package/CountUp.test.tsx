@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 
 import { CountUp } from "./CountUp";
 
-describe("<GuessBox />", () => {
+describe("<GuessInput />", () => {
     test("matches snapshot", () => {
         const { asFragment } = render(<CountUp target={12} userGuess={54} />);
 

@@ -1,37 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import React, { useRef, useState, useContext } from "react";
+import React, { useRef, useState, useContext, useEffect } from "react";
 
-import { PrimaryButton } from "../shared/buttons/Buttons";
-import { mq, serifFont, primaryColorDark } from "../../css";
-import { IPackageInfo } from "./PackageData";
-
-export interface IGuessContext {
-    package: IPackageInfo;
-    guess: number | undefined;
-    setUserGuess: (guess: number) => void;
-}
-
-export const GuessContext = React.createContext<IGuessContext>({
-    package: {
-        name: "",
-        version: "",
-        dependencies: 0,
-        distinctDependencies: 0,
-        directDependencies: 0,
-        description: "",
-        tree: {
-            data: [],
-            tree: { id: 0 }
-        }
-    },
-    guess: undefined,
-    setUserGuess: () => {}
-});
-
-interface IGuessBoxProps {
-    value?: string;
-}
+import { PrimaryButton } from "../../shared/buttons/Buttons";
+import { mq, serifFont, primaryColorDark, monospaceFont } from "../../../css";
+import { GuessContext } from "./GuessContext";
 
 const guessBoxStyle = css({
     [mq[0]]: {
@@ -54,8 +27,8 @@ const inputStyle = css({
     }
 });
 
-export const GuessBox: React.FC<IGuessBoxProps> = ({ value }) => {
-    const initValue: string = value ?? "";
+export const GuessInput: React.FC = () => {
+    const initValue: string = "";
     const [guess, setGuess] = useState(initValue);
     const [valid, setValid] = useState(Number.isNaN(parseInt(initValue)));
     const { setUserGuess } = useContext(GuessContext);

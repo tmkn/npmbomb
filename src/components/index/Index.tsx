@@ -277,16 +277,6 @@ export function useAvailablePackagesLoader(): IAvailablePackgesHookResponse {
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false);
 
-    async function fetchAvailablePackages(): Promise<string[]> {
-        const resp = await fetch(`data/lookup.txt`);
-        const text = await resp.text();
-
-        return text
-            .split("\n")
-            .map(l => l.trim())
-            .filter(l => l !== "");
-    }
-
     async function load(): Promise<void> {
         try {
             setLoading(true);
@@ -312,4 +302,14 @@ export function useAvailablePackagesLoader(): IAvailablePackgesHookResponse {
     }, []);
 
     return { packages, loading, error };
+}
+
+export async function fetchAvailablePackages(): Promise<string[]> {
+    const resp = await fetch(`/data/lookup.txt`);
+    const text = await resp.text();
+
+    return text
+        .split("\n")
+        .map(l => l.trim())
+        .filter(l => l !== "");
 }

@@ -7,6 +7,7 @@ const buttonStyle = css({
     [mq[0]]: {
         display: "flex",
         flex: 1,
+        width: "30vw",
         backgroundColor: `${primaryColorLight}`,
         color: "white",
         fontSize: "1rem",
