@@ -65,7 +65,7 @@ export const GuessRadioGroup: React.FC = () => {
     }, [`${pkgInfo.name}@${pkgInfo.version}`]);
 
     function doConfirm(): void {
-        if(typeof guess !== "undefined") {
+        if (typeof guess !== "undefined") {
             const number = parseInt(guess);
 
             if (!Number.isNaN(number)) {

@@ -2,7 +2,7 @@
 import { jsx, css } from "@emotion/core";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
-import { BehaviorSubject } from "rxjs";
+import { Subject } from "rxjs";
 import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
 
 import { mq, serifFont, textColor } from "../../../css";
@@ -69,12 +69,11 @@ export const Tree = <T,>({
     const [root, setRoot] = useState<ITreeNodeData<T>>(_root);
     const [treeData, setTreeData] = useState<ITreeListEntry<T>[]>(toTreeList([], _root, [], key));
     const [breadcrumbs, setBreadcrumbs] = useState<string[]>([]);
-    let [breadcrumbsObserver] = useState(() => new BehaviorSubject<string[]>(null!));
+    let [breadcrumbsObserver] = useState(() => new Subject<string[]>());
 
     useEffect(() => {
         breadcrumbsObserver
             .pipe(debounceTime(250))
-            .pipe(filter(value => value !== null))
             .pipe(distinctUntilChanged())
             .subscribe(value => {
                 setBreadcrumbs(value);
@@ -295,7 +294,11 @@ export const Breadcrumbs: React.FC = () => {
 
     useEffect(() => {
         if (lastBreadcrumbEl.current) {
-            lastBreadcrumbEl.current.scrollIntoView(false);
+            lastBreadcrumbEl.current.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "start"
+            });
         }
     });
 
