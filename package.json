@@ -32,7 +32,7 @@
     "@sentry/browser": "5.27.1",
     "lodash.shuffle": "^4.2.0",
     "react": "^16.14.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-virtualized": "^9.22.2",
     "rxjs": "^6.6.3"
