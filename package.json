@@ -42,7 +42,7 @@
     "@percy/cypress": "^2.3.2",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.2.1",
-    "@types/jest": "^26.0.15",
+    "@types/jest": "^26.0.17",
     "@types/lodash.shuffle": "^4.2.6",
     "@types/node": "^14.14.9",
     "@types/react": "^16.9.56",
