@@ -3,10 +3,10 @@
 exports[`<ResultBox /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-7emoiw"
+    class="css-bxgqq5-ResultBox"
   >
     <div
-      class="css-1788elh"
+      class="css-115y57d-TabView"
     >
       <div
         class="css-zxjiyd-TabHeaders"
@@ -35,14 +35,14 @@ exports[`<ResultBox /> matches snapshot 1`] = `
         style="width: 50%;"
       />
       <div
-        class="css-1lr5315"
+        class="css-d8oeyd-TabView"
       >
         <div
-          class="css-1cwnpiq"
+          class="css-12j8ocv-Info"
         >
           <span>
             <a
-              class="css-1ka21sq"
+              class="css-tgm9kd-TextLink"
               href="https://www.npmjs.com/package//v/"
               target="_blank"
             >
@@ -69,17 +69,17 @@ exports[`<ResultBox /> matches snapshot 1`] = `
       Results
     </h2>
     <div
-      class="css-khmwet"
+      class="css-d6el3m-Divider"
       style="margin: 1rem 0px;"
     />
     <div
-      class="css-1xvm6s7"
+      class="css-ziu505-ResultsTable"
     >
       <div>
         Your Guess:
       </div>
       <span
-        class="css-1naol83"
+        class="css-1lpv6qu-Num"
       >
         23
       </span>
@@ -87,21 +87,21 @@ exports[`<ResultBox /> matches snapshot 1`] = `
         Actual:
       </div>
       <span
-        class="css-1naol83"
+        class="css-1lpv6qu-Num"
       >
         45
       </span>
     </div>
     <div
-      class="css-khmwet"
+      class="css-d6el3m-Divider"
       style="margin: 1rem 0px;"
     />
     <div
-      class="css-ziif3o"
+      class="css-n1n72v-ResultBox"
     >
       You were off by 
       <span
-        class="css-1naol83"
+        class="css-1lpv6qu-Num"
       >
         22
       </span>

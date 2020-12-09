@@ -3,10 +3,10 @@
 exports[`<ErrorBanner /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     <div
-      class="css-1x66upb"
+      class="css-a8gq7t-ErrorBanner"
     >
       hello
     </div>
@@ -20,17 +20,17 @@ exports[`<ErrorComponent /> matches snapshot 1`] = `
     test
   </h1>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     <div
-      class="css-1x66upb"
+      class="css-a8gq7t-ErrorBanner"
     />
   </div>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     <button
-      class="css-16k50s1"
+      class="css-zrjck4-PrimaryButton"
     >
       Home
     </button>
@@ -44,10 +44,10 @@ exports[`<NotFound /> matches snapshot 1`] = `
     test
   </h1>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     <div
-      class="css-1x66upb"
+      class="css-a8gq7t-ErrorBanner"
     >
       <span>
         Whoops, couldn't find data for this package!
@@ -55,7 +55,7 @@ exports[`<NotFound /> matches snapshot 1`] = `
       <br />
       <span>
         <span
-          class="css-9wkshj"
+          class="css-fzjird-ClickLink"
         >
           Propose this package
         </span>
@@ -63,10 +63,10 @@ exports[`<NotFound /> matches snapshot 1`] = `
     </div>
   </div>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     <button
-      class="css-16k50s1"
+      class="css-zrjck4-PrimaryButton"
     >
       Home
     </button>

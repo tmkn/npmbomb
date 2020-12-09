@@ -30,7 +30,7 @@ exports[`<App /> matches snapshot 1`] = `
     class="css-36v4m2-Content"
   >
     <div
-      class="css-8a5j6a"
+      class="css-3f2zt9-Center"
     >
       <div
         class="css-1k3y3xi"
@@ -46,7 +46,7 @@ exports[`<App /> matches snapshot 1`] = `
     <span>
       hecho con ♥️ por 
       <a
-        class="css-1ka21sq"
+        class="css-tgm9kd-TextLink"
         href="https://twitter.com/tmkndev"
         target="_blank"
       >
