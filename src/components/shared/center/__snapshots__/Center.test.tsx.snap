@@ -3,7 +3,7 @@
 exports[`<Center /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-8a5j6a"
+    class="css-3f2zt9-Center"
   >
     Test
   </div>

@@ -3,7 +3,7 @@
 exports[`<Divider /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-khmwet"
+    class="css-d6el3m-Divider"
     style="margin: 1rem;"
   />
 </DocumentFragment>

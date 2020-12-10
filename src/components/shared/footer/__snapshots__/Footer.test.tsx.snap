@@ -8,7 +8,7 @@ exports[`<Footer /> matches snapshot 1`] = `
     <span>
       hecho con ♥️ por 
       <a
-        class="css-1ka21sq"
+        class="css-tgm9kd-TextLink"
         href="https://twitter.com/tmkndev"
         target="_blank"
       >

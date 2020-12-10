@@ -3,7 +3,7 @@
 exports[`<TabView /> matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1788elh"
+    class="css-115y57d-TabView"
   >
     <div
       class="css-zxjiyd-TabHeaders"
@@ -32,7 +32,7 @@ exports[`<TabView /> matches snapshot 1`] = `
       style="width: 50%;"
     />
     <div
-      class="css-1lr5315"
+      class="css-d8oeyd-TabView"
     >
       <div>
         tab 1 content

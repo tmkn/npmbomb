@@ -312,7 +312,7 @@ describe("<Package />", () => {
         fetchMock.doMockOnceIf("/data/lookup.txt", "typescript@1.2.3");
         fetchMock.doMockOnceIf("/data/typescript@1.2.3.json", JSON.stringify(testData));
 
-        const { container } = render(
+        const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript"]}>
                 <Route exact path={`/:routePkgName`}>
                     <Package />
@@ -323,7 +323,6 @@ describe("<Package />", () => {
             </MemoryRouter>
         );
 
-        const el = waitFor(() => container.querySelector("input"));
-        expect(el).toBeTruthy();
+        await findByText("Guess");
     });
 });

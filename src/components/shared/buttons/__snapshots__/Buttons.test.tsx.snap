@@ -3,7 +3,7 @@
 exports[`<PrimaryButton /> matches disabled snapshot 1`] = `
 <DocumentFragment>
   <button
-    class="css-8ej8wd"
+    class="css-17rmonj-PrimaryButton"
   >
     Label
   </button>
@@ -13,7 +13,7 @@ exports[`<PrimaryButton /> matches disabled snapshot 1`] = `
 exports[`<PrimaryButton /> matches snapshot 1`] = `
 <DocumentFragment>
   <button
-    class="css-16k50s1"
+    class="css-zrjck4-PrimaryButton"
   >
     Label
   </button>
