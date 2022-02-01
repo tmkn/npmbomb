@@ -33,4 +33,6 @@ module.exports = {
     moduleNameMapper: {
         "\\.(ttf|woff|woff2|css)$": "<rootDir>/jest/fileMock.js"
       },
+
+      testEnvironment: "jsdom"
 };
