@@ -34,7 +34,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-virtualized": "^9.22.2",
+    "react-virtualized": "^9.22.3",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
