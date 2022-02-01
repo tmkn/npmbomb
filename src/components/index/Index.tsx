@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes } from "@emotion/core";
+import { jsx, css, keyframes } from "@emotion/react";
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import shuffle from "lodash.shuffle";

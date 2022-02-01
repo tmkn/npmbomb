@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes, Interpolation } from "@emotion/core";
+import { jsx, css, keyframes, Interpolation } from "@emotion/react";
 import React, { memo } from "react";
 
 import { mq, primaryColor, primaryColorLight } from "../../../css";
@@ -15,7 +15,7 @@ export const LoadingIndicator: React.FC = memo(() => {
         }
     `;
 
-    const sharedStyle: Interpolation = {
+    const sharedStyle: Interpolation<{}> = {
         width: "100%",
         height: "100%",
         borderRadius: "50%",

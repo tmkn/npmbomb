@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, Global, SerializedStyles } from "@emotion/core";
+import { jsx, css, Global, SerializedStyles } from "@emotion/react";
 import React, { useState, lazy, Suspense } from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 

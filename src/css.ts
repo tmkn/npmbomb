@@ -1,4 +1,4 @@
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const breakpoints = [320, 768, 1200] as const;
 

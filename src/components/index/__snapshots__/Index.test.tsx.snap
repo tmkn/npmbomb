@@ -17,7 +17,7 @@ exports[`<Index /> matches snapshot 1`] = `
       class="css-3f2zt9-Center"
     >
       <button
-        class="css-17rmonj-PrimaryButton"
+        class="css-kpidjw-PrimaryButton"
       >
         Start
       </button>
@@ -42,7 +42,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -52,7 +52,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         As the dependency tree is traversed, each dependency from the dependencies field in the package.json is resolved according to their range and added to the overall count. 
@@ -75,7 +75,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -85,7 +85,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         A dependency is distinct if after resolving it according to their range differs in name and version.
@@ -108,7 +108,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -118,7 +118,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         All available packages can be found on the 
@@ -142,7 +142,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -152,7 +152,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         It's a hommage to the word zip bomb. Wikipedia defines it as:
@@ -175,7 +175,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -185,7 +185,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         No, it only shows (and counts) dependencies from the 
@@ -214,7 +214,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -224,7 +224,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages. If you want a specific dependency or have an idea or just want to chat in general, you can contact me on Twitter 
@@ -248,7 +248,7 @@ exports[`<Index /> matches snapshot 1`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -258,7 +258,7 @@ exports[`<Index /> matches snapshot 1`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         <a
@@ -291,7 +291,7 @@ exports[`<Index /> matches snapshot 2`] = `
       class="css-3f2zt9-Center"
     >
       <button
-        class="css-17rmonj-PrimaryButton"
+        class="css-kpidjw-PrimaryButton"
       >
         Start
       </button>
@@ -316,7 +316,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -326,7 +326,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         As the dependency tree is traversed, each dependency from the dependencies field in the package.json is resolved according to their range and added to the overall count. 
@@ -349,7 +349,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -359,7 +359,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         A dependency is distinct if after resolving it according to their range differs in name and version.
@@ -382,7 +382,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -392,7 +392,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         All available packages can be found on the 
@@ -416,7 +416,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -426,7 +426,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         It's a hommage to the word zip bomb. Wikipedia defines it as:
@@ -449,7 +449,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -459,7 +459,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         No, it only shows (and counts) dependencies from the 
@@ -488,7 +488,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -498,7 +498,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         For now, it only shows a preselected number of libraries, namely the ones that are in the dependency tree of the most downloaded packages. If you want a specific dependency or have an idea or just want to chat in general, you can contact me on Twitter 
@@ -522,7 +522,7 @@ exports[`<Index /> matches snapshot 2`] = `
           style="cursor: pointer;"
         >
           <span
-            class="css-swfxel-Faq"
+            class="css-1stvao-Faq"
           >
             <div
               class="codicon codicon-chevron-right"
@@ -532,7 +532,7 @@ exports[`<Index /> matches snapshot 2`] = `
         </span>
       </h2>
       <div
-        class="css-osfowl-Faq"
+        class="css-ofg7lr-Faq"
         style="display: none;"
       >
         <a

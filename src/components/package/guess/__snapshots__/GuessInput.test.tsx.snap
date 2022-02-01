@@ -16,7 +16,7 @@ exports[`<GuessInput /> matches snapshot 1`] = `
       style="flex: 0.05;"
     />
     <button
-      class="css-17rmonj-PrimaryButton"
+      class="css-kpidjw-PrimaryButton"
     >
       Guess
     </button>

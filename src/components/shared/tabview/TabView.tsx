@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import React, { useState, useEffect, useContext, useRef } from "react";
 
 import { mq, serifFont, secondaryColor, primaryColor, primaryColorDark } from "../../../css";

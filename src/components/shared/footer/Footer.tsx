@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 
 import { mq, sansSerifFont, textColor, secondaryColor } from "../../../css";
 import { TextLink } from "../link/TextLink";

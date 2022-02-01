@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes, SerializedStyles } from "@emotion/core";
+import { jsx, css, keyframes, SerializedStyles } from "@emotion/react";
 import React, { useRef, useState, useContext, useEffect, memo } from "react";
 
 import {

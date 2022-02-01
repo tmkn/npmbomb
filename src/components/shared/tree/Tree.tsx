@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 import { Subject } from "rxjs";
