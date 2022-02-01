@@ -60,8 +60,10 @@ module.exports = {
         },
     },
     devServer: {
-        overlay: true,
-        contentBase: path.join(__dirname),
+        client: {
+            overlay: true
+        },
+        static: path.join(__dirname),
         historyApiFallback: {
             disableDotRule: true
         }
