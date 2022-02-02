@@ -53,7 +53,7 @@
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.5.1",
     "cypress": "^9.4.1",
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.4.7",
     "jest-fetch-mock": "^3.0.3",
