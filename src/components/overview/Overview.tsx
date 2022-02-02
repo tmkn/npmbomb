@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes } from "@emotion/core";
+import { jsx, css, keyframes } from "@emotion/react";
 import React, { useContext, useState, useEffect, useRef, memo } from "react";
 import { BehaviorSubject } from "rxjs";
 import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";

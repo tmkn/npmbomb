@@ -12,7 +12,7 @@ exports[`<TabView /> matches snapshot 1`] = `
         tabindex="0"
       >
         <span
-          class="css-gvuyi4"
+          class="css-n9ujjh-TabHeaders"
         >
           Tab 1
         </span>
@@ -21,7 +21,7 @@ exports[`<TabView /> matches snapshot 1`] = `
         tabindex="0"
       >
         <span
-          class="css-qmn0xh"
+          class="css-1pqaqeh-TabHeaders"
         >
           Tab 2
         </span>

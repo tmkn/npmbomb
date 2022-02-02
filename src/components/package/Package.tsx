@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css, keyframes } from "@emotion/core";
+import { jsx, css, keyframes } from "@emotion/react";
 import React, { useState, useEffect, useContext } from "react";
 import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import React, { useRef, useState, useContext, useEffect } from "react";
 
 import { PrimaryButton } from "../../shared/buttons/Buttons";

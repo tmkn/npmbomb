@@ -15,7 +15,7 @@ exports[`<ResultBox /> matches snapshot 1`] = `
           tabindex="0"
         >
           <span
-            class="css-gvuyi4"
+            class="css-n9ujjh-TabHeaders"
           >
             Summary
           </span>
@@ -24,7 +24,7 @@ exports[`<ResultBox /> matches snapshot 1`] = `
           tabindex="0"
         >
           <span
-            class="css-qmn0xh"
+            class="css-1pqaqeh-TabHeaders"
           >
             Dependency Tree
           </span>

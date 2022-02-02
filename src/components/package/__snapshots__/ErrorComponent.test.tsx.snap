@@ -30,7 +30,7 @@ exports[`<ErrorComponent /> matches snapshot 1`] = `
     class="css-3f2zt9-Center"
   >
     <button
-      class="css-zrjck4-PrimaryButton"
+      class="css-124ngqg-PrimaryButton"
     >
       Home
     </button>
@@ -66,7 +66,7 @@ exports[`<NotFound /> matches snapshot 1`] = `
     class="css-3f2zt9-Center"
   >
     <button
-      class="css-zrjck4-PrimaryButton"
+      class="css-124ngqg-PrimaryButton"
     >
       Home
     </button>
