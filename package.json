@@ -51,7 +51,7 @@
     "@webpack-cli/serve": "^1.6.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",
-    "css-loader": "^6.5.1",
+    "css-loader": "^6.6.0",
     "cypress": "^9.4.1",
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.5.0",
