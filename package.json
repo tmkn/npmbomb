@@ -55,7 +55,7 @@
     "cypress": "^9.4.1",
     "express": "^4.17.2",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^27.4.7",
+    "jest": "^27.5.0",
     "jest-fetch-mock": "^3.0.3",
     "prettier": "^2.5.1",
     "style-loader": "^3.3.1",
