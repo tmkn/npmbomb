@@ -30,8 +30,8 @@
     "@emotion/react": "^11.8.1",
     "@sentry/browser": "^6.18.1",
     "lodash.shuffle": "^4.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-router-dom": "^5.2.0",
     "react-virtualized": "^9.22.3",
     "rxjs": "^7.5.4"
