@@ -52,7 +52,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.6.0",
-    "cypress": "^9.5.1",
+    "cypress": "^11.2.0",
     "express": "^4.17.3",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
