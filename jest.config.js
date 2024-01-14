@@ -12,14 +12,10 @@ module.exports = {
     // Runs special logic, such as cleaning up components
     // when using React Testing Library and adds special
     // extended assertions to Jest
-    setupFilesAfterEnv: [
-        "@testing-library/jest-dom/extend-expect"
-    ],
+    setupFilesAfterEnv: ["@testing-library/jest-dom"],
 
     automock: false,
-    setupFiles: [
-        "./setupJest.js"
-    ],
+    setupFiles: ["./setupJest.js"],
 
     // Test spec file resolution pattern
     // Matches parent folder `__tests__` and filename
@@ -28,11 +24,11 @@ module.exports = {
 
     // Module file extensions for importing
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-    collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+    collectCoverageFrom: ["src/**/*.{ts,tsx}"],
 
     moduleNameMapper: {
         "\\.(ttf|woff|woff2|css)$": "<rootDir>/jest/fileMock.js"
-      },
+    },
 
-      testEnvironment: "jsdom"
+    testEnvironment: "jsdom"
 };

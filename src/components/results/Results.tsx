@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
 import React, { useContext, useEffect } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 import { ResultsTable, Num } from "../shared/results/ResultsTable";
 import { primaryColor, mq, mobileOnly, hideOnMobile } from "../../css";
@@ -15,13 +15,13 @@ type Results = IGuessResult[];
 
 const Results: React.FC = () => {
     const { appState, setAppState } = useContext(AppContext);
-    const history = useHistory();
+    const history = useNavigate();
 
     useEffect(() => {
         setDefaultTitle();
     });
 
-    if (appState.guesses.length === 0) return <Redirect to="/" />;
+    if (appState.guesses.length === 0) return <Navigate to="/" />;
 
     const alignRight = css({
         [mq[0]]: {
@@ -64,7 +64,7 @@ const Results: React.FC = () => {
             remaining: []
         });
 
-        history.push("/");
+        history("/");
     }
 
     return (

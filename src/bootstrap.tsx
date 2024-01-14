@@ -1,7 +1,7 @@
 /* istanbul ignore file */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import * as Sentry from "@sentry/browser";
 
 import { App } from "./App";
@@ -13,7 +13,8 @@ function mount(): void {
 
     document.body.appendChild(app);
 
-    ReactDOM.render(<App />, app);
+    const root = createRoot(app);
+    root.render(<App />);
 }
 
 mount();

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, MemoryRouter, Route } from "react-router-dom";
+import { BrowserRouter, MemoryRouter, Route, Routes } from "react-router-dom";
 import { render, fireEvent } from "@testing-library/react";
 
 import Results from "./Results";
@@ -70,14 +70,17 @@ describe("<Results />", () => {
         };
         const { findByText } = render(
             <MemoryRouter initialEntries={["/results"]}>
-                <Route exact path={`/results`}>
-                    <AppContext.Provider value={mockedAppContext}>
-                        <Results />
-                    </AppContext.Provider>
-                </Route>
-                <Route path={"/"}>
-                    <React.Fragment>Index</React.Fragment>
-                </Route>
+                <Routes>
+                    <Route
+                        path={`/results`}
+                        element={
+                            <AppContext.Provider value={mockedAppContext}>
+                                <Results />
+                            </AppContext.Provider>
+                        }
+                    />
+                    <Route path={"/"} element={<React.Fragment>Index</React.Fragment>} />
+                </Routes>
             </MemoryRouter>
         );
 

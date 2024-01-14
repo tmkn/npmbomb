@@ -2,6 +2,7 @@
 import { jsx, css } from "@emotion/react";
 
 import { serifFont, textColor, mq } from "../../../css";
+import { PropsWithChildren } from "react";
 
 const numberStyle = css({
     [mq[0]]: {
@@ -10,13 +11,18 @@ const numberStyle = css({
     }
 });
 
-export const Num: React.FC = ({ children }) => <span css={numberStyle}>{children}</span>;
+export const Num: React.FC<PropsWithChildren> = ({ children }) => (
+    <span css={numberStyle}>{children}</span>
+);
 
 interface IResultsTableProps {
     columns: number;
 }
 
-export const ResultsTable: React.FC<IResultsTableProps> = ({ children, columns }) => {
+export const ResultsTable: React.FC<PropsWithChildren<IResultsTableProps>> = ({
+    children,
+    columns
+}) => {
     const resultsTable = css({
         [mq[0]]: {
             display: "grid",

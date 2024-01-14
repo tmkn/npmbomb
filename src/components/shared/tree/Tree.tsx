@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
+// import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 import { Subject } from "rxjs";
 import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
 
@@ -84,15 +84,15 @@ export const Tree = <T,>({
         };
     }, []);
 
-    const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
-        const p = treeData[index];
+    // const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
+    //     const p = treeData[index];
 
-        return (
-            <div key={key} style={style}>
-                <TreeNode<T> node={p} treeFormatter={treeFormatter} />
-            </div>
-        );
-    };
+    //     return (
+    //         <div key={key} style={style}>
+    //             <TreeNode<T> node={p} treeFormatter={treeFormatter} />
+    //         </div>
+    //     );
+    // };
 
     const treeList = `treeList`;
     const treeStyle = css({
@@ -117,7 +117,8 @@ export const Tree = <T,>({
             <BreadcrumbsContext.Provider value={{ breadcrumbs }}>
                 <Breadcrumbs />
                 <div css={treeStyle}>
-                    <AutoSizer defaultHeight={24}>
+                    todo refactor with https://tanstack.com/virtual/v3
+                    {/* <AutoSizer defaultHeight={24}>
                         {({ height, width }) => (
                             <List
                                 className={treeList}
@@ -129,7 +130,7 @@ export const Tree = <T,>({
                                 rowRenderer={rowRenderer}
                             />
                         )}
-                    </AutoSizer>
+                    </AutoSizer> */}
                 </div>
             </BreadcrumbsContext.Provider>
         </TreeControlProvider.Provider>

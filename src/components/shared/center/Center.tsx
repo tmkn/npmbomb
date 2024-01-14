@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import { PropsWithChildren } from "react";
 
 import { mq } from "../../../css";
 
@@ -19,6 +20,6 @@ const centerStyle = css({
     }
 });
 
-export const Center: React.FC = ({ children }) => {
+export const Center: React.FC<PropsWithChildren> = ({ children }) => {
     return <div css={centerStyle}>{children}</div>;
 };

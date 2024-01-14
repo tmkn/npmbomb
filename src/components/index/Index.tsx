@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
-import React, { useContext, useState, useEffect, useRef } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useContext, useState, useEffect, useRef, PropsWithChildren } from "react";
+import { useNavigate } from "react-router-dom";
 import shuffle from "lodash.shuffle";
 
 import { mq, serifFont, sansSerifFont, secondaryColor, textColor } from "../../css";
@@ -97,7 +97,7 @@ interface IFaqProps {
     collapsed?: boolean;
 }
 
-const Faq: React.FC<IFaqProps> = ({ children, header, collapsed }) => {
+const Faq: React.FC<PropsWithChildren<IFaqProps>> = ({ children, header, collapsed }) => {
     const faqEl = useRef<HTMLDivElement>(null);
     const [expanded, setExpandend] = useState(!collapsed ?? true);
     const contentEl = useRef<HTMLDivElement>(null);
@@ -169,7 +169,7 @@ interface IFaqHeadingProps {
     onClick?: (e: React.MouseEvent<HTMLHeadingElement>) => void;
 }
 
-const FaqHeading: React.FC<IFaqHeadingProps> = ({ children, onClick }) => {
+const FaqHeading: React.FC<PropsWithChildren<IFaqHeadingProps>> = ({ children, onClick }) => {
     const _onClick = onClick ?? (() => {});
 
     return (
@@ -189,7 +189,7 @@ const style = css({
 
 export default () => {
     const { appState, setAppState } = useContext(AppContext);
-    const history = useHistory();
+    const history = useNavigate();
     const { loading, error } = useAvailablePackagesLoader();
     const disableStart = loading === true || error === true;
 
@@ -205,7 +205,7 @@ export default () => {
             remaining: remaining,
             inGameMode: true
         });
-        history.push(`/package/${remaining[0]}`);
+        history(`/package/${remaining[0]}`);
     }
 
     return (

@@ -3,7 +3,7 @@ import { jsx, css, keyframes } from "@emotion/react";
 import React, { useContext, useState, useEffect, useRef, memo } from "react";
 import { BehaviorSubject } from "rxjs";
 import { debounceTime, distinctUntilChanged, filter } from "rxjs/operators";
-import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
+// import { List, ListRowRenderer, AutoSizer } from "react-virtualized";
 
 import {
     mq,
@@ -104,21 +104,22 @@ const ResultListing: React.FC<{ packages: string[] }> = ({ packages }) => {
         overflow: "auto"
     });
 
-    const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
-        const p = packages[index];
+    // const rowRenderer: ListRowRenderer = ({ key, index, isScrolling, isVisible, style }) => {
+    //     const p = packages[index];
 
-        return (
-            <div key={key} style={style} css={rowStyle}>
-                <OverviewLink key={p} p={p} />
-            </div>
-        );
-    };
+    //     return (
+    //         <div key={key} style={style} css={rowStyle}>
+    //             <OverviewLink key={p} p={p} />
+    //         </div>
+    //     );
+    // };
 
     return (
         <React.Fragment>
             <span css={countStyle}>Found {packages.length} packages</span>
             <div css={resultsStyle}>
-                <AutoSizer defaultHeight={600}>
+                todo refactor this with tanstack/virtual
+                {/* <AutoSizer defaultHeight={600}>
                     {({ height, width }) => (
                         <List
                             overscanRowCount={10}
@@ -129,7 +130,7 @@ const ResultListing: React.FC<{ packages: string[] }> = ({ packages }) => {
                             rowRenderer={rowRenderer}
                         />
                     )}
-                </AutoSizer>
+                </AutoSizer> */}
             </div>
         </React.Fragment>
     );

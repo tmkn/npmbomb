@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import React from "react";
+import React, { PropsWithChildren } from "react";
 
 import { mq, secondaryColor, primaryColor } from "../../../css";
 
-export const TextLink: React.FC<{ href: string; target?: string }> = ({
+export const TextLink: React.FC<PropsWithChildren<{ href: string; target?: string }>> = ({
     children,
     href,
     target
@@ -25,7 +25,10 @@ export const TextLink: React.FC<{ href: string; target?: string }> = ({
     );
 };
 
-export const ClickLink: React.FC<{ onClick: () => void }> = ({ children, onClick }) => {
+export const ClickLink: React.FC<PropsWithChildren<{ onClick: () => void }>> = ({
+    children,
+    onClick
+}) => {
     const style = css({
         [mq[0]]: {
             textDecoration: "underline",

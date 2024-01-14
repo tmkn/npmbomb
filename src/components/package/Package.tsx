@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import { jsx, css, keyframes } from "@emotion/react";
 import React, { useState, useEffect, useContext } from "react";
-import { Switch, Route, useRouteMatch, useParams, Redirect, useHistory } from "react-router-dom";
+import { Routes, Route, useParams, Navigate, useNavigate } from "react-router-dom";
 
 import { PrimaryButton } from "../shared/buttons/Buttons";
 import { Info } from "../shared/info/Info";
 import { Center } from "../shared/center/Center";
 import { LoadingIndicator } from "../shared/loading/LoadingIndicator";
-import { GuessInput } from "./guess/GuessInput";
 import { IGuessContext, GuessContext } from "./guess/GuessContext";
 import { NotFound } from "./ErrorComponent";
 import { ResultBox } from "./ResultBox";
@@ -70,7 +69,7 @@ interface IDataLoaderResponse {
 }
 
 function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderResponse {
-    const history = useHistory();
+    const history = useNavigate();
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false);
     const [data, setData] = useState<IPackageInfo>({
@@ -105,7 +104,7 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
                     if (!unmounted) {
                         setLoading(false);
                     }
-                    history.push(`/package/${availableVersion}`);
+                    history(`/package/${availableVersion}`);
                 } else {
                     const pkgInfo = await getPackageInfo(pkgName, scope);
 
@@ -132,15 +131,15 @@ function useDataLoader(pkgName: string, scope: string | undefined): IDataLoaderR
     };
 }
 
-interface IRouteParams {
+type IRouteParams = {
     routePkgName: string;
     routeScope?: string;
-}
+};
 
 export const Package: React.FC = () => {
-    const history = useHistory();
+    const history = useNavigate();
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    const { routePkgName, routeScope } = useParams<IRouteParams>();
+    const { routePkgName = "foo", routeScope } = useParams<IRouteParams>();
     const { appState, setAppState } = useContext(AppContext);
     const [userGuess, setUserGuess] = useState<number | undefined>();
     const { data: pkgInfo, loading, error } = useDataLoader(routePkgName, routeScope);
@@ -180,9 +179,9 @@ export const Package: React.FC = () => {
         });
 
         if (remaining.length === 0) {
-            history.push("/results");
+            history("/results");
         } else {
-            history.push(`/package/${remaining[0]}`);
+            history(`/package/${remaining[0]}`);
         }
     }
 
@@ -252,19 +251,13 @@ const NextLabel: React.FC = () => {
 
 /* istanbul ignore next */
 export default () => {
-    let match = useRouteMatch();
-
     return (
-        <Switch>
-            <Route exact path={`${match.path}/:routePkgName`}>
-                <Package />
-            </Route>
-            <Route exact path={`${match.path}/:routeScope/:routePkgName`}>
-                <Package />
-            </Route>
-            <Route path={match.path}>
-                <Redirect to="/" />
-            </Route>
-        </Switch>
+        <Routes>
+            <Route path={`:routePkgName`} element={<Package />} />
+
+            <Route path={`:routeScope/:routePkgName`} element={<Package />} />
+
+            <Route path={`*`} element={<Navigate to="/" />} />
+        </Routes>
     );
 };

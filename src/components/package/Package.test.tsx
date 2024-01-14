@@ -1,5 +1,5 @@
 import React from "react";
-import { MemoryRouter, Route } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import fetchMock, { FetchMock } from "jest-fetch-mock";
 
@@ -142,9 +142,9 @@ describe("<Package />", () => {
     test("renders not found view", async () => {
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
 
@@ -165,11 +165,16 @@ describe("<Package />", () => {
         };
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <AppContext.Provider value={mockAppContext}>
-                        <Package />
-                    </AppContext.Provider>
-                </Route>
+                <Routes>
+                    <Route
+                        path={`/:routePkgName`}
+                        element={
+                            <AppContext.Provider value={mockAppContext}>
+                                <Package />
+                            </AppContext.Provider>
+                        }
+                    />
+                </Routes>
             </MemoryRouter>
         );
 
@@ -190,11 +195,16 @@ describe("<Package />", () => {
         };
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <AppContext.Provider value={mockAppContext}>
-                        <Package />
-                    </AppContext.Provider>
-                </Route>
+                <Routes>
+                    <Route
+                        path={`/:routePkgName`}
+                        element={
+                            <AppContext.Provider value={mockAppContext}>
+                                <Package />
+                            </AppContext.Provider>
+                        }
+                    />
+                </Routes>
             </MemoryRouter>
         );
 
@@ -215,9 +225,9 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
@@ -236,9 +246,9 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
@@ -257,9 +267,9 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
-                <Route exact path={`/:routeScope/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routeScope/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
@@ -278,9 +288,9 @@ describe("<Package />", () => {
 
         const { container, findByText } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
-                <Route exact path={`/:routeScope/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routeScope/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
@@ -299,9 +309,9 @@ describe("<Package />", () => {
 
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
 
@@ -314,12 +324,10 @@ describe("<Package />", () => {
 
         const { findByText } = render(
             <MemoryRouter initialEntries={["/typescript"]}>
-                <Route exact path={`/:routePkgName`}>
-                    <Package />
-                </Route>
-                <Route exact path={`/package/:routePkgName`}>
-                    <Package />
-                </Route>
+                <Routes>
+                    <Route path={`/:routePkgName`} element={<Package />} />
+                    <Route path={`/package/:routePkgName`} element={<Package />} />
+                </Routes>
             </MemoryRouter>
         );
 

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, css, Global, SerializedStyles } from "@emotion/react";
 import React, { useState, lazy, Suspense } from "react";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 const Index = lazy(() => import("./components/index/Index"));
 const Package = lazy(() => import("./components/package/Package"));
@@ -117,29 +117,41 @@ export const App: React.FC = () => {
                 <Global styles={[globalStyle, globalFocusStyle]} />
                 <Header />
                 <Content>
-                    <Switch>
-                        <Route path="/package">
-                            <Suspense fallback={<LoadingIndicator />}>
-                                <Package />
-                            </Suspense>
-                        </Route>
-                        <Route path="/results">
-                            <Suspense fallback={<LoadingIndicator />}>
-                                <Results />
-                            </Suspense>
-                        </Route>
-                        <Route path="/overview">
-                            <Suspense fallback={<LoadingIndicator />}>
-                                <Overview />
-                            </Suspense>
-                        </Route>
-                        <Route path="/">
-                            <Suspense fallback={<LoadingIndicator />}>
-                                <Index />
-                            </Suspense>
-                        </Route>
-                        <Redirect to="/" />
-                    </Switch>
+                    <Routes>
+                        <Route
+                            path="/package/*"
+                            element={
+                                <Suspense fallback={<LoadingIndicator />}>
+                                    <Package />
+                                </Suspense>
+                            }
+                        />
+                        <Route
+                            path="/results"
+                            element={
+                                <Suspense fallback={<LoadingIndicator />}>
+                                    <Results />
+                                </Suspense>
+                            }
+                        />
+                        <Route
+                            path="/overview"
+                            element={
+                                <Suspense fallback={<LoadingIndicator />}>
+                                    <Overview />
+                                </Suspense>
+                            }
+                        />
+                        <Route
+                            path="/"
+                            element={
+                                <Suspense fallback={<LoadingIndicator />}>
+                                    <Index />
+                                </Suspense>
+                            }
+                        />
+                        <Route path="*" element={<Navigate to="/" />} />
+                    </Routes>
                 </Content>
                 <Footer />
             </BrowserRouter>

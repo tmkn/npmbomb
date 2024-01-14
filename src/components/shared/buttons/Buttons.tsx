@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import { PropsWithChildren } from "react";
 
 import { mq, sansSerifFont, primaryColor, primaryColorLight } from "../../../css";
 
@@ -32,7 +33,11 @@ interface IPrimaryButtonProps {
     disabled?: boolean;
 }
 
-export const PrimaryButton: React.FC<IPrimaryButtonProps> = ({ children, onClick, disabled }) => {
+export const PrimaryButton: React.FC<PropsWithChildren<IPrimaryButtonProps>> = ({
+    children,
+    onClick,
+    disabled
+}) => {
     const isDisabled = disabled ?? false;
 
     const disabledStyle = css({

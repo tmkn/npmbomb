@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import { PropsWithChildren } from "react";
 
 import { mq } from "../../../css";
 
@@ -16,7 +17,7 @@ const style = css({
     }
 });
 
-const Content: React.FC = ({ children }) => {
+const Content: React.FC<PropsWithChildren> = ({ children }) => {
     return <div css={style}>{children}</div>;
 };
 

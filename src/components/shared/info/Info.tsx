@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
+import { PropsWithChildren } from "react";
 
 import { sansSerifFont, primaryColorDark, secondaryColorLight, mq } from "../../../css";
 
@@ -16,6 +17,6 @@ const infoStyle = css({
     }
 });
 
-export const Info: React.FC = ({ children }) => {
+export const Info: React.FC<PropsWithChildren> = ({ children }) => {
     return <div css={infoStyle}>{children}</div>;
 };

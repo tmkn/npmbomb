@@ -1,19 +1,22 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/react";
-import React, { useState, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useContext, PropsWithChildren } from "react";
+import { useNavigate } from "react-router-dom";
 import * as Sentry from "@sentry/browser";
 
 import { AppContext } from "../../AppContext";
 import { mq, textColor } from "../../css";
 import { Center } from "../shared/center/Center";
 import { PrimaryButton } from "../shared/buttons/Buttons";
-import { TextLink, ClickLink } from "../shared/link/TextLink";
+import { ClickLink } from "../shared/link/TextLink";
 import { Highlight } from "../shared/highlight/Highlight";
 
-export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, children }) => {
+export const ErrorComponent: React.FC<PropsWithChildren<{ pkgName: string }>> = ({
+    pkgName,
+    children
+}) => {
     const { setAppState } = useContext(AppContext);
-    const history = useHistory();
+    const history = useNavigate();
 
     /* istanbul ignore next */
     function onClick(): void {
@@ -23,7 +26,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
             remaining: [],
             packages: []
         });
-        history.push("/");
+        history("/");
     }
 
     return (
@@ -37,7 +40,7 @@ export const ErrorComponent: React.FC<{ pkgName: string }> = ({ pkgName, childre
     );
 };
 
-export const ErrorBanner: React.FC = ({ children }) => {
+export const ErrorBanner: React.FC<PropsWithChildren> = ({ children }) => {
     const style = css({
         [mq[0]]: {
             color: textColor,
