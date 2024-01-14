@@ -193,7 +193,7 @@ describe("<Package />", () => {
             },
             setAppState: () => {}
         };
-        const { container, findByText } = render(
+        const { findByText, findAllByRole } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
                 <Routes>
                     <Route
@@ -209,8 +209,8 @@ describe("<Package />", () => {
         );
 
         await findByText("[1/2]");
-        const radioEl = [...document.querySelectorAll<HTMLInputElement>("input[type=radio]")].find(
-            el => el.value !== "123"
+        const radioEl = (await findAllByRole("radio")).find(
+            el => el.getAttribute("value") !== "123"
         );
         const guessBtn = await findByText("Guess");
 
@@ -223,7 +223,7 @@ describe("<Package />", () => {
     test("does a guess", async () => {
         mockResponseNonScoped(fetchMock);
 
-        const { container, findByText } = render(
+        const { findByText, findAllByRole } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
                 <Routes>
                     <Route path={`/:routePkgName`} element={<Package />} />
@@ -231,8 +231,8 @@ describe("<Package />", () => {
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
-        const radioEl = [...document.querySelectorAll<HTMLInputElement>("input[type=radio]")].find(
-            el => el.value !== "123"
+        const radioEl = (await findAllByRole("radio")).find(
+            el => el.getAttribute("value") !== "123"
         );
 
         fireEvent.click(radioEl!);
@@ -244,7 +244,7 @@ describe("<Package />", () => {
     test("does a correct guess", async () => {
         mockResponseNonScoped(fetchMock);
 
-        const { container, findByText } = render(
+        const { findByText, findAllByRole } = render(
             <MemoryRouter initialEntries={["/typescript@1.2.3"]}>
                 <Routes>
                     <Route path={`/:routePkgName`} element={<Package />} />
@@ -252,8 +252,8 @@ describe("<Package />", () => {
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
-        const radioEl = [...document.querySelectorAll<HTMLInputElement>("input[type=radio]")].find(
-            el => el.value === "123"
+        const radioEl = (await findAllByRole("radio")).find(
+            el => el.getAttribute("value") === "123"
         );
 
         fireEvent.click(radioEl!);
@@ -265,7 +265,7 @@ describe("<Package />", () => {
     test("does a guess for scoped package", async () => {
         mockResponseScoped(fetchMock);
 
-        const { container, findByText } = render(
+        const { findByText, findAllByRole } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
                 <Routes>
                     <Route path={`/:routeScope/:routePkgName`} element={<Package />} />
@@ -273,8 +273,8 @@ describe("<Package />", () => {
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
-        const radioEl = [...document.querySelectorAll<HTMLInputElement>("input[type=radio]")].find(
-            el => el.value !== "123"
+        const radioEl = (await findAllByRole("radio")).find(
+            el => el.getAttribute("value") !== "123"
         );
 
         fireEvent.click(radioEl!);
@@ -286,7 +286,7 @@ describe("<Package />", () => {
     test("does a correct guess for scoped package", async () => {
         mockResponseScoped(fetchMock);
 
-        const { container, findByText } = render(
+        const { findByText, findAllByRole } = render(
             <MemoryRouter initialEntries={["/@typescript/foo@1.2.3"]}>
                 <Routes>
                     <Route path={`/:routeScope/:routePkgName`} element={<Package />} />
@@ -294,8 +294,8 @@ describe("<Package />", () => {
             </MemoryRouter>
         );
         const guessBtn = await findByText("Guess");
-        const radioEl = [...document.querySelectorAll<HTMLInputElement>("input[type=radio]")].find(
-            el => el.value === "123"
+        const radioEl = (await findAllByRole("radio")).find(
+            el => el.getAttribute("value") === "123"
         );
 
         fireEvent.click(radioEl!);
