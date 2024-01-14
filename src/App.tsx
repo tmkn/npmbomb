@@ -88,7 +88,9 @@ const globalStyle: SerializedStyles = css`
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: local("Open Sans Regular"), local("OpenSans-Regular"),
+        src:
+            local("Open Sans Regular"),
+            local("OpenSans-Regular"),
             url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)
                 format("woff2");
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
